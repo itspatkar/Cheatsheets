@@ -25,33 +25,6 @@ h2 {
     color: #444;
 }
 
-.back-to-top {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 999;
-  background: #0563bb;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-.back-to-top a: link {
-    text-decoration: ;
-    border:none;
-    outline: none;
-}
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-.back-to-top:hover {
-  background: #0678e3;
-  color: #fff;
-}
-
-
 /* Responsiveness */
 @media screen and (max-width: 575px) {
     body {
