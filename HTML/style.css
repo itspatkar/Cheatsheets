@@ -11,6 +11,7 @@ h2 {
 .title {
     text-align: center;
     padding: 1.5rem;
+    text-decoration: underline;
 }
 .table {
     color: #555;
@@ -56,11 +57,14 @@ h2 {
     body {
         font-size: 0.85rem;
     }
+    h1 {
+        font-size: 1.85rem !important;
+    }
     h2 {
-        font-size: 1.6rem !important;
+        font-size: 1.5rem !important;
     }
     h3 {
-        font-size: 1.4rem !important;
+        font-size: 1.3rem !important;
     }
     .title {
         text-align: center;
