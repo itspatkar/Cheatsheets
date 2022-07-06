@@ -17,13 +17,12 @@
         <script src="https://kit.fontawesome.com/e76697353a.js" crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="assets/style.css" />
     </head>
 
     <body>
         <!-- Page -->
         <div class="container">
-
             <h1 class="title">Git Cheatsheet</h1>
 
             <h3>Table Of Content :</h3>
@@ -44,8 +43,8 @@
                 <li><a href="#tags">Tags</a></li>
             </ul>
 
-            <hr><br />
-
+            <hr />
+            <br />
 
             <h2 id="initial-setup"># Initial Setup</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -78,10 +77,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p>
-                <strong>Note :</strong> All global settings are saved in a file .gitconfig in your home directory.
-            </p>
-
+            <p><strong>Note :</strong> All global settings are saved in a file .gitconfig in your home directory.</p>
 
             <h2 id="git-ignore-file"># Git Ignore File</h2>
             <ul>
@@ -90,19 +86,21 @@
                 <li>File name: <code>.gitignore</code></li>
                 <li><a href="https://github.com/github/gitignore">Collection of useful .gitignore templates</a></li>
             </ul>
-            <p><strong>For Example :</strong></p>
-            <div class="code-box">
-                # setup.txt will be excluded.<br>
-                setup.txt<br><br>
+            <p>
+                <strong>For Example :</strong>
+            </p>
+            <p class="code-box">
+                # setup.txt will be excluded.<br />
+                setup.txt<br />
+                <br />
 
-                # All files with the extension .sh will be excluded.<br>
-                *.sh<br><br>
+                # All files with the extension .sh will be excluded.<br />
+                *.sh<br />
+                <br />
 
-                # folder bin will be excluded.<br>
+                # folder bin will be excluded.<br />
                 bin/
-            </div>
-            <br>
-
+            </p>
 
             <h2 id="setting-repo"># Setting Repo</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -131,7 +129,6 @@
                     </tr>
                 </tbody>
             </table>
-
 
             <h2 id="view-and-inspect-changes"># View and Inspect Changes</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -208,10 +205,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p>
-                <strong>Note :</strong> <code>HEAD</code> is a pointer which points at the current working tree and working branch.
-            </p>
-
+            <p><strong>Note :</strong> <code>HEAD</code> is a pointer which points at the current working tree and working branch.</p>
 
             <h2 id="staging-and-unstaging"># Staging and Unstaging</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -266,7 +260,6 @@
                 - Index = staged = tracked
             </p>
 
-
             <h2 id="commit-and-rebase"># Commit and Rebase</h2>
             <table class="table table-bordered table-hover table-striped">
                 <thead class="thead-dark">
@@ -314,10 +307,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p>
-                <strong>Note :</strong> Never rebase on public branch. Other teams may face conflicts as rebasing changes checksums.
-            </p>
-
+            <p><strong>Note :</strong> Never rebase on public branch. Other teams may face conflicts as rebasing changes checksums.</p>
 
             <h2 id="reset"># Reset</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -357,7 +347,6 @@
                 It will update the HEAD only if you checkout a branch (if not, then you end up with a detached HEAD).
             </p>
 
-
             <h2 id="push"># Push</h2>
             <table class="table table-bordered table-hover table-striped">
                 <thead class="thead-dark">
@@ -396,10 +385,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p>
-                <strong>Note :</strong> Use <code>force-with-lease</code> option instead of <code>f</code> with push.
-            </p>
-
+            <p><strong>Note :</strong> Use <code>force-with-lease</code> option instead of <code>f</code> with push.</p>
 
             <h2 id="fetch-merge-and-pull"># Fetch Merge and Pull</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -444,7 +430,6 @@
                     </tr>
                 </tbody>
             </table>
-
 
             <h2 id="branch"># Branch</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -517,10 +502,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p>
-                <strong>Note :</strong> It is recommended to create branches from the main branch.
-            </p>
-
+            <p><strong>Note :</strong> It is recommended to create branches from the main branch.</p>
 
             <h2 id="remote"># Remote</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -565,7 +547,6 @@
                     </tr>
                 </tbody>
             </table>
-
 
             <h2 id="stash"># Stash</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -624,7 +605,6 @@
                 - It is similar to a data structure stack with LIFO.
             </p>
 
-
             <h2 id="reflog"># Reflog</h2>
             <table class="table table-bordered table-hover table-striped">
                 <thead class="thead-dark">
@@ -644,10 +624,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p>
-                <strong>Note :</strong> Git reflog can be used to restore deleted/lost commits.
-            </p>
-
+            <p><strong>Note :</strong> Git reflog can be used to restore deleted/lost commits.</p>
 
             <h2 id="tags"># Tags</h2>
             <table class="table table-bordered table-hover table-striped">
@@ -676,10 +653,10 @@
                     </tr>
                 </tbody>
             </table>
-            <br />
 
             <p>
-                <strong><a href="https://github.com/itspatkar/Cheatsheets/blob/main/git.md#">GO UP</a></strong>
+                <strong><a href="https://itspatkar.github.io/Cheatsheets/"><i class="fas fa-arrow-left"></i> BACK</a></strong>
+                <strong style="float: right;"><a href="https://itspatkar.github.io/Cheatsheets/git.html#"><i class="fas fa-arrow-up"></i> TOP</a></strong>
             </p>
         </div>
 
