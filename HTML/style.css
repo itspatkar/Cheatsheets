@@ -52,7 +52,10 @@ h2 {
 /* Responsiveness */
 @media screen and (max-width: 575px) {
     body {
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.6rem !important;
     }
     .title {
         text-align: center;
