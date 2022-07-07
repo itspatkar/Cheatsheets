@@ -5,6 +5,10 @@ h2 {
     padding-bottom: 5px;
     border-bottom: 1.5px solid #ccc;
 }
+table {
+    table-layout: fixed;
+    overflow-wrap: break-word;
+}
 thead {
     text-align: center;
 }
@@ -34,7 +38,7 @@ thead {
         font-size: 0.95rem;
     }
     h1 {
-        font-size: 1.85rem !important;
+        font-size: 1.9rem !important;
     }
     h2 {
         font-size: 1.5rem !important;

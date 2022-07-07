@@ -466,8 +466,6 @@ Ex :
 - `table-dark` : add dark background to table
 - `table-borderless` : removes borders from table
 - `table-sm` : make table smaller by cutting cell padding in half
-- `thead-dark` : add dark background to table head
-- `thead-light` : add light background to table head
 
 *add in `<table>`*
 
