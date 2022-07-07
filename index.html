@@ -16,47 +16,62 @@
         <!-- Font Awesome Kit's Code -->
         <script src="https://kit.fontawesome.com/e76697353a.js" crossorigin="anonymous"></script>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/style.css" />
-
         <style type="text/css">
+            /* Fonts Family */
+            @font-face {
+                font-family: UbuntuMedium;
+                src: url(https://itspatkar.github.io/Cheatsheets/assets/UbuntuMedium.ttf);
+            }
+            .ubuntu-medium {
+                font-family: UbuntuMedium;
+            }
             body {
+                padding: 1rem;
                 background-color: #101010;
                 color: white;
+            }
+            .title {
+                text-align: center;
             }
             .list {
                 display: block;
                 margin: 5px;
                 padding: 5px;
-                background-color: #202020;
                 border: 1px solid #ccc;
                 border-radius: 6px;
                 text-align: center;
+                font-size: 1.25rem;
+                background-color: #202020;
                 color: #ccc;
                 text-decoration: none;
             }
             .list:hover {
                 background-color: #252525;
                 text-decoration: none;
-                color: ;
+            }
+            .credits {
+                padding: 1.5rem;
+                text-align: center;
+                word-spacing: 5px;
+                font-size: 1rem;
             }
         </style>
     </head>
 
     <body>
-        <!-- Page -->
         <div class="container">
             <h1 class="title">Cheatsheets</h1>
             <br />
 
-            <a class="list" href="https://itspatkar.github.io/Cheatsheets/bootstrap.html">Bootstrap</a>
-            <a class="list" href="https://itspatkar.github.io/Cheatsheets/css.html">CSS</a>
-            <a class="list" href="https://itspatkar.github.io/Cheatsheets/linux.html">Linux+BASH</a>
-            <a class="list" href="https://itspatkar.github.io/Cheatsheets/git.html">Git</a>
-            <a class="list" href="https://itspatkar.github.io/Cheatsheets/html.html">HTML</a>
-        </div>
+            <div>
+                <a class="list" href="https://itspatkar.github.io/Cheatsheets/bootstrap.html">Bootstrap</a>
+                <a class="list" href="https://itspatkar.github.io/Cheatsheets/css.html">CSS</a>
+                <a class="list" href="https://itspatkar.github.io/Cheatsheets/linux.html">Linux+BASH</a>
+                <a class="list" href="https://itspatkar.github.io/Cheatsheets/git.html">Git</a>
+                <a class="list" href="https://itspatkar.github.io/Cheatsheets/html.html">HTML</a>
+            </div>
 
-        <!-- External Jscript -->
-        <script src="JS/jscript.js"></script>
+            <div class="credits redressed">Made by <a href="https://github.com/itspatkar" target="_blank">ItsPatkar</a></div>
+        </div>
     </body>
 </html>
