@@ -186,9 +186,9 @@ div {
 |`visibility: hidden\|visible\|collapse`|
 |`position: static\|fixed\|relative\|absolute\|sticky`|
 |`top\|bottom\|left\|right: value`|
-|`margin: value\|auto\|inherit` \| `margin: top right bottom left` \| `margin: X Y` |
+|`margin: value\|auto\|inherit` \| `margin: top right bottom left` \| `margin: Y X` |
 |`margin-top\|bottom\|left\|right: value`|
-|`padding: value\|inherit` \| `padding: top right bottom left` \| `padding: X Y` |
+|`padding: value\|inherit` \| `padding: top right bottom left` \| `padding: Y X` |
 |`padding-top\|bottom\|left\|right: value`|
 
 
