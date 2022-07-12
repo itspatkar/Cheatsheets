@@ -34,7 +34,7 @@ thead {
 /* Responsiveness */
 @media screen and (max-width: 575px) {
     body {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     h1 {
         font-size: 1.9rem !important;
