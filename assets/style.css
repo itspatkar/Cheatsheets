@@ -9,8 +9,8 @@ thead {
     text-align: center;
 }
 .title {
+	padding: 1.5rem;
     text-align: center;
-    padding: 1.5rem;
     text-decoration: underline;
 }
 .sections {
@@ -49,11 +49,18 @@ thead {
     	font-size: 1.2rem;
     }
     .title {
-        text-align: center;
         padding: 0.75rem;
     }
     .sections {
         font-size: 1rem;
     }
+}
+
+}
+
+ont-size: 1rem;
+    }
+}
+
 }
 
