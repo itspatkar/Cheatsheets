@@ -32,8 +32,8 @@ thead {
     border-radius: 6px;
     background-color: #f6f5f6;
 }
-.code-box code {
-    color: #e6503f;
+.code-box-color code {
+    color: #ff395a;
 }
 
 /* Responsiveness */

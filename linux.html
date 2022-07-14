@@ -1520,66 +1520,27 @@ eval $CDDOC
                 <h2># Expr</h2>
                 <p>Expr evaluates given expression and displays its corresponding output.</p>
                 <h5>Syntax :</h5>
-                <code>expr [OPTION] [EXPRESSION]
-</code>
+                <code>expr [OPTION] [EXPRESSION] </code>
                 <p><strong>Ex -</strong></p>
-                <p class="code-box"><code># Example 1:
-expr 1 + 2
-
-# Example 2:
-expr 2 /* 3
-
-# Example 3:
-read X
-read Y
-sum=`expr $X + $Y`
-echo &quot;Sum = $sum&quot;
-
-# Example 4: matching numbers with &#39;=&#39; (0=false &amp; 1=true)
-res=`expr $x = $y`
-echo $res
-
-# Example 5: displays 1 when arg1 is less than arg2
-res=`expr $x \&lt; $y`
-echo $res
-
-# Example 6: display 1 when arg1 is not equal to arg2
-res=`expr $x \!= $y`
-echo $res
-
-# Example 7: OR operation
-$expr length  &quot;geekss&quot;  &quot;&lt;&quot;  5  &quot;|&quot;  19  -  6  &quot;&gt;&quot;  10
-
-# Example 8: Finding length of string
-x=geeks
-len=`expr length $x`
-echo $len
-
-# Example 9: Finding substring of string
-x=geeks
-sub=`expr substr $x 2 3`
-#extract 3 characters starting from index 2
-echo $su
-
-# Example 10: Check the index of character
-a=linuxhint
-b=`expr index $a t`
-echo $b
-</code></p>
+                <p class="code-box code-box-color">
+                    <code>
+                        # Example 1: expr 1 + 2 # Example 2: expr 2 /* 3 # Example 3: read X read Y sum=`expr $X + $Y` echo &quot;Sum = $sum&quot; # Example 4: matching numbers with &#39;=&#39; (0=false &amp; 1=true) res=`expr $x = $y` echo
+                        $res # Example 5: displays 1 when arg1 is less than arg2 res=`expr $x \&lt; $y` echo $res # Example 6: display 1 when arg1 is not equal to arg2 res=`expr $x \!= $y` echo $res # Example 7: OR operation $expr length
+                        &quot;geekss&quot; &quot;&lt;&quot; 5 &quot;|&quot; 19 - 6 &quot;&gt;&quot; 10 # Example 8: Finding length of string x=geeks len=`expr length $x` echo $len # Example 9: Finding substring of string x=geeks sub=`expr
+                        substr $x 2 3` #extract 3 characters starting from index 2 echo $su # Example 10: Check the index of character a=linuxhint b=`expr index $a t` echo $b
+                    </code>
+                </p>
             </div>
 
             <div class="sections" id="file-permissions">
                 <h2># File Permissions</h2>
                 <p>Change/Modify file permissions.</p>
                 <h5>Syntax:</h5>
-                <p class="code-box"><code>chmod user+permission [file]
-</code></p>
+                <p class="code-box"><code>chmod user+permission [file] </code></p>
                 <h5>Change Permission Recursively :</h5>
-                <p class="code-box"><code>chmod -R user+permission [file]
-</code></p>
+                <p class="code-box"><code>chmod -R user+permission [file] </code></p>
                 <h5>Format of Permission :</h5>
-                <p class="code-box"><code>-rwx r-- r--
-</code></p>
+                <p class="code-box"><code>-rwx r-- r-- </code></p>
                 <ul>
                     <li>1st bit is file type</li>
                     <li>2nd 3 bits are user permission</li>
@@ -1703,12 +1664,15 @@ echo $b
                 </ul>
                 <p><strong>Ex -</strong></p>
                 <p class="code-box">
-                <code>chmod u+wr-r text.txt<br>
-chmod o+wrx script.sh<br><br>
+                    <code>
+                        chmod u+wr-r text.txt<br />
+                        chmod o+wrx script.sh<br />
+                        <br />
 
-# Using Numbers -<br>
-chmod 777 file.sh
-</code></p>
+                        # Using Numbers -<br />
+                        chmod 777 file.sh
+                    </code>
+                </p>
             </div>
 
             <div class="sections" id="linux-filesystem-hierarchy">
