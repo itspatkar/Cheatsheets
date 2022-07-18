@@ -1406,11 +1406,11 @@ $ exec 3&gt;&amp;-
             <div class="sections" id="piping">
                 <h2># Piping</h2>
                 <p>Pipelines or pipes are used as a funnel to pass the output of one command to another command as input or parameter.</p>
-                <h3 id="syntax--1">Syntax :</h3>
-                <pre><code>[command] | [command]
-</code></pre>
+                <h5>Syntax :</h5>
+                <p class="code-box"><code>[command] | [command]
+</code></p>
                 <p><strong>Ex -</strong></p>
-                <pre><code># Output 1 page at time -
+                <p class="code-box code-box-color"><code># Output 1 page at time -
 ls -iR | less
 
 # Display 10 rows -
@@ -1421,22 +1421,22 @@ cat file.txt | grep hello
 
 # Sort output file names and print only unique file names -
 grep -l int *.cpp | sort | uniq
-</code></pre>
+</code></p>
             </div>
 
             <div class="sections" id="bash-aliases">
                 <h2># Bash Aliases</h2>
                 <p>Redefine aliases by assigning commands to words or short-names as substitutions or short-cuts.</p>
-                <h3 id="synatx-">Synatx :</h3>
-                <pre><code>alias short-name=&#39;[command]&#39;
-</code></pre>
+                <h5>Synatx :</h5>
+                <p class="code-box"><code>alias short-name=&#39;[command]&#39;
+</code></p>
                 <p>save aliases in .bashrc file (in home dir) &amp; execute file with -</p>
                 <blockquote>
                     <p>source .bashrc</p>
                 </blockquote>
                 <p><strong>Ex -</strong></p>
-                <pre><code>alias repo=&#39;cd /document/github/repo&#39;
-</code></pre>
+                <p class="code-box code-box-color"><code>alias repo=&#39;cd /document/github/repo&#39;
+		</code></p>
             </div>
 
             <div class="sections" id="bash-ranges">
@@ -1469,7 +1469,7 @@ grep -l int *.cpp | sort | uniq
             <div class="sections" id="grep">
                 <h2># Grep</h2>
                 <p>Global regular expression print (grep) prints lines that match patterns from text or files.</p>
-                <h6>Syntax :</h6>
+                <h5>Syntax :</h5>
                 <p class="code-box"><code>grep -option pattern [file]
 </code></p>
                 <ul>
@@ -1489,7 +1489,7 @@ grep -l int *.cpp | sort | uniq
             <div class="sections" id="find">
                 <h2># Find</h2>
                 <p>Search for files in the directory hierarchy.</p>
-                <h4>Syntax :</h4>
+                <h5>Syntax :</h5>
                 <p class="code-box"><code>find path -option [file]
 </code></p>
                 <ul>
@@ -1507,7 +1507,7 @@ grep -l int *.cpp | sort | uniq
             <div class="sections" id="eval">
                 <h2># Eval</h2>
                 <p>Eval is used to execute arguments as shell command.</p>
-                <h3>Syntax :</h3>
+                <h5>Syntax :</h5>
 		<p class="code-box"><code>eval [arg ..]
 		</code></p>
                 <p><strong>Ex -</strong></p>
@@ -1575,7 +1575,7 @@ eval $CDDOC
                         </tbody>
                     </table>
                 </div>
-                <h4>Permission using Integers :</h4>
+                <h5>Permission using Integers :</h5>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
