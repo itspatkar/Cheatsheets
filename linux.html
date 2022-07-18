@@ -1234,38 +1234,38 @@ done
 
             <div class="sections" id="functions">
                 <h2># Functions</h2>
-                <h3 id="syntax-">Syntax :</h3>
-                <pre><code>function(){
+                <h5>Syntax :</h5>
+                <p class="code-box"><code>function(){
     #statements
 }
-</code></pre>
-                <h3 id="calling-function-">Calling Function :</h3>
-                <pre><code>greet(){
+</code></p>
+                <h5>Calling Function :</h5>
+                <p class="code-box code-box-color"><code>greet(){
     echo &quot;Hello World&quot;
 }
 
 greet
 </code></pre>
-                <h3 id="function-with-parameter-">Function with Parameter :</h3>
-                <pre><code>greet(){
+                <h4>Function with Parameter :</h4>
+                <p class="code-box code-box-color"><code>greet(){
     echo &quot;Hello $1&quot;
 }
 
 greet Mandar
-</code></pre>
-                <h3 id="call-within-statement-">Call within statement :</h3>
-                <pre><code>greet(){
+</code></p>
+                <h5>Call within statement :</h5>
+                <p class="code-box code-box-color"><code>greet(){
     echo &quot;Hello World&quot;
 }
 
 echo $(greet)
 echo `greet`
-</code></pre>
+</code></p>
             </div>
 
             <div class="sections" id="command-line-arguments">
                 <h2># Command Line Arguments</h2>
-                <p><em>Also called as shell script parameters.</em></p>
+                <p>Also called as shell script parameters.</p>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -1387,20 +1387,20 @@ echo `greet`
                     <li>0 is STDIN, 1 is STDOUT, 2 is STDERR (0,1,2 are global file descriptor)</li>
                     <li><code>/dev/null</code> is a special device everything redirects to it is completely lost.</li>
                 </ol>
-                <h3 id="define-file-descriptor--redirect-to-it-">Define File Descriptor &amp; Redirect to it :</h3>
+                <h5>Define File Descriptor &amp; Redirect to it :</h5>
                 <ul>
                     <li>Define/Create output file descriptor with x and redirect to file : <code>exec x&lt;&gt; [file]</code></li>
                     <li>Redirect to it : <code>[command] &gt;&amp;x</code></li>
                     <li>Undefine/Close output file descriptor x : <code>exec x&gt;&amp;-</code></li>
                 </ul>
                 <p><strong>Ex -</strong></p>
-                <pre><code>$ exec 3&lt;&gt; log.txt
+                <p class="code-box code-box-color"><code>$ exec 3&lt;&gt; log.txt
 $ echo &quot;Hello&quot; &gt;&amp;3 #output is redirect to log.txt
 $ cat log.txt
 Hello
 
 $ exec 3&gt;&amp;-
-</code></pre>
+</code></p>
             </div>
 
             <div class="sections" id="piping">
