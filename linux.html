@@ -1489,9 +1489,9 @@ grep -l int *.cpp | sort | uniq
             <div class="sections" id="find">
                 <h2># Find</h2>
                 <p>Search for files in the directory hierarchy.</p>
-                <h3 id="syntax--3">Syntax :</h3>
-                <pre><code>find path -option [file]
-</code></pre>
+                <h4>Syntax :</h4>
+                <p class="code-box"><code>find path -option [file]
+</code></p>
                 <ul>
                     <li><code>find /home/user/documents -name file.txt</code> : find &quot;file.txt&quot; and is case sensitive</li>
                     <li><code>find . -iname file.txt</code> : find &quot;file.txt&quot; and is case insensitive</li>
@@ -1507,20 +1507,20 @@ grep -l int *.cpp | sort | uniq
             <div class="sections" id="eval">
                 <h2># Eval</h2>
                 <p>Eval is used to execute arguments as shell command.</p>
-                <h3 id="syntax--4">Syntax :</h3>
-                <pre><code>eval [arg ..]
-</code></pre>
+                <h3>Syntax :</h3>
+		<p class="code-box"><code>eval [arg ..]
+		</code></p>
                 <p><strong>Ex -</strong></p>
-                <pre><code>CDDOC=&quot;cd Documents&quot;
+                <p class="code-box code-box-color"><code>CDDOC=&quot;cd Documents&quot;
 eval $CDDOC
-</code></pre>
+</code></p>
             </div>
 
             <div class="sections" id="expr">
                 <h2># Expr</h2>
                 <p>Expr evaluates given expression and displays its corresponding output.</p>
                 <h5>Syntax :</h5>
-                <code>expr [OPTION] [EXPRESSION] </code>
+		<p class="code-box"><code>expr [OPTION] [EXPRESSION] </code></p>
                 <p><strong>Ex -</strong></p>
                 <p class="code-box code-box-color">
                     <code>
