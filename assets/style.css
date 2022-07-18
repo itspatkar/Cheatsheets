@@ -35,6 +35,10 @@ thead {
 .code-box-color code {
     color: #ff395a;
 }
+.img {
+    max-height: 100%;
+    max-width: 100%;
+}
 
 /* Responsiveness */
 @media screen and (max-width: 575px) {
