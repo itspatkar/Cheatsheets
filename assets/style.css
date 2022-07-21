@@ -42,14 +42,10 @@ thead {
 
 /* Responsiveness */
 @media screen and (max-width: 575px) {
-    
     .title {
         padding: 0.75rem;
     }
-    .section-list {
-        font-size: 1.1rem;
-    }
-    .sections {
+    .section-list , .sections {
         font-size: 1rem;
     }
 }
