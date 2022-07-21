@@ -57,7 +57,7 @@
 
             <div class="sections" id="linux-basics">
                 <h3># Linux Basics</h3>
-                <h4>Basic Commands :</h4>
+                <h5>Basic Commands :</h5>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -119,7 +119,7 @@
                     </table>
                 </div>
 
-                <h4>System and User :</h4>
+                <h5>System and User :</h5>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -225,7 +225,7 @@
                     </table>
                 </div>
 
-                <h4>Hardware :</h4>
+                <h5>Hardware :</h5>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -263,7 +263,7 @@
                     </table>
                 </div>
 
-                <h4>Networking :</h4>
+                <h5>Networking :</h5>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -308,7 +308,7 @@
                         </tbody>
                     </table>
                 </div>
-                <h4>File Management :</h4>
+                <h5>File Management :</h5>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -490,7 +490,7 @@
                     <li>Script have <code>.sh</code> extension i.e. <code>script.sh</code></li>
                     <li>Script start with Shell Bang <code>#!/bin/sh</code></li>
                 </ul>
-                <h4>Executing Scripts :</h4>
+                <h5>Executing Scripts :</h5>
                 <p>Script must have executable permission.</p>
                 <p class="code-box code-box-color"><code>./[script]
                     sh [script]
@@ -503,58 +503,58 @@
 
             <div class="sections" id="variables">
                 <h3># Variables</h3>
-                <h4>Declare Variable :</h4>
+                <h5>Declare Variable :</h5>
                 <p class="code-box"><code>
                     var=&quot;hello&quot;
                     var=12
                 month=“jan feb mar apr may”
             </code></p>
-                <h4>Access Value :</h4>
+                <h5>Access Value :</h5>
                 <p class="code-box"><code>echo $var
 echo ${var}
 </code></p>
-                <h4>Remove variable :</h4>
+                <h5>Remove variable :</h5>
                 <p class="code-box"><code>unset var
 </code></p>
-                <h4>Read only variable :</h4>
+                <h5>Read only variable :</h5>
                 <p class="code-box"><code>readonly var
 </code></p>
             </div>
 
             <div class="sections" id="arrays">
                 <h3># Arrays</h3>
-                <h4>Declare array :</h4>
+                <h5>Declare array :</h5>
                 <p class="code-box"><code>array=(&quot;I&quot; &quot;am&quot; &quot;Mandar&quot; 007 )
 </code></p>
-                <h4>Input Array :</h4>
+                <h5>Input Array :</h5>
                 <p class="code-box"><code>read -a array
 </code></p>
-                <h4>Assign Value :</h4>
+                <h5>Assign Value :</h5>
                 <p class="code-box"><code>array[0]=&quot;hello&quot;
 </code></p>
-                <h4>Access Array Element :</h4>
+                <h5>Access Array Element :</h5>
                 <p class="code-box"><code>echo ${array[0]}
 </code></p>
-                <h4>Length Of Array :</h4>
+                <h5>Length Of Array :</h5>
                 <p class="code-box"><code>echo ${#array[@]}
 </code></p>
             </div>
 
             <div class="sections" id="input">
                 <h3># Input</h3>
-                <h4>Input (STDIN) :</h4>
+                <h5>Input (STDIN) :</h5>
                 <p class="code-box"><code>read [var]
 </code></p>
-                <h4>Prompt input :</h4>
+                <h5>Prompt input :</h5>
                 <p class="code-box"><code>read -p &#39;Username : &#39; [var]
 </code></p>
-                <h4>Secure prompt input :</h4>
+                <h5>Secure prompt input :</h5>
                 <p class="code-box"><code>read -sp &#39;Password : &#39; [var]
 </code></p>
-                <h4>Input x char :</h4>
+                <h5>Input x char :</h5>
                 <p class="code-box"><code>read -n [x] [var]
 </code></p>
-                <h4>Array input :</h4>
+                <h5>Array input :</h5>
                 <p class="code-box"><code>read -a [array]
 </code></p>
             </div>
@@ -564,10 +564,10 @@ echo ${var}
                 <h5>Print message (STDOUT) :</h5>
                 <p class="code-box"><code>echo &quot;message&quot;
 </code></p>
-                <h4>Special char in echo :</h4>
+                <h5>Special char in echo :</h5>
                 <p class="code-box"><code>echo -e &quot;\n some text&quot;
 </code></p>
-                <h4>Print message (STDOUT) :</h4>
+                <h5>Print message (STDOUT) :</h5>
                 <p class="code-box"><code>printf &quot;some text&quot;
 </code></p>
             </div>
@@ -1539,11 +1539,11 @@ eval $CDDOC
             <div class="sections" id="file-permissions">
                 <h3># File Permissions</h3>
                 <p>Change/Modify file permissions.</p>
-                <h4>Syntax:</h4>
+                <h5>Syntax:</h5>
                 <p class="code-box"><code>chmod user+permission [file] </code></p>
-                <h4>Change Permission Recursively :</h4>
+                <h5>Change Permission Recursively :</h5>
                 <p class="code-box"><code>chmod -R user+permission [file] </code></p>
-                <h4>Format of Permission :</h4>
+                <h5>Format of Permission :</h5>
                 <p class="code-box"><code>-rwx r-- r-- </code></p>
                 <ul>
                     <li>1st bit is file type</li>
