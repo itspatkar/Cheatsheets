@@ -57,7 +57,7 @@
 
             <div class="sections" id="linux-basics">
                 <h3># Linux Basics</h3>
-                <h5>Basic Commands :</h5>
+                <h4>Basic Commands :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -119,7 +119,7 @@
                     </table>
                 </div>
 
-                <h5>System and User :</h5>
+                <h4>System and User :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -225,7 +225,7 @@
                     </table>
                 </div>
 
-                <h5>Hardware :</h5>
+                <h4>Hardware :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -263,7 +263,7 @@
                     </table>
                 </div>
 
-                <h5>Networking :</h5>
+                <h4>Networking :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -308,7 +308,8 @@
                         </tbody>
                     </table>
                 </div>
-                <h5>File Management :</h5>
+
+                <h4>File Management :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -574,7 +575,7 @@ echo ${var}
 
             <div class="sections" id="operators">
                 <h3># Operators</h3>
-                <h3 id="arithmetic-operator-">Arithmetic operator :</h3>
+                <h4>Arithmetic operator :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -616,9 +617,10 @@ echo ${var}
                     </table>
                 </div>
                 <p>
-                    <em>Arithmetic operations should be in double braces: <code>count=$((count+1))</code></em>
+                    Arithmetic operations should be in double braces: <code>count=$((count+1))</code>
                 </p>
-                <h3 id="logical-operator-">Logical Operator :</h3>
+
+                <h4>Logical Operator :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -643,7 +645,9 @@ echo ${var}
                         </tbody>
                     </table>
                 </div>
-                <h3 id="relational-operator-numerical-comparison-">Relational Operator (Numerical Comparison) :</h3>
+
+                <h4>Relational Operator :</h4>
+                <p>(Numerical Comparison)</p>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -686,7 +690,8 @@ then
     echo &quot;greater&quot;
 fi
 </code></p>
-                <h3 id="relational-operator-string-comparison-">Relational Operator (String Comparison) :</h3>
+                <h4>Relational Operator :</h4>
+                <p>(String Comparison)</p>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -727,7 +732,7 @@ else
     echo &quot;different&quot;
 fi
 </code></p>
-                <h3 id="lexicographic-comparison-">Lexicographic Comparison :</h3>
+                <h4>Lexicographic Comparison :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -748,7 +753,7 @@ fi
                         </tbody>
                     </table>
                 </div>
-                <h3 id="file-testing-operator-">File Testing Operator :</h3>
+                <h4>File Testing Operator :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -803,12 +808,13 @@ then
     echo &quot;text.txt exists and it is regular file&quot;
 fi
 </code></p>
-                <h3 id="note-">Note :</h3>
+                <p><strong>Note :</strong>
                 <ol>
                     <li>Expressions can be grouped with <code>( [expression] )</code></li>
                     <li>Conditional expressions must be in square braces <code>[]</code></li>
                     <li>Space must be given between operands and operator.</li>
                 </ol>
+                </p>
             </div>
 
             <div class="sections" id="variable-substitution">
@@ -849,12 +855,12 @@ fi
 
             <div class="sections" id="command-substitution">
                 <h3># Command Substitution</h3>
-                <h3 id="back-quote--">Back-quote (`) :</h3>
-                <p><strong>Syntax -</strong></p>
+                <h4>Back-quote (`) :</h4>
+                <h5>Syntax :</h5>
                 <p class="code-box"><code>`[command]`
 </code></p>
-                <p><strong>Ex -</strong></p>
-                <p class="code-box"><code># Example 1:
+                <p><strong>Ex -</strong>
+                <p class="code-box code-box-color"><code># Example 1:
 DATE=`date`
 echo &quot;Date is $DATE&quot;
 
@@ -862,11 +868,12 @@ echo &quot;Date is $DATE&quot;
 USERS=`who | wc -l`
 echo &quot;Logged in user are $USERS&quot;
 </code></p>
-                <h3 id="dollor-sign--parenthesis--">Dollor Sign &amp; Parenthesis ($()) :</h3>
-                <p><strong>Syntax -</strong></p>
+</p>
+                <h4>Dollor Sign &amp; Parenthesis ($()) :</h4>
+                <h5>Syntax :</h5>
                 <p class="code-box"><code>$([command])
 </code></p>
-                <p><strong>Ex -</strong></p>
+                <p><strong>Ex -</strong>
                 <p class="code-box"><code># Example 1:
 echo &quot;Today is $(date)&quot;
 
@@ -875,7 +882,7 @@ for i in $(cat file.txt)
 do
    echo &quot;$i&quot;
 done
-</code></p>
+</code></p></p>
             </div>
             <div class="sections" id="shell-substitution">
                 <h3># Shell Substitution</h3>

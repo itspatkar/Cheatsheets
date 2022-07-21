@@ -78,7 +78,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p><strong>Note :</strong> All global settings are saved in a file .gitconfig in your home directory.</p>
+                <div class="note"><strong>Note :</strong> All global settings are saved in a file .gitconfig in your home directory.</div>
             </div>
 
             <div class="sections" id="git-ignore-file">
@@ -89,18 +89,10 @@
                     <li>File name: <code>.gitignore</code></li>
                     <li><a href="https://github.com/github/gitignore">Collection of useful .gitignore templates</a></li>
                 </ul>
-                <p>
+                <div class="note">
                     <strong>For Example :</strong>
-                </p>
-                <p class="code-box code-box-color"><code># setup.txt will be excluded
-                    setup.txt
-
-                    # All files with extension .sh will be excluded
-                    *.sh
-
-                    # folder bin will be excluded
-                    bin/
-                </code></p>
+                    <div class="code-box code-box-color"><code># setup.txt will be excluded setup.txt # All files with extension .sh will be excluded *.sh # folder bin will be excluded bin/ </code></div>
+                </div>
             </div>
 
             <div class="sections" id="setting-repo">
@@ -213,7 +205,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p><strong>Note :</strong> <code>HEAD</code> is a pointer which points at the current working tree and working branch.</p>
+                <div class="note"><strong>Note :</strong> <code>HEAD</code> is a pointer which points at the current working tree and working branch.</div>
             </div>
 
             <div class="sections" id="staging-and-unstaging">
@@ -266,11 +258,13 @@
                         </tbody>
                     </table>
                 </div>
-                <p>
-                    <strong>Note :</strong> <br />
-                    - Working tree = unstaged = untracked <br />
-                    - Index = staged = tracked
-                </p>
+                <div class="note">
+                    <strong>Note :</strong>
+                    <ul>
+                        <li>Working tree = unstaged = untracked</li>
+                        <li>Index = staged = tracked</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="commit-and-rebase">
@@ -323,7 +317,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p><strong>Note :</strong> Never rebase on public branch. Other teams may face conflicts as rebasing changes checksums.</p>
+                <div class="note"><strong>Note :</strong> Never rebase on public branch. Other teams may face conflicts as rebasing changes checksums.</div>
             </div>
 
             <div class="sections" id="reset">
@@ -360,12 +354,12 @@
                         </tbody>
                     </table>
                 </div>
-                <p>
+                <div class="note">
                     <strong>Note : <code>checkout</code> vs <code>reset</code></strong> <br />
                     Git reset is specifically about updating the index and moving the HEAD. <br />
                     Git checkout is about updating the working tree (to the index or the specified tree). <br />
                     It will update the HEAD only if you checkout a branch (if not, then you end up with a detached HEAD).
-                </p>
+                </div>
             </div>
 
             <div class="sections" id="push">
@@ -409,7 +403,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p><strong>Note :</strong> Use <code>force-with-lease</code> option instead of <code>f</code> with push.</p>
+                <div class="note"><strong>Note :</strong> Use <code>force-with-lease</code> option instead of <code>f</code> with push.</div>
             </div>
 
             <div class="sections" id="fetch-merge-and-pull">
@@ -534,7 +528,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p><strong>Note :</strong> It is recommended to create branches from the main branch.</p>
+                <div class="note"><strong>Note :</strong> It is recommended to create branches from the main branch.</div>
             </div>
 
             <div class="sections" id="remote">
@@ -639,11 +633,13 @@
                         </tbody>
                     </table>
                 </div>
-                <p>
+                <div class="note">
                     <strong>Note :</strong> <br />
-                    - Stash index start from 0 as in the array. <br />
-                    - It is similar to a data structure stack with LIFO.
-                </p>
+                    <ul>
+                        <li>Stash index start from 0 as in the array.</li>
+                        <li>It is similar to a data structure stack with LIFO.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="reflog">
@@ -668,7 +664,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p><strong>Note :</strong> Git reflog can be used to restore deleted/lost commits.</p>
+                <div class="note"><strong>Note :</strong> Git reflog can be used to restore deleted/lost commits.</div>
             </div>
 
             <div class="sections" id="tags">
@@ -702,9 +698,6 @@
                     </table>
                 </div>
             </div>
-
-            <br />
-
             <p>
                 <strong>
                     <a href="https://itspatkar.github.io/Cheatsheets/"><i class="fas fa-arrow-left"></i> BACK</a>
