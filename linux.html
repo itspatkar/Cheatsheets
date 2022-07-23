@@ -493,7 +493,7 @@
                 </ul>
                 <h5>Executing Scripts :</h5>
                 <p>Script must have executable permission.</p>
-<pre class="code-box code-box-color"><code>./[script]
+                <pre class="code-box code-box-color"><code>./[script]
 sh [script]
 bash [script]
 
@@ -504,7 +504,7 @@ bash -x [script]</code></pre>
             <div class="sections" id="variables">
                 <h3># Variables</h3>
                 <h5>Declare Variable :</h5>
-<pre class="code-box"><code>var="hello"
+                <pre class="code-box"><code>var="hello"
 var=12
 month=“jan feb mar apr may”</code></pre>
                 <h5>Access Value :</h5>
@@ -664,7 +664,7 @@ month=“jan feb mar apr may”</code></pre>
                 </div>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>if [ 80 -gt 40 ]
+                    <pre class="code-box code-box-color"><code>if [ 80 -gt 40 ]
 then
     echo "greater"
 fi</code></pre>
@@ -706,7 +706,7 @@ fi</code></pre>
                 </div>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>if [ "Hello" = "Hi" ]
+                    <pre class="code-box code-box-color"><code>if [ "Hello" = "Hi" ]
 then
     echo "same"
 else
@@ -788,7 +788,7 @@ fi</code></pre>
 
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>if [ -f text.txt ]
+                    <pre class="code-box code-box-color"><code>if [ -f text.txt ]
 then
     echo "text.txt exists and it is regular file"
 fi</code></pre>
@@ -847,7 +847,7 @@ fi</code></pre>
                 <div class="code-box"><code>`[command]`</code></div>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code># Example 1:
+                    <pre class="code-box code-box-color"><code># Example 1:
 DATE=`date`
 echo "Date is $DATE"
 
@@ -860,7 +860,7 @@ echo "Logged in user are $USERS"</code></pre>
                 <div class="code-box"><code>$([command])</code></div>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code># Example 1:
+                    <pre class="code-box code-box-color"><code># Example 1:
 echo "Today is $(date)"
 
 # Example 2:
@@ -927,7 +927,7 @@ done</code></pre>
                 <h3># Conditional</h3>
                 <h4>&bull; If Statement :</h4>
                 <h5>Syntax -</h5>
-<pre class="code-box"><code>if [ condition ]
+                <pre class="code-box"><code>if [ condition ]
 then
     #statement
 fi
@@ -945,7 +945,7 @@ then
 fi</code></pre>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>if [ "$X" = "y" ] || [ "$X" = "Y" ]
+                    <pre class="code-box code-box-color"><code>if [ "$X" = "y" ] || [ "$X" = "Y" ]
 then
     echo "YES"
 fi</code></pre>
@@ -953,7 +953,7 @@ fi</code></pre>
 
                 <h4>&bull; If-Else Statement :</h4>
                 <h5>Syntax -</h5>
-<pre class="code-box"><code>if [ condition ]
+                <pre class="code-box"><code>if [ condition ]
 then
     #statement
 else
@@ -961,7 +961,7 @@ else
 fi</code></pre>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>if [ $name = "mandar" ]
+                    <pre class="code-box code-box-color"><code>if [ $name = "mandar" ]
 then
     echo "Hello BOSS"
 else
@@ -971,7 +971,7 @@ fi</code></pre>
 
                 <h4>&bull; Elif Statements :</h4>
                 <h5>Syntax -</h5>
-<pre class="code-box"><code>If [ condition ]
+                <pre class="code-box"><code>If [ condition ]
 then
     #statement
 elif [ condition ]
@@ -982,7 +982,7 @@ else
 fi</code></pre>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code># Example 1
+                    <pre class="code-box code-box-color"><code># Example 1
 if [ $X -lt $Y ]
 then
     echo "X is less than Y"
@@ -1008,7 +1008,7 @@ fi</code></pre>
 
                 <h4>&bull; Switch Statement :</h4>
                 <h5>Syntax -</h5>
-<pre class="code-box"><code>case "$var" in
+                <pre class="code-box"><code>case "$var" in
 "case 1")
     #statement
     ;;
@@ -1025,13 +1025,13 @@ esac</code></pre>
                 <h3># Loops</h3>
                 <h4>&bull; While Loop :</h4>
                 <h5>Syntax -</h5>
-<pre class="code-box"><code>while [ condition ]
+                <pre class="code-box"><code>while [ condition ]
 do
     #statement
 done</code></pre>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code># Example 1: print "hello" 5 times
+                    <pre class="code-box code-box-color"><code># Example 1: print "hello" 5 times
 count=0
 while [ $count -lt 5 ]
 do
@@ -1085,7 +1085,7 @@ echo $factorial</code></pre>
 
                 <h4>&bull; For Loop :</h4>
                 <h5>Syntax -</h5>
-<pre class="code-box"><code>for var in expression
+                <pre class="code-box"><code>for var in expression
 do
     #statement
 done
@@ -1097,7 +1097,7 @@ do
 done</code></pre>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code># Example 1: input array & print
+                    <pre class="code-box code-box-color"><code># Example 1: input array & print
 read -a array
 for i in ${array[@]}
 do
@@ -1164,13 +1164,13 @@ done</code></pre>
                 <h4>&bull; Until Loop :</h4>
                 <p>Executes until the condition is false.</p>
                 <h5>Syntax -</h5>
-<pre class="code-box"><code>until [ condition ]
+                <pre class="code-box"><code>until [ condition ]
 do
     #statement
 done</code></pre>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>count=3
+                    <pre class="code-box code-box-color"><code>count=3
 until [ $count -le 0 ]
 do
     count=$((count-1))
@@ -1184,7 +1184,7 @@ done</code></pre>
                 <div class="code-box"><code>select VAR in expressions do #statements done</code></div>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>select DRINK in tea cofee water juice appe all none
+                    <pre class="code-box code-box-color"><code>select DRINK in tea cofee water juice appe all none
 do
     case $DRINK in
     tea|cofee|water|all)
@@ -1205,7 +1205,7 @@ done</code></pre>
 
                 <h4>&bull; Loop Controls :</h4>
                 <h5>1. Break Statement -</h5>
-<pre class="code-box"><code>a=0
+                <pre class="code-box"><code>a=0
 while [ $a -lt 10 ]
 do
     echo $a
@@ -1216,7 +1216,7 @@ do
     a=`expr $a + 1`
 done</code></pre>
                 <h5>2. Continue Statement -</h5>
-<pre class="code-box"><code>NUMS="1 2 3 4 5 6 7"
+                <pre class="code-box"><code>NUMS="1 2 3 4 5 6 7"
 for NUM in $NUMS
 do
     Q=`expr $NUM % 2`
@@ -1232,22 +1232,22 @@ done</code></pre>
             <div class="sections" id="functions">
                 <h3># Functions</h3>
                 <h5>Syntax :</h5>
-<pre class="code-box"><code>function(){
+                <pre class="code-box"><code>function(){
     #statements
 }</code></pre>
                 <h5>Calling Function :</h5>
-<pre class="code-box code-box-color"><code>greet(){
+                <pre class="code-box code-box-color"><code>greet(){
     echo "Hello World"
 }
 
 greet</code></pre>
                 <h5>Function with Parameter :</h5>
-<pre class="code-box code-box-color"><code>greet(){
+                <pre class="code-box code-box-color"><code>greet(){
 echo "Hello $1" }
 
 greet Mandar</code></pre>
                 <h5>Call within statement :</h5>
-<pre class="code-box code-box-color"><code>greet(){
+                <pre class="code-box code-box-color"><code>greet(){
     echo "Hello World"
 }
 
@@ -1411,7 +1411,7 @@ echo `greet`</code></pre>
                 </ol>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>$ exec 3&lt;&gt; log.txt
+                    <pre class="code-box code-box-color"><code>$ exec 3&lt;&gt; log.txt
 $ echo "Hello" &gt;&3 #output is redirect to log.txt
 $ cat log.txt
 Hello
@@ -1427,7 +1427,7 @@ $ exec 3&gt;&-</code></pre>
                 <div class="code-box"><code>[command] | [command]</code></div>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code># Output 1 page at time
+                    <pre class="code-box code-box-color"><code># Output 1 page at time
 ls -iR | less
 
 # Display 10 rows
@@ -1527,7 +1527,7 @@ grep -l int *.cpp | sort | uniq</code></pre>
                 <div class="code-box"><code>eval [arg ..]</code></div>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>CDDOC="cd Documents"
+                    <pre class="code-box code-box-color"><code>CDDOC="cd Documents"
 eval $CDDOC</code></pre>
                 </div>
             </div>
@@ -1539,7 +1539,7 @@ eval $CDDOC</code></pre>
                 <div class="code-box"><code>expr [OPTION] [EXPRESSION]</code></div>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code># Example 1:
+                    <pre class="code-box code-box-color"><code># Example 1:
 expr 1 + 2
 
 # Example 2:
@@ -1716,7 +1716,7 @@ echo $b</code></pre>
                 </ul>
                 <div>
                     <strong>Ex -</strong>
-<pre class="code-box code-box-color"><code>chmod u+wr-r text.txt
+                    <pre class="code-box code-box-color"><code>chmod u+wr-r text.txt
 chmod o+wrx script.sh
 
 # Using Numbers
