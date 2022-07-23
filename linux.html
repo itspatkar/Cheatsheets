@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <title>Cheatsheets</title>
+        <title>Linux Cheatsheets | ItsPatkar</title>
 
         <!-- Bootstrap Libraries -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
@@ -56,7 +56,7 @@
             <br />
 
             <div class="sections" id="linux-basics">
-                <h3># Linux Basics</h3>
+                <h3 class="heading"># Linux Basics</h3>
                 <h4>&bull; Basic Commands :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
@@ -485,7 +485,7 @@
             </div>
 
             <div class="sections" id="bash-scripts">
-                <h3># Bash Scripts</h3>
+                <h3 class="heading"># Bash Scripts</h3>
                 <p>Bash script is plain text file which contains series of commands which is executed in sequence.</p>
                 <ul>
                     <li>Script have <code>.sh</code> extension i.e. <code>script.sh</code></li>
@@ -502,7 +502,7 @@ bash -x [script]</code></pre>
             </div>
 
             <div class="sections" id="variables">
-                <h3># Variables</h3>
+                <h3 class="heading"># Variables</h3>
                 <h5>Declare Variable :</h5>
                 <pre class="code-box"><code>var="hello"
 var=12
@@ -516,7 +516,7 @@ month=“jan feb mar apr may”</code></pre>
             </div>
 
             <div class="sections" id="arrays">
-                <h3># Arrays</h3>
+                <h3 class="heading"># Arrays</h3>
                 <h5>Declare array :</h5>
                 <div class="code-box"><code>array=("I" "am" "Mandar" 007 )</code></div>
                 <h5>Input Array :</h5>
@@ -530,7 +530,7 @@ month=“jan feb mar apr may”</code></pre>
             </div>
 
             <div class="sections" id="input">
-                <h3># Input</h3>
+                <h3 class="heading"># Input</h3>
                 <h5>Input (STDIN) :</h5>
                 <div class="code-box"><code>read [var]</code></div>
                 <h5>Prompt input :</h5>
@@ -544,7 +544,7 @@ month=“jan feb mar apr may”</code></pre>
             </div>
 
             <div class="sections" id="output">
-                <h3># Output</h3>
+                <h3 class="heading"># Output</h3>
                 <h5>Print message (STDOUT) :</h5>
                 <div class="code-box"><code>echo "message"</code></div>
                 <h5>Special char in echo :</h5>
@@ -554,7 +554,7 @@ month=“jan feb mar apr may”</code></pre>
             </div>
 
             <div class="sections" id="operators">
-                <h3># Operators</h3>
+                <h3 class="heading"># Operators</h3>
                 <h4>&bull; Arithmetic operator :</h4>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
@@ -805,7 +805,7 @@ fi</code></pre>
             </div>
 
             <div class="sections" id="variable-substitution">
-                <h3># Variable Substitution</h3>
+                <h3 class="heading"># Variable Substitution</h3>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -841,7 +841,7 @@ fi</code></pre>
             </div>
 
             <div class="sections" id="command-substitution">
-                <h3># Command Substitution</h3>
+                <h3 class="heading"># Command Substitution</h3>
                 <h4>&bull; Back-quote :</h4>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>`[command]`</code></div>
@@ -872,7 +872,7 @@ done</code></pre>
             </div>
 
             <div class="sections" id="shell-substitution">
-                <h3># Shell Substitution</h3>
+                <h3 class="heading"># Shell Substitution</h3>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -924,7 +924,7 @@ done</code></pre>
             </div>
 
             <div class="sections" id="conditional">
-                <h3># Conditional</h3>
+                <h3 class="heading"># Conditional</h3>
                 <h4>&bull; If Statement :</h4>
                 <h5>Syntax -</h5>
                 <pre class="code-box"><code>if [ condition ]
@@ -1022,7 +1022,7 @@ esac</code></pre>
             </div>
 
             <div class="sections" id="loops">
-                <h3># Loops</h3>
+                <h3 class="heading"># Loops</h3>
                 <h4>&bull; While Loop :</h4>
                 <h5>Syntax -</h5>
                 <pre class="code-box"><code>while [ condition ]
@@ -1230,7 +1230,7 @@ done</code></pre>
             </div>
 
             <div class="sections" id="functions">
-                <h3># Functions</h3>
+                <h3 class="heading"># Functions</h3>
                 <h5>Syntax :</h5>
                 <pre class="code-box"><code>function(){
     #statements
@@ -1256,7 +1256,7 @@ echo `greet`</code></pre>
             </div>
 
             <div class="sections" id="command-line-arguments">
-                <h3># Command Line Arguments</h3>
+                <h3 class="heading"># Command Line Arguments</h3>
                 <p>Also called as shell script parameters.</p>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
@@ -1317,7 +1317,7 @@ echo `greet`</code></pre>
             </div>
 
             <div class="sections" id="output-redirection">
-                <h3># Output Redirection</h3>
+                <h3 class="heading"># Output Redirection</h3>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -1421,7 +1421,7 @@ $ exec 3&gt;&-</code></pre>
             </div>
 
             <div class="sections" id="piping">
-                <h3># Piping</h3>
+                <h3 class="heading"># Piping</h3>
                 <p>Pipelines or pipes are used as a funnel to pass the output of one command to another command as input or parameter.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>[command] | [command]</code></div>
@@ -1442,7 +1442,7 @@ grep -l int *.cpp | sort | uniq</code></pre>
             </div>
 
             <div class="sections" id="bash-aliases">
-                <h3># Bash Aliases</h3>
+                <h3 class="heading"># Bash Aliases</h3>
                 <p>Redefine aliases by assigning commands to words or short-names as substitutions or short-cuts.</p>
                 <h5>Synatx :</h5>
                 <div class="code-box"><code>alias short-name='[command]'</code></div>
@@ -1455,7 +1455,7 @@ grep -l int *.cpp | sort | uniq</code></pre>
             </div>
 
             <div class="sections" id="bash-ranges">
-                <h3># Bash Ranges</h3>
+                <h3 class="heading"># Bash Ranges</h3>
                 <ul>
                     <li><code>echo {1,2,3}</code> : 1 2 3</li>
                     <li><code>echo {1..3}</code> : 1 2 3</li>
@@ -1467,7 +1467,7 @@ grep -l int *.cpp | sort | uniq</code></pre>
             </div>
 
             <div class="sections" id="regex">
-                <h3># Regex</h3>
+                <h3 class="heading"># Regex</h3>
                 <p>Regular expressions for pattern matching.</p>
                 <ul>
                     <li><code>grep ^The file.txt</code> : print line start with "The"</li>
@@ -1485,7 +1485,7 @@ grep -l int *.cpp | sort | uniq</code></pre>
             </div>
 
             <div class="sections" id="grep">
-                <h3># Grep</h3>
+                <h3 class="heading"># Grep</h3>
                 <p>Global regular expression print (grep) prints lines that match patterns from text or files.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>grep -option pattern [file]</code></div>
@@ -1504,7 +1504,7 @@ grep -l int *.cpp | sort | uniq</code></pre>
             </div>
 
             <div class="sections" id="find">
-                <h3># Find</h3>
+                <h3 class="heading"># Find</h3>
                 <p>Search for files in the directory hierarchy.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>find path -option [file]</code></div>
@@ -1521,7 +1521,7 @@ grep -l int *.cpp | sort | uniq</code></pre>
             </div>
 
             <div class="sections" id="eval">
-                <h3># Eval</h3>
+                <h3 class="heading"># Eval</h3>
                 <p>Eval is used to execute arguments as shell command.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>eval [arg ..]</code></div>
@@ -1533,7 +1533,7 @@ eval $CDDOC</code></pre>
             </div>
 
             <div class="sections" id="expr">
-                <h3># Expr</h3>
+                <h3 class="heading"># Expr</h3>
                 <p>Expr evaluates given expression and displays its corresponding output.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>expr [OPTION] [EXPRESSION]</code></div>
@@ -1585,7 +1585,7 @@ echo $b</code></pre>
             </div>
 
             <div class="sections" id="file-permissions">
-                <h3># File Permissions</h3>
+                <h3 class="heading"># File Permissions</h3>
                 <p>Change/Modify file permissions.</p>
                 <h5>Syntax:</h5>
                 <div class="code-box"><code>chmod user+permission [file]</code></div>
@@ -1725,7 +1725,7 @@ chmod 777 file.sh</code></pre>
             </div>
 
             <div class="sections" id="linux-filesystem-hierarchy">
-                <h3># Linux Filesystem Hierarchy</h3>
+                <h3 class="heading"># Linux Filesystem Hierarchy</h3>
                 <p><img src="assets/linux-filesystem.png" alt="linux filesystem" class="img" /></p>
             </div>
 
