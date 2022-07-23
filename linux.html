@@ -37,7 +37,7 @@
                 <li><a href="#shell-substitution">Shell Substitution</a></li>
                 <li><a href="#conditional">Conditional</a></li>
                 <li><a href="#loops">Loops</a></li>
-                <li><a href="#funtions">Funtions</a></li>
+                <li><a href="#functions">Functions</a></li>
                 <li><a href="#command-line-arguments">Command Line Arguments</a></li>
                 <li><a href="#output-redirection">Output Redirection</a></li>
                 <li><a href="#piping">Piping</a></li>
@@ -555,252 +555,261 @@ month=“jan feb mar apr may”</code></pre>
 
             <div class="sections" id="operators">
                 <h3 class="heading"># Operators</h3>
-                <h4>&bull; Arithmetic operator :</h4>
-                <div class="table-scroll">
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Operator</th>
-                                <th>Operation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>+</code></td>
-                                <td>addition</td>
-                            </tr>
-                            <tr>
-                                <td><code>-</code></td>
-                                <td>subtraction</td>
-                            </tr>
-                            <tr>
-                                <td><code>*</code></td>
-                                <td>multiplication</td>
-                            </tr>
-                            <tr>
-                                <td><code>/</code></td>
-                                <td>division</td>
-                            </tr>
-                            <tr>
-                                <td><code>%</code></td>
-                                <td>modulus</td>
-                            </tr>
-                            <tr>
-                                <td><code>++</code></td>
-                                <td>increment</td>
-                            </tr>
-                            <tr>
-                                <td><code>--</code></td>
-                                <td>decrement</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p>Arithmetic operations should be in double braces: <code>count=$((count+1))</code></p>
-
-                <h4>&bull; Logical Operator :</h4>
-                <div class="table-scroll">
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Operator</th>
-                                <th>Operation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>! [expression]</code></td>
-                                <td>not</td>
-                            </tr>
-                            <tr>
-                                <td><code>[expression] || [expression]</code> or <code>[expression] -o [expression]</code></td>
-                                <td>or</td>
-                            </tr>
-                            <tr>
-                                <td><code>[expression] && [expression]</code> or <code>[expression] -a [expression]</code></td>
-                                <td>and</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h4>&bull; Relational Operator :</h4>
-                <p>(Numerical Comparison)</p>
-                <div class="table-scroll">
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Operator</th>
-                                <th>Operation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>[expression] -eq [expression]</code></td>
-                                <td>equal</td>
-                            </tr>
-                            <tr>
-                                <td><code>[expression] -ne [expression]</code></td>
-                                <td>not equal</td>
-                            </tr>
-                            <tr>
-                                <td><code>[expression] -gt [expression]</code></td>
-                                <td>greater than</td>
-                            </tr>
-                            <tr>
-                                <td><code>[expression] -lt [expression]</code></td>
-                                <td>less than</td>
-                            </tr>
-                            <tr>
-                                <td><code>[expression] -ge [expression]</code></td>
-                                <td>greater than or equal</td>
-                            </tr>
-                            <tr>
-                                <td><code>[expression] -le [expression]</code></td>
-                                <td>less than or equal</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div>
+                    <h4>&bull; Arithmetic operator :</h4>
+                    <div class="table-scroll">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>+</code></td>
+                                    <td>addition</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-</code></td>
+                                    <td>subtraction</td>
+                                </tr>
+                                <tr>
+                                    <td><code>*</code></td>
+                                    <td>multiplication</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/</code></td>
+                                    <td>division</td>
+                                </tr>
+                                <tr>
+                                    <td><code>%</code></td>
+                                    <td>modulus</td>
+                                </tr>
+                                <tr>
+                                    <td><code>++</code></td>
+                                    <td>increment</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--</code></td>
+                                    <td>decrement</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Arithmetic operations should be in double braces: <code>count=$((count+1))</code></p>
                 </div>
                 <div>
-                    <strong>Ex -</strong>
-                    <pre class="code-box code-box-color"><code>if [ 80 -gt 40 ]
+                    <h4>&bull; Logical Operator :</h4>
+                    <div class="table-scroll">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>! [expression]</code></td>
+                                    <td>not</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[expression] || [expression]</code> or <code>[expression] -o [expression]</code></td>
+                                    <td>or</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[expression] && [expression]</code> or <code>[expression] -a [expression]</code></td>
+                                    <td>and</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>&bull; Relational Operator :</h4>
+                    <p>(Numerical Comparison)</p>
+                    <div class="table-scroll">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>[expression] -eq [expression]</code></td>
+                                    <td>equal</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[expression] -ne [expression]</code></td>
+                                    <td>not equal</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[expression] -gt [expression]</code></td>
+                                    <td>greater than</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[expression] -lt [expression]</code></td>
+                                    <td>less than</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[expression] -ge [expression]</code></td>
+                                    <td>greater than or equal</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[expression] -le [expression]</code></td>
+                                    <td>less than or equal</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h5>Ex -</h5>
+                        <pre class="code-box code-box-color"><code>if [ 80 -gt 40 ]
 then
     echo "greater"
 fi</code></pre>
+                    </div>
                 </div>
 
-                <h4>&bull; Relational Operator :</h4>
-                <p>(String Comparison)</p>
-                <div class="table-scroll">
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Operator</th>
-                                <th>Operation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>[string1] = [string2]</code></td>
-                                <td>equal</td>
-                            </tr>
-                            <tr>
-                                <td><code>[string1] != [string2]</code></td>
-                                <td>not equal</td>
-                            </tr>
-                            <tr>
-                                <td><code>[string1] == [string2]</code></td>
-                                <td>equal for pattern matching</td>
-                            </tr>
-                            <tr>
-                                <td><code>-n [string]</code></td>
-                                <td>true if length of string is nonzero</td>
-                            </tr>
-                            <tr>
-                                <td><code>-z [string]</code></td>
-                                <td>true if length of string is zero</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
                 <div>
-                    <strong>Ex -</strong>
-                    <pre class="code-box code-box-color"><code>if [ "Hello" = "Hi" ]
+                    <h4>&bull; Relational Operator :</h4>
+                    <p>(String Comparison)</p>
+                    <div class="table-scroll">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>[string1] = [string2]</code></td>
+                                    <td>equal</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[string1] != [string2]</code></td>
+                                    <td>not equal</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[string1] == [string2]</code></td>
+                                    <td>equal for pattern matching</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-n [string]</code></td>
+                                    <td>true if length of string is nonzero</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-z [string]</code></td>
+                                    <td>true if length of string is zero</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h5>Ex -</h5>
+                        <pre class="code-box code-box-color"><code>if [ "Hello" = "Hi" ]
 then
     echo "same"
 else
     echo "different"
 fi</code></pre>
-                </div>
-
-                <h4>&bull; Lexicographic Comparison :</h4>
-                <div class="table-scroll">
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Operator</th>
-                                <th>Operation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>[string] &gt; [string]</code></td>
-                                <td>left string is greater than right in alphabetical order</td>
-                            </tr>
-                            <tr>
-                                <td><code>[string] &lt; [string]</code></td>
-                                <td>right string is greater than left string in alphabetical order</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h4>&bull; File Testing Operator :</h4>
-                <div class="table-scroll">
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Operator</th>
-                                <th>Operation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>-e [file]</code></td>
-                                <td>true if file exists</td>
-                            </tr>
-                            <tr>
-                                <td><code>-f [file]</code></td>
-                                <td>true if file exists and is regular file</td>
-                            </tr>
-                            <tr>
-                                <td><code>-d [file]</code></td>
-                                <td>true if file exists and is directory</td>
-                            </tr>
-                            <tr>
-                                <td><code>-c [file]</code></td>
-                                <td>true if file exists and is character file</td>
-                            </tr>
-                            <tr>
-                                <td><code>-b [file]</code></td>
-                                <td>true if file exists and is block file</td>
-                            </tr>
-                            <tr>
-                                <td><code>-r [file]</code></td>
-                                <td>true if file exists and read permission is granted</td>
-                            </tr>
-                            <tr>
-                                <td><code>-w [file]</code></td>
-                                <td>true if file exists and write permission is granted</td>
-                            </tr>
-                            <tr>
-                                <td><code>-x [file]</code></td>
-                                <td>true if file exists and execute permission is granted</td>
-                            </tr>
-                            <tr>
-                                <td><code>-s [file]</code></td>
-                                <td>true if size of file is greater than zero</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    </div>
                 </div>
 
                 <div>
-                    <strong>Ex -</strong>
+                    <h4>&bull; Lexicographic Comparison :</h4>
+                    <div class="table-scroll">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>[string] &gt; [string]</code></td>
+                                    <td>left string is greater than right in alphabetical order</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[string] &lt; [string]</code></td>
+                                    <td>right string is greater than left string in alphabetical order</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>&bull; File Testing Operator :</h4>
+                    <div class="table-scroll">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>-e [file]</code></td>
+                                    <td>true if file exists</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-f [file]</code></td>
+                                    <td>true if file exists and is regular file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-d [file]</code></td>
+                                    <td>true if file exists and is directory</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-c [file]</code></td>
+                                    <td>true if file exists and is character file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-b [file]</code></td>
+                                    <td>true if file exists and is block file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-r [file]</code></td>
+                                    <td>true if file exists and read permission is granted</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-w [file]</code></td>
+                                    <td>true if file exists and write permission is granted</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-x [file]</code></td>
+                                    <td>true if file exists and execute permission is granted</td>
+                                </tr>
+                                <tr>
+                                    <td><code>-s [file]</code></td>
+                                    <td>true if size of file is greater than zero</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>if [ -f text.txt ]
 then
     echo "text.txt exists and it is regular file"
 fi</code></pre>
-                </div>
 
-                <div>
-                    <strong>Note :</strong>
-                    <ul>
-                        <li>Expressions can be grouped with <code>( [expression] )</code></li>
-                        <li>Conditional expressions must be in square braces <code>[]</code></li>
-                        <li>Space must be given between operands and operator.</li>
-                    </ul>
+                    <div>
+                        <strong>Note :</strong>
+                        <ul>
+                            <li>Expressions can be grouped with <code>( [expression] )</code></li>
+                            <li>Conditional expressions must be in square braces <code>[]</code></li>
+                            <li>Space must be given between operands and operator.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -842,11 +851,12 @@ fi</code></pre>
 
             <div class="sections" id="command-substitution">
                 <h3 class="heading"># Command Substitution</h3>
-                <h4>&bull; Back-quote :</h4>
-                <h5>Syntax :</h5>
-                <div class="code-box"><code>`[command]`</code></div>
                 <div>
-                    <strong>Ex -</strong>
+                    <h4>&bull; Back-quote :</h4>
+                    <h5>Syntax :</h5>
+                    <div class="code-box"><code>`[command]`</code></div>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code># Example 1:
 DATE=`date`
 echo "Date is $DATE"
@@ -855,11 +865,12 @@ echo "Date is $DATE"
 USERS=`who | wc -l`
 echo "Logged in user are $USERS"</code></pre>
                 </div>
-                <h4>&bull; Dollor Sign & Parenthesis :</h4>
-                <h5>Syntax :</h5>
-                <div class="code-box"><code>$([command])</code></div>
+
                 <div>
-                    <strong>Ex -</strong>
+                    <h4>&bull; Dollor Sign & Parenthesis :</h4>
+                    <h5>Syntax :</h5>
+                    <div class="code-box"><code>$([command])</code></div>
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code># Example 1:
 echo "Today is $(date)"
 
@@ -925,9 +936,10 @@ done</code></pre>
 
             <div class="sections" id="conditional">
                 <h3 class="heading"># Conditional</h3>
-                <h4>&bull; If Statement :</h4>
-                <h5>Syntax -</h5>
-                <pre class="code-box"><code>if [ condition ]
+                <div>
+                    <h4>&bull; If Statement :</h4>
+                    <h5>Syntax -</h5>
+                    <pre class="code-box"><code>if [ condition ]
 then
     #statement
 fi
@@ -943,24 +955,25 @@ if [ condition ] && [ condition ]
 then
     #statement
 fi</code></pre>
-                <div>
-                    <strong>Ex -</strong>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>if [ "$X" = "y" ] || [ "$X" = "Y" ]
 then
     echo "YES"
 fi</code></pre>
                 </div>
 
-                <h4>&bull; If-Else Statement :</h4>
-                <h5>Syntax -</h5>
-                <pre class="code-box"><code>if [ condition ]
+                <div>
+                    <h4>&bull; If-Else Statement :</h4>
+                    <h5>Syntax -</h5>
+                    <pre class="code-box"><code>if [ condition ]
 then
     #statement
 else
     #statement
 fi</code></pre>
-                <div>
-                    <strong>Ex -</strong>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>if [ $name = "mandar" ]
 then
     echo "Hello BOSS"
@@ -969,9 +982,10 @@ else
 fi</code></pre>
                 </div>
 
-                <h4>&bull; Elif Statements :</h4>
-                <h5>Syntax -</h5>
-                <pre class="code-box"><code>If [ condition ]
+                <div>
+                    <h4>&bull; Elif Statements :</h4>
+                    <h5>Syntax -</h5>
+                    <pre class="code-box"><code>If [ condition ]
 then
     #statement
 elif [ condition ]
@@ -980,8 +994,8 @@ then
 else
     #statement
 fi</code></pre>
-                <div>
-                    <strong>Ex -</strong>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code># Example 1
 if [ $X -lt $Y ]
 then
@@ -1006,9 +1020,10 @@ else
 fi</code></pre>
                 </div>
 
-                <h4>&bull; Switch Statement :</h4>
-                <h5>Syntax -</h5>
-                <pre class="code-box"><code>case "$var" in
+                <div>
+                    <h4>&bull; Switch Statement :</h4>
+                    <h5>Syntax -</h5>
+                    <pre class="code-box"><code>case "$var" in
 "case 1")
     #statement
     ;;
@@ -1019,18 +1034,20 @@ fi</code></pre>
     #Default Statement 
     ;;
 esac</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="loops">
                 <h3 class="heading"># Loops</h3>
-                <h4>&bull; While Loop :</h4>
-                <h5>Syntax -</h5>
-                <pre class="code-box"><code>while [ condition ]
+                <div>
+                    <h4>&bull; While Loop :</h4>
+                    <h5>Syntax -</h5>
+                    <pre class="code-box"><code>while [ condition ]
 do
     #statement
 done</code></pre>
-                <div>
-                    <strong>Ex -</strong>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code># Example 1: print "hello" 5 times
 count=0
 while [ $count -lt 5 ]
@@ -1083,9 +1100,10 @@ done
 echo $factorial</code></pre>
                 </div>
 
-                <h4>&bull; For Loop :</h4>
-                <h5>Syntax -</h5>
-                <pre class="code-box"><code>for var in expression
+                <div>
+                    <h4>&bull; For Loop :</h4>
+                    <h5>Syntax -</h5>
+                    <pre class="code-box"><code>for var in expression
 do
     #statement
 done
@@ -1095,8 +1113,8 @@ for (( expr; expr; expr ))
 do
     #statement
 done</code></pre>
-                <div>
-                    <strong>Ex -</strong>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code># Example 1: input array & print
 read -a array
 for i in ${array[@]}
@@ -1161,15 +1179,16 @@ for line in $(cat test.txt); do
 done</code></pre>
                 </div>
 
-                <h4>&bull; Until Loop :</h4>
-                <p>Executes until the condition is false.</p>
-                <h5>Syntax -</h5>
-                <pre class="code-box"><code>until [ condition ]
+                <div>
+                    <h4>&bull; Until Loop :</h4>
+                    <p>Executes until the condition is false.</p>
+                    <h5>Syntax -</h5>
+                    <pre class="code-box"><code>until [ condition ]
 do
     #statement
 done</code></pre>
-                <div>
-                    <strong>Ex -</strong>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>count=3
 until [ $count -le 0 ]
 do
@@ -1179,11 +1198,12 @@ do
 done</code></pre>
                 </div>
 
-                <h4>&bull; Select Loop :</h4>
-                <h5>Syntax -</h5>
-                <div class="code-box"><code>select VAR in expressions do #statements done</code></div>
                 <div>
-                    <strong>Ex -</strong>
+                    <h4>&bull; Select Loop :</h4>
+                    <h5>Syntax -</h5>
+                    <div class="code-box"><code>select VAR in expressions do #statements done</code></div>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>select DRINK in tea cofee water juice appe all none
 do
     case $DRINK in
@@ -1203,9 +1223,11 @@ do
 done</code></pre>
                 </div>
 
-                <h4>&bull; Loop Controls :</h4>
-                <h5>1. Break Statement -</h5>
-                <pre class="code-box"><code>a=0
+                <div>
+                    <h4>&bull; Loop Controls :</h4>
+                    <div>
+                        <h5>1. Break Statement -</h5>
+                        <pre class="code-box"><code>a=0
 while [ $a -lt 10 ]
 do
     echo $a
@@ -1215,8 +1237,10 @@ do
     fi
     a=`expr $a + 1`
 done</code></pre>
-                <h5>2. Continue Statement -</h5>
-                <pre class="code-box"><code>NUMS="1 2 3 4 5 6 7"
+                    </div>
+                    <div>
+                        <h5>2. Continue Statement -</h5>
+                        <pre class="code-box"><code>NUMS="1 2 3 4 5 6 7"
 for NUM in $NUMS
 do
     Q=`expr $NUM % 2`
@@ -1227,6 +1251,8 @@ do
     fi
     echo "Found odd number"
 done</code></pre>
+                    </div>
+                </div>
             </div>
 
             <div class="sections" id="functions">
@@ -1403,14 +1429,15 @@ echo `greet`</code></pre>
                     </div>
                 </div>
 
-                <h4>&bull; Define File Descriptor & Redirect to it :</h4>
-                <ol>
-                    <li>Define/Create output file descriptor with x and redirect to file : <code>exec x&lt;&gt; [file]</code></li>
-                    <li>Redirect to it : <code>[command] &gt;&x</code></li>
-                    <li>Undefine/Close output file descriptor x : <code>exec x&gt;&-</code></li>
-                </ol>
                 <div>
-                    <strong>Ex -</strong>
+                    <h4>&bull; Define File Descriptor & Redirect to it :</h4>
+                    <ol>
+                        <li>Define/Create output file descriptor with x and redirect to file : <code>exec x&lt;&gt; [file]</code></li>
+                        <li>Redirect to it : <code>[command] &gt;&x</code></li>
+                        <li>Undefine/Close output file descriptor x : <code>exec x&gt;&-</code></li>
+                    </ol>
+
+                    <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>$ exec 3&lt;&gt; log.txt
 $ echo "Hello" &gt;&3 #output is redirect to log.txt
 $ cat log.txt
@@ -1425,9 +1452,9 @@ $ exec 3&gt;&-</code></pre>
                 <p>Pipelines or pipes are used as a funnel to pass the output of one command to another command as input or parameter.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>[command] | [command]</code></div>
-                <div>
-                    <strong>Ex -</strong>
-                    <pre class="code-box code-box-color"><code># Output 1 page at time
+
+                <h5>Ex -</h5>
+                <pre class="code-box code-box-color"><code># Output 1 page at time
 ls -iR | less
 
 # Display 10 rows
@@ -1438,7 +1465,6 @@ cat file.txt | grep hello
 
 # Sort output file names and print only unique file names
 grep -l int *.cpp | sort | uniq</code></pre>
-                </div>
             </div>
 
             <div class="sections" id="bash-aliases">
@@ -1448,10 +1474,9 @@ grep -l int *.cpp | sort | uniq</code></pre>
                 <div class="code-box"><code>alias short-name='[command]'</code></div>
                 <p>save aliases in .bashrc file (in home dir) & execute file with -</p>
                 <div class="code-box"><code>source .bashrc</code></div>
-                <div>
-                    <strong>Ex -</strong>
-                    <pre class="code-box code-box-color"><code>alias repo='cd /document/github/repo'</code></pre>
-                </div>
+
+                <h5>Ex -</h5>
+                <pre class="code-box code-box-color"><code>alias repo='cd /document/github/repo'</code></pre>
             </div>
 
             <div class="sections" id="bash-ranges">
@@ -1525,11 +1550,10 @@ grep -l int *.cpp | sort | uniq</code></pre>
                 <p>Eval is used to execute arguments as shell command.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>eval [arg ..]</code></div>
-                <div>
-                    <strong>Ex -</strong>
-                    <pre class="code-box code-box-color"><code>CDDOC="cd Documents"
+
+                <h5>Ex -</h5>
+                <pre class="code-box code-box-color"><code>CDDOC="cd Documents"
 eval $CDDOC</code></pre>
-                </div>
             </div>
 
             <div class="sections" id="expr">
@@ -1537,9 +1561,9 @@ eval $CDDOC</code></pre>
                 <p>Expr evaluates given expression and displays its corresponding output.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>expr [OPTION] [EXPRESSION]</code></div>
-                <div>
-                    <strong>Ex -</strong>
-                    <pre class="code-box code-box-color"><code># Example 1:
+
+                <h5>Ex -</h5>
+                <pre class="code-box code-box-color"><code># Example 1:
 expr 1 + 2
 
 # Example 2:
@@ -1581,7 +1605,6 @@ echo $sub
 a=linuxhint
 b=`expr index $a t`
 echo $b</code></pre>
-                </div>
             </div>
 
             <div class="sections" id="file-permissions">
@@ -1627,100 +1650,100 @@ echo $b</code></pre>
                         </tbody>
                     </table>
                 </div>
-                <h5>Permission using Integers :</h5>
-                <div class="table-scroll">
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Permission</th>
-                                <th>Value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>r</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>w</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>x</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>-</td>
-                                <td>0</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-scroll">
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Permission Value</th>
-                                <th>Permission</th>
-                                <th>Info</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>7</td>
-                                <td>rwx</td>
-                                <td>read, write & execute</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>rw-</td>
-                                <td>read & write</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>r-x</td>
-                                <td>read & execute</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>r--</td>
-                                <td>read-only</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>-wx</td>
-                                <td>write & execute</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>-w-</td>
-                                <td>write only</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>--x</td>
-                                <td>execute only</td>
-                            </tr>
-                            <tr>
-                                <td>0</td>
-                                <td>---</td>
-                                <td>none</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div><strong>Note :</strong> max value is r+w+x = 4+2+1 = 7</div>
-                <ul>
-                    <li>wrx wrx --- = 4+2+1 4+2+1 0+0+0 = 770</li>
-                    <li>r-x r-- r-- = 4+0+1 4+0+0 4+0+0 = 544</li>
-                </ul>
-                <div>
-                    <strong>Ex -</strong>
-                    <pre class="code-box code-box-color"><code>chmod u+wr-r text.txt
-chmod o+wrx script.sh
+                <h5>Ex -</h5>
+                <pre class="code-box code-box-color"><code>chmod u+wr-r text.txt
+chmod o+wrx script.sh</code></pre>
 
-# Using Numbers
-chmod 777 file.sh</code></pre>
+                <div>
+                    <h4>&bull; Permission using Integers :</h4>
+                    <div class="table-scroll">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Permission</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>r</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>w</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>x</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Permission Value</th>
+                                    <th>Permission</th>
+                                    <th>Info</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>7</td>
+                                    <td>rwx</td>
+                                    <td>read, write & execute</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>rw-</td>
+                                    <td>read & write</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>r-x</td>
+                                    <td>read & execute</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>r--</td>
+                                    <td>read-only</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>-wx</td>
+                                    <td>write & execute</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>-w-</td>
+                                    <td>write only</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>--x</td>
+                                    <td>execute only</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>---</td>
+                                    <td>none</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div><strong>Note :</strong> max value is r+w+x = 4+2+1 = 7</div>
+                    <ul>
+                        <li>wrx wrx --- = 4+2+1 4+2+1 0+0+0 = 770</li>
+                        <li>r-x r-- r-- = 4+0+1 4+0+0 4+0+0 = 544</li>
+                    </ul>
+                    <h5>Ex -</h5>
+                    <pre class="code-box code-box-color"><code>chmod 777 file.sh</code></pre>
                 </div>
             </div>
 

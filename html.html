@@ -208,34 +208,43 @@
                 <h3 class="heading"># Links</h3>
                 <pre class="code-box"><code>&lt;a href=&quot;url&quot; target=&quot;_blank&quot;&gt; Link Text &lt;/a&gt;</code></pre>
                 <p><strong>target :</strong> <code>blanck|self|parent|top</code></p>
-                <h4>&bull; Bookmarks :</h4>
-                <pre class="code-box"><code>&lt;h2 id=&quot;C4&quot;&gt;Chapter 4&lt;/h2&gt;
+                <div>
+                    <h4>&bull; Bookmarks :</h4>
+                    <pre class="code-box"><code>&lt;h2 id=&quot;C4&quot;&gt;Chapter 4&lt;/h2&gt;
 
 &lt;a href=&quot;#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="lists">
                 <h3 class="heading"># Lists</h3>
-                <h4>&bull; Unordered :</h4>
-                <pre class="code-box"><code>&lt;ul&gt;
+                <div>
+                    <h4>&bull; Unordered :</h4>
+                    <pre class="code-box"><code>&lt;ul&gt;
     &lt;li&gt;Items&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-                <h4>&bull; Ordered :</h4>
-                <pre class="code-box"><code>&lt;ol type=&quot;value&quot; start=&quot;20&quot;&gt;
+                </div>
+
+                <div>
+                    <h4>&bull; Ordered :</h4>
+                    <pre class="code-box"><code>&lt;ol type=&quot;value&quot; start=&quot;20&quot;&gt;
     &lt;li&gt;Items&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-                <ul>
-                    <li><strong>value</strong>=<code>1|a|A|I|i</code></li>
-                    <li><strong>start</strong> : start counting from 20</li>
-                </ul>
+                    <ul>
+                        <li><strong>value</strong>=<code>1|a|A|I|i</code></li>
+                        <li><strong>start</strong> : start counting from 20</li>
+                    </ul>
+                </div>
 
-                <h4>&bull; Description Lists :</h4>
-                <pre class="code-box"><code>&lt;dl&gt;
+                <div>
+                    <h4>&bull; Description Lists :</h4>
+                    <pre class="code-box"><code>&lt;dl&gt;
     &lt;dt&gt;Term&lt;/dt&gt;
     &lt;dd&gt;- description &lt;/dd&gt;
     &lt;dt&gt;Term&lt;/dt&gt;
     &lt;dd&gt;- description&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="tables">
@@ -277,21 +286,25 @@
                 <h3 class="heading"># Images</h3>
                 <pre class="code-box"><code>&lt;img src=&quot;image.jpg&quot; alt=&quot;Image Not Supported&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;
 </code></pre>
-                <h4>&bull; Clickable Area :</h4>
-                <pre class="code-box"><code>&lt;map name=&quot;workmap&quot;&gt;
+                <div>
+                    <h4>&bull; Clickable Area :</h4>
+                    <pre class="code-box"><code>&lt;map name=&quot;workmap&quot;&gt;
     &lt;area shape=&quot;rect&quot; coords=&quot;34,44,270,350&quot; alt=&quot;Computer&quot; href=&quot;computer.htm&quot;&gt;
     &lt;area shape=&quot;rect&quot; coords=&quot;290,172,333,250&quot; alt=&quot;Phone&quot; href=&quot;phone.htm&quot;&gt;
     &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; alt=&quot;Cup of coffee&quot; href=&quot;coffee.htm&quot;&gt;
 &lt;/map&gt;
 </code></pre>
-                <h4>&bull; Picture Gallery :</h4>
-                <pre class="code-box"><code>&lt;picture&gt;
+                </div>
+                <div>
+                    <h4>&bull; Picture Gallery :</h4>
+                    <pre class="code-box"><code>&lt;picture&gt;
     &lt;source media=&quot;(min-width:650px)&quot; srcset=&quot;img_pink_flowers.jpg&quot;&gt;
     &lt;source media=&quot;(min-width:465px)&quot; srcset=&quot;img_white_flower.jpg&quot;&gt;
     &lt;img src=&quot;img_orange_flowers.jpg&quot; alt=&quot;Flowers&quot; style=&quot;width:auto;&quot;&gt;
 &lt;/picture&gt;
 </code></pre>
-                <p><strong>shape</strong> : <code>rect|circle|poly|default</code></p>
+                    <p><strong>shape</strong> : <code>rect|circle|poly|default</code></p>
+                </div>
             </div>
 
             <div class="sections" id="video">
@@ -343,16 +356,21 @@
                     </li>
                 </ul>
 
-                <h4>&bull; Button :</h4>
-                <pre class="code-box"><code>&lt;button type=&quot;button&quot; onclick=&quot;alert(&#39;Hello World!&#39;)&quot;&gt;Click Me!&lt;/button&gt;
+                <div>
+                    <h4>&bull; Button :</h4>
+                    <pre class="code-box"><code>&lt;button type=&quot;button&quot; onclick=&quot;alert(&#39;Hello World!&#39;)&quot;&gt;Click Me!&lt;/button&gt;
 </code></pre>
-                <h4>&bull; Fieldset :</h4>
-                <pre class="code-box"><code>&lt;fieldset&gt;
+                </div>
+                <div>
+                    <h4>&bull; Fieldset :</h4>
+                    <pre class="code-box"><code>&lt;fieldset&gt;
     &lt;legend&gt;Caption Name&lt;/legend&gt;
 &lt;/fieldset&gt;
 </code></pre>
-                <h4>&bull; Selection List :</h4>
-                <pre class="code-box"><code>&lt;select id=&quot;cars&quot; name=&quot;cars&quot; size=&quot;3&quot; multiple&gt;
+                </div>
+                <div>
+                    <h4>&bull; Selection List :</h4>
+                    <pre class="code-box"><code>&lt;select id=&quot;cars&quot; name=&quot;cars&quot; size=&quot;3&quot; multiple&gt;
     &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
     &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;
     &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;
@@ -360,8 +378,10 @@
     &lt;option value=&quot;fiat&quot; selected&gt;Fiat&lt;/option&gt;
 &lt;/select&gt;
 </code></pre>
-                <h4>&bull; Data List :</h4>
-                <pre class="code-box"><code>&lt;datalist id=&quot;browsers&quot;&gt;
+                </div>
+                <div>
+                    <h4>&bull; Data List :</h4>
+                    <pre class="code-box"><code>&lt;datalist id=&quot;browsers&quot;&gt;
     &lt;option value=&quot;Internet Explorer&quot;&gt;
     &lt;option value=&quot;Firefox&quot;&gt;
     &lt;option value=&quot;Chrome&quot;&gt;
@@ -369,9 +389,12 @@
     &lt;option value=&quot;Safari&quot;&gt;
 &lt;/datalist&gt;
 </code></pre>
-                <h4>&bull; Textarea :</h4>
-                <pre class="code-box"><code>&lt;textarea name=&quot;message&quot; rows=&quot;10&quot; cols=&quot;30&quot;&gt;Text&lt;/textarea&gt;
+                </div>
+                <div>
+                    <h4>&bull; Textarea :</h4>
+                    <pre class="code-box"><code>&lt;textarea name=&quot;message&quot; rows=&quot;10&quot; cols=&quot;30&quot;&gt;Text&lt;/textarea&gt;
 </code></pre>
+                </div>
             </div>
 
             <div class="sections" id="html-entity">
