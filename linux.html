@@ -22,7 +22,7 @@
 
     <body>
         <div class="container">
-            <h2 class="title">Linux &amp; BASH Scripting</h2>
+            <h2 class="title">Linux & BASH Scripting</h2>
 
             <ul class="section-list">
                 <li><a href="#linux-basics">Linux Basics</a></li>
@@ -325,7 +325,7 @@
                             </tr>
                             <tr>
                                 <td><code>cd -</code></td>
-                                <td>change to last dir &amp; print path</td>
+                                <td>change to last dir & print path</td>
                             </tr>
                             <tr>
                                 <td><code>cd ..</code></td>
@@ -345,7 +345,7 @@
                             </tr>
                             <tr>
                                 <td><code>cp -r [dir1] [dir2]</code></td>
-                                <td>copy folder &amp; its content recursively</td>
+                                <td>copy folder & its content recursively</td>
                             </tr>
                             <tr>
                                 <td><code>file [file]</code></td>
@@ -421,7 +421,7 @@
                             </tr>
                             <tr>
                                 <td><code>rm -rf [file]</code></td>
-                                <td>remove empty/non-empty file &amp; dir</td>
+                                <td>remove empty/non-empty file & dir</td>
                             </tr>
                             <tr>
                                 <td><code>rmdir dir</code></td>
@@ -493,61 +493,64 @@
                 </ul>
                 <h5>Executing Scripts :</h5>
                 <p>Script must have executable permission.</p>
-                <div class="code-box code-box-color"><code>./[script] sh [script] bash [script] # show each command execution bash -x [script] </code></div>
+<pre class="code-box code-box-color"><code>./[script]
+sh [script]
+bash [script]
+
+# show each command execution
+bash -x [script]</code></pre>
             </div>
 
             <div class="sections" id="variables">
                 <h3># Variables</h3>
                 <h5>Declare Variable :</h5>
-                <div class="code-box">
-                    <code>
-                        var=&quot;hello&quot; var=12 month=“jan feb mar apr may”
-                    </code>
-                </div>
+<pre class="code-box"><code>var="hello"
+var=12
+month=“jan feb mar apr may”</code></pre>
                 <h5>Access Value :</h5>
-                <div class="code-box"><code>echo $var echo ${var} </code></div>
+                <div class="code-box"><code>echo $var echo ${var}</code></div>
                 <h5>Remove variable :</h5>
-                <div class="code-box"><code>unset var </code></div>
+                <div class="code-box"><code>unset var</code></div>
                 <h5>Read only variable :</h5>
-                <div class="code-box"><code>readonly var </code></div>
+                <div class="code-box"><code>readonly var</code></div>
             </div>
 
             <div class="sections" id="arrays">
                 <h3># Arrays</h3>
                 <h5>Declare array :</h5>
-                <div class="code-box"><code>array=(&quot;I&quot; &quot;am&quot; &quot;Mandar&quot; 007 ) </code></div>
+                <div class="code-box"><code>array=("I" "am" "Mandar" 007 )</code></div>
                 <h5>Input Array :</h5>
-                <div class="code-box"><code>read -a array </code></div>
+                <div class="code-box"><code>read -a array</code></div>
                 <h5>Assign Value :</h5>
-                <div class="code-box"><code>array[0]=&quot;hello&quot; </code></div>
+                <div class="code-box"><code>array[0]="hello"</code></div>
                 <h5>Access Array Element :</h5>
-                <div class="code-box"><code>echo ${array[0]} </code></div>
+                <div class="code-box"><code>echo ${array[0]}</code></div>
                 <h5>Length Of Array :</h5>
-                <div class="code-box"><code>echo ${#array[@]} </code></div>
+                <div class="code-box"><code>echo ${#array[@]}</code></div>
             </div>
 
             <div class="sections" id="input">
                 <h3># Input</h3>
                 <h5>Input (STDIN) :</h5>
-                <div class="code-box"><code>read [var] </code></div>
+                <div class="code-box"><code>read [var]</code></div>
                 <h5>Prompt input :</h5>
-                <div class="code-box"><code>read -p &#39;Username : &#39; [var] </code></div>
+                <div class="code-box"><code>read -p 'Username : ' [var]</code></div>
                 <h5>Secure prompt input :</h5>
-                <div class="code-box"><code>read -sp &#39;Password : &#39; [var] </code></div>
+                <div class="code-box"><code>read -sp 'Password : ' [var]</code></div>
                 <h5>Input x char :</h5>
-                <div class="code-box"><code>read -n [x] [var] </code></div>
+                <div class="code-box"><code>read -n [x] [var]</code></div>
                 <h5>Array input :</h5>
-                <div class="code-box"><code>read -a [array] </code></div>
+                <div class="code-box"><code>read -a [array]</code></div>
             </div>
 
             <div class="sections" id="output">
                 <h3># Output</h3>
                 <h5>Print message (STDOUT) :</h5>
-                <div class="code-box"><code>echo &quot;message&quot; </code></div>
+                <div class="code-box"><code>echo "message"</code></div>
                 <h5>Special char in echo :</h5>
-                <div class="code-box"><code>echo -e &quot;\n some text&quot; </code></div>
+                <div class="code-box"><code>echo -e "\n some text"</code></div>
                 <h5>Print message (STDOUT) :</h5>
-                <div class="code-box"><code>printf &quot;some text&quot; </code></div>
+                <div class="code-box"><code>printf "some text"</code></div>
             </div>
 
             <div class="sections" id="operators">
@@ -614,7 +617,7 @@
                                 <td>or</td>
                             </tr>
                             <tr>
-                                <td><code>[expression] &amp;&amp; [expression]</code> or <code>[expression] -a [expression]</code></td>
+                                <td><code>[expression] && [expression]</code> or <code>[expression] -a [expression]</code></td>
                                 <td>and</td>
                             </tr>
                         </tbody>
@@ -661,7 +664,10 @@
                 </div>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box"><code>if [ 80 -gt 40 ] then echo &quot;greater&quot; fi </code></div>
+<pre class="code-box code-box-color"><code>if [ 80 -gt 40 ]
+then
+    echo "greater"
+fi</code></pre>
                 </div>
 
                 <h4>&bull; Relational Operator :</h4>
@@ -700,7 +706,12 @@
                 </div>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box"><code>if [ &quot;Hello&quot; = &quot;Hi&quot; ] then echo &quot;same&quot; else echo &quot;different&quot; fi </code></div>
+<pre class="code-box code-box-color"><code>if [ "Hello" = "Hi" ]
+then
+    echo "same"
+else
+    echo "different"
+fi</code></pre>
                 </div>
 
                 <h4>&bull; Lexicographic Comparison :</h4>
@@ -777,7 +788,10 @@
 
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box"><code>if [ -f text.txt ] then echo &quot;text.txt exists and it is regular file&quot; fi </code></div>
+<pre class="code-box code-box-color"><code>if [ -f text.txt ]
+then
+    echo "text.txt exists and it is regular file"
+fi</code></pre>
                 </div>
 
                 <div>
@@ -830,17 +844,30 @@
                 <h3># Command Substitution</h3>
                 <h4>&bull; Back-quote :</h4>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>`[command]` </code></div>
+                <div class="code-box"><code>`[command]`</code></div>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color"><code># Example 1: DATE=`date` echo &quot;Date is $DATE&quot; # # Example 2: USERS=`who | wc -l` echo &quot;Logged in user are $USERS&quot; </code></div>
+<pre class="code-box code-box-color"><code># Example 1:
+DATE=`date`
+echo "Date is $DATE"
+
+# Example 2:
+USERS=`who | wc -l`
+echo "Logged in user are $USERS"</code></pre>
                 </div>
-                <h4>&bull; Dollor Sign &amp; Parenthesis :</h4>
+                <h4>&bull; Dollor Sign & Parenthesis :</h4>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>$([command]) </code></div>
+                <div class="code-box"><code>$([command])</code></div>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color"><code># Example 1: echo &quot;Today is $(date)&quot; # Example 2: for i in $(cat file.txt) do echo &quot;$i&quot; done </code></div>
+<pre class="code-box code-box-color"><code># Example 1:
+echo "Today is $(date)"
+
+# Example 2:
+for i in $(cat file.txt)
+do
+    echo "$i"
+done</code></pre>
                 </div>
             </div>
 
@@ -900,111 +927,332 @@
                 <h3># Conditional</h3>
                 <h4>&bull; If Statement :</h4>
                 <h5>Syntax -</h5>
-                <div class="code-box"><code>if [ condition ] then #statement fi # with OR if [ condition ] || [ condition ] then #statement fi # with AND if [ condition ] &amp;&amp; [ condition ] then #statement fi </code></div>
+<pre class="code-box"><code>if [ condition ]
+then
+    #statement
+fi
+
+# with OR
+if [ condition ] || [ condition ]
+then
+    #statement
+fi
+
+# with AND
+if [ condition ] && [ condition ]
+then
+    #statement
+fi</code></pre>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color"><code>if [ &quot;$X&quot; = &quot;y&quot; ] || [ &quot;$X&quot; = &quot;Y&quot; ] then echo &quot;YES&quot; fi </code></div>
+<pre class="code-box code-box-color"><code>if [ "$X" = "y" ] || [ "$X" = "Y" ]
+then
+    echo "YES"
+fi</code></pre>
                 </div>
 
                 <h4>&bull; If-Else Statement :</h4>
                 <h5>Syntax -</h5>
-                <div class="code-box"><code>if [ condition ] then #statement else #statement fi </code></div>
+<pre class="code-box"><code>if [ condition ]
+then
+    #statement
+else
+    #statement
+fi</code></pre>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color"><code>if [ $name = &quot;mandar&quot; ] then echo &quot;Hello BOSS&quot; else echo &quot;Who Are You?&quot; fi </code></div>
+<pre class="code-box code-box-color"><code>if [ $name = "mandar" ]
+then
+    echo "Hello BOSS"
+else
+    echo "Who Are You?"
+fi</code></pre>
                 </div>
 
                 <h4>&bull; Elif Statements :</h4>
                 <h5>Syntax -</h5>
-                <div class="code-box"><code>If [ condition ] then #statement elif [ condition ] then #statement else #statement fi </code></div>
+<pre class="code-box"><code>If [ condition ]
+then
+    #statement
+elif [ condition ]
+then
+    #statement
+else
+    #statement
+fi</code></pre>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color">
-                        <code>
-                            # Example 1 if [ $X -lt $Y ] then echo &quot;X is less than Y&quot; elif [ $X -gt $Y ] then echo &quot;X is greater than Y&quot; elif [ $X -eq $Y ] then echo &quot;X is equal to Y&quot; fi # Example 2 if [ $X -eq
-                            $Y ] &amp;&amp; [ $X -eq $Z ] then echo &quot;EQUILATERAL&quot; elif [ $X -eq $Y ] || [ $Y -eq $Z ] || [ $X -eq $Z ] then echo &quot;ISOSCELES&quot; else echo &quot;SCALENE&quot; fi
-                        </code>
-                    </div>
+<pre class="code-box code-box-color"><code># Example 1
+if [ $X -lt $Y ]
+then
+    echo "X is less than Y"
+elif [ $X -gt $Y ]
+then
+    echo "X is greater than Y"
+elif [ $X -eq $Y ]
+then
+    echo "X is equal to Y"
+fi
+
+# Example 2
+if [ $X -eq $Y ] && [ $X -eq $Z ]
+then
+    echo "EQUILATERAL"
+elif [ $X -eq $Y ] || [ $Y -eq $Z ] || [ $X -eq $Z ]
+then
+    echo "ISOSCELES"
+else
+    echo "SCALENE"
+fi</code></pre>
                 </div>
 
                 <h4>&bull; Switch Statement :</h4>
                 <h5>Syntax -</h5>
-                <div class="code-box"><code>case &quot;$var&quot; in &quot;case 1&quot;) #statement ;; &quot;case 2&quot;) #statement ;; *) #Default Statement ;; esac </code></div>
+<pre class="code-box"><code>case "$var" in
+"case 1")
+    #statement
+    ;;
+"case 2")
+    #statement
+    ;;
+*)
+    #Default Statement 
+    ;;
+esac</code></pre>
             </div>
 
             <div class="sections" id="loops">
                 <h3># Loops</h3>
                 <h4>&bull; While Loop :</h4>
                 <h5>Syntax -</h5>
-                <div class="code-box"><code>while [ condition ] do #statement done </code></div>
+<pre class="code-box"><code>while [ condition ]
+do
+    #statement
+done</code></pre>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color">
-                        <code>
-                            # Example 1: print &quot;hello&quot; 5 times count=0 while [ $count -lt 5 ] do echo &quot;hello&quot; count=$((count+1)) done # OR count=0 while [ $count -lt 5 ] do echo &quot;hello&quot; ((count++)) done #
-                            Example 2: print file content by line cat file.txt | while read line do echo $line done # Example 3 - read while loop while read line do echo $line done &lt; file.txt # Example 4 - infinite loop while true # 1
-                            instead of true also works do echo &quot;infinite loop&quot; done # Example 5: infinite loop while : do echo &quot;infinite loop&quot; done # Example 6: factorial counter=$1 factorial=1 while [ $counter -gt 0 ]
-                            do factorial=$(( $factorial * $counter )) counter=$(( $counter - 1 )) done echo $factorial
-                        </code>
-                    </div>
+<pre class="code-box code-box-color"><code># Example 1: print "hello" 5 times
+count=0
+while [ $count -lt 5 ]
+do
+    echo "hello"
+    count=$((count+1))
+done
+
+# OR
+count=0
+while [ $count -lt 5 ]
+do
+    echo "hello"
+    ((count++))
+done
+
+# Example 2: print file content by line
+cat file.txt | while read line
+do
+    echo $line
+done
+
+# Example 3 - read while loop
+while read line
+do
+    echo $line
+done &lt; file.txt
+
+# Example 4 - infinite loop
+while true # 1 instead of true also works
+do
+    echo "infinite loop"
+done
+
+# Example 5: infinite loop
+while :
+do
+    echo
+    "infinite loop"
+done
+
+# Example 6: factorial
+counter=$1
+factorial=1
+while [ $counter -gt 0 ]
+do
+    factorial=$(( $factorial * $counter ))
+    counter=$(( $counter - 1 ))
+done
+echo $factorial</code></pre>
                 </div>
 
                 <h4>&bull; For Loop :</h4>
                 <h5>Syntax -</h5>
-                <div class="code-box"><code>for var in expression do #statement done # 2nd Syntax: for (( expr; expr; expr )) do #statement done </code></div>
+<pre class="code-box"><code>for var in expression
+do
+    #statement
+done
+
+# 2nd Syntax:
+for (( expr; expr; expr ))
+do
+    #statement
+done</code></pre>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color">
-                        <code>
-                            # Example 1: input array &amp; print read -a array for i in ${array[@]} do echo &quot;input is $i&quot; done # Example 2 for i in 1 2 3 4 5 do echo $i done # Example 3 for i in {1..25} do echo $i done # Example
-                            4: increment by 2 from 0 to 10 for i in {0..10..2} do echo $i done # Example 5: increment by 2 from 0 to 20 for i in $(seq 0 2 20) do echo $i done # Example 6 for i in `seq 1 10` do echo $i done # Example 7:
-                            increment by 1 upto 5 for (( i=1; i&lt;=5; i++ )) do echo $i done # Example 8: infinite loop for (( ; ; )) do echo &quot;infinite loop&quot; done # Example 9 - create 10 copies of test.txt for i in `seq 1 10` do
-                            cp test.txt &quot;test_${i}.txt&quot; done # OR single line format for i in `seq 1 10`; do cp test.txt &quot;test_${i}.txt&quot;; done # Example 10: reading file for line in $(cat test.txt); do echo $line done
-                        </code>
-                    </div>
+<pre class="code-box code-box-color"><code># Example 1: input array & print
+read -a array
+for i in ${array[@]}
+do
+    echo "input is $i"
+done
+
+# Example 2
+for i in 1 2 3 4 5
+do
+    echo $i
+done
+
+# Example 3
+for i in {1..25}
+do
+    echo $i
+done
+
+# Example 4: increment by 2 from 0 to 10
+for i in {0..10..2}
+do
+    echo $i
+done
+
+# Example 5: increment by 2 from 0 to 20
+for i in $(seq 0 2 20)
+do
+    echo $i
+done
+
+# Example 6
+for i in `seq 1 10`
+do
+    echo $i
+done
+
+# Example 7: increment by 1 upto 5
+for (( i=1; i&lt;=5; i++ ))
+do
+    echo $i
+done
+
+# Example 8: infinite loop
+for (( ; ; ))
+do
+    echo "infinite loop"
+done
+
+# Example 9 - create 10 copies of test.txt
+for i in `seq 1 10`
+do
+    cp test.txt "test_${i}.txt"
+done
+
+# OR single line format
+for i in `seq 1 10`; do cp test.txt "test_${i}.txt"; done
+
+# Example 10: reading file
+for line in $(cat test.txt); do
+    echo $line
+done</code></pre>
                 </div>
 
                 <h4>&bull; Until Loop :</h4>
                 <p>Executes until the condition is false.</p>
                 <h5>Syntax -</h5>
-                <div class="code-box"><code>until [ condition ] do #statement done </code></div>
+<pre class="code-box"><code>until [ condition ]
+do
+    #statement
+done</code></pre>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color"><code>count=3 until [ $count -le 0 ] do count=$((count-1)) echo &quot;count = $count&quot; sleep 1 done </code></div>
+<pre class="code-box code-box-color"><code>count=3
+until [ $count -le 0 ]
+do
+    count=$((count-1))
+    echo "count = $count"
+    sleep 1
+done</code></pre>
                 </div>
 
                 <h4>&bull; Select Loop :</h4>
                 <h5>Syntax -</h5>
-                <div class="code-box"><code>select VAR in expressions do #statements done </code></div>
+                <div class="code-box"><code>select VAR in expressions do #statements done</code></div>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color">
-                        <code>
-                            select DRINK in tea cofee water juice appe all none do case $DRINK in tea|cofee|water|all) echo &quot;Go to canteen&quot; ;; juice|appe) echo &quot;Available at home&quot; ;; none) break ;; *) echo &quot;ERROR:
-                            Invalid selection&quot; ;; esac done
-                        </code>
-                    </div>
+<pre class="code-box code-box-color"><code>select DRINK in tea cofee water juice appe all none
+do
+    case $DRINK in
+    tea|cofee|water|all)
+        echo "Go to canteen"
+        ;;
+    juice|apple)
+        echo "Available at home"
+        ;;
+    none)
+        break
+        ;;
+    *)
+        echo "ERROR: Invalid selection"
+        ;;
+    esac
+done</code></pre>
                 </div>
 
                 <h4>&bull; Loop Controls :</h4>
                 <h5>1. Break Statement -</h5>
-                <div class="code-box"><code>a=0 while [ $a -lt 10 ] do echo $a if [ $a -eq 5 ] then break fi a=`expr $a + 1` done </code></div>
+<pre class="code-box"><code>a=0
+while [ $a -lt 10 ]
+do
+    echo $a
+    if [ $a -eq 5 ]
+    then
+        break
+    fi
+    a=`expr $a + 1`
+done</code></pre>
                 <h5>2. Continue Statement -</h5>
-                <div class="code-box">
-                    <code>NUMS=&quot;1 2 3 4 5 6 7&quot; for NUM in $NUMS do Q=`expr $NUM % 2` if [ $Q -eq 0 ] then echo &quot;Number is an even number!!&quot; continue fi echo &quot;Found odd number&quot; done </code>
-                </div>
+<pre class="code-box"><code>NUMS="1 2 3 4 5 6 7"
+for NUM in $NUMS
+do
+    Q=`expr $NUM % 2`
+    if [ $Q -eq 0 ]
+    then
+        echo "Number is an even number!!"
+        continue
+    fi
+    echo "Found odd number"
+done</code></pre>
             </div>
 
             <div class="sections" id="functions">
                 <h3># Functions</h3>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>function(){ #statements } </code></div>
+<pre class="code-box"><code>function(){
+    #statements
+}</code></pre>
                 <h5>Calling Function :</h5>
-                <div class="code-box code-box-color"><code>greet(){ echo &quot;Hello World&quot; } greet </code></div>
+<pre class="code-box code-box-color"><code>greet(){
+    echo "Hello World"
+}
+
+greet</code></pre>
                 <h5>Function with Parameter :</h5>
-                <div class="code-box code-box-color"><code>greet(){ echo &quot;Hello $1&quot; } greet Mandar </code></div>
+<pre class="code-box code-box-color"><code>greet(){
+echo "Hello $1" }
+
+greet Mandar</code></pre>
                 <h5>Call within statement :</h5>
-                <div class="code-box code-box-color"><code>greet(){ echo &quot;Hello World&quot; } echo $(greet) echo `greet` </code></div>
+<pre class="code-box code-box-color"><code>greet(){
+    echo "Hello World"
+}
+
+echo $(greet)
+echo `greet`</code></pre>
             </div>
 
             <div class="sections" id="command-line-arguments">
@@ -1057,7 +1305,7 @@
                             </tr>
                             <tr>
                                 <td><code>$@</code></td>
-                                <td>same as $∗, but differ when enclosed in (&quot;), (stored as array)</td>
+                                <td>same as $∗, but differ when enclosed in ("), (stored as array)</td>
                             </tr>
                             <tr>
                                 <td><code>$-</code></td>
@@ -1092,24 +1340,24 @@
                                 <td>redirect standard error (STDERR) to file</td>
                             </tr>
                             <tr>
-                                <td><code>[command] &amp;&gt; [file]</code></td>
+                                <td><code>[command] &&gt; [file]</code></td>
                                 <td>redirect STDOUT and STDERR to file</td>
                             </tr>
                             <tr>
-                                <td><code>[command] &gt; [file] 2&gt;&amp;1</code></td>
+                                <td><code>[command] &gt; [file] 2&gt;&1</code></td>
                                 <td>same as above (redirect STDOUT and STDERR)</td>
                             </tr>
                             <tr>
                                 <td><code>[command] &gt;&gt; [file]</code></td>
-                                <td>redirect &amp; append output (STDOUT) to file</td>
+                                <td>redirect & append output (STDOUT) to file</td>
                             </tr>
                             <tr>
                                 <td><code>[command] &gt; /dev/null</code></td>
                                 <td>redirect STDOUT to null (discard STDOUT)</td>
                             </tr>
                             <tr>
-                                <td><code>[command] &amp;&gt; /dev/null</code></td>
-                                <td>redirect STDOUT &amp; STDERR to null (discard STDOUT and STDERR)</td>
+                                <td><code>[command] &&gt; /dev/null</code></td>
+                                <td>redirect STDOUT & STDERR to null (discard STDOUT and STDERR)</td>
                             </tr>
                             <tr>
                                 <td><code>echo &gt; [file]</code></td>
@@ -1155,15 +1403,20 @@
                     </div>
                 </div>
 
-                <h4>&bull; Define File Descriptor &amp; Redirect to it :</h4>
+                <h4>&bull; Define File Descriptor & Redirect to it :</h4>
                 <ol>
                     <li>Define/Create output file descriptor with x and redirect to file : <code>exec x&lt;&gt; [file]</code></li>
-                    <li>Redirect to it : <code>[command] &gt;&amp;x</code></li>
-                    <li>Undefine/Close output file descriptor x : <code>exec x&gt;&amp;-</code></li>
+                    <li>Redirect to it : <code>[command] &gt;&x</code></li>
+                    <li>Undefine/Close output file descriptor x : <code>exec x&gt;&-</code></li>
                 </ol>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color"><code>$ exec 3&lt;&gt; log.txt $ echo &quot;Hello&quot; &gt;&amp;3 #output is redirect to log.txt $ cat log.txt Hello $ exec 3&gt;&amp;- </code></div>
+<pre class="code-box code-box-color"><code>$ exec 3&lt;&gt; log.txt
+$ echo "Hello" &gt;&3 #output is redirect to log.txt
+$ cat log.txt
+Hello
+
+$ exec 3&gt;&-</code></pre>
                 </div>
             </div>
 
@@ -1171,15 +1424,20 @@
                 <h3># Piping</h3>
                 <p>Pipelines or pipes are used as a funnel to pass the output of one command to another command as input or parameter.</p>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>[command] | [command] </code></div>
+                <div class="code-box"><code>[command] | [command]</code></div>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color">
-                        <code>
-                            # Output 1 page at time - ls -iR | less # Display 10 rows - ls -it | head -10 # Print line matched word &quot;hello&quot; in file.txt - cat file.txt | grep hello # Sort output file names and print only unique
-                            file names - grep -l int *.cpp | sort | uniq
-                        </code>
-                    </div>
+<pre class="code-box code-box-color"><code># Output 1 page at time
+ls -iR | less
+
+# Display 10 rows
+ls -it | head -10
+
+# Print line matched word "hello" in file.txt
+cat file.txt | grep hello
+
+# Sort output file names and print only unique file names
+grep -l int *.cpp | sort | uniq</code></pre>
                 </div>
             </div>
 
@@ -1187,12 +1445,12 @@
                 <h3># Bash Aliases</h3>
                 <p>Redefine aliases by assigning commands to words or short-names as substitutions or short-cuts.</p>
                 <h5>Synatx :</h5>
-                <div class="code-box"><code>alias short-name=&#39;[command]&#39; </code></div>
-                <p>save aliases in .bashrc file (in home dir) &amp; execute file with -</p>
-                <div class="code-box"><code>source .bashrc </code></div>
+                <div class="code-box"><code>alias short-name='[command]'</code></div>
+                <p>save aliases in .bashrc file (in home dir) & execute file with -</p>
+                <div class="code-box"><code>source .bashrc</code></div>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color"><code>alias repo=&#39;cd /document/github/repo&#39; </code></div>
+                    <pre class="code-box code-box-color"><code>alias repo='cd /document/github/repo'</code></pre>
                 </div>
             </div>
 
@@ -1212,14 +1470,14 @@
                 <h3># Regex</h3>
                 <p>Regular expressions for pattern matching.</p>
                 <ul>
-                    <li><code>grep ^The file.txt</code> : print line start with &quot;The&quot;</li>
-                    <li><code>grep The^ file.txt</code> : print line end with &quot;The&quot;</li>
-                    <li><code>grep [Hh]ello file.txt</code> : match for &quot;Hello&quot; or &quot;hello&quot; and print found</li>
+                    <li><code>grep ^The file.txt</code> : print line start with "The"</li>
+                    <li><code>grep The^ file.txt</code> : print line end with "The"</li>
+                    <li><code>grep [Hh]ello file.txt</code> : match for "Hello" or "hello" and print found</li>
                     <li><code>ls file[0-9]</code> - file1 file5 : print all with name file[0 to 9]</li>
-                    <li><code>grep &#39;[0-9][0-9][0-9][0-9]&#39; file.txt</code> : match for 4 digit number from file.txt with range 0-9</li>
+                    <li><code>grep '[0-9][0-9][0-9][0-9]' file.txt</code> : match for 4 digit number from file.txt with range 0-9</li>
                     <li><code>ls *[0-9]*</code> - file1.txt test2.sh note5.pdf test_20 : print all with contain no 0 to 9</li>
-                    <li><code>ls test.*</code> - test.txt test.pdf : print all start with &quot;test&quot;</li>
-                    <li><code>ls ab*</code> - ab.txt abcd abort.sh : print all start with &quot;ab&quot;</li>
+                    <li><code>ls test.*</code> - test.txt test.pdf : print all start with "test"</li>
+                    <li><code>ls ab*</code> - ab.txt abcd abort.sh : print all start with "ab"</li>
                     <li><code>ls {*.pdf,*.doc,*.exe}</code> - file.txt project.doc run.exe : print all with extension pdf/doc/exe</li>
                     <li><code>ls a[a-d]b</code> - abd acd : print all with name betn a[a to d]b</li>
                     <li><code>ls test_[!3]</code> - test test_2 test_4 : print all with any no except 3</li>
@@ -1230,18 +1488,18 @@
                 <h3># Grep</h3>
                 <p>Global regular expression print (grep) prints lines that match patterns from text or files.</p>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>grep -option pattern [file] </code></div>
+                <div class="code-box"><code>grep -option pattern [file]</code></div>
                 <ul>
-                    <li><code>grep hello file.txt</code> : match for &quot;hello&quot; in file.txt and print found</li>
-                    <li><code>grep -i hello file.txt</code> : match for &quot;hello&quot; in file.txt in insensitive way</li>
-                    <li><code>grep -r hello file.txt</code> : match for &quot;hello&quot; in file.txt recursively</li>
-                    <li><code>grep -v hello *</code> : match for all folders &amp; files which doesn`t have &quot;hello&quot;</li>
-                    <li><code>grep -c hello file.txt</code> : count no of occurance of &quot;hello&quot; in file.txt</li>
-                    <li><code>grep -w hello file.txt</code> : match for &quot;hello&quot; in file.txt and select only matched word lines</li>
-                    <li><code>grep -n hello file.txt</code> : match for &quot;hello&quot; in file.txt and print line number with matched lines</li>
-                    <li><code>grep -l int *.cpp</code> : suppress normal output of matched case and instead print name of each input file having match &quot;int&quot;</li>
+                    <li><code>grep hello file.txt</code> : match for "hello" in file.txt and print found</li>
+                    <li><code>grep -i hello file.txt</code> : match for "hello" in file.txt in insensitive way</li>
+                    <li><code>grep -r hello file.txt</code> : match for "hello" in file.txt recursively</li>
+                    <li><code>grep -v hello *</code> : match for all folders & files which doesn`t have "hello"</li>
+                    <li><code>grep -c hello file.txt</code> : count no of occurance of "hello" in file.txt</li>
+                    <li><code>grep -w hello file.txt</code> : match for "hello" in file.txt and select only matched word lines</li>
+                    <li><code>grep -n hello file.txt</code> : match for "hello" in file.txt and print line number with matched lines</li>
+                    <li><code>grep -l int *.cpp</code> : suppress normal output of matched case and instead print name of each input file having match "int"</li>
                     <li><code>grep -B 2 -A 3 hello file.txt</code> : print before 2 lines and after 3 lines of matched case</li>
-                    <li><code>grep -E -w &#39;hello|HELLO&#39; file.txt</code> : match for &quot;hello&quot; or &quot;HELLO&quot; in file.txt &amp; w select only matched word lines, E will treat it as regex</li>
+                    <li><code>grep -E -w 'hello|HELLO' file.txt</code> : match for "hello" or "HELLO" in file.txt & w select only matched word lines, E will treat it as regex</li>
                 </ul>
             </div>
 
@@ -1249,13 +1507,13 @@
                 <h3># Find</h3>
                 <p>Search for files in the directory hierarchy.</p>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>find path -option [file] </code></div>
+                <div class="code-box"><code>find path -option [file]</code></div>
                 <ul>
-                    <li><code>find /home/user/documents -name file.txt</code> : find &quot;file.txt&quot; and is case sensitive</li>
-                    <li><code>find . -iname file.txt</code> : find &quot;file.txt&quot; and is case insensitive</li>
-                    <li><code>find . -iname &quot;*.cpp&quot;</code> : find files with &quot;.cpp&quot; extension and is case insensitive</li>
-                    <li><code>find . -maxdepth 2 -iname &quot;*.cpp&quot;</code> : find files with &quot;.cpp&quot; extension in 2 level depth only and is case insensitive</li>
-                    <li><code>find . -not -iname &quot;*.cpp&quot;</code> : find all files except with &quot;.cpp&quot; extension and is case insensitive</li>
+                    <li><code>find /home/user/documents -name file.txt</code> : find "file.txt" and is case sensitive</li>
+                    <li><code>find . -iname file.txt</code> : find "file.txt" and is case insensitive</li>
+                    <li><code>find . -iname "*.cpp"</code> : find files with ".cpp" extension and is case insensitive</li>
+                    <li><code>find . -maxdepth 2 -iname "*.cpp"</code> : find files with ".cpp" extension in 2 level depth only and is case insensitive</li>
+                    <li><code>find . -not -iname "*.cpp"</code> : find all files except with ".cpp" extension and is case insensitive</li>
                     <li><code>find / -mtime 10</code> : find files which modified within last 10 hours</li>
                     <li><code>find / -atime 10</code> : find files whose access time is within last 10 hours</li>
                     <li><code>find / -cmin 10</code> : find files which created within last 10 min</li>
@@ -1266,10 +1524,11 @@
                 <h3># Eval</h3>
                 <p>Eval is used to execute arguments as shell command.</p>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>eval [arg ..] </code></div>
+                <div class="code-box"><code>eval [arg ..]</code></div>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color"><code>CDDOC=&quot;cd Documents&quot; eval $CDDOC </code></div>
+<pre class="code-box code-box-color"><code>CDDOC="cd Documents"
+eval $CDDOC</code></pre>
                 </div>
             </div>
 
@@ -1277,17 +1536,51 @@
                 <h3># Expr</h3>
                 <p>Expr evaluates given expression and displays its corresponding output.</p>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>expr [OPTION] [EXPRESSION] </code></div>
+                <div class="code-box"><code>expr [OPTION] [EXPRESSION]</code></div>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color">
-                        <code>
-                            # Example 1: expr 1 + 2 # Example 2: expr 2 /* 3 # Example 3: read X read Y sum=`expr $X + $Y` echo &quot;Sum = $sum&quot; # Example 4: matching numbers with &#39;=&#39; (0=false &amp; 1=true) res=`expr $x = $y`
-                            echo $res # Example 5: displays 1 when arg1 is less than arg2 res=`expr $x \&lt; $y` echo $res # Example 6: display 1 when arg1 is not equal to arg2 res=`expr $x \!= $y` echo $res # Example 7: OR operation $expr
-                            length &quot;geekss&quot; &quot;&lt;&quot; 5 &quot;|&quot; 19 - 6 &quot;&gt;&quot; 10 # Example 8: Finding length of string x=geeks len=`expr length $x` echo $len # Example 9: Finding substring of string x=geeks
-                            sub=`expr substr $x 2 3` #extract 3 characters starting from index 2 echo $su # Example 10: Check the index of character a=linuxhint b=`expr index $a t` echo $b
-                        </code>
-                    </div>
+<pre class="code-box code-box-color"><code># Example 1:
+expr 1 + 2
+
+# Example 2:
+expr 2 /* 3
+
+# Example 3:
+read X
+read Y
+sum=`expr $X + $Y`
+echo "Sum = $sum"
+
+# Example 4: matching numbers with '=' (0=false & 1=true)
+res=`expr $x = $y`
+echo $res
+
+# Example 5: displays 1 when arg1 is less than arg2
+res=`expr $x \&lt; $y`
+echo $res
+
+# Example 6: display 1 when arg1 is not equal to arg2
+res=`expr $x \!= $y`
+echo $res
+
+# Example 7: OR operation
+$expr length "geekss" "&lt;" 5 "|" 19 - 6 "&gt;" 10
+
+# Example 8: Finding length of string
+x=geeks
+len=`expr length $x`
+echo $len
+
+# Example 9: Finding substring of string
+x=geeks
+sub=`expr substr $x 2 3`
+#extract 3 characters starting from index 2
+echo $sub
+
+# Example 10: Check the index of character
+a=linuxhint
+b=`expr index $a t`
+echo $b</code></pre>
                 </div>
             </div>
 
@@ -1295,11 +1588,11 @@
                 <h3># File Permissions</h3>
                 <p>Change/Modify file permissions.</p>
                 <h5>Syntax:</h5>
-                <div class="code-box"><code>chmod user+permission [file] </code></div>
+                <div class="code-box"><code>chmod user+permission [file]</code></div>
                 <h5>Change Permission Recursively :</h5>
-                <div class="code-box"><code>chmod -R user+permission [file] </code></div>
+                <div class="code-box"><code>chmod -R user+permission [file]</code></div>
                 <h5>Format of Permission :</h5>
-                <div class="code-box"><code>-rwx r-- r-- </code></div>
+                <div class="code-box"><code>-rwx r-- r--</code></div>
                 <ol>
                     <li>1st bit is file type</li>
                     <li>2nd 3 bits are user permission</li>
@@ -1376,17 +1669,17 @@
                             <tr>
                                 <td>7</td>
                                 <td>rwx</td>
-                                <td>read, write &amp; execute</td>
+                                <td>read, write & execute</td>
                             </tr>
                             <tr>
                                 <td>6</td>
                                 <td>rw-</td>
-                                <td>read &amp; write</td>
+                                <td>read & write</td>
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td>r-x</td>
-                                <td>read &amp; execute</td>
+                                <td>read & execute</td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -1396,7 +1689,7 @@
                             <tr>
                                 <td>3</td>
                                 <td>-wx</td>
-                                <td>write &amp; execute</td>
+                                <td>write & execute</td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -1423,11 +1716,11 @@
                 </ul>
                 <div>
                     <strong>Ex -</strong>
-                    <div class="code-box code-box-color">
-                        <code>
-                            chmod u+wr-r text.txt chmod o+wrx script.sh # Using Numbers - chmod 777 file.sh
-                        </code>
-                    </div>
+<pre class="code-box code-box-color"><code>chmod u+wr-r text.txt
+chmod o+wrx script.sh
+
+# Using Numbers
+chmod 777 file.sh</code></pre>
                 </div>
             </div>
 
