@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <title>Bootstrap Cheatsheet | ItsPatkar</title>
 
         <!-- Bootstrap Libraries -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -17,7 +17,7 @@
         <script src="https://kit.fontawesome.com/e76697353a.js" crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/style.css" />
+        <link rel="stylesheet" href="assets/style.css">
     </head>
 
     <body>
@@ -70,8 +70,8 @@
                 <li><a href="#grid">Grid</a></li>
             </ul>
 
-            <hr />
-            <br />
+            <hr>
+            <br>
 
             <div class="sections" id="container-classes">
                 <h3 class="heading"># Container Classes</h3>
@@ -166,7 +166,7 @@
                 <div>
                     <h4>Lists Style :</h4>
                     <ul>
-                        <li><code>list-unstyled</code> : add to <code>&lt;ul&gt;/&lt;ol&gt;</code> to remove default list-style &amp; ml on list items (this class only applies to immediate children list items)</li>
+                        <li><code>list-unstyled</code> : add to <code>&lt;ul&gt;</code>/<code>&lt;ol&gt;</code> to remove default list-style &amp; ml on list items (this class only applies to immediate children list items)</li>
                         <li><code>list-inline</code> : place all list items on single line (used together with .list-inline-item on each <code>&lt;li&gt;</code> elements)</li>
                     </ul>
                     <h5>Ex -</h5>
@@ -219,13 +219,15 @@
     &lt;span class=&quot;float-right&quot;&gt;Float right&lt;/span&gt;
 &lt;/div&gt;
 </code></pre>
-                <h4>Responive Floats Class :</h4>
-                <ul>
-                    <li><code>float-sm|md|lg|xl-left|right</code> : float depends on screen width</li>
-                </ul>
-                <h5>Ex -</h5>
-                <pre class="code-box code-box-color"><code>&lt;div class=&quot;float-sm-right&quot;&gt;Float right on small screens or wider&lt;/div&gt;
-</code></pre>
+                <div>
+                    <h4>Responive Floats Class :</h4>
+                    <ul>
+                        <li><code>float-sm|md|lg|xl-left|right</code> : float depends on screen width</li>
+                    </ul>
+                    <h5>Ex -</h5>
+                    <pre class="code-box code-box-color"><code>&lt;div class=&quot;float-sm-right&quot;&gt;Float right on small screens or wider&lt;/div&gt;
+    </code></pre>
+                </div>
             </div>
 
             <div class="sections" id="height-and-width">
@@ -264,17 +266,17 @@
 &lt;div class=&quot;mb-sm-5 bg-warning&quot;&gt;Margin Bottom 3rem on sm screens&lt;/div&gt;
 &lt;div class=&quot;px-xl-5 bg-primary&quot;&gt;Padding on x 5 on xl screens&lt;/div&gt;
 </code></pre>
-                <h5>Center Align Element Using Margin :</h5>
-                <ul>
-                    <li>Set left &amp; right margin to auto i.e. <code>mx-auto</code></li>
-                </ul>
-                <pre class="code-box code-box-color"><code>&lt;div class=&quot;mx-auto bg-warning&quot; style=&quot;width:150px&quot;&gt;Centered&lt;/div&gt;
-</code></pre>
+                <div>
+                    <h5>Center Align Element Using Margin :</h5>
+                    <div>Set left &amp; right margin to auto i.e. <code>mx-auto</code></div>
+                    <pre class="code-box code-box-color"><code>&lt;div class=&quot;mx-auto bg-warning&quot; style=&quot;width:150px&quot;&gt;Centered&lt;/div&gt;
+    </code></pre>
+                </div>
             </div>
 
             <div class="sections" id="vertical-align">
                 <h3 class="heading"># Vertical Align</h3>
-                <p>Only for inline elements.</p>
+                <div>Only for inline elements.</div>
                 <ul>
                     <li><code>align-baseline</code> : align to line</li>
                     <li><code>align-top</code> : align above line</li>
@@ -306,7 +308,7 @@
                     <li><code>sticky-top</code> : sticks to top on scroll</li>
                 </ul>
                 <h5>Ex -</h5>
-                <p>Fixed nav-bar at top -</p>
+                <div>Fixed nav-bar at top -</div>
                 <pre class="code-box code-box-color"><code>&lt;nav class=&quot;navbar navbar-expand-sm bg-dark navbar-dark fixed-top&quot;&gt;...&lt;/nav&gt;
 </code></pre>
             </div>
@@ -433,7 +435,7 @@
                     <li><code>embed-responsive-item</code> : add to <code>&lt;video&gt;/&lt;iframe&gt;</code></li>
                 </ul>
                 <h5>Ex -</h5>
-                <p>Frame will be open is ratio 21:9 on screen -</p>
+                <div>Frame will be open is ratio 21:9 on screen -</div>
                 <pre class="code-box code-box-color"><code>&lt;div class=&quot;embed-responsive embed-responsive-21by9&quot;&gt;
     &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;...&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -528,7 +530,7 @@
                         <li><code>table-borderless</code> : removes borders from table</li>
                         <li><code>table-sm</code> : make table smaller by cutting cell padding in half</li>
                     </ul>
-                    <p>Add in <code>&lt;table&gt;</code>.</p>
+                    <div>Add in <code>&lt;table&gt;</code>.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;table class=&quot;table table-striped&quot;&gt;
     &lt;thead class=&quot;thead-dark&quot;&gt;
@@ -553,7 +555,7 @@
                         <li><code>table-responsive</code> : add scrollbar to table when needed</li>
                         <li><code>table-responsive-sm|md|lg|xl</code> : add scrollbar to table when needed depends on screen width</li>
                     </ul>
-                    <p>Add in parent <code>&lt;div&gt;</code> element of table.</p>
+                    <div>Add in parent <code>&lt;div&gt;</code> element of table.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;table-responsive&quot;&gt;
     &lt;table class=&quot;table table-bordered&quot;&gt; ... &lt;/table&gt;
@@ -566,7 +568,7 @@
                         <li><code>thead-dark</code> : add dark background to table header</li>
                         <li><code>thead-light</code> : add grey background to table header</li>
                     </ul>
-                    <p>Add in table header <code>&lt;thead&gt;</code>.</p>
+                    <div>Add in table header <code>&lt;thead&gt;</code>.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;table class=&quot;table table-striped table-sm&quot;&gt;
     &lt;thead class=&quot;thead-dark&quot;&gt;
@@ -598,7 +600,7 @@
                         <li><code>table-light</code> : light grey</li>
                         <li><code>table-dark</code> : dark grey</li>
                     </ul>
-                    <p>For row/col.</p>
+                    <div>For row/col.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;table class=&quot;table table-striped&quot;&gt;
     &lt;thead&gt;
@@ -630,9 +632,11 @@
                 <pre class="code-box code-box-color"><code>&lt;img src=&quot;cinqueterre.jpg&quot; class=&quot;rounded&quot; alt=&quot;Cinque Terre&quot;&gt;
 &lt;img src=&quot;paris.jpg&quot; class=&quot;float-left&quot;&gt;
 </code></pre>
-                <h5>Float Image To Center (Center Aligned Image) -</h5>
-                <pre class="code-box code-box-color"><code>&lt;img src=&quot;paris.jpg&quot; class=&quot;mx-auto d-block&quot;&gt;
+                <div>
+                    <h5>Float Image To Center (Center Aligned Image) -</h5>
+                    <pre class="code-box code-box-color"><code>&lt;img src=&quot;paris.jpg&quot; class=&quot;mx-auto d-block&quot;&gt;
 </code></pre>
+                </div>
             </div>
 
             <div class="sections" id="alert-box-classes">
@@ -807,9 +811,10 @@
 &lt;/div&gt;
 </code></pre>
                 </div>
-                <h5>Button Group With Dropdown List -</h5>
-                <pre class="code-box code-box-color"><code>&lt;div class=&quot;btn-group&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Apple&lt;/button&gt;
+                <div>
+                    <h5>Button Group With Dropdown List -</h5>
+                    <pre class="code-box code-box-color"><code>&lt;div class=&quot;btn-group&quot;&gt;
+     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Apple&lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Samsung&lt;/button&gt;
     &lt;div class=&quot;btn-group&quot;&gt;
         &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
@@ -820,13 +825,14 @@
             &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Smartphone&lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-                <h4>Split Button Dropdown :</h4>
-                <ul>
-                    <li><code>dropdown-toggle-split</code> : add to button for split</li>
-                </ul>
-                <pre class="code-box code-box-color"><code>&lt;div class=&quot;btn-group&quot;&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+                <div>
+                    <h4>Split Button Dropdown :</h4>
+                    <ul>
+                        <li><code>dropdown-toggle-split</code> : add to button for split</li>
+                    </ul>
+                    <pre class="code-box code-box-color"><code>&lt;div class=&quot;btn-group&quot;&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Sony&lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle dropdown-toggle-split&quot; data-toggle=&quot;dropdown&quot;&gt;
         &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
@@ -835,8 +841,8 @@
         &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Tablet&lt;/a&gt;
         &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Smartphone&lt;/a&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="badges">
@@ -903,7 +909,7 @@
                 </div>
                 <div>
                     <h4>Multiple Progress Bar :</h4>
-                    <p>Use contextual color classes for bg &amp; text color.</p>
+                    <div>Use contextual color classes for bg &amp; text color.</div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;progress&quot;&gt;
     &lt;div class=&quot;progress-bar bg-success&quot; style=&quot;width:40%&quot;&gt;
         Free Space
@@ -925,7 +931,7 @@
                     <li><code>spinner-border</code> : add to <code>&lt;div&gt;/&lt;span&gt;</code> for spinner of spinning border</li>
                 </ul>
                 <h5>Ex -</h5>
-                <p>Use contextual color classes for color.</p>
+                <div>Use contextual color classes for color.</div>
                 <pre class="code-box code-box-color"><code>&lt;div class=&quot;spinner-border text-primary&quot;&gt;&lt;/div&gt;
 </code></pre>
                 <div>
@@ -1001,7 +1007,7 @@
                 </div>
                 <div>
                     <h4>Breadcrumbs :</h4>
-                    <p>Indicates current page&#39;s location within navigational hierarchy.</p>
+                    <div>Indicates current page&#39;s location within navigational hierarchy.</div>
                     <ul>
                         <li><code>breadcrumb</code> : add to <code>&lt;ul&gt;</code></li>
                         <li><code>breadcrumb-item</code> : add to each <code>&lt;li&gt;</code></li>
@@ -1099,12 +1105,13 @@
 &lt;/ul&gt; 
 </code></pre>
                 </div>
-                <h5>Link List with Contextual Colors -</h5>
-                <pre class="code-box code-box-color"><code>&lt;div class=&quot;list-group&quot;&gt;
+                <div>
+                    <h5>Link List with Contextual Colors -</h5>
+                    <pre class="code-box code-box-color"><code>&lt;div class=&quot;list-group&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action list-group-item-dark&quot;&gt;Action item&lt;/a&gt;
     &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action list-group-item-success&quot;&gt;Success item&lt;/a&gt;
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="cards">
@@ -1122,7 +1129,7 @@
                         <li><code>card-text</code> : add add inside body for text</li>
                         <li><code>card-link</code> : add add inside body for card link</li>
                     </ul>
-                    <p>Use contextual colors for bg &amp; text colors.</p>
+                    <div>Use contextual colors for bg &amp; text colors.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;card&quot;&gt;
     &lt;div class=&quot;card-body&quot;&gt;
@@ -1188,7 +1195,7 @@
                     <ul>
                         <li><code>card-columns</code> : add to parent <code>&lt;div&gt;</code> of card to create grid of cards (like pinterest)</li>
                     </ul>
-                    <p><strong>Note :</strong> Layout will automatically adjust as insert more cards. cards are displayed vertically on small screens (&lt;576px).</p>
+                    <div><strong>Note :</strong> The layout will automatically adjust as you insert more cards. Cards are displayed vertically on small screens (&lt;576px).</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;card-columns&quot;&gt;
     &lt;div class=&quot;card bg-primary&quot;&gt;
@@ -1214,7 +1221,7 @@
                     <ul>
                         <li><code>card-deck</code> : add to parent <code>&lt;div&gt;</code> of card to create grid of cards are of equal height &amp; width</li>
                     </ul>
-                    <p><strong>Note :</strong> Layout will automatically adjust as you insert more cards. cards are displayed vertically on small screens (&lt;576px).</p>
+                    <div><strong>Note :</strong> The layout will automatically adjust as you insert more cards. Cards are displayed vertically on small screens (&lt;576px).</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;card-deck&quot;&gt;
     &lt;div class=&quot;card bg-primary&quot;&gt;
@@ -1240,7 +1247,7 @@
                     <ul>
                         <li><code>card-group</code> : add to parent <code>&lt;div&gt;</code> of card to create group of cards (same as card column &amp; deck but it removes left &amp; right margin)</li>
                     </ul>
-                    <p><strong>Note :</strong> Layout will automatically adjust as you insert more cards. cards are displayed vertically on small screens (&lt;576px) with top and bottom margin.</p>
+                    <div><strong>Note :</strong> The layout will automatically adjust as you insert more cards. Cards are displayed vertically on small screens (&lt;576px) with a top and bottom margin.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;card-group&quot;&gt;
     &lt;div class=&quot;card bg-primary&quot;&gt;
@@ -1270,8 +1277,6 @@
                     <li><code>dropdown-menu</code> : add to <code>&lt;div&gt;</code> inside dropdown for menu for dropdown</li>
                     <li><code>dropdown-item</code> : add to each <code>&lt;div&gt;</code> for dropdown items</li>
                 </ul>
-                <br />
-
                 <ul>
                     <li><code>dropdown-toggle</code> : add to <code>&lt;button&gt;/&lt;a&gt;</code> for dropdown toggle</li>
                     <li><code>data-toggle=&quot;dropdown&quot;</code> : add to <code>&lt;button&gt;/&lt;a&gt;</code> to made toggle as dropdown</li>
@@ -1363,8 +1368,9 @@
 &lt;/div&gt;
 </code></pre>
                 </div>
-                <h5>Dropup :</h5>
-                <pre class="code-box code-box-color"><code>&lt;div class=&quot;dropup&quot;&gt;
+                <div>
+                    <h4>Dropup :</h4>
+                    <pre class="code-box code-box-color"><code>&lt;div class=&quot;dropup&quot;&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
         Dropup button
     &lt;/button&gt;
@@ -1372,8 +1378,8 @@
         &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Link 1&lt;/a&gt;
         &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Link 2&lt;/a&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
+                </div>
                 <div>
                     <h4>Dropdown Text :</h4>
                     <ul>
@@ -1454,7 +1460,6 @@
                 <ul>
                     <li><code>collapse</code> : add to <code>&lt;div&gt;</code> to make collapsible element</li>
                 </ul>
-                <br />
                 <ul>
                     <li><code>data-toggle=&quot;collapse&quot;</code> : to control (show/hide) collapsible content add attribute to <code>&lt;button&gt;/&lt;a&gt;</code></li>
                     <li><code>data-target=&quot;#id&quot;</code> : add attribute to connect button with collapsible content (<code>&lt;div id=&quot;demo&quot;&gt;</code>)</li>
@@ -1467,7 +1472,7 @@
     Text Here
 &lt;/div&gt;
 </code></pre>
-                <p><strong>Note :</strong> for <code>&lt;a&gt;</code> href attribute can be used instead of data-target attribute -</p>
+                <div><strong>Note :</strong> for <code>&lt;a&gt;</code> href attribute can be used instead of data-target attribute -</div>
                 <pre class="code-box code-box-color"><code>&lt;a href=&quot;#demo&quot; data-toggle=&quot;collapse&quot;&gt;Collapsible&lt;/a&gt;
 &lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt;
     Text Here
@@ -1546,7 +1551,7 @@
                     <ul>
                         <li><code>nav-tabs</code> : add to <code>&lt;ul&gt;</code> for turn nav menu into navigation tabs</li>
                     </ul>
-                    <p>Add <code>.active</code> class to indicate active tab.</p>
+                    <div>Add <code>.active</code> class to indicate active tab.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;ul class=&quot;nav nav-tabs&quot;&gt;
     &lt;li class=&quot;nav-item&quot;&gt;
@@ -1566,7 +1571,7 @@
                     <ul>
                         <li><code>nav-pills</code> : add to <code>&lt;ul&gt;</code> for turn nav menu into navigation pills</li>
                     </ul>
-                    <p>Add <code>.active</code> class to indicate active tab.</p>
+                    <div>Add <code>.active</code> class to indicate active tab.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;ul class=&quot;nav nav-pills&quot;&gt;
     &lt;li class=&quot;nav-item&quot;&gt;
@@ -1583,7 +1588,7 @@
                 </div>
                 <div>
                     <h4>Justified Tabs/Pills :</h4>
-                    <p>Tabs or pills of equal width.</p>
+                    <div>Tabs or pills of equal width.</div>
                     <ul>
                         <li><code>nav-justified</code> : add to <code>&lt;ul&gt;</code> for nav-tabs/pills of equal width tabs</li>
                     </ul>
@@ -1593,8 +1598,27 @@
 </code></pre>
                 </div>
                 <div>
-                    <h5>Pills with Dropdown -</h5>
-                    <pre class="code-box code-box-color"><code>&lt;ul class=&quot;nav nav-pills&quot;&gt;
+                    <div>
+                        <h5>Pills with Dropdown -</h5>
+                        <pre class="code-box code-box-color"><code>&lt;ul class=&quot;nav nav-pills&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item dropdown&quot;&gt;
+        &lt;a class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Dropdown&lt;/a&gt;
+        &lt;div class=&quot;dropdown-menu&quot;&gt;
+            &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Link 1&lt;/a&gt;
+            &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Link 2&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+                    <div>
+                        <h5>Tabs with Dropdown -</h5>
+                        <pre class="code-box code-box-color"><code>&lt;ul class=&quot;nav nav-tabs&quot;&gt;
     &lt;li class=&quot;nav-item&quot;&gt;
         &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
     &lt;/li&gt;
@@ -1610,25 +1634,10 @@
     &lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-                    <h5>Tabs with Dropdown -</h5>
-                    <pre class="code-box code-box-color"><code>&lt;ul class=&quot;nav nav-tabs&quot;&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;
-        &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;nav-item dropdown&quot;&gt;
-        &lt;a class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Dropdown&lt;/a&gt;
-        &lt;div class=&quot;dropdown-menu&quot;&gt;
-            &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Link 1&lt;/a&gt;
-            &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Link 2&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-                    <h5>Toggleable / Dynamic Tabs -</h5>
-                    <pre class="code-box code-box-color"><code>&lt;!-- Nav Tabs --&gt;
+                    </div>
+                    <div>
+                        <h5>Toggleable / Dynamic Tabs -</h5>
+                        <pre class="code-box code-box-color"><code>&lt;!-- Nav Tabs --&gt;
 &lt;ul class=&quot;nav nav-tabs&quot;&gt;
     &lt;li class=&quot;nav-item&quot;&gt;
         &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
@@ -1643,8 +1652,10 @@
     &lt;div class=&quot;tab-pane container fade&quot; id=&quot;menu&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <h5>Toggleable / Dynamic Pills :</h5>
-                    <pre class="code-box code-box-color"><code>&lt;!-- Nav Pills --&gt;
+                    </div>
+                    <div>
+                        <h5>Toggleable / Dynamic Pills :</h5>
+                        <pre class="code-box code-box-color"><code>&lt;!-- Nav Pills --&gt;
 &lt;ul class=&quot;nav nav-pills&quot;&gt;
     &lt;li class=&quot;nav-item&quot;&gt;
         &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;pill&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
@@ -1659,6 +1670,7 @@
     &lt;div class=&quot;tab-pane container fade&quot; id=&quot;menu&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+                    </div>
                 </div>
             </div>
 
@@ -1673,12 +1685,10 @@
                     <li><code>navbar-dark</code> : add to <code>&lt;nav&gt;</code> for white text navbar</li>
                     <li><code>navbar-light</code> : add to <code>&lt;nav&gt;</code> for dark text navbar</li>
                 </ul>
-                <br />
-
                 <ul>
                     <li><code>active|disabled</code> : add to link <code>(&lt;a&gt;)</code> for disable|active nav-item</li>
                 </ul>
-                <p>Use contextual color class for colored navbar.</p>
+                <div>Use contextual color class for colored navbar.</div>
                 <h5>Ex -</h5>
                 <pre class="code-box code-box-color"><code>&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-light&quot;&gt;
     &lt;ul class=&quot;navbar-nav&quot;&gt;
@@ -1756,8 +1766,6 @@
                         <li><code>collapse</code> : add to parent <code>&lt;div&gt;</code> of <code>&lt;ul&gt;</code></li>
                         <li><code>navbar-collapse</code> : add to parent <code>&lt;div&gt;</code> of <code>&lt;ul&gt;</code></li>
                     </ul>
-                    <br />
-
                     <ul>
                         <li>add <code>data-toggle=&quot;collapse&quot;</code> to <code>&lt;button&gt;</code> for collapsing navbar</li>
                         <li>add <code>data-target=&quot;#thetarget&quot;</code> to <code>&lt;button&gt;</code> for selecting nav menu</li>
@@ -1793,8 +1801,9 @@
 </code></pre>
                 </div>
                 <div>
-                    <h5>Navbar With Dropdown -</h5>
-                    <pre class="code-box code-box-color"><code>&lt;nav class=&quot;navbar navbar-expand-sm bg-dark navbar-dark&quot;&gt;
+                    <div>
+                        <h5>Navbar With Dropdown -</h5>
+                        <pre class="code-box code-box-color"><code>&lt;nav class=&quot;navbar navbar-expand-sm bg-dark navbar-dark&quot;&gt;
     &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Logo&lt;/a&gt;
     &lt;ul class=&quot;navbar-nav&quot;&gt;
         &lt;li class=&quot;nav-item&quot;&gt;
@@ -1812,20 +1821,23 @@
     &lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-                    <h5>Navbar With Forms &amp; Buttons -</h5>
-                    <pre class="code-box code-box-color"><code>&lt;nav class=&quot;navbar navbar-expand-sm bg-dark navbar-dark&quot;&gt;
+                    </div>
+                    <div>
+                        <h5>Navbar With Forms &amp; Buttons -</h5>
+                        <pre class="code-box code-box-color"><code>&lt;nav class=&quot;navbar navbar-expand-sm bg-dark navbar-dark&quot;&gt;
     &lt;form class=&quot;form-inline&quot; action=&quot;/action_page.php&quot;&gt;
         &lt;input class=&quot;form-control mr-sm-2&quot; type=&quot;text&quot; placeholder=&quot;Search&quot;&gt;
         &lt;button class=&quot;btn btn-success&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;
     &lt;/form&gt;
 &lt;/nav&gt;
 </code></pre>
+                    </div>
                 </div>
             </div>
 
             <div class="sections" id="carousel">
                 <h3 class="heading"># Carousel</h3>
-                <p>Slideshow sliding through elements.</p>
+                <div>Slideshow sliding through elements.</div>
                 <ul>
                     <li><code>carousel</code> : add to <code>&lt;div&gt;</code> for creating carousel of image</li>
                     <li><code>slide</code> : add with corousel for make slide of images</li>
@@ -1998,7 +2010,7 @@
 
 &lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Hooray!&quot;&gt;Hover&lt;/a&gt;
 </code></pre>
-                <p><strong>Note :</strong> Tooltips must be initialized with jQuery, select specified element &amp; call tooltip() method. following code will enable all tooltips in document -</p>
+                <div><strong>Note :</strong> Tooltips must be initialised with jQuery; select the specified element & call the tooltip() method. The following code will enable all tooltips in the document -</div>
                 <pre class="code-box code-box-color"><code>&lt;script&gt;
 $(document).ready(function(){
     $(&#39;[data-toggle=&quot;tooltip&quot;]&#39;).tooltip();
@@ -2026,7 +2038,7 @@ $(document).ready(function(){
 
 &lt;a href=&quot;#&quot; title=&quot;Dismissible Popover&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;hover&quot; data-content=&quot;Click anywhere in document to close this popover&quot;&gt;Click&lt;/a&gt;
 </code></pre>
-                <p><strong>Note :</strong> Popovers must be initialized with jQuery, select specified element &amp; call popover() method. following code will enable all popovers in document -</p>
+                <div><strong>Note :</strong> Popovers must be initialised with jQuery, select the specified element and call the popover() method. The following code will enable all popovers in this document -</div>
                 <pre class="code-box code-box-color"><code>&lt;script&gt;
 $(document).ready(function(){
     $(&#39;[data-toggle=&quot;popover&quot;]&#39;).popover();
@@ -2065,7 +2077,7 @@ $(document).ready(function(){
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                <p><strong>Note :</strong> Toasts must be initialized with jQuery, select specified element &amp; call toast() method. following code will show all &quot;toasts&quot; in document -</p>
+                <div><strong>Note :</strong> Toasts must be initialised with jQuery; select the specified element & call the toast() method. The following code will show all "toasts" in the document -</div>
                 <pre class="code-box code-box-color"><code>&lt;script&gt;
 $(document).ready(function(){
     $(&#39;.toast&#39;).toast(&#39;show&#39;);
@@ -2081,7 +2093,7 @@ $(document).ready(function(){
                     <li><code>data-target=&quot;#id|.class&quot;</code> : add attribute to target navigation bar and set class/id</li>
                     <li><code>data-offset=&quot;value&quot;</code> : set number of pixels to offset from top when calculating position of scroll (optional)</li>
                 </ul>
-                <p><strong>Note :</strong> Scrollable element must match id/class of links inside navbar&#39;s list items (<code>&lt;div id=&quot;section1&quot;&gt;</code> matches <code>&lt;a href=&quot;#section1&quot;&gt;</code>).</p>
+                <div><strong>Note :</strong> Scrollable element must match id/class of links inside navbar&#39;s list items (<code>&lt;div id=&quot;section1&quot;&gt;</code> matches <code>&lt;a href=&quot;#section1&quot;&gt;</code>).</div>
                 <h5>Ex -</h5>
                 <pre class="code-box code-box-color"><code>&lt;body data-spy=&quot;scroll&quot; data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;
 &lt;nav class=&quot;navbar navbar-expand-sm bg-dark navbar-dark fixed-top&quot;&gt;  
@@ -2115,8 +2127,9 @@ $(document).ready(function(){
 &lt;/div&gt;
 &lt;/body&gt;
 </code></pre>
-                <h5>Vertical Navigation Bar -</h5>
-                <pre class="code-box code-box-color"><code>&lt;body data-spy=&quot;scroll&quot; data-target=&quot;#myScrollspy&quot; data-offset=&quot;1&quot;&gt;
+                <div>
+                    <h5>Vertical Navigation Bar -</h5>
+                    <pre class="code-box code-box-color"><code>&lt;body data-spy=&quot;scroll&quot; data-target=&quot;#myScrollspy&quot; data-offset=&quot;1&quot;&gt;
 &lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;nav class=&quot;col-sm-3 col-4&quot; id=&quot;myScrollspy&quot;&gt;
@@ -2151,6 +2164,7 @@ $(document).ready(function(){
 &lt;/div&gt;
 &lt;/body&gt;
 </code></pre>
+                </div>
             </div>
 
             <div class="sections" id="media-objects">
@@ -2198,7 +2212,7 @@ $(document).ready(function(){
 </code></pre>
                 </div>
                 <div>
-                    <h4>Top Middle or Bottom Alignment :</h4>
+                    <h4>Top, Middle or Bottom Alignment :</h4>
                     <h5>Media Top -</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;media&quot;&gt;
     &lt;img src=&quot;img_avatar1.png&quot; class=&quot;align-self-start mr-3&quot; style=&quot;width:60px&quot;&gt;
@@ -2286,14 +2300,13 @@ $(document).ready(function(){
                         <li><code>was-validated</code> : add to <code>&lt;form&gt;</code> for validate before submision</li>
                         <li><code>needs-validation</code> : add to <code>&lt;form&gt;</code> for validate after submision</li>
                     </ul>
-                    <br />
-
                     <ul>
                         <li><code>valid-feedback</code> : add to seperate <code>&lt;div&gt;</code> with message for feedback if form is valid</li>
                         <li><code>invalid-feedback</code> : add to seperate <code>&lt;div&gt;</code> with message for feedback if form is invalid</li>
                     </ul>
-                    <h5>Validate Before Submission -</h5>
-                    <pre class="code-box code-box-color"><code>&lt;form action=&quot;/action_page.php&quot; class=&quot;was-validated&quot;&gt;
+                    <div>
+                        <h5>Validate Before Submission -</h5>
+                        <pre class="code-box code-box-color"><code>&lt;form action=&quot;/action_page.php&quot; class=&quot;was-validated&quot;&gt;
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label for=&quot;uname&quot;&gt;Username:&lt;/label&gt;
         &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;uname&quot; placeholder=&quot;Enter username&quot; name=&quot;uname&quot; required&gt;
@@ -2316,8 +2329,10 @@ $(document).ready(function(){
     &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
 &lt;/form&gt;
 </code></pre>
-                    <h5>Validate After Submission -</h5>
-                    <pre class="code-box code-box-color"><code>&lt;form action=&quot;/action_page.php&quot; class=&quot;needs-validation&quot; novalidate&gt;
+                    </div>
+                    <div>
+                        <h5>Validate After Submission -</h5>
+                        <pre class="code-box code-box-color"><code>&lt;form action=&quot;/action_page.php&quot; class=&quot;needs-validation&quot; novalidate&gt;
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label for=&quot;uname&quot;&gt;Username:&lt;/label&gt;
         &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;uname&quot; placeholder=&quot;Enter username&quot; name=&quot;uname&quot; required&gt;
@@ -2360,6 +2375,7 @@ $(document).ready(function(){
 })();
 &lt;/script&gt;
 </code></pre>
+                    </div>
                 </div>
             </div>
 
@@ -2387,14 +2403,12 @@ $(document).ready(function(){
                     </ul>
                     <pre class="code-box code-box-color"><code>&lt;input type=&quot;text&quot; class=&quot;form-control-plaintext&quot;&gt;
 </code></pre>
-
                     <h5>Form Control File -</h5>
                     <ul>
                         <li><code>form-control-file</code> : for input type file</li>
                     </ul>
                     <pre class="code-box code-box-color"><code>&lt;input type=&quot;file&quot; class=&quot;form-control-file border&quot;&gt;
 </code></pre>
-
                     <h5>Form Control Range -</h5>
                     <ul>
                         <li><code>form-control-range</code> : for input type range</li>
@@ -2417,7 +2431,6 @@ $(document).ready(function(){
   &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt;
 &lt;/div&gt;
 </code></pre>
-
                     <h5>Textarea -</h5>
                     <ul>
                         <li><code>form-control</code> : add to <code>&lt;textarea&gt;</code></li>
@@ -2427,7 +2440,6 @@ $(document).ready(function(){
   &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 </code></pre>
-
                     <h5>Checkboxes -</h5>
                     <ul>
                         <li><code>form-check</code> : add to wrapper <code>&lt;div&gt;</code> to create checkbox</li>
@@ -2451,7 +2463,6 @@ $(document).ready(function(){
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
-
                     <h5>Inline Checkbox -</h5>
                     <ul>
                         <li><code>form-check-inline</code> : add to wrapper <code>&lt;div&gt;</code> to create inline checkboxes</li>
@@ -2472,7 +2483,6 @@ $(document).ready(function(){
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
-
                     <h5>Radio Buttons -</h5>
                     <ul>
                         <li><code>form-check</code> : add to wrapper <code>&lt;div&gt;</code> to create radio button</li>
@@ -2496,7 +2506,6 @@ $(document).ready(function(){
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
-
                     <h5>Inline Radio Buttons -</h5>
                     <ul>
                         <li><code>form-check-inline</code> : add to wrapper <code>&lt;div&gt;</code> to create inline radio buttons</li>
@@ -2517,7 +2526,6 @@ $(document).ready(function(){
   &lt;/label&gt;
 &lt;/div&gt; 
 </code></pre>
-
                     <h5>Selection Lists -</h5>
                     <ul>
                         <li><code>form-check</code> : add to wrapper <code>&lt;div&gt;</code> to create select list</li>
@@ -2701,49 +2709,56 @@ $(document).ready(function(){
 &lt;/form&gt;
 </code></pre>
                 <div>
-                    <h4>Custom Checkbox :</h4>
-                    <ul>
-                        <li><code>custom-control-input</code> : add to <code>&lt;input&gt;</code></li>
-                        <li><code>custom-checkbox</code> : add with <code>.custom-control</code> for custom checkboxes</li>
-                    </ul>
-                    <h5>Ex -</h5>
-                    <pre class="code-box code-box-color"><code>&lt;form&gt;
+                    <div>
+                        <h4>Custom Checkbox :</h4>
+                        <ul>
+                            <li><code>custom-control-input</code> : add to <code>&lt;input&gt;</code></li>
+                            <li><code>custom-checkbox</code> : add with <code>.custom-control</code> for custom checkboxes</li>
+                        </ul>
+                        <h5>Ex -</h5>
+                        <pre class="code-box code-box-color"><code>&lt;form&gt;
     &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
         &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck&quot; name=&quot;example1&quot;&gt;
         &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck&quot;&gt;Check this custom checkbox&lt;/label&gt;
     &lt;/div&gt;
 &lt;/form&gt;
 </code></pre>
-                    <h4>Custom Switch :</h4>
-                    <ul>
-                        <li><code>custom-control-input</code> : add to <code>&lt;input&gt;</code></li>
-                        <li><code>custom-switch</code> : add with <code>.custom-control</code> for custom switch</li>
-                    </ul>
-                    <pre class="code-box code-box-color"><code>&lt;form&gt;
+                    </div>
+                    <div>
+                        <h4>Custom Switch :</h4>
+                        <ul>
+                            <li><code>custom-control-input</code> : add to <code>&lt;input&gt;</code></li>
+                            <li><code>custom-switch</code> : add with <code>.custom-control</code> for custom switch</li>
+                        </ul>
+                        <pre class="code-box code-box-color"><code>&lt;form&gt;
     &lt;div class=&quot;custom-control custom-switch&quot;&gt;
         &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;switch1&quot;&gt;
         &lt;label class=&quot;custom-control-label&quot; for=&quot;switch1&quot;&gt;Toggle me&lt;/label&gt;
     &lt;/div&gt;
 &lt;/form&gt;
 </code></pre>
-                    <h4>Custom Radio buttons :</h4>
-                    <ul>
-                        <li><code>custom-control-input</code> : add to <code>&lt;input&gt;</code></li>
-                        <li><code>custom-radio</code> : add with <code>.custom-control</code> for custom radio buttons</li>
-                    </ul>
-                    <pre class="code-box code-box-color"><code>&lt;form&gt;
+                    </div>
+                    <div>
+                        <h4>Custom Radio buttons :</h4>
+                        <ul>
+                            <li><code>custom-control-input</code> : add to <code>&lt;input&gt;</code></li>
+                            <li><code>custom-radio</code> : add with <code>.custom-control</code> for custom radio buttons</li>
+                        </ul>
+                        <pre class="code-box code-box-color"><code>&lt;form&gt;
     &lt;div class=&quot;custom-control custom-radio&quot;&gt;
         &lt;input type=&quot;radio&quot; class=&quot;custom-control-input&quot; id=&quot;customRadio&quot; name=&quot;example1&quot; value=&quot;customEx&quot;&gt;
         &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio&quot;&gt;Custom radio&lt;/label&gt;
     &lt;/div&gt;
 &lt;/form&gt;
 </code></pre>
-                    <h4>Custom Select Menu :</h4>
-                    <ul>
-                        <li><code>custom-select</code> : add to <code>&lt;select&gt;</code> element for custom select menu</li>
-                        <li><code>custom-select-sm|lg</code> : add to <code>&lt;select&gt;</code> element for sizing custom select menu (default md)</li>
-                    </ul>
-                    <pre class="code-box code-box-color"><code>&lt;form&gt;
+                    </div>
+                    <div>
+                        <h4>Custom Select Menu :</h4>
+                        <ul>
+                            <li><code>custom-select</code> : add to <code>&lt;select&gt;</code> element for custom select menu</li>
+                            <li><code>custom-select-sm|lg</code> : add to <code>&lt;select&gt;</code> element for sizing custom select menu (default md)</li>
+                        </ul>
+                        <pre class="code-box code-box-color"><code>&lt;form&gt;
     &lt;select name=&quot;cars&quot; class=&quot;custom-select&quot;&gt;
         &lt;option selected&gt;Custom Select Menu&lt;/option&gt;
         &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
@@ -2752,8 +2767,8 @@ $(document).ready(function(){
     &lt;/select&gt;
 &lt;/form&gt;
 </code></pre>
-                    <h5>Small Custom Select Menu -</h5>
-                    <pre class="code-box code-box-color"><code>&lt;form&gt;
+                        <h5>Small Custom Select Menu -</h5>
+                        <pre class="code-box code-box-color"><code>&lt;form&gt;
     &lt;select name=&quot;cars&quot; class=&quot;custom-select-sm&quot;&gt;
         &lt;option selected&gt;Small Custom Select Menu&lt;/option&gt;
         &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
@@ -2762,21 +2777,25 @@ $(document).ready(function(){
     &lt;/select&gt;
 &lt;/form&gt;
 </code></pre>
-                    <h4>Custom Range :</h4>
-                    <ul>
-                        <li><code>custom-range</code> : add to <code>&lt;input&gt;</code> type range for custom range</li>
-                    </ul>
-                    <pre class="code-box code-box-color"><code>&lt;form&gt;
+                    </div>
+                    <div>
+                        <h4>Custom Range :</h4>
+                        <ul>
+                            <li><code>custom-range</code> : add to <code>&lt;input&gt;</code> type range for custom range</li>
+                        </ul>
+                        <pre class="code-box code-box-color"><code>&lt;form&gt;
     &lt;label for=&quot;customRange&quot;&gt;Custom range&lt;/label&gt;
     &lt;input type=&quot;range&quot; class=&quot;custom-range&quot; id=&quot;customRange&quot; name=&quot;points1&quot;&gt;
 &lt;/form&gt;
 </code></pre>
-                    <h4>Custom File Upload :</h4>
-                    <ul>
-                        <li><code>custom-file</code> : add to wrapper <code>&lt;div&gt;</code> element for custom file upload</li>
-                        <li><code>custom-file-input</code> : add to <code>&lt;input&gt;</code> type file for custom file upload</li>
-                    </ul>
-                    <pre class="code-box code-box-color"><code>&lt;form&gt;
+                    </div>
+                    <div>
+                        <h4>Custom File Upload :</h4>
+                        <ul>
+                            <li><code>custom-file</code> : add to wrapper <code>&lt;div&gt;</code> element for custom file upload</li>
+                            <li><code>custom-file-input</code> : add to <code>&lt;input&gt;</code> type file for custom file upload</li>
+                        </ul>
+                        <pre class="code-box code-box-color"><code>&lt;form&gt;
     &lt;div class=&quot;custom-file&quot;&gt;
         &lt;input type=&quot;file&quot; class=&quot;custom-file-input&quot; id=&quot;customFile&quot;&gt;
         &lt;label class=&quot;custom-file-label&quot; for=&quot;customFile&quot;&gt;Choose file&lt;/label&gt;
@@ -2791,6 +2810,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
 });
 &lt;/script&gt;
 </code></pre>
+                    </div>
                 </div>
             </div>
 
@@ -2800,7 +2820,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
                     <li><code>d-flex</code> : add it to <code>&lt;div&gt;</code> to create flexbox container &amp; transforms direct children into flex items</li>
                     <li><code>d-md|sm|lg|xl-flex</code> : add it to <code>&lt;div&gt;</code> to create flexbox container on specific screen size</li>
                 </ul>
-                <p><strong>Note :</strong> max columns are 12.</p>
+                <div><strong>Note :</strong> max columns are 12.</div>
                 <h5>Ex -</h5>
                 <pre class="code-box code-box-color"><code>&lt;div class=&quot;d-flex p-3 bg-secondary text-white&quot;&gt;
     &lt;div class=&quot;p-2 bg-info&quot;&gt;Flex item 1&lt;/div&gt;
@@ -2892,7 +2912,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
                     <ul>
                         <li><code>order</code> : add to flex items to change visual order of specific flex item</li>
                     </ul>
-                    <p><strong>Note :</strong> Valid classes are from 0-12, lowest number has highest priority i.e. order-1 is shown before order-2.</p>
+                    <div><strong>Note :</strong> Valid classes are from 0-12. The lowest number has the highest priority, i.e., order-1 is shown before order-2.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;d-flex bg-secondary&quot;&gt;
     &lt;div class=&quot;p-2 bg-info order-3&quot;&gt;Flex item 1&lt;/div&gt;
@@ -2903,7 +2923,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
                 </div>
                 <div>
                     <h4>Flex Wrap :</h4>
-                    <p>Controls how flex items wrap in flex container.</p>
+                    <div>Controls how flex items are wrapped in flex containers.</div>
                     <ul>
                         <li><code>flex-nowrap</code> : add with <code>d-flex</code> to no wrapping to flex container (default)</li>
                         <li><code>flex-wrap</code> : add with <code>d-flex</code> to wrap flex container</li>
@@ -2917,15 +2937,14 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
                 </div>
                 <div>
                     <h4>Auto Margins :</h4>
-                    <p>Add auto margins to flex items with <code>.mr-auto</code>, push items to right -</p>
-
+                    <div>Add auto margins to flex items with <code>.mr-auto</code>, push items to right -</div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;d-flex bg-secondary&quot;&gt;
   &lt;div class=&quot;p-2 mr-auto bg-info&quot;&gt;Flex item 1&lt;/div&gt;
   &lt;div class=&quot;p-2 bg-warning&quot;&gt;Flex item 2&lt;/div&gt;
   &lt;div class=&quot;p-2 bg-primary&quot;&gt;Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <p>Add auto margins to flex items with <code>.ml-auto</code>, push items to left -</p>
+                    <div>Add auto margins to flex items with <code>.ml-auto</code>, push items to left -</div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;d-flex bg-secondary&quot;&gt;
   &lt;div class=&quot;p-2 bg-info&quot;&gt;Flex item 1&lt;/div&gt;
   &lt;div class=&quot;p-2 bg-warning&quot;&gt;Flex item 2&lt;/div&gt;
@@ -2935,11 +2954,11 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
                 </div>
                 <div>
                     <h4>Flex Align Content :</h4>
-                    <p>Controls vertical alignment of gathered flex items.</p>
+                    <div>Controls the vertical alignment of gathered flex items.</div>
                     <ul>
                         <li><code>align-content-start|end|center|between|around|stretch</code> : add with <code>d-flex</code> for vertical alignment of gathered flex items</li>
                     </ul>
-                    <p><strong>Note :</strong> These classes have no effect on single rows of flex items.</p>
+                    <div><strong>Note :</strong> These classes have no effect on single rows of flex items.</div>
                     <h5>Ex -</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;d-flex flex-wrap align-content-start&quot;&gt;..&lt;/div&gt;
 &lt;div class=&quot;d-flex flex-wrap align-content-end&quot;&gt;..&lt;/div&gt;
@@ -2947,7 +2966,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
                 </div>
                 <div>
                     <h4>Flex Align Items :</h4>
-                    <p>Controls vertical alignment of single rows of flex items.</p>
+                    <div>Controls the vertical alignment of single rows of flex items.</div>
                     <ul>
                         <li><code>align-items-start|end|center|baseline|stretch</code> : add with <code>d-flex</code> for vertical alignment of single rows of flex items</li>
                     </ul>
@@ -2958,7 +2977,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
                 </div>
                 <div>
                     <h4>Flex Align Self :</h4>
-                    <p>Controls vertical alignment of specified flex item.</p>
+                    <div>Controls the vertical alignment of a specified flex item.</div>
                     <ul>
                         <li><code>align-self-start|end|center|baseline|stretch</code> : add with <code>d-flex</code> for vertical alignment of specified flex item</li>
                     </ul>
@@ -2972,7 +2991,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
                 </div>
                 <div>
                     <h4>Responsive Flex :</h4>
-                    <p><strong>Note :</strong> * = <code>sm|md|lg|xl</code></p>
+                    <div><strong>Note :</strong> * = <code>sm|md|lg|xl</code></div>
                     <h5>Flex Container -</h5>
                     <ul>
                         <li><code>d-*-flex</code> : creates flexbox container for different screens</li>
@@ -3063,21 +3082,21 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
                 </div>
                 <div>
                     <h5>Ex -</h5>
-                    <h5>Create unequal col of 25% 50% 25% -</h5>
+                    <h5>Create unequal col of 25% 50% 25% :</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-md-3&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;col-md-6&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;col-md-3&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <h5>Create col of equal width (auto layout col) -</h5>
+                    <h5>Create col of equal width (auto layout col) :</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-*&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;col-*&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;col-*&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <h5>Stacked to horizontal on large screens &amp; stack on top of each other on small screens -</h5>
+                    <h5>Stacked horizontally on large screens and stacked on top of each other on small screens :</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-sm-6&quot;&gt;
@@ -3089,7 +3108,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <h5>4 columns of 25% width each (auto layout col) -</h5>
+                    <h5>4 columns of 25% width each (auto layout col) :</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm&quot;&gt;1 of 4&lt;/div&gt;
     &lt;div class=&quot;col-sm&quot;&gt;2 of 4&lt;/div&gt;
@@ -3097,7 +3116,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
     &lt;div class=&quot;col-sm&quot;&gt;4 of 4&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <h5>Nested Columns -</h5>
+                    <h5>Nested Columns :</h5>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-8&quot;&gt;
         col-8
@@ -3109,9 +3128,8 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
     &lt;div class=&quot;col-4&quot;&gt;col-4&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-
-                    <h5>On Xtra Small Screen Devices -</h5>
-                    <p>Two cols of 25% 75% split on all devices (xsm, sm, md, lg, xl).</p>
+                    <h5>On Xtra Small Screen Devices :</h5>
+                    <div>Two cols of 25% 75% split on all devices (xsm, sm, md, lg, xl).</div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-3 bg-success&quot;&gt;
@@ -3124,7 +3142,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
 &lt;/div&gt;
 </code></pre>
                     <h5>On Small Screen Devices :</h5>
-                    <p>Two cols of 25% 75% split on sm (md, lg, xl) devices, on x-sm devices it will automatically stack 100% width.</p>
+                    <div>Two cols of 25% 75% split on sm (md, lg, xl) devices, on x-sm devices it will automatically stack 100% width.</div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-sm-3 bg-success&quot;&gt;
@@ -3136,11 +3154,11 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <h5>On Medium Screen Devices -</h5>
-                    <p>
+                    <h5>On Medium Screen Devices :</h5>
+                    <div>
                         On sm size, look at classes with <code>-sm-</code> in them and use those &amp; on md size look at classes with <code>-md-</code> in them and use those. 25% 75% split on sm devices &amp; 50% 50% split on md (lg, xl)
-                        devices. on x-sm devices, it will automatically stack (100%).
-                    </p>
+                        devices. on x-sm devices, it will automatically stack (100%) -
+                    </div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-sm-3 col-md-6&quot;&gt;
@@ -3152,7 +3170,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <p>Using Only Medium. md, lg, xl devices it split 50% 50%, for sm, x-sm devices t will stack vertically (100% width) -</p>
+                    <div>Using Only Medium. md, lg, xl devices it split 50% 50%, for sm, x-sm devices it will stack vertically (100% width) -</div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-md-6&quot;&gt;
         &lt;p&gt;Lorem ipsum...&lt;/p&gt;
@@ -3162,11 +3180,11 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <h5>On Large Screen Devices -</h5>
-                    <p>
+                    <h5>On Large Screen Devices :</h5>
+                    <div>
                         On sm size, look at classes with <code>-sm-</code>. on md size, look at classes with <code>-md-</code>. on lg size, look at classes with <code>-lg-</code>. 25% 75% split on sm devices, 50% 50% split on md devices
-                        &amp; 33% 66% split on lg &amp; xl devices. On x-sm devices, it will automatically stack (100%).
-                    </p>
+                        &amp; 33% 66% split on lg &amp; xl devices. On x-sm devices, it will automatically stack (100%) -
+                    </div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-sm-3 col-md-6 col-lg-4&quot;&gt;
@@ -3178,7 +3196,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <p>Using Only Large. lg &amp; xl devices split 50% 50%, for md, sm &amp; x-sm devices it will stack vertically (100% width) -</p>
+                    <div>Using Only Large. lg &amp; xl devices split 50% 50%, for md, sm &amp; x-sm devices it will stack vertically (100% width) -</div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-lg-6&quot;&gt;
@@ -3190,8 +3208,8 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <h5>On Extra Large Screen Devices -</h5>
-                    <p>25% 75% split on sm devices, 50% 50% split on md devices, 33% 66% split on lg &amp; 20% 80% split on xl devices. On x-sm devices it will automatically stack (100%).</p>
+                    <h5>On Extra Large Screen Devices :</h5>
+                    <div>25% 75% split on sm devices, 50% 50% split on md devices, 33% 66% split on lg &amp; 20% 80% split on xl devices. On x-sm devices, it will automatically stack (100%) -</div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-sm-3 col-md-6 col-lg-4 col-xl-2&quot;&gt;
@@ -3203,7 +3221,7 @@ $(&quot;.custom-file-input&quot;).on(&quot;change&quot;, function() {
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                    <p>Using Only XLarge. On xl devices split 50% 50%. for lg, md, sm, x-sm devices it will stack vertically (100% width) -</p>
+                    <div>Using Only XLarge. On xl devices, split 50% 50%. For lg, md, sm, x-sm devices, it will stack vertically (100% width) -</div>
                     <pre class="code-box code-box-color"><code>&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-xl-6&quot;&gt;
         &lt;p&gt;Lorem ipsum...&lt;/p&gt;

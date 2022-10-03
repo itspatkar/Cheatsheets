@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <title>CSS Cheatsheet | ItsPatkar</title>
 
         <!-- Bootstrap Libraries -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -17,7 +17,7 @@
         <script src="https://kit.fontawesome.com/e76697353a.js" crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/style.css" />
+        <link rel="stylesheet" href="assets/style.css">
     </head>
 
     <body>
@@ -41,8 +41,8 @@
                 <li><a href="#outline">Outline</a></li>
                 <li><a href="#shadow">Shadow</a></li>
                 <li><a href="#background">Background</a></li>
-                <li><a href="#background-gradient-linear">Background Gradient Linear</a></li>
-                <li><a href="#background-gradient-radial">Background Gradient Radial</a></li>
+                <li><a href="#background-linear-gradient">Background Gradient Linear</a></li>
+                <li><a href="#background-radial-gradient">Background Gradient Radial</a></li>
                 <li><a href="#multiple-background">Multiple Background</a></li>
                 <li><a href="#media-queries">Media Queries</a></li>
                 <li><a href="#multi-columns">Multi Columns</a></li>
@@ -55,16 +55,16 @@
                 <li><a href="#animation">Animation</a></li>
             </ul>
 
-            <hr />
-            <br />
+            <hr>
+            <br>
 
             <div class="sections" id="using-css">
                 <h3 class="heading"># Using CSS</h3>
-                <h5>Ways to insert CSS in page -</h5>
+                <h5>Inserting CSS into a page -</h5>
                 <ul>
                     <li>
                         <strong>Inline CSS :</strong>
-                        <p>Add style attribute to relevant element.</p>
+                        <div>Add the style attribute to the relevant element.</div>
                         <pre class="code-box code-box-color"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -73,10 +73,9 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
                     </li>
-
                     <li>
                         <strong>Internal CSS :</strong>
-                        <p>The internal style is defined inside <code>&lt;style&gt;</code> element, inside the head section.</p>
+                        <div>The internal style is defined by the <code>&lt;style&gt;</code> element inside the head section.</div>
                         <pre class="code-box code-box-color"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -98,7 +97,7 @@
                     </li>
                     <li>
                         <strong>External CSS :</strong>
-                        <p>Each HTML page must include reference to external style sheet file inside <code>&lt;link&gt;</code> element, inside head section.</p>
+                        <div>Each HTML page must include a reference to an external style sheet inside the <code>&lt;link&gt;</code> element inside the head section.</div>
                         <h5>HTML File -</h5>
                         <pre class="code-box code-box-color"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -197,7 +196,6 @@ h1 {
 
             <div class="sections" id="css-selectors">
                 <h3 class="heading"># CSS Selectors</h3>
-
                 <div>
                     <h4>&bull; Selectors</h4>
                     <div class="table-scroll">
@@ -300,18 +298,17 @@ h1 {
 
             <div class="sections" id="pseudo-classes">
                 <h3 class="heading"># Pseudo Classes</h3>
-                <p>Selects all with pseudo-class.</p>
-                <h5>Pseudo Class :</h5>
-                <p>
+                <div>Selects all with pseudo-class.</div>
+                <div>
+                    <strong>Pseudo Class :</strong>
                     <code>first-child|last-child|hover|active|link|visited|focus|checked|disabled|enabled|empty|required|target|invalid|not(element)</code>
-                </p>
+                </div>
                 <h5>Syntax :</h5>
                 <pre class="code-box"><code>selector : pseudo-class {
     property: value;
 }
 </code></pre>
                 <h5>Ex -</h5>
-
                 <pre class="code-box code-box-color"><code>div:hover {
     color: red;
 }
@@ -320,11 +317,11 @@ h1 {
 
             <div class="sections" id="pseudo-elements">
                 <h3 class="heading"># Pseudo Elements</h3>
-                <p>Selects &amp; Inserts content with pseudo-element.</p>
-                <h5>Pseudo Element :</h5>
-                <p>
+                <div>selects and inserts content with a pseudo-element.</div>
+                <div>
+                    <strong>Pseudo Element :</strong>
                     <code>after|before|first-letter|first-line|selection</code>
-                </p>
+                </div>
                 <h5>Syntax :</h5>
                 <pre class="code-box"><code>selector :: pseudo-element {
     property: value;
@@ -372,7 +369,7 @@ h1 {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">font: style variant weight color-name font-name</p>
+                <div class="block-quote">font: style variant weight color-name font-name</div>
                 <div>
                     <h4>&bull; Font-Face Rules :</h4>
                     <h5>Syntax :</h5>
@@ -603,7 +600,7 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">list-style: list-style-type list-style-position none</p>
+                <div class="block-quote">list-style: list-style-type list-style-position none</div>
             </div>
 
             <div class="sections" id="table">
@@ -700,7 +697,7 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">border: value style color-name</p>
+                <div class="block-quote">border: value style color-name</div>
             </div>
 
             <div class="sections" id="outline">
@@ -731,7 +728,7 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">outline: value style color-name</p>
+                <div class="block-quote">outline: value style color-name</div>
             </div>
 
             <div class="sections" id="shadow">
@@ -794,8 +791,8 @@ div {
                 </div>
             </div>
 
-            <div class="sections" id="background-gradient-linear">
-                <h3 class="heading"># Background Gradient Linear</h3>
+            <div class="sections" id="background-linear-gradient">
+                <h3 class="heading"># Background Linear Gradient</h3>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -827,8 +824,8 @@ div {
                 </div>
             </div>
 
-            <div class="sections" id="background-gradient-radial">
-                <h3 class="heading"># Background Gradient Radial</h3>
+            <div class="sections" id="background-radial-gradient">
+                <h3 class="heading"># Background Radial Gradient</h3>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -885,17 +882,20 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">background: background-image background-position background-repeat</p>
-                <p>(comma seperates multiple)</p>
+                <div class="block-quote">background: background-image background-position background-repeat</div>
+                <div>(comma seperates multiple)</div>
             </div>
 
             <div class="sections" id="media-queries">
                 <h3 class="heading"># Media Queries</h3>
-                <p><strong>Media-Types :</strong><code> all|print|screen|speech</code></p>
-                <p>
+                <div>
+                    <strong>Media-Types :</strong>
+                    <code>all|print|screen|speech</code>
+                </div>
+                <div>
                     <strong>Media-Features :</strong>
                     <code> width|resolution|overflow-inline|overflow-block|orientation|aspect-ratio|height|min-width|min-resolution|min-height|min-aspect-ratio|max-width|max-resolution|max-height|max-aspect-ratio</code>
-                </p>
+                </div>
                 <h5>Syntax :</h5>
                 <pre class="code-box"><code>@media media-types and ( media-features ) {
     property: value;
@@ -953,15 +953,13 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">column: column-rule-width column-count</p>
-                <p class="block-quote">column-rule: column-rule-width column-rule-style column-rule-color</p>
+                <div class="block-quote">column: column-rule-width column-count</div>
+                <div class="block-quote">column-rule: column-rule-width column-rule-style column-rule-color</div>
             </div>
 
             <div class="sections" id="flexbox">
                 <h3 class="heading"># Flexbox</h3>
-                <p>
-                    <strong>Note : must be <code>display: flex</code></strong>
-                </p>
+                <div><strong>Note : must be <code>display: flex</code></strong></div>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -988,7 +986,7 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">flex-flow: flex-direction flex-wrap</p>
+                <div class="block-quote">flex-flow: flex-direction flex-wrap</div>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -1015,14 +1013,12 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">flex: flex-grow flex-shrink flex-basis</p>
+                <div class="block-quote">flex: flex-grow flex-shrink flex-basis</div>
             </div>
 
             <div class="sections" id="grid-view">
                 <h3 class="heading"># Grid View</h3>
-                <p>
-                    <strong>Note : must be <code>display: grid|inline-grid</code></strong>
-                </p>
+                <div><strong>Note : must be <code>display: grid|inline-grid</code></strong></div>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -1070,9 +1066,9 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">grid-column: start | end</p>
-                <p class="block-quote">grid-row: start | end</p>
-                <p class="block-quote">grid-area: row-start | column-start | row-end | column-end</p>
+                <div class="block-quote">grid-column: start | end</div>
+                <div class="block-quote">grid-row: start | end</div>
+                <div class="block-quote">grid-area: row-start | column-start | row-end | column-end</div>
             </div>
 
             <div class="sections" id="css-filters">
@@ -1152,9 +1148,9 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">filter: blur hue-rotate()</p>
+                <div class="block-quote">filter: blur hue-rotate()</div>
                 <h5>Ex -</h5>
-                <pre class="code-box code-box-color"><code>blur(5px) hue-rotate(180deg)</code></pre>
+                <pre class="code-box code-box-color"><code>filter: blur(5px) hue-rotate(180deg)</code></pre>
             </div>
 
             <div class="sections" id="transitions">
@@ -1182,8 +1178,8 @@ div {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">transition: transition-property transition-duration transition-timing-function transition-delay</p>
-                <p>(comma seperates multiple)</p>
+                <div class="block-quote">transition: transition-property transition-duration transition-timing-function transition-delay</div>
+                <div>(comma seperates multiple)</div>
                 <h5>Ex -</h5>
                 <h5>Triggers when div elements width changes -</h5>
                 <pre class="code-box code-box-color"><code>div {
@@ -1256,8 +1252,8 @@ div:hover {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">transform: rotate(45deg) translate(100px)</p>
-                <p>(comma seperates muliple)</p>
+                <div class="block-quote">transform: rotate(45deg) translate(100px)</div>
+                <div>(comma seperates muliple)</div>
                 <h5>Ex -</h5>
                 <pre class="code-box code-box-color"><code>div {
     width: 200px;
@@ -1383,8 +1379,7 @@ div:hover {
                         </tbody>
                     </table>
                 </div>
-                <p class="block-quote">animation: anim-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction</p>
-
+                <div class="block-quote">animation: anim-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction</div>
                 <h5>Ex -</h5>
                 <h5>Change bg-color when animation is 25% complete, 50% complete &amp; 100% complete -</h5>
                 <pre class="code-box code-box-color"><code>@keyframe anim-1 {
