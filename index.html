@@ -10,71 +10,26 @@
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-        <style>
-            /* Fonts Family */
-            @font-face {
-                font-family: UbuntuMedium;
-                src: url(https://itspatkar.github.io/Cheatsheets/assets/UbuntuMedium.ttf);
-            }
-            .ubuntu-medium {
-                font-family: UbuntuMedium;
-            }
-            body {
-                padding-top: 2rem;
-                background-color: #020202;
-                color: white;
-            }
-            .title {
-                text-align: center;
-                color: #006abf;
-            }
-            .list {
-                display: block;
-                margin: 6.5px 5px;
-                padding: 5px;
-                border: 2px outset #1565c0;
-                border-radius: 6px;
-                text-align: center;
-                text-decoration: none;
-                font-size: 1.25rem;
-                background-color: #101010;
-                color: #ccc;
-            }
-            .list:hover {
-                text-decoration: none;
-                background-color: #161616;
-                color: #1e88e5;
-            }
-            .credits {
-                padding: 1.5rem;
-                text-align: center;
-                word-spacing: 3px;
-                font-size: 1.15rem;
-            }
-        </style>
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/style-index.css">
     </head>
 
     <body>
-        <div class="container">
-            <h1 class="title">#CHEATSHEETS</h1>
-            <br>
+        <div>
+            <h1 class="title font-roboto-slab">CHEATSHEETS</h1>
 
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-xl">
-                        <a class="list" href="https://itspatkar.github.io/Cheatsheets/adb_fastboot.html">ADB & Fastboot</a>
-                        <a class="list" href="https://itspatkar.github.io/Cheatsheets/bootstrap.html">Bootstrap</a>
-                        <a class="list" href="https://itspatkar.github.io/Cheatsheets/css.html">CSS</a>
-                    </div>
-                    <div class="col-xl">
-                        <a class="list" href="https://itspatkar.github.io/Cheatsheets/git.html">Git</a>
-                        <a class="list" href="https://itspatkar.github.io/Cheatsheets/html.html">HTML</a>
-                        <a class="list" href="https://itspatkar.github.io/Cheatsheets/linux.html">Linux & BASH</a>
-                    </div>
+            <div class="container font-montserrat">
+                <div class="list">
+                    <a class="list-block" href="https://itspatkar.github.io/Cheatsheets/adb_fastboot.html">ADB & Fastboot</a>
+                    <a class="list-block" href="https://itspatkar.github.io/Cheatsheets/bootstrap.html">Bootstrap</a>
+                    <a class="list-block" href="https://itspatkar.github.io/Cheatsheets/css.html">CSS</a>
+                    <a class="list-block" href="https://itspatkar.github.io/Cheatsheets/git.html">Git</a>
+                    <a class="list-block" href="https://itspatkar.github.io/Cheatsheets/html.html">HTML</a>
+                    <a class="list-block" href="https://itspatkar.github.io/Cheatsheets/linux.html">Linux & BASH</a>
                 </div>
             </div>
 
-            <div class="credits ubuntu-medium">Made by <a href="https://github.com/itspatkar" target="_blank">ItsPatkar</a></div>
+            <div class="credits font-ubuntu">Developed by <a href="https://github.com/itspatkar" target="_blank">ItsPatkar</a></div>
         </div>
     </body>
 </html>

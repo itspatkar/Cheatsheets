@@ -1,0 +1,61 @@
+/* Fonts Family */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@500&family=Ubuntu:wght@500&display=swap");
+
+.font-roboto-slab {
+    font-family: Roboto Slab;
+}
+.font-montserrat {
+    font-family: Montserrat;
+}
+.font-ubuntu {
+    font-family: Ubuntu;
+}
+
+body {
+    text-align: center;
+    background-color: #020202;
+    color: #fff;
+}
+.title {
+    margin-top: 2rem;
+    padding-bottom: 10px;
+    color: #006abf;
+}
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 15px;
+    font-size: 1.25rem;
+}
+.list-block {
+    display: block;
+    padding: 5px;
+    border: 2px outset #1565c0;
+    border-radius: 6px;
+    background-color: #101010;
+    color: #ccc;
+}
+.list-block:hover {
+    text-decoration: none;
+    background-color: #161616;
+    color: #1e88e5;
+}
+.credits {
+    padding: 5px;
+    word-spacing: 3px;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .title {
+        font-size: 2.25rem !important;
+    }
+    .list {
+        grid-template-columns: 1fr;
+        font-size: 1.2rem;
+    }
+    .credits {
+        font-size: 1rem;
+    }
+}
