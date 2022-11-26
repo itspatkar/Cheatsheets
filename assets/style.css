@@ -1,3 +1,7 @@
+p {
+    margin-bottom: 0.4rem;
+    text-align: justify;
+}
 thead {
     text-align: center;
 }
@@ -14,7 +18,7 @@ nav {
     font-size: 1.35rem;
 }
 .sections {
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     font-size: 1.25rem;
 }
 .heading {
@@ -28,7 +32,7 @@ nav {
     overflow-x: scroll;
 }
 .code-box {
-    margin: 4px auto 10px auto;
+    margin-bottom: 10px;
     padding: 6px;
     border: 1px solid #7c8e9c;
     border-radius: 5px;
@@ -51,6 +55,9 @@ nav {
 .img {
     max-height: 100%;
     max-width: 100%;
+}
+.justify {
+    text-align: justify;
 }
 
 /* Responsiveness */

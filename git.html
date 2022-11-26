@@ -75,18 +75,18 @@
                         </tbody>
                     </table>
                 </div>
-                <div><strong>Note :</strong> All global settings are saved in a file <code>.gitconfig</code> in your home directory.</div>
+                <p><strong>Note :</strong> All global settings are saved in a file <code>.gitconfig</code> in your home directory.</p>
             </div>
 
             <div class="sections" id="git-ignore-file">
                 <h3 class="heading"># Git Ignore File</h3>
-                <ul>
+                <ul class="justify">
                     <li>It is a special config file. Any files added to it will be excluded from the git repo.</li>
                     <li>This file should be in the root folder of the repository.</li>
                     <li>File name: <code>.gitignore</code></li>
                     <li><a href="https://github.com/github/gitignore">Collection of useful .gitignore templates</a></li>
                 </ul>
-                <h5>Ex:</h5>
+                <h5>Ex :</h5>
                 <pre class="code-box code-box-color"><code># setup.txt will be excluded
 setup.txt
 
@@ -207,7 +207,7 @@ bin/</code></pre>
                         </tbody>
                     </table>
                 </div>
-                <div><strong>Note :</strong> <code>HEAD</code> is a pointer which points at the current working tree and working branch.</div>
+                <p><strong>Note :</strong> <code>HEAD</code> is a pointer which points at the current working tree and working branch.</p>
             </div>
 
             <div class="sections" id="staging-and-unstaging">
@@ -319,7 +319,7 @@ bin/</code></pre>
                         </tbody>
                     </table>
                 </div>
-                <div><strong>Note :</strong> Never rebase on a public branch. Other teams may face conflicts as rebasing changes checksums.</div>
+                <p><strong>Note :</strong> Never rebase on a public branch. Other teams may face conflicts as rebasing changes checksums.</p>
             </div>
 
             <div class="sections" id="reset">
@@ -356,12 +356,12 @@ bin/</code></pre>
                         </tbody>
                     </table>
                 </div>
-                <div>
+                <p>
                     <strong>Note : <code>checkout</code> vs <code>reset</code></strong><br>
                     Git reset is specifically about updating the index and moving the HEAD.<br>
                     Git checkout is about updating the working tree to the index or the specified tree.<br>
                     It will update the HEAD only if you checkout a branch. If not, then you end up with a detached HEAD.
-                </div>
+                </p>
             </div>
 
             <div class="sections" id="push">
@@ -405,7 +405,7 @@ bin/</code></pre>
                         </tbody>
                     </table>
                 </div>
-                <div><strong>Note :</strong> Use the <code>force-with-lease</code> option instead of <code>f</code> with push.</div>
+                <p><strong>Note :</strong> Use the <code>force-with-lease</code> option instead of <code>f</code> with push.</p>
             </div>
 
             <div class="sections" id="fetch-merge-and-pull">
@@ -530,7 +530,7 @@ bin/</code></pre>
                         </tbody>
                     </table>
                 </div>
-                <div><strong>Note :</strong> It is recommended to create branches from the main branch.</div>
+                <p><strong>Note :</strong> It is recommended to create branches from the main branch.</p>
             </div>
 
             <div class="sections" id="remote">
@@ -637,7 +637,7 @@ bin/</code></pre>
                 </div>
                 <div>
                     <strong>Note :</strong>
-                    <ul>
+                    <ul class="justify">
                         <li>As in the array, the stash index begins at 0.</li>
                         <li>It is similar to a data structure stack with LIFO.</li>
                     </ul>
@@ -666,7 +666,7 @@ bin/</code></pre>
                         </tbody>
                     </table>
                 </div>
-                <div><strong>Note :</strong> Git reflog can be used to restore deleted or lost commits.</div>
+                <p><strong>Note :</strong> Git reflog can be used to restore deleted or lost commits.</p>
             </div>
 
             <div class="sections" id="tags">

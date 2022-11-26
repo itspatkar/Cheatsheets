@@ -61,7 +61,7 @@
                 <ul>
                     <li>
                         <strong>Inline CSS :</strong>
-                        <div>Add the style attribute to the relevant element.</div>
+                        <p>Add the style attribute to the relevant element.</p>
                         <pre class="code-box code-box-color"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -72,7 +72,7 @@
                     </li>
                     <li>
                         <strong>Internal CSS :</strong>
-                        <div>The internal style is defined by the <code>&lt;style&gt;</code> element inside the head section.</div>
+                        <p>The internal style is defined by the <code>&lt;style&gt;</code> element inside the head section.</p>
                         <pre class="code-box code-box-color"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -94,7 +94,7 @@
                     </li>
                     <li>
                         <strong>External CSS :</strong>
-                        <div>Each HTML page must include a reference to an external style sheet inside the <code>&lt;link&gt;</code> element inside the head section.</div>
+                        <p>Each HTML page must include a reference to an external style sheet inside the <code>&lt;link&gt;</code> element inside the head section.</p>
                         <h5>HTML File -</h5>
                         <pre class="code-box code-box-color"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -295,7 +295,7 @@ h1 {
 
             <div class="sections" id="pseudo-classes">
                 <h3 class="heading"># Pseudo Classes</h3>
-                <div>Selects all with pseudo-class.</div>
+                <p>Selects all with pseudo-class.</p>
                 <div>
                     <strong>Pseudo Class :</strong>
                     <code>first-child|last-child|hover|active|link|visited|focus|checked|disabled|enabled|empty|required|target|invalid|not(element)</code>
@@ -305,7 +305,7 @@ h1 {
     property: value;
 }
 </code></pre>
-                <h5>Ex -</h5>
+                <h5>Ex :</h5>
                 <pre class="code-box code-box-color"><code>div:hover {
     color: red;
 }
@@ -314,7 +314,7 @@ h1 {
 
             <div class="sections" id="pseudo-elements">
                 <h3 class="heading"># Pseudo Elements</h3>
-                <div>selects and inserts content with a pseudo-element.</div>
+                <p>selects and inserts content with a pseudo-element.</p>
                 <div>
                     <strong>Pseudo Element :</strong>
                     <code>after|before|first-letter|first-line|selection</code>
@@ -324,7 +324,7 @@ h1 {
     property: value;
 }
 </code></pre>
-                <h5>Ex -</h5>
+                <h5>Ex :</h5>
                 <pre class="code-box code-box-color"><code>p :: before {
     content: &quot;before p&quot;;
     color: red;
@@ -381,7 +381,7 @@ tag|selector {
    font-family: font-name;
 }
 </code></pre>
-                    <h5>Ex -</h5>
+                    <h5>Ex :</h5>
                     <pre class="code-box code-box-color"><code>@font-face {
     font-family: UbuntuCondensed;
     src: url(ubuntucondensed.ttf);
@@ -880,7 +880,7 @@ div {
                     </table>
                 </div>
                 <div class="block-quote">background: background-image background-position background-repeat</div>
-                <div>(comma seperates multiple)</div>
+                <p>(comma seperates multiple)</p>
             </div>
 
             <div class="sections" id="media-queries">
@@ -898,7 +898,7 @@ div {
     property: value;
 }
 </code></pre>
-                <h5>Ex -</h5>
+                <h5>Ex :</h5>
                 <pre class="code-box code-box-color"><code>@media screen and (min-width: 480px){
     body{
         background-color: lightgreen;
@@ -956,7 +956,7 @@ div {
 
             <div class="sections" id="flexbox">
                 <h3 class="heading"># Flexbox</h3>
-                <div><strong>Note : must be <code>display: flex</code></strong></div>
+                <p><strong>Note : must be <code>display: flex</code></strong></p>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -1015,7 +1015,7 @@ div {
 
             <div class="sections" id="grid-view">
                 <h3 class="heading"># Grid View</h3>
-                <div><strong>Note : must be <code>display: grid|inline-grid</code></strong></div>
+                <p><strong>Note : must be <code>display: grid|inline-grid</code></strong></p>
                 <div class="table-scroll">
                     <table class="table table-bordered table-hover table-striped">
                         <thead class="thead-dark">
@@ -1146,7 +1146,7 @@ div {
                     </table>
                 </div>
                 <div class="block-quote">filter: blur hue-rotate()</div>
-                <h5>Ex -</h5>
+                <h5>Ex :</h5>
                 <pre class="code-box code-box-color"><code>filter: blur(5px) hue-rotate(180deg)</code></pre>
             </div>
 
@@ -1176,9 +1176,9 @@ div {
                     </table>
                 </div>
                 <div class="block-quote">transition: transition-property transition-duration transition-timing-function transition-delay</div>
-                <div>(comma seperates multiple)</div>
-                <h5>Ex -</h5>
-                <h5>Triggers when div elements width changes -</h5>
+                <p>(comma seperates multiple)</p>
+                <h5>Ex :</h5>
+                <h5 class="justify">Triggers when div elements width changes -</h5>
                 <pre class="code-box code-box-color"><code>div {
     width: 100px;
     height: 100px;
@@ -1189,7 +1189,7 @@ div:hover {
     width: 300px;
 }
 </code></pre>
-                <h5>Transition with transform -</h5>
+                <h5 class="justify">Transition with transform -</h5>
                 <pre class="code-box code-box-color"><code>div {
     width: 100px;
     height: 100px;
@@ -1250,8 +1250,8 @@ div:hover {
                     </table>
                 </div>
                 <div class="block-quote">transform: rotate(45deg) translate(100px)</div>
-                <div>(comma seperates muliple)</div>
-                <h5>Ex -</h5>
+                <p>(comma seperates muliple)</p>
+                <h5>Ex :</h5>
                 <pre class="code-box code-box-color"><code>div {
     width: 200px;
     height: 100px;
@@ -1321,7 +1321,7 @@ div:hover {
                         </tbody>
                     </table>
                 </div>
-                <h5>Ex -</h5>
+                <h5>Ex :</h5>
                 <pre class="code-box code-box-color"><code>div {
     height: 150px;
     width: 150px;
@@ -1377,8 +1377,8 @@ div:hover {
                     </table>
                 </div>
                 <div class="block-quote">animation: anim-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction</div>
-                <h5>Ex -</h5>
-                <h5>Change bg-color when animation is 25% complete, 50% complete &amp; 100% complete -</h5>
+                <h5>Ex :</h5>
+                <h5 class="justify">Change bg-color when animation is 25% complete, 50% complete &amp; 100% complete -</h5>
                 <pre class="code-box code-box-color"><code>@keyframe anim-1 {
     0%  { background-color: red; }
     50%  { background-color: yellow; }
@@ -1393,7 +1393,7 @@ div {
     animation-duration: 4s;
 }
 </code></pre>
-                <h5>Change bg-color from red to green -</h5>
+                <h5 class="justify">Change bg-color from red to green -</h5>
                 <pre class="code-box code-box-color"><code>@keyframes anim-2 {
     from { background-color: red; }
     to { background-color: green; }
