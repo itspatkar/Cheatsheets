@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@500&family=Ubuntu:wght@500&display=swap");
 
 .font-roboto-slab {
-    font-family: Roboto Slab;
+    font-family: "Roboto Slab";
 }
 .font-montserrat {
     font-family: Montserrat;
