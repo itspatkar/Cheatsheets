@@ -39,6 +39,7 @@
                 <li><a href="#stash">Stash</a></li>
                 <li><a href="#reflog">Reflog</a></li>
                 <li><a href="#tags">Tags</a></li>
+                <li><a href="#tips">Tips</a></li>
             </ul>
 
             <hr>
@@ -701,6 +702,26 @@ bin/</code></pre>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+
+            <div class="sections" id="tips">
+                <h3 class="heading"># Tips</h3>
+                <div>
+                    <h4>&bull; Undo recent commit :</h4>
+                    <p>Undo or delete the most recent remote commit.</p>
+                    <pre class="code-box code-box-color"><code>$ git reset --hard HEAD~1
+$ git push -f</code></pre>
+                </div>
+                <div>
+                    <h4>&bull; Local to remote repo :</h4>
+                    <p>Creating a local repository and connecting to a non-empty remote repository.</p>
+                    <pre class="code-box code-box-color"><code>$ git init
+$ git remote add origin [remote-repo]
+$ git pull origin main --allow-unrelated-histories
+$ git add -A
+$ git commit -m "commit message"
+$ git push --set-upstream origin main</code></pre>
                 </div>
             </div>
 
