@@ -28,13 +28,14 @@
                 <li><a href="#linux-basics">Linux Basics</a></li>
                 <li><a href="#bash-scripts">Bash Scripts</a></li>
                 <li><a href="#variables">Variables</a></li>
+                <li><a href="#strings">Strings</a></li>
                 <li><a href="#arrays">Arrays</a></li>
                 <li><a href="#input">Input</a></li>
                 <li><a href="#output">Output</a></li>
                 <li><a href="#operators">Operators</a></li>
+                <li><a href="#escape-sequence">Escape Sequence</a></li>
                 <li><a href="#variable-substitution">Variable Substitution</a></li>
                 <li><a href="#command-substitution">Command Substitution</a></li>
-                <li><a href="#shell-substitution">Shell Substitution</a></li>
                 <li><a href="#decision">Decision Making</a></li>
                 <li><a href="#loops">Loops</a></li>
                 <li><a href="#functions">Functions</a></li>
@@ -42,7 +43,7 @@
                 <li><a href="#output-redirection">Output Redirection</a></li>
                 <li><a href="#piping">Piping</a></li>
                 <li><a href="#bash-aliases">Bash Aliases</a></li>
-                <li><a href="#bash-ranges">Bash Ranges</a></li>
+                <li><a href="#brace-expansion">Brace Expansion</a></li>
                 <li><a href="#regex">RegEx</a></li>
                 <li><a href="#grep">Grep</a></li>
                 <li><a href="#find">Find</a></li>
@@ -58,19 +59,19 @@
             <div class="sections" id="linux-basics">
                 <h3 class="heading"># Linux Basics</h3>
                 <div>
-                    <h4>&bull; Basic Commands :</h4>
+                    <h4>&bull; Shell :</h4>
                     <div class="table-scroll">
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
                                     <th>Commands</th>
-                                    <th>Info</th>
+                                    <th>Description</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><code>!!</code> or <code>!$</code></td>
-                                    <td>repeat previous command</td>
+                                    <td>execute previous command</td>
                                 </tr>
                                 <tr>
                                     <td><code>![x]</code></td>
@@ -81,36 +82,40 @@
                                     <td>run last xth command</td>
                                 </tr>
                                 <tr>
-                                    <td><code>chroot</code></td>
-                                    <td>run command/shell with special root dir</td>
+                                    <td><code>which [command]</code></td>
+                                    <td>print full path of (shell) commands</td>
+                                </tr>
+                                <tr>
+                                    <td><code>whereis [command]</code></td>
+                                    <td>locate binary, source, and manual-page files for command</td>
                                 </tr>
                                 <tr>
                                     <td><code>clear</code></td>
-                                    <td>clear screen</td>
+                                    <td>clear terminal screen</td>
                                 </tr>
                                 <tr>
                                     <td><code>exit</code></td>
-                                    <td>exit terminal</td>
+                                    <td>exit shell</td>
                                 </tr>
                                 <tr>
                                     <td><code>exit [x]</code></td>
-                                    <td>exit terminal with exit status, where x&gt;=0</td>
+                                    <td>exit shell with exit status x</td>
                                 </tr>
                                 <tr>
                                     <td><code>history</code></td>
-                                    <td>print command history</td>
+                                    <td>shell history</td>
                                 </tr>
                                 <tr>
                                     <td><code>history [x]</code></td>
-                                    <td>print last x command history</td>
-                                </tr>
-                                <tr>
-                                    <td><code>reset</code></td>
-                                    <td>resets terminal mode</td>
+                                    <td>last x shell history</td>
                                 </tr>
                                 <tr>
                                     <td><code>sleep [x]</code></td>
-                                    <td>sleep terminal for x s/m/h/d</td>
+                                    <td>sleep (pause) terminal for x sec</td>
+                                </tr>
+                                <tr>
+                                    <td><code>reset</code></td>
+                                    <td>initialize the terminal (resets terminal mode)</td>
                                 </tr>
                                 <tr>
                                     <td><code>tty</code></td>
@@ -127,140 +132,109 @@
                             <thead>
                                 <tr>
                                     <th>Commands</th>
-                                    <th>Info</th>
+                                    <th>Description</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><code>df</code></td>
-                                    <td>print disk free space</td>
+                                    <td>filesystem disk space usage</td>
                                 </tr>
                                 <tr>
                                     <td><code>du</code></td>
-                                    <td>print disk space usage</td>
+                                    <td>estimate file space usage of set of files</td>
                                 </tr>
                                 <tr>
-                                    <td><code>hostid</code></td>
-                                    <td>print numeric host identifier</td>
+                                    <td><code>free</code></td>
+                                    <td>print free and used memory in system</td>
                                 </tr>
-                                <tr>
-                                    <td><code>hostname</code></td>
-                                    <td>print name of host system</td>
-                                </tr>
-                                <tr>
-                                    <td><code>id -u</code></td>
-                                    <td>print user id (0 is root user)</td>
-                                </tr>
-                                <tr>
-                                    <td><code>kill [PID]</code></td>
-                                    <td>kill process</td>
-                                </tr>
-                                <tr>
-                                    <td><code>last reboot</code></td>
-                                    <td>show system reboot history</td>
-                                </tr>
-                                <tr>
-                                    <td><code>logout</code></td>
-                                    <td>logout active user</td>
-                                </tr>
-                                <tr>
-                                    <td><code>passwd</code></td>
-                                    <td>change password of current user</td>
-                                </tr>
-                                <tr>
-                                    <td><code>poweroff</code></td>
-                                    <td>poweroff system</td>
-                                </tr>
-                                <tr>
-                                    <td><code>ps</code></td>
-                                    <td>print currently active process</td>
-                                </tr>
-                                <tr>
-                                    <td><code>reboot</code></td>
-                                    <td>reboot system</td>
-                                </tr>
-                                <tr>
-                                    <td><code>shutdown</code></td>
-                                    <td>shutdown system</td>
-                                </tr>
-                                <tr>
-                                    <td><code>top</code></td>
-                                    <td>print running processes interactively</td>
-                                </tr>
-                                <tr>
-                                    <td><code>top -n [x]</code></td>
-                                    <td>print only x page of running processes</td>
-                                </tr>
-                                <tr>
-                                    <td><code>uname</code></td>
-                                    <td>print system OS name</td>
-                                </tr>
-                                <tr>
-                                    <td><code>uname -a</code></td>
-                                    <td>print all system OS info</td>
-                                </tr>
-                                <tr>
-                                    <td><code>uptime</code></td>
-                                    <td>show current uptime</td>
-                                </tr>
-                                <tr>
-                                    <td><code>users</code></td>
-                                    <td>print all users on system</td>
-                                </tr>
-                                <tr>
-                                    <td><code>w</code></td>
-                                    <td>print who is logged-in and what running</td>
-                                </tr>
-                                <tr>
-                                    <td><code>whereis [command]</code></td>
-                                    <td>print possible location of command</td>
-                                </tr>
-                                <tr>
-                                    <td><code>who</code></td>
-                                    <td>print all logged on users on system</td>
-                                </tr>
-                                <tr>
-                                    <td><code>whoami</code></td>
-                                    <td>print current user</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div>
-                    <h4>&bull; Hardware :</h4>
-                    <div class="table-scroll">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Commands</th>
-                                    <th>Info</th>
-                                </tr>
-                            </thead>
-                            <tbody>
                                 <tr>
                                     <td><code>arch</code></td>
                                     <td>print CPU architecture</td>
                                 </tr>
                                 <tr>
                                     <td><code>dmesg</code></td>
-                                    <td>print detected hardware and boot messages</td>
-                                </tr>
-                                <tr>
-                                    <td><code>free</code></td>
-                                    <td>print free memory</td>
+                                    <td>print or control kernel ring buffer (logs)</td>
                                 </tr>
                                 <tr>
                                     <td><code>lsblk</code></td>
-                                    <td>print block device information</td>
+                                    <td>list block devices information</td>
                                 </tr>
                                 <tr>
                                     <td><code>lspci</code></td>
-                                    <td>print PCI devices</td>
+                                    <td>list PCI devices (buses) information</td>
                                 </tr>
                                 <tr>
                                     <td><code>lsusb</code></td>
-                                    <td>print USB devices</td>
+                                    <td>list USB devices (buses) information</td>
+                                </tr>
+                                <tr>
+                                    <td><code>hostid</code></td>
+                                    <td>print numeric identifier for current host</td>
+                                </tr>
+                                <tr>
+                                    <td><code>hostname</code></td>
+                                    <td>print hostname of current system</td>
+                                </tr>
+                                <tr>
+                                    <td><code>uname</code></td>
+                                    <td>print system information</td>
+                                </tr>
+                                <tr>
+                                    <td><code>uptime</code></td>
+                                    <td>show uptime (how long the system has been running)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>poweroff</code></td>
+                                    <td>poweroff system</td>
+                                </tr>
+                                <tr>
+                                    <td><code>shutdown</code></td>
+                                    <td>shutdown system</td>
+                                </tr>
+                                <tr>
+                                    <td><code>reboot</code></td>
+                                    <td>reboot system</td>
+                                </tr>
+                                <tr>
+                                    <td><code>last reboot</code></td>
+                                    <td>print system reboot history</td>
+                                </tr>
+                                <tr>
+                                    <td><code>id</code></td>
+                                    <td>print user and group id</td>
+                                </tr>
+                                <tr>
+                                    <td><code>users</code></td>
+                                    <td>print all logged in users on system</td>
+                                </tr>
+                                <tr>
+                                    <td><code>w</code></td>
+                                    <td>print who is logged-in and what running</td>
+                                </tr>
+                                <tr>
+                                    <td><code>who</code></td>
+                                    <td>print logged in user</td>
+                                </tr>
+                                <tr>
+                                    <td><code>whoami</code></td>
+                                    <td>print current user</td>
+                                </tr>
+                                <tr>
+                                    <td><code>passwd</code></td>
+                                    <td>change user password</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ps</code></td>
+                                    <td>snapshot of current processes</td>
+                                </tr>
+                                <tr>
+                                    <td><code>top</code></td>
+                                    <td>view running system in real-time interactively</td>
+                                </tr>
+                                <tr>
+                                    <td><code>kill [PID]</code></td>
+                                    <td>kill/terminate process</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -273,41 +247,41 @@
                             <thead>
                                 <tr>
                                     <th>Commands</th>
-                                    <th>Info</th>
+                                    <th>Description</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr>
+                                    <td><code>ifconfig</code></td>
+                                    <td>Interface Configuration (ifconfig) used to configure network interfaces <b>(deprecated)</b></td>
+                                </tr>
+                                <tr>
+                                    <td><code>nslookup [URL]</code></td>
+                                    <td>Name Server Lookup (Nslookup) used to query DNS server interactively <b>(deprecated)</b></td>
+                                </tr>
+                                <tr>
+                                    <td><code>netstat</code></td>
+                                    <td>print network connections, routing tables, interface statistics, masquerade connections, multicast memberships etc <b>(deprecated)</b></td>
+                                </tr>
+                                <tr>
+                                    <td><code>route</code></td>
+                                    <td>display IP/kernel routing table <b>(deprecated)</b></td>
+                                </tr>
+                                <tr>
+                                    <td><code>traceroute [URL]</code></td>
+                                    <td>print route packets trace to network host</td>
+                                </tr>
                                 <tr>
                                     <td><code>dig</code></td>
                                     <td>Domain Information Groper (dig) used for retrieving information about DNS name servers</td>
                                 </tr>
                                 <tr>
-                                    <td><code>ifconfig</code></td>
-                                    <td>Interface Configuration (ifconfig) used to configure kernel-resident network interfaces</td>
-                                </tr>
-                                <tr>
                                     <td><code>ip</code></td>
-                                    <td>show or manipulate routing, devices, and tunnels</td>
-                                </tr>
-                                <tr>
-                                    <td><code>netstat</code></td>
-                                    <td>displays various network related information such as network connections, routing tables, interface statistics, masquerade connections, multicast memberships etc</td>
-                                </tr>
-                                <tr>
-                                    <td><code>nslookup [URL]</code></td>
-                                    <td>Name Server Lookup (Nslookup) used for getting information from DNS server</td>
+                                    <td>show or manipulate routing, network devices, and tunnels</td>
                                 </tr>
                                 <tr>
                                     <td><code>ping [URL|IP]</code></td>
-                                    <td>Packet Internet Groper (ping) used to check network connectivity between host and server/host</td>
-                                </tr>
-                                <tr>
-                                    <td><code>route</code></td>
-                                    <td>used for showing or update IP/kernel routing table and to set up static routes to specific hosts or networks via interface</td>
-                                </tr>
-                                <tr>
-                                    <td><code>traceroute [URL]</code></td>
-                                    <td>prints route that packet takes to reach host</td>
+                                    <td>Packet Internet Groper (ping) sends ICMP ECHO_REQUEST to network hosts</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -320,129 +294,93 @@
                             <thead>
                                 <tr>
                                     <th>Commands</th>
-                                    <th>Info</th>
+                                    <th>Description</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><code>cat [file]</code></td>
-                                    <td>show content of file</td>
-                                </tr>
-                                <tr>
-                                    <td><code>cd -</code></td>
-                                    <td>change to last dir & print path</td>
-                                </tr>
-                                <tr>
-                                    <td><code>cd ..</code></td>
-                                    <td>change to one level above current dir</td>
-                                </tr>
-                                <tr>
-                                    <td><code>cd</code> or <code>cd ~</code></td>
-                                    <td>change to home dir</td>
-                                </tr>
-                                <tr>
-                                    <td><code>cd [dir]</code></td>
-                                    <td>change dir</td>
-                                </tr>
-                                <tr>
-                                    <td><code>cp [source-path] [destin-path]</code></td>
-                                    <td>copy file from source to destination</td>
-                                </tr>
-                                <tr>
-                                    <td><code>cp -r [dir1] [dir2]</code></td>
-                                    <td>copy folder & its content recursively</td>
-                                </tr>
-                                <tr>
-                                    <td><code>file [file]</code></td>
-                                    <td>print file type</td>
-                                </tr>
-                                <tr>
-                                    <td><code>head [file]</code></td>
-                                    <td>show first 10 lines of file</td>
-                                </tr>
-                                <tr>
-                                    <td><code>head -[x] [file]</code></td>
-                                    <td>show first x lines of file</td>
-                                </tr>
-                                <tr>
-                                    <td><code>less [file]</code></td>
-                                    <td>paging through content one screenful at time with enhancements</td>
-                                </tr>
-                                <tr>
-                                    <td><code>link [file1] [file2]</code></td>
-                                    <td>create hard link</td>
-                                </tr>
-                                <tr>
-                                    <td><code>ln -s [/path/to/file] [/path/link]</code></td>
-                                    <td>create symbolic/soft link to file</td>
-                                </tr>
-                                <tr>
-                                    <td><code>locate [file]</code></td>
-                                    <td>locate file by name</td>
-                                </tr>
-                                <tr>
                                     <td><code>ls</code></td>
-                                    <td>list content of current dir (except hidden)</td>
-                                </tr>
-                                <tr>
-                                    <td><code>ls -a</code></td>
-                                    <td>list content of dir include hidden</td>
-                                </tr>
-                                <tr>
-                                    <td><code>ls -l</code></td>
-                                    <td>list detailed content of dir</td>
+                                    <td>list current directory contents (except hidden)</td>
                                 </tr>
                                 <tr>
                                     <td><code>ls [dir]</code></td>
-                                    <td>list content of dir</td>
+                                    <td>list directory contents</td>
                                 </tr>
                                 <tr>
-                                    <td><code>mkdir [dir]</code></td>
-                                    <td>create dir</td>
+                                    <td><code>ls -a</code></td>
+                                    <td>list directory contents include hidden</td>
                                 </tr>
                                 <tr>
-                                    <td><code>mkdir -p [dir1]/[dir2]</code></td>
-                                    <td>create dir2 inside non-existing dir1</td>
-                                </tr>
-                                <tr>
-                                    <td><code>more [file]</code></td>
-                                    <td>paging through content one screenful at time (it is primitive, use less instead)</td>
-                                </tr>
-                                <tr>
-                                    <td><code>mv [source/old] [destin/new]</code></td>
-                                    <td>rename OR move file/dir</td>
-                                </tr>
-                                <tr>
-                                    <td><code>nl [file]</code></td>
-                                    <td>print line no at each line</td>
+                                    <td><code>ls -l</code></td>
+                                    <td>list directory contents in detailed format</td>
                                 </tr>
                                 <tr>
                                     <td><code>pwd</code></td>
-                                    <td>print current working dir (full path)</td>
+                                    <td>print current/working directory (full path)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>cd [dir]</code></td>
+                                    <td>change directory</td>
+                                </tr>
+                                <tr>
+                                    <td><code>cd -</code></td>
+                                    <td>change to last directory</td>
+                                </tr>
+                                <tr>
+                                    <td><code>cd ..</code></td>
+                                    <td>change to one level above current directory</td>
+                                </tr>
+                                <tr>
+                                    <td><code>cd</code> or <code>cd ~</code></td>
+                                    <td>change to home directory</td>
+                                </tr>
+                                <tr>
+                                    <td><code>mkdir [dir]</code></td>
+                                    <td>create directory</td>
+                                </tr>
+                                <tr>
+                                    <td><code>mkdir -p [dir1]/[dir2]</code></td>
+                                    <td>create directory inside non-existing parent directory</td>
+                                </tr>
+                                <tr>
+                                    <td><code>rmdir [dir]</code></td>
+                                    <td>remove empty directory</td>
+                                </tr>
+                                <tr>
+                                    <td><code>cp [source] [destin]</code></td>
+                                    <td>copy files and directories from source to destination</td>
+                                </tr>
+                                <tr>
+                                    <td><code>cp -r [dir1] [dir2]</code></td>
+                                    <td>copy directories & its content recursively</td>
+                                </tr>
+                                <tr>
+                                    <td><code>mv [source/old] [destin/new]</code></td>
+                                    <td>rename or move file and directory</td>
                                 </tr>
                                 <tr>
                                     <td><code>rm [file]</code></td>
-                                    <td>remove file</td>
+                                    <td>remove files</td>
                                 </tr>
                                 <tr>
-                                    <td><code>rm -rf [file]</code></td>
-                                    <td>remove empty/non-empty file & dir</td>
+                                    <td><code>rm -r [file]</code></td>
+                                    <td>remove files/directories & its content recursively</td>
                                 </tr>
                                 <tr>
-                                    <td><code>rmdir dir</code></td>
-                                    <td>remove empty dir</td>
-                                </tr>
-                                <tr>
-                                    <td><code>sort [file]</code></td>
-                                    <td>display content in alphabetical sort</td>
-                                </tr>
-                                <tr>
-                                    <td><code>stat [file]</code></td>
-                                    <td>display file/file-system stats</td>
+                                    <td><code>cat [file]</code></td>
+                                    <td>concatenate and print files on standard output</td>
                                 </tr>
                                 <tr>
                                     <td><code>tac [file]</code></td>
-                                    <td>show content in reverse by line</td>
+                                    <td>concatenate and print files in reverse</td>
+                                </tr>
+                                <tr>
+                                    <td><code>head [file]</code></td>
+                                    <td>print first 10 lines of file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>head -[x] [file]</code></td>
+                                    <td>print first x lines of file</td>
                                 </tr>
                                 <tr>
                                     <td><code>tail [file]</code></td>
@@ -453,36 +391,72 @@
                                     <td>show last x lines of file</td>
                                 </tr>
                                 <tr>
+                                    <td><code>more [file]</code></td>
+                                    <td>paging through content one screenful at time <b>(it is primitive, use less instead)</b></td>
+                                </tr>
+                                <tr>
+                                    <td><code>less [file]</code></td>
+                                    <td>paging through content one screenful at time with enhancements</td>
+                                </tr>
+                                <tr>
+                                    <td><code>nl [file]</code></td>
+                                    <td>number lines of files</td>
+                                </tr>
+                                <tr>
                                     <td><code>touch [file]</code></td>
-                                    <td>change modification and access time of file (create file if not exists)</td>
+                                    <td>update modification and access time of file (create if not exist)</td>
                                 </tr>
                                 <tr>
                                     <td><code>touch -c [file]</code></td>
-                                    <td>modify access time if file exist but doesn`t create new file</td>
+                                    <td>update modification and access time of file but do not create new file</td>
                                 </tr>
                                 <tr>
-                                    <td><code>tree [dir]</code></td>
-                                    <td>print directory tree</td>
+                                    <td><code>sort [file]</code></td>
+                                    <td>sort lines of text files (default alphabetical order)</td>
                                 </tr>
                                 <tr>
                                     <td><code>uniq [file]</code></td>
-                                    <td>print unique line from sorted file (suppress duplicate lines)</td>
+                                    <td>filter adjacent matching (duplicate) lines from files</td>
                                 </tr>
                                 <tr>
                                     <td><code>wc [file]</code></td>
-                                    <td>print line, word, byte counts</td>
+                                    <td>print line, word and byte counts of files</td>
                                 </tr>
                                 <tr>
                                     <td><code>wc -l [file]</code></td>
-                                    <td>count no lines (<code>l-line, m-char, c-byte, w-word</code>)</td>
+                                    <td>print lines count (<code>l-line, m-char, c-byte, w-word</code>)</td>
                                 </tr>
                                 <tr>
-                                    <td><code>wget [file]</code></td>
-                                    <td>download file (over network)</td>
+                                    <td><code>tree [dir]</code></td>
+                                    <td>list contents of directories in trees format</td>
                                 </tr>
                                 <tr>
-                                    <td><code>which [command]</code></td>
-                                    <td>show command full path on system</td>
+                                    <td><code>file [file]</code></td>
+                                    <td>print file type</td>
+                                </tr>
+                                <tr>
+                                    <td><code>stat [file]</code></td>
+                                    <td>display file or file-system status</td>
+                                </tr>
+                                <tr>
+                                    <td><code>locate [file]</code></td>
+                                    <td>search for entries (files) in locate database</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ln [file] [link]</code></td>
+                                    <td>create hard link to file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ln -s [file] [link]</code></td>
+                                    <td>create symbolic/soft link to file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>wget [URL]</code></td>
+                                    <td>non-interactive network retriever (downloader)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>curl [URL]</code></td>
+                                    <td>transfers data from or to server</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -492,13 +466,16 @@
 
             <div class="sections" id="bash-scripts">
                 <h3 class="heading"># Bash Scripts</h3>
-                <p>A Bash script is a plain text file that contains a series of commands which are executed in sequence.</p>
-                <ul>
-                    <li>Scripts have <code>.sh</code> extension, i.e., <code>script.sh</code></li>
-                    <li>Scripts start with the Shell Bang, i.e., <code>#!/bin/sh</code></li>
-                </ul>
-                <h5>Executing Scripts :</h5>
-                <p><strong>Note :</strong> The script must have executable permission.</p>
+                <p>A Bash script is a plain text file that contains a series of commands that are executed in sequence. Scripts have <code>.sh</code> extension (for example: <code>script.sh</code>). Shell scripts begin with the shebang (<code>#!/bin/sh</code>), which tells the system which shell interpreter to use to run the script.</p>
+                <h5>Ex :</h5>
+                <pre class="code-box code-box-color"><code>#!/bin/bash
+
+mkdir Docs
+cp doc1.txt Docs/
+rm doc1.txt
+clear</code></pre>
+                <h4>Executing Scripts :</h4>
+                <p><b>Note :</b> The script must have executable permission.</p>
                 <pre class="code-box"><code>./[script]
 sh [script]
 bash [script]
@@ -512,31 +489,48 @@ bash script.sh</code></pre>
 
             <div class="sections" id="variables">
                 <h3 class="heading"># Variables</h3>
-                <h5>Declare Variable :</h5>
-                <pre class="code-box"><code>greet="Hello"
-num=17
-month=“Jan Feb Mar Apr May”</code></pre>
-                <h5>Access Value :</h5>
+                <h5>Declaring :</h5>
+                <pre class="code-box"><code>greet="Hello World"
+num=17</code></pre>
+                <h5>Access :</h5>
                 <pre class="code-box"><code>echo $greet
-echo ${num}</code></pre>
+echo "Number is ${num}"</code></pre>
+                <h5>Read-Only Variable :</h5>
+                <div class="code-box"><code>readonly COUNT = 1</code></div>
                 <h5>Remove Variable :</h5>
                 <div class="code-box"><code>unset num</code></div>
-                <h5>Read-only Variable :</h5>
-                <div class="code-box"><code>readonly count = 1;</code></div>
+            </div>
+
+            <div class="sections" id="strings">
+                <h3 class="heading"># Strings</h3>
+                <h5>Declaring :</h5>
+                <div class="code-box"><code>greet="Hello World"</code></div>
+                <h5>Access :</h5>
+                <div class="code-box"><code>echo $greet</code></div>
+                <h5>Length of string :</h5>
+                <div class="code-box"><code>echo ${#greet}</code></div>
+                <h5>String Replace :</h5>
+                <pre class="code-box"><code>greet="Hello World"
+echo "Before: $greet"
+greet=${greet/World/Universe}
+echo "After: $greet"</code></pre>
             </div>
 
             <div class="sections" id="arrays">
                 <h3 class="heading"># Arrays</h3>
-                <h5>Declare Array :</h5>
-                <div class="code-box"><code>intro=("I" "am" "Mandar" 17 )</code></div>
-                <h5>Input Array :</h5>
-                <div class="code-box"><code>read -a array</code></div>
-                <h5>Assign Value :</h5>
-                <div class="code-box"><code>greet[0]="Hello"</code></div>
-                <h5>Access Array Element :</h5>
-                <div class="code-box"><code>echo ${intro[0]}</code></div>
-                <h5>Length Of Array :</h5>
-                <div class="code-box"><code>echo ${#intro[@]}</code></div>
+                <h5>Declaring :</h5>
+                <pre class="code-box"><code>declare -a fruits
+fruits=(apple mango banana orange)</code></pre>
+                <h5>Input :</h5>
+                <div class="code-box"><code>read -a fruits</code></div>
+                <h5>Indexing :</h5>
+                <div class="code-box"><code>fruits[0]="grapes"</code></div>
+                <h5>Access Element :</h5>
+                <div class="code-box"><code>echo ${fruits[0]}</code></div>
+                <h5>Print All Elements :</h5>
+                <div class="code-box"><code>echo ${fruits[@]}</code></div>
+                <h5>Length of Array :</h5>
+                <div class="code-box"><code>echo ${#fruits[@]}</code></div>
             </div>
 
             <div class="sections" id="input">
@@ -544,9 +538,9 @@ echo ${num}</code></pre>
                 <h5>Input (STDIN) :</h5>
                 <div class="code-box"><code>read [var]</code></div>
                 <h5>Prompt Input :</h5>
-                <div class="code-box"><code>read -p 'Username : ' [var]</code></div>
+                <div class="code-box"><code>read -p "Username : " [var]</code></div>
                 <h5>Secure Prompt Input :</h5>
-                <div class="code-box"><code>read -sp 'Password : ' [var]</code></div>
+                <div class="code-box"><code>read -sp "Password : " [var]</code></div>
                 <h5>Input x Char :</h5>
                 <div class="code-box"><code>read -n [x] [var]</code></div>
                 <h5>Array Input :</h5>
@@ -555,12 +549,20 @@ echo ${num}</code></pre>
 
             <div class="sections" id="output">
                 <h3 class="heading"># Output</h3>
-                <h5>Print Message (STDOUT) :</h5>
-                <div class="code-box"><code>echo "Message"</code></div>
-                <h5>Special char in echo :</h5>
-                <div class="code-box"><code>echo -e "\n Message"</code></div>
-                <h5>Print Message (STDOUT) :</h5>
-                <div class="code-box"><code>printf "Message"</code></div>
+                <h5>Print (STDOUT) :</h5>
+                <p>The <code>echo</code> prints output followed by a new line character.</p>
+                <pre class="code-box"><code>echo "Hello World"
+
+msg="Hello World"
+echo $msg
+echo "Hii, ${msg}"</code></pre>
+                <h5>Enable Backslash Escapes :</h5>
+                <div class="code-box"><code>echo -e "\n Hello World"</code></div>
+                <h5>Special Char in Output :</h5>
+                <div class="code-box"><code>echo '$Hello World'</code></div>
+                <h5>Print (STDOUT) :</h5>
+                <p>The <code>printf</code> prints output in the specified format; it does not append an implied newline.</p>
+                <div class="code-box"><code>printf "Hello World"</code></div>
             </div>
 
             <div class="sections" id="operators">
@@ -607,7 +609,7 @@ echo ${num}</code></pre>
                             </tbody>
                         </table>
                     </div>
-                    <p>Arithmetic operations should be in double braces: <code>count=$((count+1))</code></p>
+                    <p><b>Note :</b> Arithmetic operations should be in double braces: <code>count=$((count+1))</code></p>
                 </div>
 
                 <div>
@@ -622,15 +624,15 @@ echo ${num}</code></pre>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><code>! [expression]</code></td>
+                                    <td><code>![expr]</code></td>
                                     <td>not</td>
                                 </tr>
                                 <tr>
-                                    <td><code>[expression] || [expression]</code> or <code>[expression] -o [expression]</code></td>
+                                    <td><code>[expr] || [expr]</code> or <code>[expr] -o [expr]</code></td>
                                     <td>or</td>
                                 </tr>
                                 <tr>
-                                    <td><code>[expression] && [expression]</code> or <code>[expression] -a [expression]</code></td>
+                                    <td><code>[expr] && [expr]</code> or <code>[expr] -a [expr]</code></td>
                                     <td>and</td>
                                 </tr>
                             </tbody>
@@ -651,33 +653,33 @@ echo ${num}</code></pre>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><code>[expression] -eq [expression]</code></td>
+                                    <td><code>[expr] -eq [expr]</code></td>
                                     <td>equal</td>
                                 </tr>
                                 <tr>
-                                    <td><code>[expression] -ne [expression]</code></td>
+                                    <td><code>[expr] -ne [expr]</code></td>
                                     <td>not equal</td>
                                 </tr>
                                 <tr>
-                                    <td><code>[expression] -gt [expression]</code></td>
+                                    <td><code>[expr] -gt [expr]</code></td>
                                     <td>greater than</td>
                                 </tr>
                                 <tr>
-                                    <td><code>[expression] -lt [expression]</code></td>
+                                    <td><code>[expr] -lt [expr]</code></td>
                                     <td>less than</td>
                                 </tr>
                                 <tr>
-                                    <td><code>[expression] -ge [expression]</code></td>
+                                    <td><code>[expr] -ge [expr]</code></td>
                                     <td>greater than or equal</td>
                                 </tr>
                                 <tr>
-                                    <td><code>[expression] -le [expression]</code></td>
+                                    <td><code>[expr] -le [expr]</code></td>
                                     <td>less than or equal</td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                    <h5>Ex :</h5>
+                    </div
+                   <h5>Ex :</h5>
                     <pre class="code-box code-box-color"><code>if [ 80 -gt 40 ]
 then
     echo "Greater"
@@ -697,15 +699,15 @@ fi</code></pre>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><code>[string1] = [string2]</code></td>
+                                    <td><code>[string] = [string]</code></td>
                                     <td>equal</td>
                                 </tr>
                                 <tr>
-                                    <td><code>[string1] != [string2]</code></td>
+                                    <td><code>[string] != [string]</code></td>
                                     <td>not equal</td>
                                 </tr>
                                 <tr>
-                                    <td><code>[string1] == [string2]</code></td>
+                                    <td><code>[string] == [string]</code></td>
                                     <td>equal for pattern matching</td>
                                 </tr>
                                 <tr>
@@ -722,9 +724,9 @@ fi</code></pre>
                     <h5>Ex :</h5>
                     <pre class="code-box code-box-color"><code>if [ "Hello" = "Hi" ]
 then
-    echo "Same"
+    echo "Matched"
 else
-    echo "Different"
+    echo "Not Matched"
 fi</code></pre>
                 </div>
 
@@ -741,11 +743,11 @@ fi</code></pre>
                             <tbody>
                                 <tr>
                                     <td><code>[string] &gt; [string]</code></td>
-                                    <td>left string is greater than right in alphabetical order</td>
+                                    <td>true if left string is greater than right in alphabetical order</td>
                                 </tr>
                                 <tr>
                                     <td><code>[string] &lt; [string]</code></td>
-                                    <td>right string is greater than left string in alphabetical order</td>
+                                    <td>true if right string is greater than left string in alphabetical order</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -808,7 +810,7 @@ then
     echo "text.txt exists and it is regular file."
 fi</code></pre>
                     <p>
-                        <strong>Note :</strong>
+                        <b>Note :</b>
                         <ul>
                             <li>Expressions can be grouped with <code>( [expression] )</code></li>
                             <li>Conditional expressions must be in square braces <code>[]</code></li>
@@ -818,83 +820,14 @@ fi</code></pre>
                 </div>
             </div>
 
-            <div class="sections" id="variable-substitution">
-                <h3 class="heading"># Variable Substitution</h3>
-                <div class="table-scroll">
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Var</th>
-                                <th>Info</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>${var}</code></td>
-                                <td>substitute value</td>
-                            </tr>
-                            <tr>
-                                <td><code>${var:-word}</code></td>
-                                <td>If var is null or unset, word is substituted for var. Value of var does not change</td>
-                            </tr>
-                            <tr>
-                                <td><code>${var:=word}</code></td>
-                                <td>If var is null or unset, var is set to value of word</td>
-                            </tr>
-                            <tr>
-                                <td><code>${var:?message}</code></td>
-                                <td>If var is null or unset, message is printed to standard error. This checks that variables are set correctly</td>
-                            </tr>
-                            <tr>
-                                <td><code>${var:+word}</code></td>
-                                <td>If var is set, word is substituted for var. Value of var does not change</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="sections" id="command-substitution">
-                <h3 class="heading"># Command Substitution</h3>
-                <div>
-                    <h4>&bull; Back-Quote :</h4>
-                    <h5>Syntax :</h5>
-                    <div class="code-box"><code>`[command]`</code></div>
-
-                    <h5>Ex :</h5>
-                    <pre class="code-box code-box-color"><code># Example 1:
-DATE=`date`
-echo "Date is $DATE"
-
-# Example 2:
-USERS=`who | wc -l`
-echo "Logged in user are $USERS"</code></pre>
-                </div>
-
-                <div>
-                    <h4>&bull; Dollor Sign & Parenthesis :</h4>
-                    <h5>Syntax :</h5>
-                    <div class="code-box"><code>$([command])</code></div>
-                    <h5>Ex :</h5>
-                    <pre class="code-box code-box-color"><code># Example 1:
-echo "Today is $(date)"
-
-# Example 2:
-for i in $(cat file.txt)
-do
-    echo "$i"
-done</code></pre>
-                </div>
-            </div>
-
-            <div class="sections" id="shell-substitution">
-                <h3 class="heading"># Shell Substitution</h3>
+            <div class="sections" id="escape-sequence">
+                <h3 class="heading"># Escape Sequence</h3>
                 <div class="table-scroll">
                     <table class="table table-bordered table-striped">
                         <thead>
                             <tr>
                                 <th>Escape</th>
-                                <th>Info</th>
+                                <th>Description</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -939,6 +872,76 @@ done</code></pre>
                 </div>
             </div>
 
+            <div class="sections" id="variable-substitution">
+                <h3 class="heading"># Variable Substitution</h3>
+                <div class="table-scroll">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Var</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>${x}</code></td>
+                                <td>substitute value of variable x</td>
+                            </tr>
+                            <tr>
+                                <td><code>${x:+y}</code></td>
+                                <td>if x is set, y is substituted for x. (value of x does not change)</td>
+                            </tr>
+                            <tr>
+                                <td><code>${x:-y}</code></td>
+                                <td>if x is null or unset, y is substituted for x. (value of x does not change)</td>
+                            </tr>
+                            <tr>
+                                <td><code>${x:=y}</code></td>
+                                <td>if x is null or unset, x is set to value of y.</td>
+                            </tr>
+                            <tr>
+                                <td><code>${x:?y}</code></td>
+                                <td>if x is null or unset, y is printed to standard error.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="sections" id="command-substitution">
+                <h3 class="heading"># Command Substitution</h3>
+                <p>Command substitution allows the output of a command to replace the command itself. Using a backquote is old-style; instead, the second form is recommended.</p>
+                <div>
+                    <h4>&bull; Back-Quote :</h4>
+                    <h5>Syntax :</h5>
+                    <div class="code-box"><code>`[command]`</code></div>
+
+                    <h5>Ex :</h5>
+                    <pre class="code-box code-box-color"><code># Example 1:
+DATE=`date`
+echo "Date is $DATE"
+
+# Example 2:
+USERS=`who | wc -l`
+echo "Logged in user are $USERS"</code></pre>
+                </div>
+
+                <div>
+                    <h4>&bull; Dollor Sign & Parenthesis :</h4>
+                    <h5>Syntax :</h5>
+                    <div class="code-box"><code>$([command])</code></div>
+                    <h5>Ex :</h5>
+                    <pre class="code-box code-box-color"><code># Example 1:
+echo "Today is $(date)"
+
+# Example 2:
+for i in $(cat file.txt)
+do
+    echo "$i"
+done</code></pre>
+                </div>
+            </div>
+
             <div class="sections" id="decision">
                 <h3 class="heading"># Decision Making</h3>
                 <div>
@@ -962,7 +965,8 @@ then
 fi</code></pre>
 
                     <h5>Ex :</h5>
-                    <pre class="code-box code-box-color"><code>if [ "$X" = "y" ] || [ "$X" = "Y" ]
+                    <pre class="code-box code-box-color"><code>x="Y"
+if [ "$x" = "y" ] || [ "$x" = "Y" ]
 then
     echo "YES"
 fi</code></pre>
@@ -979,7 +983,8 @@ else
 fi</code></pre>
 
                     <h5>Ex :</h5>
-                    <pre class="code-box code-box-color"><code>if [ $name = "mandar" ]
+                    <pre class="code-box code-box-color"><code>name="admin"
+if [ $name = "admin" ]
 then
     echo "Hello BOSS"
 else
@@ -1001,23 +1006,28 @@ else
 fi</code></pre>
 
                     <h5>Ex :</h5>
-                    <pre class="code-box code-box-color"><code># Example 1
-if [ $X -lt $Y ]
+                    <pre class="code-box code-box-color"><code># Example 1:
+x=10
+y=20
+if [ $x -lt $y ]
 then
     echo "X is less than Y"
-elif [ $X -gt $Y ]
+elif [ $x -gt $y ]
 then
     echo "X is greater than Y"
-elif [ $X -eq $Y ]
+elif [ $x -eq $y ]
 then
     echo "X is equal to Y"
 fi
 
-# Example 2
-if [ $X -eq $Y ] && [ $X -eq $Z ]
+# Example 2:
+a=3
+b=3
+c=3
+if [ $a -eq $b ] && [ $a -eq $c ]
 then
     echo "Equilateral"
-elif [ $X -eq $Y ] || [ $Y -eq $Z ] || [ $X -eq $Z ]
+elif [ $a -eq $b ] || [ $b -eq $c ] || [ $a -eq $c ]
 then
     echo "Isosceles"
 else
@@ -1028,11 +1038,14 @@ fi</code></pre>
                 <div>
                     <h4>&bull; Switch Statement :</h4>
                     <h5>Syntax :</h5>
-                    <pre class="code-box"><code>case "$var" in
-"case 1")
+                    <pre class="code-box"><code>case [var] in
+case-1)
     #Statement
     ;;
-"case 2")
+case-2)
+    #Statement
+    ;;
+case-3)
     #Statement
     ;;
 *)
@@ -1040,18 +1053,19 @@ fi</code></pre>
     ;;
 esac</code></pre>
                     <h5>Ex :</h5>
-                    <pre class="code-box code-box-color"><code>case $DRINK in
-tea|cofee|water|all)
+                    <pre class="code-box code-box-color"><code>drink="tea"
+case $drink in
+tea|cofee|water)
     echo "Go to canteen"
     ;;
-juice|apple)
-    echo "Available at home"
+orange|apple)
+    echo "Go to fruit market"
     ;;
 none)
-    break
+    echo "Okay"
     ;;
 *)
-    echo "ERROR: Invalid selection"
+    echo "ERROR: Invalid Selection"
     ;;
 esac</code></pre>
                 </div>
@@ -1072,7 +1086,7 @@ done</code></pre>
 count=0
 while [ $count -lt 5 ]
 do
-    echo "hello"
+    echo "Hello World"
     count=$((count+1))
 done
 
@@ -1080,7 +1094,7 @@ done
 count=0
 while [ $count -lt 5 ]
 do
-    echo "hello"
+    echo "Hello World"
     ((count++))
 done
 
@@ -1090,26 +1104,25 @@ do
     echo $line
 done
 
-# Example 3 - read while loop
+# Example 3: read while loop
 while read line
 do
     echo $line
 done &lt; file.txt
 
-# Example 4 - infinite loop
-while true # 1 instead of true also works
+# Example 4: infinite loop
+while true
 do
-    echo "infinite loop"
+    echo "Infinite Loop..."
 done
 
 # Example 5: infinite loop
 while :
 do
-    echo
-    "infinite loop"
+    echo "Infinite Loop..."
 done
 
-# Example 6: factorial
+# Example 6: factorial - pass number as command argument
 counter=$1
 factorial=1
 while [ $counter -gt 0 ]
@@ -1136,18 +1149,20 @@ done</code></pre>
                     <h5>Ex :</h5>
                     <pre class="code-box code-box-color"><code># Example 1: input array & print
 read -a array
+count=1
 for i in ${array[@]}
 do
-    echo "input is $i"
+    echo "Element $count : $i"
+    ((count++))
 done
 
-# Example 2
+# Example 2:
 for i in 1 2 3 4 5
 do
     echo $i
 done
 
-# Example 3
+# Example 3:
 for i in {1..25}
 do
     echo $i
@@ -1159,40 +1174,34 @@ do
     echo $i
 done
 
-# Example 5: increment by 2 from 0 to 20
-for i in $(seq 0 2 20)
+# OR using seq - increment by 2 from 0 to 10
+for i in $(seq 0 2 10)
 do
     echo $i
 done
 
-# Example 6
-for i in `seq 1 10`
-do
-    echo $i
-done
-
-# Example 7: increment by 1 upto 5
+# Example 5:
 for (( i=1; i&lt;=5; i++ ))
 do
     echo $i
 done
 
-# Example 8: infinite loop
+# Example 6: infinite loop
 for (( ; ; ))
 do
-    echo "infinite loop"
+    echo "Infinite Loop..."
 done
 
-# Example 9 - create 10 copies of test.txt
-for i in `seq 1 10`
+# Example 7: create 10 copies of test.txt
+for i in $(seq 1 10)
 do
     cp test.txt "test_${i}.txt"
 done
 
 # OR single line format
-for i in `seq 1 10`; do cp test.txt "test_${i}.txt"; done
+for i in $(seq 1 10); do cp test.txt "test_${i}.txt"; done
 
-# Example 10: reading file
+# Example 8: reading file
 for line in $(cat test.txt); do
     echo $line
 done</code></pre>
@@ -1208,11 +1217,11 @@ do
 done</code></pre>
 
                     <h5>Ex :</h5>
-                    <pre class="code-box code-box-color"><code>count=3
+                    <pre class="code-box code-box-color"><code>count=5
 until [ $count -le 0 ]
 do
-    count=$((count-1))
     echo "count = $count"
+    count=$((count-1))
     sleep 1
 done</code></pre>
                 </div>
@@ -1226,20 +1235,20 @@ do
 done</code></pre>
 
                     <h5>Ex :</h5>
-                    <pre class="code-box code-box-color"><code>select DRINK in tea cofee water juice appe all none
+                    <pre class="code-box code-box-color"><code>select drink in tea cofee water orange apple none
 do
-    case $DRINK in
-    tea|cofee|water|all)
+    case $drink in
+    tea|cofee|water)
         echo "Go to canteen"
         ;;
-    juice|apple)
-        echo "Available at home"
+    orange|apple)
+        echo "Go to fruit market"
         ;;
     none)
         break
         ;;
     *)
-        echo "ERROR: Invalid selection"
+        echo "ERROR: Invalid Selection"
         ;;
     esac
 done</code></pre>
@@ -1249,7 +1258,7 @@ done</code></pre>
                     <h4>&bull; Loop Controls :</h4>
                     <div>
                         <h5>1. Break Statement -</h5>
-                        <pre class="code-box"><code>a=0
+                        <pre class="code-box"><code>a=1
 while [ $a -lt 10 ]
 do
     echo $a
@@ -1257,21 +1266,21 @@ do
     then
         break
     fi
-    a=`expr $a + 1`
+    a=$(expr $a + 1)
 done</code></pre>
                     </div>
                     <div>
                         <h5>2. Continue Statement -</h5>
-                        <pre class="code-box"><code>NUMS="1 2 3 4 5 6 7"
-for NUM in $NUMS
+                        <pre class="code-box"><code>nums="1 2 3 4 5 6 7"
+for num in $nums
 do
-    Q=`expr $NUM % 2`
-    if [ $Q -eq 0 ]
+    q=$(expr $num % 2)
+    if [ $q -eq 0 ]
     then
-        echo "Number is an even number!!"
+        echo "Even"
         continue
     fi
-    echo "Found odd number"
+    echo $num
 done</code></pre>
                     </div>
                 </div>
@@ -1294,14 +1303,13 @@ greet</code></pre>
     echo "Hello $1"
 }
 
-greet Mandar</code></pre>
+greet World</code></pre>
                 <h5>Call within statement :</h5>
                 <pre class="code-box code-box-color"><code>greet(){
     echo "Hello World"
 }
 
-echo $(greet)
-echo `greet`</code></pre>
+echo $(greet)</code></pre>
             </div>
 
             <div class="sections" id="command-line-arguments">
@@ -1312,17 +1320,17 @@ echo `greet`</code></pre>
                         <thead>
                             <tr>
                                 <th>Arguments</th>
-                                <th>Info</th>
+                                <th>Description</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><code>$0</code></td>
-                                <td>name of script</td>
+                                <td>returns file name of script</td>
                             </tr>
                             <tr>
                                 <td><code>basename $0</code></td>
-                                <td>returns name of script without leading path</td>
+                                <td>filename of script without leading path</td>
                             </tr>
                             <tr>
                                 <td><code>$[x]</code></td>
@@ -1334,11 +1342,11 @@ echo `greet`</code></pre>
                             </tr>
                             <tr>
                                 <td><code>$$</code></td>
-                                <td>PID of shell where script executing</td>
+                                <td>PID of current shell</td>
                             </tr>
                             <tr>
                                 <td><code>$!</code></td>
-                                <td>process number of background that was executed last</td>
+                                <td>PID of last executed background process</td>
                             </tr>
                             <tr>
                                 <td><code>$?</code></td>
@@ -1350,11 +1358,11 @@ echo `greet`</code></pre>
                             </tr>
                             <tr>
                                 <td><code>$∗</code></td>
-                                <td>returns all the arguments (stored in single string)</td>
+                                <td>returns all the arguments (in single string)</td>
                             </tr>
                             <tr>
                                 <td><code>$@</code></td>
-                                <td>same as $∗, but differ when enclosed in ("), (stored as array)</td>
+                                <td>same as $∗, but differ when enclosed in (") (in array)</td>
                             </tr>
                             <tr>
                                 <td><code>$-</code></td>
@@ -1372,21 +1380,21 @@ echo `greet`</code></pre>
                         <thead>
                             <tr>
                                 <th>Commands</th>
-                                <th>info</th>
+                                <th>Description</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><code>[command] &gt; [file]</code></td>
-                                <td>redirect output (STDOUT) to file</td>
+                                <td>redirect STDOUT to file</td>
                             </tr>
                             <tr>
                                 <td><code>[command] 1&gt; [file]</code></td>
-                                <td>same as above, redirect STDOUT (its default file descriptor)</td>
+                                <td>redirect STDOUT to file (default file descriptor)</td>
                             </tr>
                             <tr>
                                 <td><code>[command] 2&gt; [file]</code></td>
-                                <td>redirect standard error (STDERR) to file</td>
+                                <td>redirect STDERR (standard error) to file</td>
                             </tr>
                             <tr>
                                 <td><code>[command] &&gt; [file]</code></td>
@@ -1394,11 +1402,11 @@ echo `greet`</code></pre>
                             </tr>
                             <tr>
                                 <td><code>[command] &gt; [file] 2&gt;&1</code></td>
-                                <td>same as above (redirect STDOUT and STDERR)</td>
+                                <td>redirect STDOUT and STDERR to file</td>
                             </tr>
                             <tr>
                                 <td><code>[command] &gt;&gt; [file]</code></td>
-                                <td>redirect & append output (STDOUT) to file</td>
+                                <td>redirect and append STDOUT to file</td>
                             </tr>
                             <tr>
                                 <td><code>[command] &gt; /dev/null</code></td>
@@ -1406,7 +1414,7 @@ echo `greet`</code></pre>
                             </tr>
                             <tr>
                                 <td><code>[command] &&gt; /dev/null</code></td>
-                                <td>redirect STDOUT & STDERR to null (discard STDOUT and STDERR)</td>
+                                <td>redirect STDOUT and STDERR to null</td>
                             </tr>
                             <tr>
                                 <td><code>echo &gt; [file]</code></td>
@@ -1418,14 +1426,14 @@ echo `greet`</code></pre>
                             </tr>
                             <tr>
                                 <td><code>cat &gt; [file]</code></td>
-                                <td>create file - press CTRL+C to exit typing</td>
+                                <td>create file (CTRL+C to exit)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div>
-                    <p><strong>NOTE :</strong> 0,1,2 are global file descriptors.</p>
+                    <p><b>NOTE :</b> 0,1,2 are global file descriptors.</p>
                     <div class="table-scroll">
                         <table class="table table-bordered table-striped">
                             <thead>
@@ -1463,7 +1471,7 @@ echo `greet`</code></pre>
 
                     <h5>Ex :</h5>
                     <pre class="code-box code-box-color"><code>$ exec 3&lt;&gt; log.txt
-$ echo "Hello" &gt;&3 #output is redirect to log.txt
+$ echo "Hello" &gt;&3 #output is redirected to log.txt
 $ cat log.txt
 Hello
 
@@ -1473,22 +1481,22 @@ $ exec 3&gt;&-</code></pre>
 
             <div class="sections" id="piping">
                 <h3 class="heading"># Piping</h3>
-                <p>Pipelines or pipes are used as a funnel to pass the output of one command to another command as an input or parameter.</p>
+                <p>Pipelines or pipes (<code>|</code>) are used as a funnel to pass the output of one command to another command as an input or parameter.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>[command] | [command]</code></div>
 
                 <h5>Ex :</h5>
-                <pre class="code-box code-box-color"><code># Output 1 page at time
+                <pre class="code-box code-box-color"><code># Output 1 page at time:
 ls -iR | less
 
-# Display 10 rows
+# Display 10 rows:
 ls -it | head -10
 
-# Print line matched word "hello" in file.txt
-cat file.txt | grep hello
+# Print line with word "Hello" in file.txt:
+cat file.txt | grep Hello
 
-# Sort output file names and print only unique file names
-grep -l int *.cpp | sort | uniq</code></pre>
+# Sort output file having word "index":
+grep -l index * | sort</code></pre>
             </div>
 
             <div class="sections" id="bash-aliases">
@@ -1496,22 +1504,27 @@ grep -l int *.cpp | sort | uniq</code></pre>
                 <p>Redefine aliases by assigning commands to words or short-names as substitutions.</p>
                 <h5>Synatx :</h5>
                 <div class="code-box"><code>alias name='[command]'</code></div>
-                <p>Save aliases in the.bashrc file (in the home directory) and execute the file with -</p>
+                <p>Save aliases in the file <code>.bashrc</code> (in home directory) and execute the file with -</p>
                 <div class="code-box"><code>source .bashrc</code></div>
 
                 <h5>Ex :</h5>
-                <pre class="code-box code-box-color"><code>alias repo='cd /document/github/repo'</code></pre>
+                <pre class="code-box code-box-color"><code>alias cpp='g++ $1 && ./a.out && rm a.out'</code></pre>
             </div>
 
-            <div class="sections" id="bash-ranges">
-                <h3 class="heading"># Bash Ranges</h3>
+            <div class="sections" id="brace-expansion">
+                <h3 class="heading"># Brace Expansion</h3>
                 <ul>
                     <li><code>echo {1,2,3}</code> : 1 2 3</li>
-                    <li><code>echo {1..3}</code> : 1 2 3</li>
+                    <li><code>echo {1..5}</code> : 1 2 3 4 5</li>
+                    <li><code>echo {5..1}</code> : 5 4 3 2 1</li>
                     <li><code>echo {1..-3}</code> : 1 0 -1 -2 -3</li>
-                    <li><code>echo {A..D}</code> : A B C D</li>
+                    <li><code>echo {1..10..2}</code> : 1 3 5 7 9</li>
+                    <li><code>echo {A..E}</code> : A B C D E</li>
+                    <li><code>echo {A..H..2}</code> : A C E G</li>
                     <li><code>echo a{2..5}b</code> : a2b a3b a4b a5b</li>
                     <li><code>echo a, b, c, d{1..3}, e</code> : a, b, c, d1, d2, d3, e</li>
+                    <li><code>echo {code1,code2,code3}.c</code> : code1.c code2.c code3.c</li>
+                    <li><code>echo code{.c,.cpp,.py,.sh}</code> : code.c code.cpp code.py code.sh </li>
                 </ul>
             </div>
 
@@ -1521,15 +1534,16 @@ grep -l int *.cpp | sort | uniq</code></pre>
                 <ul>
                     <li><code>grep ^The file.txt</code> : print line start with "The"</li>
                     <li><code>grep The^ file.txt</code> : print line end with "The"</li>
-                    <li><code>grep [Hh]ello file.txt</code> : match for "Hello" or "hello" and print found</li>
-                    <li><code>ls file[0-9]</code> - file1 file5 : print all with name file[0 to 9]</li>
+                    <li><code>grep [Hh]ello file.txt</code> : print line with word "Hello" or "hello"</li>
+                    <li><code>grep hello|HELLO file.txt</code> : print line with word "hello" or "HELLO"</li>
+                    <li><code>ls file[1-9]</code> : print files with name file1 to file9</li>
                     <li><code>grep '[0-9][0-9][0-9][0-9]' file.txt</code> : match for 4 digit number from file.txt with range 0-9</li>
-                    <li><code>ls *[0-9]*</code> - file1.txt test2.sh note5.pdf test_20 : print all with contain no 0 to 9</li>
-                    <li><code>ls test.*</code> - test.txt test.pdf : print all start with "test"</li>
-                    <li><code>ls ab*</code> - ab.txt abcd abort.sh : print all start with "ab"</li>
-                    <li><code>ls {*.pdf,*.doc,*.exe}</code> - file.txt project.doc run.exe : print all with extension pdf/doc/exe</li>
-                    <li><code>ls a[a-d]b</code> - abd acd : print all with name betn a[a to d]b</li>
-                    <li><code>ls test_[!3]</code> - test test_2 test_4 : print all with any no except 3</li>
+                    <li><code>ls *[0-9]*</code> : print files containing numbers 0 to 9 (file1.txt test2.sh note5.pdf test_20)</li>
+                    <li><code>ls test.*</code> : print files start with "test" (test.txt test.pdf)</li>
+                    <li><code>ls ab*</code> : print files start with "ab" (ab.txt abcd abort.sh)</li>
+                    <li><code>ls {*.pdf,*.doc,*.exe}</code> : print files end with .pdf/.doc/.exe (file.txt project.doc run.exe)</li>
+                    <li><code>ls a[a-d]b</code> : print files with name bet a[a to d]b (abd acd)</li>
+                    <li><code>ls test_[!3]</code> : print files with number except 3 (test_1 test_2 test_4)</li>
                 </ul>
             </div>
 
@@ -1537,98 +1551,87 @@ grep -l int *.cpp | sort | uniq</code></pre>
                 <h3 class="heading"># Grep</h3>
                 <p>Global regular expression print (grep) prints lines that match patterns from text or files.</p>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>grep -option pattern [file]</code></div>
+                <div class="code-box"><code>grep -option [pattern] [file]</code></div>
                 <ul>
-                    <li><code>grep hello file.txt</code> : match for "hello" in file.txt and print found</li>
-                    <li><code>grep -i hello file.txt</code> : match for "hello" in file.txt in insensitive way</li>
-                    <li><code>grep -r hello file.txt</code> : match for "hello" in file.txt recursively</li>
-                    <li><code>grep -v hello *</code> : match for all folders & files which doesn`t have "hello"</li>
-                    <li><code>grep -c hello file.txt</code> : count no of occurance of "hello" in file.txt</li>
-                    <li><code>grep -w hello file.txt</code> : match for "hello" in file.txt and select only matched word lines</li>
+                    <li><code>grep hello file.txt</code> : match for word "hello" in file.txt and print matched line</li>
+                    <li><code>grep -i hello file.txt</code> : case insensitive match for "hello" in file.txt</li>
+                    <li><code>grep -r hello file.txt</code> : recursively match for "hello" in file.txt</li>
+                    <li><code>grep -v hello *</code> : match for all files & folders which doesn`t have word "hello"</li>
+                    <li><code>grep -c hello file.txt</code> : count occurance of "hello" in file.txt</li>
+                    <li><code>grep -w hello file.txt</code> : match for whole word "hello" in file.txt</li>
                     <li><code>grep -n hello file.txt</code> : match for "hello" in file.txt and print line number with matched lines</li>
-                    <li><code>grep -l int *.cpp</code> : suppress normal output of matched case and instead print name of each input file having match "int"</li>
+                    <li><code>grep -l hello *</code> : match for "hello" in all files and print name of each matched files instead of matched line</li>
                     <li><code>grep -B 2 -A 3 hello file.txt</code> : print before 2 lines and after 3 lines of matched case</li>
-                    <li><code>grep -E -w 'hello|HELLO' file.txt</code> : match for "hello" or "HELLO" in file.txt & w select only matched word lines, E will treat it as regex</li>
                 </ul>
             </div>
 
             <div class="sections" id="find">
                 <h3 class="heading"># Find</h3>
-                <p>It searches for files in the directory hierarchy.</p>
+                <p>It searches for files and directories in the directory hierarchy.</p>
                 <h5>Syntax :</h5>
-                <div class="code-box"><code>find path -option [file]</code></div>
+                <div class="code-box"><code>find [path] -option [file]</code></div>
                 <ul>
-                    <li><code>find /home/user/documents -name file.txt</code> : find "file.txt" and is case sensitive</li>
+                    <li><code>find . -name file.txt</code> : find "file.txt" and is case sensitive</li>
                     <li><code>find . -iname file.txt</code> : find "file.txt" and is case insensitive</li>
-                    <li><code>find . -iname "*.cpp"</code> : find files with ".cpp" extension and is case insensitive</li>
-                    <li><code>find . -maxdepth 2 -iname "*.cpp"</code> : find files with ".cpp" extension in 2 level depth only and is case insensitive</li>
-                    <li><code>find . -not -iname "*.cpp"</code> : find all files except with ".cpp" extension and is case insensitive</li>
-                    <li><code>find / -mtime 10</code> : find files which modified within last 10 hours</li>
-                    <li><code>find / -atime 10</code> : find files whose access time is within last 10 hours</li>
-                    <li><code>find / -cmin 10</code> : find files which created within last 10 min</li>
+                    <li><code>find . -name "*.html"</code> : find files end with ".html" and is case sensitive</li>
+                    <li><code>find . -maxdepth 2 "*.cpp"</code> : find files end with ".html" in 2 level depth only</li>
+                    <li><code>find . -not "*.cpp"</code> : find all files except those end with ".cpp"</li>
+                    <li><code>find / -mtime 10</code> : find files that modified in last 10 days</li>
+                    <li><code>find / -atime 10</code> : find files whose access time is within last 10 days</li>
+                    <li><code>find / -cmin 10</code> : find files that created within last 10 days</li>
                 </ul>
             </div>
 
             <div class="sections" id="eval">
                 <h3 class="heading"># Eval</h3>
-                <p>Eval is used to execute arguments as shell commands.</p>
+                <p>Eval evaluates the specified parameters as a command.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>eval [arg...]</code></div>
-
                 <h5>Ex :</h5>
-                <pre class="code-box code-box-color"><code>CDDOC="cd Documents"
-eval $CDDOC</code></pre>
+                <pre class="code-box code-box-color"><code>list="ls | more"
+eval $list</code></pre>
             </div>
 
             <div class="sections" id="expr">
                 <h3 class="heading"># Expr</h3>
-                <p>Expr evaluates a given expression and displays its corresponding output.</p>
+                <p>Expr evaluates a given expression and prints it to standard output.</p>
                 <h5>Syntax :</h5>
                 <div class="code-box"><code>expr [OPTION] [EXPRESSION]</code></div>
 
                 <h5>Ex :</h5>
                 <pre class="code-box code-box-color"><code># Example 1:
 expr 1 + 2
+expr 5 - 3
+expr 2 \* 3
+expr 8 / 2
 
 # Example 2:
-expr 2 /* 3
-
-# Example 3:
-read X
-read Y
-sum=`expr $X + $Y`
+read x
+read y
+sum=$(expr $x + $y)
 echo "Sum = $sum"
 
-# Example 4: matching numbers with '=' (0=false & 1=true)
-res=`expr $x = $y`
+# Example 3: comparing numbers with '=' (0=false & 1=true)
+res=$(expr $x = $y)
 echo $res
 
-# Example 5: displays 1 when arg1 is less than arg2
-res=`expr $x \&lt; $y`
+# Example 4: 1 when arg1 < arg2
+res=$(expr $x \&lt; $y)
 echo $res
 
-# Example 6: display 1 when arg1 is not equal to arg2
-res=`expr $x \!= $y`
-echo $res
+# Example 5: length of string
+x="Hello World"
+echo $(expr length $x)
 
-# Example 7: OR operation
-$expr length "geekss" "&lt;" 5 "|" 19 - 6 "&gt;" 10
-
-# Example 8: Finding length of string
-x=geeks
-len=`expr length $x`
-echo $len
-
-# Example 9: Finding substring of string
-x=geeks
-sub=`expr substr $x 2 3`
-#extract 3 characters starting from index 2
+# Example 6: Extract substring from string
+x="Hello World"
+sub=$(expr substr $x 2 3)
 echo $sub
 
-# Example 10: Check the index of character
-a=linuxhint
-b=`expr index $a t`
-echo $b</code></pre>
+# Example 7: index of character
+x="Hello World"
+c=$(expr index $x)
+echo $c</code></pre>
             </div>
 
             <div class="sections" id="file-permissions">
@@ -1640,12 +1643,12 @@ echo $b</code></pre>
                 <div class="code-box"><code>chmod -R user+permission [file]</code></div>
                 <h5>Format of Permission :</h5>
                 <div class="code-box"><code>-rwx r-- r--</code></div>
-                <ol>
+                <ul>
                     <li>1st bit is file type</li>
                     <li>2nd 3 bits are user permission</li>
                     <li>3rd 3 bits are group permission</li>
                     <li>4th 3 bits are others permission</li>
-                </ol>
+                </ul>
                 <div class="table-scroll">
                     <table class="table table-bordered table-striped">
                         <thead>
@@ -1714,7 +1717,7 @@ chmod o+wrx script.sh</code></pre>
                                 <tr>
                                     <th>Permission Value</th>
                                     <th>Permission</th>
-                                    <th>Info</th>
+                                    <th>Description</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -1761,7 +1764,7 @@ chmod o+wrx script.sh</code></pre>
                             </tbody>
                         </table>
                     </div>
-                    <div><strong>Note :</strong> max value is r+w+x = 4+2+1 = 7</div>
+                    <div><b>Note :</b> max value is r+w+x = 4+2+1 = 7</div>
                     <ul>
                         <li>wrx wrx --- = 4+2+1 4+2+1 0+0+0 = 770</li>
                         <li>r-x r-- r-- = 4+0+1 4+0+0 4+0+0 = 544</li>
