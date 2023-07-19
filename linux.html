@@ -46,6 +46,7 @@
                 <li><a href="#brace-expansion">Brace Expansion</a></li>
                 <li><a href="#regex">RegEx</a></li>
                 <li><a href="#grep">Grep</a></li>
+                <li><a href="#tr">Tr</a></li>
                 <li><a href="#find">Find</a></li>
                 <li><a href="#eval">Eval</a></li>
                 <li><a href="#expr">Expr</a></li>
@@ -496,7 +497,9 @@ num=17</code></pre>
                 <pre class="code-box"><code>echo $greet
 echo "Number is ${num}"</code></pre>
                 <h5>Read-Only Variable :</h5>
-                <div class="code-box"><code>readonly COUNT = 1</code></div>
+                <div class="code-box"><code>readonly COUNT=1</code></div>
+                <h5>Declare Integer :</h5>
+                <div class="code-box"><code>declare -i num=10</code></div>
                 <h5>Remove Variable :</h5>
                 <div class="code-box"><code>unset num</code></div>
             </div>
@@ -518,19 +521,24 @@ echo "After: $greet"</code></pre>
 
             <div class="sections" id="arrays">
                 <h3 class="heading"># Arrays</h3>
-                <h5>Declaring :</h5>
-                <pre class="code-box"><code>declare -a fruits
-fruits=(apple mango banana orange)</code></pre>
-                <h5>Input :</h5>
-                <div class="code-box"><code>read -a fruits</code></div>
+                <h5>Declaring Indexed Array :</h5>
+                <div class="code-box"><code>declare -a fruits=("apple" "mango" "banana" "orange")</code></div>
+                <h5>Declaring Associative Array :</h5>
+                <pre class="code-box"><code>declare -A india["capital"]="New Delhi"
+
+declare -A capital=(["India"]="New Delhi", ["Nepal"]="Kathmandu", ["Bhutan"]="Thimphu")</code></pre>
                 <h5>Indexing :</h5>
                 <div class="code-box"><code>fruits[0]="grapes"</code></div>
                 <h5>Access Element :</h5>
                 <div class="code-box"><code>echo ${fruits[0]}</code></div>
                 <h5>Print All Elements :</h5>
                 <div class="code-box"><code>echo ${fruits[@]}</code></div>
+                <h5>Print Key of Associative Array :</h5>
+                <div class="code-box"><code></code>echo ${!india[@]}</div>
                 <h5>Length of Array :</h5>
                 <div class="code-box"><code>echo ${#fruits[@]}</code></div>
+                <h5>Input :</h5>
+                <div class="code-box"><code>read -a fruits</code></div>
             </div>
 
             <div class="sections" id="input">
@@ -562,7 +570,7 @@ echo "Hii, ${msg}"</code></pre>
                 <div class="code-box"><code>echo '$Hello World'</code></div>
                 <h5>Print (STDOUT) :</h5>
                 <p>The <code>printf</code> prints output in the specified format; it does not append an implied newline.</p>
-                <div class="code-box"><code>printf "Hello World"</code></div>
+                <div class="code-box"><code>printf "\n%s\n\n" "Hello World"</code></div>
             </div>
 
             <div class="sections" id="operators">
@@ -1204,6 +1212,11 @@ for i in $(seq 1 10); do cp test.txt "test_${i}.txt"; done
 # Example 8: reading file
 for line in $(cat test.txt); do
     echo $line
+done
+
+# Example 9: Iterating associative array
+for key in ${!array[@]}; do
+    echo "$key : ${array[$key]}"
 done</code></pre>
                 </div>
 
@@ -1305,11 +1318,25 @@ greet</code></pre>
 
 greet World</code></pre>
                 <h5>Call within statement :</h5>
-                <pre class="code-box code-box-color"><code>greet(){
-    echo "Hello World"
+                <pre class="code-box code-box-color"><code>capital(){
+    echo $1 | tr 'a-z' 'A-Z'
 }
 
-echo $(greet)</code></pre>
+name="admin"
+echo "Capital: $(capital $name)"</code></pre>
+                <h5>Local Variables :</h5>
+                <p>Local variables are defined within a function and have local scope. They are only accessible within the function where they are defined, not outside of it. It is declared with the <code>local</code> keyword.</p>
+                <pre class="code-box code-box-color"><code>swap(){
+    local t=$a
+    a=$b
+    b=$t
+}
+
+a=3
+b=7
+printf "\nA = $a\nb = $b"
+swap
+printf "\nA = $a\nb = $b"</code></pre>
             </div>
 
             <div class="sections" id="command-line-arguments">
@@ -1563,6 +1590,101 @@ grep -l index * | sort</code></pre>
                     <li><code>grep -l hello *</code> : match for "hello" in all files and print name of each matched files instead of matched line</li>
                     <li><code>grep -B 2 -A 3 hello file.txt</code> : print before 2 lines and after 3 lines of matched case</li>
                 </ul>
+            </div>
+
+            <div class="sections" id="tr">
+                <h3 class="heading"># Tr</h3>
+                <p>Translate, squeeze, and/or delete characters from standard input and write them to standard output.</p>
+                <h5>Syntax :</h5>
+                <div class="code-box"><code>tr -option [string1] [string2]</code></div>
+                <ul>
+                    <li><code>tr "ab" "xy" <<< "abcd"</code> : replace occurrence of "a" with "x" and "c" with "z"</li>
+                    <li><code>tr [a-z] [A-Z] <<< "abcd"</code> :  convert lower case characters to upper case</li>
+                    <li><code>tr [:lower:] [:upper:] <<< "abcd"</code> :  convert lower case characters to upper case</li>
+                    <li><code>tr [:space:] "\t" <<< "Hello World"</code> : translate white-space characters to tabs</li>
+                    <li><code>tr -s [a-z] <<< "Hellooo Worrld"</code> : squeeze sequence of repetitive characters using -s option and replaces with single occurrence of character</li>
+                    <li><code>tr -d "l" <<< "Hello World"</code> : delete specified characters using -d option</li>
+                    <li><code>tr -d [:digit:] <<< "Hello 123 World6789"</code> : remove all the digits from the string</li>
+                    <li><code>tr -c "a" "x" <<< "ababc"</code> : invert the selection by using -c option (complement)</li>
+                    <li><code>tr -cd [:digit:] <<< "abc123def456"</code> : delete everything except digits</li>
+                </ul>
+                <h5>Tokens :</h5>
+                <div class="table-scroll">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Token</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>CHAR1-CHAR2</code></td>
+                                <td>all characters from CHAR1 to CHAR2 in ascending order</td>
+                            </tr>
+                            <tr>
+                                <td><code>[CHAR*]</code></td>
+                                <td>in ARRAY2, copies of CHAR until length of ARRAY1</td>
+                            </tr>
+                            <tr>
+                                <td><code>[CHAR*REPEAT]</code></td>
+                                <td>REPEAT copies of CHAR, REPEAT octal if starting with 0</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:alnum:]</code></td>
+                                <td>all letters and digits</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:alpha:]</code></td>
+                                <td>all letters</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:blank:]</code></td>
+                                <td>all horizontal whitespace</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:cntrl:]</code></td>
+                                <td>all control characters</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:digit:]</code></td>
+                                <td>all digits</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:graph:]</code></td>
+                                <td>all printable characters, not including space</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:lower:]</code></td>
+                                <td>all lower case letters</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:print:]</code></td>
+                                <td>all printable characters, including space</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:punct:]</code></td>
+                                <td>all punctuation characters</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:space:]</code></td>
+                                <td>all horizontal or vertical whitespace</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:upper:]</code></td>
+                                <td>all upper case letters</td>
+                            </tr>
+                            <tr>
+                                <td><code>[:xdigit:]</code></td>
+                                <td>all hexadecimal digits</td>
+                            </tr>
+                            <tr>
+                                <td><code>[=CHAR=]</code></td>
+                                <td>all characters which are equivalent to CHAR</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <div class="sections" id="find">
