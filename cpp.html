@@ -781,7 +781,7 @@ switch(day){
         break;
 
     default :
-        cout << "Incorrect Day...!";
+        cout << "Incorrect Day!";
 }</code></pre>
                 </div>
             </div>
@@ -1420,7 +1420,7 @@ int main(){
                 </div>
                 <div>
                     <h4>&bull; Inline Function :</h4>
-                    <p>In an inline function, when it is called, the whole code of the inline function gets inserted or substituted at the point of the inline function call by the compiler. Inlining is only a request to the compiler, not a command, and the compiler can ignore the request for inlining.</p>
+                    <p>In an inline function, when it is called, the whole code of the inline function gets inserted or substituted at the point of the inline function call by the compiler. Inlining is only a request to the compiler, not a command, and the compiler may ignore the request for inlining.</p>
                     <pre class="code-box code-box-color"><code>inline int max(int a, int b){
     return (a > b) ? a : b;
 }
@@ -1483,7 +1483,7 @@ int main(){
 
             <div class="sections" id="struct">
                 <h3 class="heading"># Structures</h3>
-                <p>Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is referred to as a member of the structure. A structure can contain many different data types (int, string, bool, etc.). To access members of a structure, the member access operator (.) is used. We can't assign a character array (a string) to a structure, but we can copy it.</p>
+                <p>Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is referred to as a member of the structure. A structure can contain many different data types (int, string, bool, etc.). To access members of a structure, the member access operator (<code>.</code>) is used. We can't assign a character array (a string) to a structure, but we can copy it.</p>
                 <h5>Syntax :</h5>
                 <pre class="code-box"><code>struct Name {
     type name;
@@ -1681,23 +1681,23 @@ p_ob->studentInfo();</code></pre>
                     <p>Access specifiers define how the members (attributes and methods) of a class can be accessed. Default access specifier is private.</p>
                     <ul class="justify">
                         <li><strong>public</strong>: members are accessible from outside the class.</li>
-                        <li><strong>private</strong>: members cannot be accessed (or viewed) from outside the class.</li>
                         <li><strong>protected</strong>: members cannot be accessed from outside the class; however, they can be accessed in inherited classes.</li>
+                        <li><strong>private</strong>: members cannot be accessed (or viewed) from outside the class.</li>
                     </ul>
                     <pre class="code-box code-box-color"><code>class MyClass {
     public: // Public access specifier
         int pu;
-    private: // Private access specifier
-        int pr;
     protected: // Protected access specifier
         int pt;
+    private: // Private access specifier
+        int pr;
 };
 
 int main(){
     MyClass ob;
     ob.pu = 25; // Allowed (public)
-    ob.pr = 50; // Error: Not allowed (private)
     ob.pt = 75; // Error: Not allowed (protected)
+    ob.pr = 50; // Error: Not allowed (private)
 
     return 0;
 }</code></pre>
@@ -2014,7 +2014,7 @@ int main(){
                 </div>
                 <div>
                     <h4>&bull; Destructor :</h4>
-                    <p>It is a special method that is automatically called when an object of its class goes out of scope. The destructor has the same name as the class, is preceded by a tilde (~) symbol, is always public, and does not have any return value.</p>
+                    <p>It is a special method that is automatically called when an object of its class goes out of scope. The destructor has the same name as the class, is preceded by a tilde (<code>~</code>) symbol, is always public, and does not have any return value.</p>
                     <pre class="code-box code-box-color"><code>class Student {
     private:
         int roll;
@@ -2069,21 +2069,21 @@ int main(){
                             <tbody>
                                 <tr>
                                     <td>Public</td>
-                                    <td>Not Inherited</td>
-                                    <td>Not Inherited</td>
-                                    <td>Not Inherited</td>
-                                </tr>
-                                <tr>
-                                    <td>Protected</td>
-                                    <td>Protected</td>
-                                    <td>Private</td>
-                                    <td>Protected</td>
-                                </tr>
-                                <tr>
-                                    <td>Private</td>
                                     <td>Public</td>
                                     <td>Private</td>
                                     <td>Protected</td>
+                                </tr>
+                                <tr>
+                                    <td>Protected</td>
+                                    <td>Protected</td>
+                                    <td>Private</td>
+                                    <td>Protected</td>
+                                </tr>
+                                <tr>
+                                    <td>Private</td>
+                                    <td>Not Inherited</td>
+                                    <td>Not Inherited</td>
+                                    <td>Not Inherited</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2606,7 +2606,7 @@ int main(){
                         <pre class="code-box code-box-color"><code>class Shape {
     public:
         virtual void draw(){
-            cout<<"Can not draw an unknown Shape...!" << endl;
+            cout<<"Can not draw an unknown Shape!" << endl;
         }
 };
 
@@ -2828,7 +2828,7 @@ int main(){
                 <pre class="code-box code-box-color"><code>try {
     float x=5, y=0;
     if (y == 0)
-        throw "Error: Division By Zero...!";
+        throw "Error: Division By Zero!";
     else
         cout << "Division is" << x/y;
 } catch(const char *E) {
@@ -2838,11 +2838,11 @@ int main(){
                 <pre class="code-box code-box-color"><code>try {
     int age = 16;
     if (age >= 18)
-        cout << "Access Granted...!" << endl;
+        cout << "Access Granted" << endl;
     else
         throw 404;
 } catch (...) {
-    cout << "Access Denied...! You must be at least 18 years old." << endl;
+    cout << "Access Denied! You must be at least 18 years old." << endl;
 }</code></pre>
                 <h5>Multiple Catch Statements :</h5>
                 <pre class="code-box code-box-color"><code>try {
@@ -2850,9 +2850,9 @@ int main(){
     cout << "Enter Age: ";
     cin >> age;
     if (age == 0)
-        throw "Error: Age cannot be zero...!";
+        throw "Error: Age cannot be zero!";
     else if (age < 0)
-        throw std::runtime_error("Runtime Error: Age cannot be negative...!");
+        throw std::runtime_error("Runtime Error: Age cannot be negative!");
     else
         cout << "Your age is " << age << endl;
 } catch (const char *E){
@@ -2860,7 +2860,7 @@ int main(){
 } catch (std::runtime_error& E){
     cout << E.what() << endl;
 } catch (...){
-    cout << "Unkwown Error...!" << endl;
+    cout << "Unkwown Error!" << endl;
 }</code></pre>
                 <div>
                     <h4>&bull; User-Defined Exceptions :</h4>
@@ -2869,7 +2869,7 @@ int main(){
 class ZeroDivisionError : public exception {
     public:
         const char* what() const throw () {
-            return "Error: Attempted to divide by zero...!";
+            return "Error: Attempted to divide by zero!";
         }
 };
 
@@ -3009,13 +3009,13 @@ int main(){
     cout << "Enter Last  Name: ";
     cin.getline(lname, 20); // Receive char array
 
-    // Reading file:
+    // Writing file:
     ofstream outfile;
     outfile.open("name.txt");
     outfile << fname+" "+lname;
     outfile.close();
 
-    // Writing file:
+    // Reading file:
     ifstream infile;
     infile.open("name.txt");
     string line;
@@ -3279,13 +3279,13 @@ using namespace std;
 
 namespace morning {
     void greet(){
-        cout << "Good Morning...!" << endl;
+        cout << "Good Morning!" << endl;
     }
 }
 
 namespace evening {
     void greet(){
-        cout << "Good Evening...!" << endl;
+        cout << "Good Evening!" << endl;
     }
 }
 
