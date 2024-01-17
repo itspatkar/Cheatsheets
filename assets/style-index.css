@@ -37,11 +37,11 @@ a {
     border-radius: 6px;
     background-color: #100c08;
     color: #fff;
-    transition: border 0.1s;
+    transition: color 0.4s;
 }
 .list-block:hover {
-    border: 2px solid #0077b6;
-    color: #3e8ede;
+    border-color: #64b5f6;
+    color: #64b5f6;
 }
 .credits {
     padding: 5px;
