@@ -41,8 +41,8 @@ a {
 }
 .button {
     position: sticky;
-    top: 1rem;
-    font-size: 2rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
 }
 .title {
     padding: 1rem;
@@ -101,7 +101,7 @@ code {
 nav {
     position: sticky;
     bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 nav a {
     color: var(--color);
@@ -110,27 +110,24 @@ nav a {
 /* Responsiveness */
 @media screen and (max-width: 575px) {
     h2 {
-        font-size: 1.6525rem !important;
+        font-size: 1.65rem !important;
     }
     h3 {
-        font-size: 1.55rem !important;
+        font-size: 1.5rem !important;
     }
     h4 {
-        font-size: 1.325rem !important;
+        font-size: 1.25rem !important;
     }
     h5 {
-        font-size: 1.15rem !important;
+        font-size: 1rem !important;
     }
     nav {
-        font-size: 1.75rem;
-    }
-    .title {
-        padding: 0.75rem;
+        font-size: 1.5rem;
     }
     .section-list {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
     .sections {
-        font-size: 1rem;
+        font-size: 0.90rem;
     }
 }
