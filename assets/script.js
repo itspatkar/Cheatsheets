@@ -1,6 +1,6 @@
-var button = document.querySelector(".button");
+var btn = document.querySelector(".button");
 
-button.addEventListener("click", function(){
+btn.addEventListener("click", function(){
     if (document.body.getAttribute("data-theme") == "light"){
         document.body.setAttribute("data-theme", "dark");
     } else {

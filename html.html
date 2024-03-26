@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>HTML Cheatsheet | ItsPatkar</title>
+        <title>HTML Cheatsheet</title>
 
         <!-- Bootstrap CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,10 +20,10 @@
             <!-- Theme Toggle -->
             <div class="button float-end"><i class="bi bi-circle-half"></i></div>
 
-            <h2 class="title">HTML</h2>
+            <h3 class="title">HTML</h3>
 
             <div class="sections">
-                <h5>Languages of Web Development -</h5>
+                <h6>Languages of Web Development -</h6>
                 <ol>
                     <li><b>HTML :</b> define the structure and content of web pages.</li>
                     <li><b>CSS :</b> defines the styling of web pages.</li>
@@ -31,25 +31,24 @@
                 </ol>
             </div>
 
-            <ul class="section-list">
-                <li><a href="#html-page-structure">HTML Page Structure</a></li>
-                <li><a href="#tags">Tags</a></li>
-                <li><a href="#links">Links</a></li>
-                <li><a href="#lists">Lists</a></li>
-                <li><a href="#tables">Tables</a></li>
-                <li><a href="#images">Images</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#audio">Audio</a></li>
-                <li><a href="#frames">Frames</a></li>
-                <li><a href="#forms">Forms</a></li>
-                <li><a href="#html-entity">HTML Entity</a></li>
-            </ul>
-
-            <hr>
-            <br>
+            <div class="section-list">
+                <ul>
+                    <li><a href="#html-page-structure">HTML Page Structure</a></li>
+                    <li><a href="#tags">Tags</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#audio">Audio</a></li>
+                    <li><a href="#frames">Frames</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#html-entity">HTML Entity</a></li>
+                </ul>
+            </div>
 
             <div class="sections" id="html-page-structure">
-                <h3 class="heading"># HTML Page Structure</h3>
+                <h4 class="heading"># HTML Page Structure</h4>
                 <pre class="code-box code-box-color"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
     &lt;head&gt;
@@ -64,9 +63,9 @@
             </div>
 
             <div class="sections" id="tags">
-                <h3 class="heading"># Tags</h3>
+                <h4 class="heading"># Tags</h4>
                 <div>
-                    <h4>&bull; Heading</h4>
+                    <h5>&bull; Heading</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
                             <thead>
@@ -86,15 +85,15 @@
                                 </tr>
                                 <tr>
                                     <td><code>&lt;h3&gt;</code></td>
-                                    <td><h3>Heading 3</h3></td>
+                                    <td><h3>Heading 3</h4></td>
                                 </tr>
                                 <tr>
                                     <td><code>&lt;h4&gt;</code></td>
-                                    <td><h4>Heading 4</h4></td>
+                                    <td><h5>Heading 4</h5></td>
                                 </tr>
                                 <tr>
                                     <td><code>&lt;h5&gt;</code></td>
-                                    <td><h5>Heading 5</h5></td>
+                                    <td><h6>Heading 5</h6></td>
                                 </tr>
                                 <tr>
                                     <td><code>&lt;h6&gt;</code></td>
@@ -105,7 +104,7 @@
                     </div>
                 </div>
                 <div>
-                    <h4>&bull; Containers</h4>
+                    <h5>&bull; Containers</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
                             <thead>
@@ -132,7 +131,7 @@
                     </div>
                 </div>
                 <div>
-                    <h4>&bull; Text Formatting</h4>
+                    <h5>&bull; Text Formatting</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
                             <thead>
@@ -234,7 +233,7 @@
                     </div>
                 </div>
                 <div>
-                    <h4>&bull; Others</h4>
+                    <h5>&bull; Others</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
                             <thead>
@@ -264,7 +263,7 @@
                     </div>
                 </div>
                 <div>
-                    <h4>&bull; Semantic Elements</h4>
+                    <h5>&bull; Semantic Elements</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
                             <thead>
@@ -325,11 +324,11 @@
             </div>
 
             <div class="sections" id="links">
-                <h3 class="heading"># Links</h3>
+                <h4 class="heading"># Links</h4>
                 <pre class="code-box"><code>&lt;a href=&quot;url&quot; target=&quot;_blank&quot;&gt; Link Text &lt;/a&gt;</code></pre>
                 <p><strong>target :</strong> <code>blanck|self|parent|top</code></p>
                 <div>
-                    <h4>&bull; Bookmarks :</h4>
+                    <h5>&bull; Bookmarks :</h5>
                     <pre class="code-box"><code>&lt;h2 id=&quot;C4&quot;&gt;Chapter 4&lt;/h2&gt;
 
 &lt;a href=&quot;#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;</code></pre>
@@ -337,9 +336,9 @@
             </div>
 
             <div class="sections" id="lists">
-                <h3 class="heading"># Lists</h3>
+                <h4 class="heading"># Lists</h4>
                 <div>
-                    <h4>&bull; Unordered :</h4>
+                    <h5>&bull; Unordered :</h5>
                     <pre class="code-box"><code>&lt;ul&gt;
     &lt;li&gt;Item&lt;/li&gt;
     &lt;li&gt;Item&lt;/li&gt;
@@ -347,7 +346,7 @@
                 </div>
 
                 <div>
-                    <h4>&bull; Ordered :</h4>
+                    <h5>&bull; Ordered :</h5>
                     <pre class="code-box"><code>&lt;ol type=&quot;value&quot; start=&quot;20&quot;&gt;
     &lt;li&gt;Item&lt;/li&gt;
     &lt;li&gt;Item&lt;/li&gt;
@@ -359,7 +358,7 @@
                 </div>
 
                 <div>
-                    <h4>&bull; Description Lists :</h4>
+                    <h5>&bull; Description Lists :</h5>
                     <pre class="code-box"><code>&lt;dl&gt;
     &lt;dt&gt;Term&lt;/dt&gt;
     &lt;dd&gt;- description &lt;/dd&gt;
@@ -370,7 +369,7 @@
             </div>
 
             <div class="sections" id="tables">
-                <h3 class="heading"># Tables</h3>
+                <h4 class="heading"># Tables</h4>
                 <pre class="code-box"><code>&lt;table&gt;
     &lt;thead&gt;
         &lt;tr&gt;
@@ -397,18 +396,18 @@
                     <li><code>rowspan=&quot;value&quot;</code> : span rows</li>
                 </ul>
 
-                <h5>Caption :</h5>
+                <h6>Caption :</h6>
                 <pre class="code-box"><code>&lt;caption&gt;Text&lt;/caption&gt;</code></pre>
 
                 <p>The <code>&lt;caption&gt;</code> tag must be inserted immediately after the <code>&lt;table&gt;</code> tag.</p>
             </div>
 
             <div class="sections" id="images">
-                <h3 class="heading"># Images</h3>
+                <h4 class="heading"># Images</h4>
                 <pre class="code-box"><code>&lt;img src=&quot;image.jpg&quot; alt=&quot;Image Not Supported&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;
 </code></pre>
                 <div>
-                    <h4>&bull; Clickable Area :</h4>
+                    <h5>&bull; Clickable Area :</h5>
                     <pre class="code-box"><code>&lt;map name=&quot;workmap&quot;&gt;
     &lt;area shape=&quot;rect&quot; coords=&quot;34,44,270,350&quot; alt=&quot;Computer&quot; href=&quot;computer.htm&quot;&gt;
     &lt;area shape=&quot;rect&quot; coords=&quot;290,172,333,250&quot; alt=&quot;Phone&quot; href=&quot;phone.htm&quot;&gt;
@@ -417,7 +416,7 @@
 </code></pre>
                 </div>
                 <div>
-                    <h4>&bull; Picture Gallery :</h4>
+                    <h5>&bull; Picture Gallery :</h5>
                     <pre class="code-box"><code>&lt;picture&gt;
     &lt;source media=&quot;(min-width:650px)&quot; srcset=&quot;img_pink_flowers.jpg&quot;&gt;
     &lt;source media=&quot;(min-width:465px)&quot; srcset=&quot;img_white_flower.jpg&quot;&gt;
@@ -429,7 +428,7 @@
             </div>
 
             <div class="sections" id="video">
-                <h3 class="heading"># Video</h3>
+                <h4 class="heading"># Video</h4>
                 <pre class="code-box"><code>&lt;video width=&quot;320&quot; height=&quot;240&quot; autoplay&gt;
     &lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;
     &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot;&gt;
@@ -439,7 +438,7 @@
             </div>
 
             <div class="sections" id="audio">
-                <h3 class="heading"># Audio</h3>
+                <h4 class="heading"># Audio</h4>
                 <pre class="code-box"><code>&lt;audio controls&gt;
     &lt;source src=&quot;horse.ogg&quot; type=&quot;audio/ogg&quot;&gt;
     &lt;source src=&quot;horse.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
@@ -449,7 +448,7 @@
             </div>
 
             <div class="sections" id="frames">
-                <h3 class="heading"># Frames</h3>
+                <h4 class="heading"># Frames</h4>
                 <pre class="code-box"><code>&lt;iframe src=&quot;URL&quot; height=&quot;100px&quot; width=&quot;100px&quot;&gt;&lt;/iframe&gt;
 
 &lt;iframe src=&quot;demo_iframe.html&quot; name=&quot;iframe_a&quot;&gt;&lt;/iframe&gt;
@@ -460,7 +459,7 @@
             </div>
 
             <div class="sections" id="forms">
-                <h3 class="heading"># Forms</h3>
+                <h4 class="heading"># Forms</h4>
                 <pre class="code-box"><code>&lt;form action=&quot;action.php&quot; method=&quot;get/post&quot; autocomplete=&quot;on/off&quot;&gt;
     &lt;label for=&quot;fname&quot;&gt;Name&lt;/label&gt;
     &lt;input type=&quot;text&quot; name=&quot;iname&quot; value=&quot;john&quot;&gt;
@@ -478,19 +477,19 @@
                 </ul>
 
                 <div>
-                    <h4>&bull; Button :</h4>
+                    <h5>&bull; Button :</h5>
                     <pre class="code-box"><code>&lt;button type=&quot;button&quot; onclick=&quot;alert(&#39;Message&#39;)&quot;&gt;Click&lt;/button&gt;
 </code></pre>
                 </div>
                 <div>
-                    <h4>&bull; Fieldset :</h4>
+                    <h5>&bull; Fieldset :</h5>
                     <pre class="code-box"><code>&lt;fieldset&gt;
     &lt;legend&gt;Caption&lt;/legend&gt;
 &lt;/fieldset&gt;
 </code></pre>
                 </div>
                 <div>
-                    <h4>&bull; Selection List :</h4>
+                    <h5>&bull; Selection List :</h5>
                     <pre class="code-box"><code>&lt;select id=&quot;cars&quot; name=&quot;cars&quot; size=&quot;3&quot; multiple&gt;
     &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
     &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;
@@ -501,7 +500,7 @@
 </code></pre>
                 </div>
                 <div>
-                    <h4>&bull; Data List :</h4>
+                    <h5>&bull; Data List :</h5>
                     <pre class="code-box"><code>&lt;datalist id=&quot;browsers&quot;&gt;
     &lt;option value=&quot;Internet Explorer&quot;&gt;
     &lt;option value=&quot;Firefox&quot;&gt;
@@ -512,7 +511,7 @@
 </code></pre>
                 </div>
                 <div>
-                    <h4>&bull; Textarea :</h4>
+                    <h5>&bull; Textarea :</h5>
                     <pre class="code-box"><code>&lt;textarea name=&quot;message&quot; rows=&quot;10&quot; cols=&quot;30&quot;&gt;
     Text
 &lt;/textarea&gt;
@@ -521,7 +520,7 @@
             </div>
 
             <div class="sections" id="html-entity">
-                <h3 class="heading"># HTML Entity</h3>
+                <h4 class="heading"># HTML Entity</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -597,6 +596,7 @@
                 <div><strong>More? <a href="https://dev.w3.org/html5/html-author/charref" target="_blank">Click Here</a></strong></div>
             </div>
 
+            <!-- Navigation Buttons -->
             <nav>
                 <a href="https://itspatkar.github.io/Cheatsheets/"><i class="bi bi-arrow-left-square-fill"></i></a>
                 <a href="#" class="float-end"><i class="bi bi-arrow-up-square-fill"></i></a>

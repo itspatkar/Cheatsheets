@@ -20,15 +20,16 @@ a {
     text-decoration: none;
 }
 .title {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     color: #4b92db;
 }
 .list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    padding: 35px;
-    font-size: 1rem;
+    padding: 0 45px;
+    font-size: 0.85rem;
 }
 .list-block {
     display: block;
@@ -44,11 +45,11 @@ a {
     color: #64b5f6;
 }
 .credits {
-    padding: 5px;
+    margin-top: 1rem;
 }
 .credits a {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.80rem;
     color: #aaa;
     transition: color 0.4s;
 }
@@ -56,16 +57,15 @@ a {
     color: #fff;
 }
 
+/* Responsiveness */
 @media only screen and (max-width: 450px) {
     .title {
-        font-size: 1.75rem !important;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
     .list {
         grid-template-columns: 1fr;
         gap: 10px;
         padding: 5px;
-    }
-    .credits {
-        padding: 15px;
     }
 }

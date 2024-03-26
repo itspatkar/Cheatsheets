@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>CSS Cheatsheet | ItsPatkar</title>
+        <title>CSS Cheatsheet</title>
 
         <!-- Bootstrap CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,45 +20,44 @@
             <!-- Theme Toggle -->
             <div class="button float-end"><i class="bi bi-circle-half"></i></div>
 
-            <h2 class="title">CSS 3</h2>
+            <h3 class="title">CSS 3</h3>
 
-            <ul class="section-list">
-                <li><a href="#using-css">Using CSS</a></li>
-                <li><a href="#css-units">CSS Units</a></li>
-                <li><a href="#css-selectors">CSS Selectors</a></li>
-                <li><a href="#pseudo-classes">Pseudo Classes</a></li>
-                <li><a href="#pseudo-elements">Pseudo Elements</a></li>
-                <li><a href="#font">Font</a></li>
-                <li><a href="#text-formatting">Text Formatting</a></li>
-                <li><a href="#display-and-layout">Display and Layout</a></li>
-                <li><a href="#sizing-and-content">Sizing and Content</a></li>
-                <li><a href="#link">Link</a></li>
-                <li><a href="#list">List</a></li>
-                <li><a href="#table">Table</a></li>
-                <li><a href="#border">Border</a></li>
-                <li><a href="#outline">Outline</a></li>
-                <li><a href="#shadow">Shadow</a></li>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#background-linear-gradient">Background Gradient Linear</a></li>
-                <li><a href="#background-radial-gradient">Background Gradient Radial</a></li>
-                <li><a href="#multiple-background">Multiple Background</a></li>
-                <li><a href="#media-queries">Media Queries</a></li>
-                <li><a href="#multi-columns">Multi Columns</a></li>
-                <li><a href="#flexbox">Flexbox</a></li>
-                <li><a href="#grid-view">Grid View</a></li>
-                <li><a href="#css-filters">CSS Filters</a></li>
-                <li><a href="#transitions">Transitions</a></li>
-                <li><a href="#transformation-2d">Transformation 2D</a></li>
-                <li><a href="#transform-3d">Transform 3D</a></li>
-                <li><a href="#animation">Animation</a></li>
-            </ul>
-
-            <hr>
-            <br>
+            <div class="section-list">
+                <ul>
+                    <li><a href="#using-css">Using CSS</a></li>
+                    <li><a href="#css-units">CSS Units</a></li>
+                    <li><a href="#css-selectors">CSS Selectors</a></li>
+                    <li><a href="#pseudo-classes">Pseudo Classes</a></li>
+                    <li><a href="#pseudo-elements">Pseudo Elements</a></li>
+                    <li><a href="#font">Font</a></li>
+                    <li><a href="#text-formatting">Text Formatting</a></li>
+                    <li><a href="#display-and-layout">Display and Layout</a></li>
+                    <li><a href="#sizing-and-content">Sizing and Content</a></li>
+                    <li><a href="#link">Link</a></li>
+                    <li><a href="#list">List</a></li>
+                    <li><a href="#table">Table</a></li>
+                    <li><a href="#border">Border</a></li>
+                    <li><a href="#outline">Outline</a></li>
+                    <li><a href="#shadow">Shadow</a></li>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#background-linear-gradient">Background Gradient Linear</a></li>
+                    <li><a href="#background-radial-gradient">Background Gradient Radial</a></li>
+                    <li><a href="#multiple-background">Multiple Background</a></li>
+                    <li><a href="#media-queries">Media Queries</a></li>
+                    <li><a href="#multi-columns">Multi Columns</a></li>
+                    <li><a href="#flexbox">Flexbox</a></li>
+                    <li><a href="#grid-view">Grid View</a></li>
+                    <li><a href="#css-filters">CSS Filters</a></li>
+                    <li><a href="#transitions">Transitions</a></li>
+                    <li><a href="#transformation-2d">Transformation 2D</a></li>
+                    <li><a href="#transform-3d">Transform 3D</a></li>
+                    <li><a href="#animation">Animation</a></li>
+                </ul>
+            </div>
 
             <div class="sections" id="using-css">
-                <h3 class="heading"># Using CSS</h3>
-                <h5>Inserting CSS into a page -</h5>
+                <h4 class="heading"># Using CSS</h4>
+                <h6>Inserting CSS into a page -</h6>
                 <ul>
                     <li>
                         <strong>Inline CSS :</strong>
@@ -96,7 +95,7 @@
                     <li>
                         <strong>External CSS :</strong>
                         <p>Each HTML page must include a reference to an external style sheet inside the <code>&lt;link&gt;</code> element inside the head section.</p>
-                        <h5>HTML File -</h5>
+                        <h6>HTML File -</h6>
                         <pre class="code-box code-box-color"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -107,7 +106,7 @@
         &lt;p&gt;This is a paragraph.&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                        <h5>CSS File -</h5>
+                        <h6>CSS File -</h6>
                         <pre class="code-box code-box-color"><code>body {
     background-color: lightblue;
 }
@@ -122,7 +121,7 @@ h1 {
             </div>
 
             <div class="sections" id="css-units">
-                <h3 class="heading"># CSS Units</h3>
+                <h4 class="heading"># CSS Units</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -193,9 +192,9 @@ h1 {
             </div>
 
             <div class="sections" id="css-selectors">
-                <h3 class="heading"># CSS Selectors</h3>
+                <h4 class="heading"># CSS Selectors</h4>
                 <div>
-                    <h4>&bull; Selectors</h4>
+                    <h5>&bull; Selectors</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
                             <thead>
@@ -222,7 +221,7 @@ h1 {
                 </div>
 
                 <div>
-                    <h4>&bull; Combinators :</h4>
+                    <h5>&bull; Combinators :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
                             <thead>
@@ -249,7 +248,7 @@ h1 {
                 </div>
 
                 <div>
-                    <h4>&bull; Attributes :</h4>
+                    <h5>&bull; Attributes :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
                             <thead>
@@ -295,18 +294,18 @@ h1 {
             </div>
 
             <div class="sections" id="pseudo-classes">
-                <h3 class="heading"># Pseudo Classes</h3>
+                <h4 class="heading"># Pseudo Classes</h4>
                 <p>Selects all with pseudo-class.</p>
                 <div>
                     <strong>Pseudo Class :</strong>
                     <code>first-child|last-child|hover|active|link|visited|focus|checked|disabled|enabled|empty|required|target|invalid|not(element)</code>
                 </div>
-                <h5>Syntax :</h5>
+                <h6>Syntax :</h6>
                 <pre class="code-box"><code>selector : pseudo-class {
     property: value;
 }
 </code></pre>
-                <h5>Ex :</h5>
+                <h6>Ex :</h6>
                 <pre class="code-box code-box-color"><code>div:hover {
     color: red;
 }
@@ -314,18 +313,18 @@ h1 {
             </div>
 
             <div class="sections" id="pseudo-elements">
-                <h3 class="heading"># Pseudo Elements</h3>
+                <h4 class="heading"># Pseudo Elements</h4>
                 <p>selects and inserts content with a pseudo-element.</p>
                 <div>
                     <strong>Pseudo Element :</strong>
                     <code>after|before|first-letter|first-line|selection</code>
                 </div>
-                <h5>Syntax :</h5>
+                <h6>Syntax :</h6>
                 <pre class="code-box"><code>selector :: pseudo-element {
     property: value;
 }
 </code></pre>
-                <h5>Ex :</h5>
+                <h6>Ex :</h6>
                 <pre class="code-box code-box-color"><code>p :: before {
     content: &quot;before p&quot;;
     color: red;
@@ -334,7 +333,7 @@ h1 {
             </div>
 
             <div class="sections" id="font">
-                <h3 class="heading"># Font</h3>
+                <h4 class="heading"># Font</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -369,8 +368,8 @@ h1 {
                 </div>
                 <div class="block-quote">font: style variant weight color-name font-name</div>
                 <div>
-                    <h4>&bull; Font-Face Rules :</h4>
-                    <h5>Syntax :</h5>
+                    <h5>&bull; Font-Face Rules :</h5>
+                    <h6>Syntax :</h6>
                     <pre class="code-box"><code>@font-face { 
     font-family: font-name;
     src: url(&#39;font-name.otf&#39;);
@@ -382,7 +381,7 @@ tag|selector {
    font-family: font-name;
 }
 </code></pre>
-                    <h5>Ex :</h5>
+                    <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code>@font-face {
     font-family: UbuntuCondensed;
     src: url(ubuntucondensed.ttf);
@@ -395,7 +394,7 @@ div {
             </div>
 
             <div class="sections" id="text-formatting">
-                <h3 class="heading"># Text Formatting</h3>
+                <h4 class="heading"># Text Formatting</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -452,7 +451,7 @@ div {
             </div>
 
             <div class="sections" id="display-and-layout">
-                <h3 class="heading"># Display and Layout</h3>
+                <h4 class="heading"># Display and Layout</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -494,7 +493,7 @@ div {
             </div>
 
             <div class="sections" id="sizing-and-content">
-                <h3 class="heading"># Sizing and Content</h3>
+                <h4 class="heading"># Sizing and Content</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -560,7 +559,7 @@ div {
             </div>
 
             <div class="sections" id="link">
-                <h3 class="heading"># Link</h3>
+                <h4 class="heading"># Link</h4>
                 <pre class="code-box"><code>a: link|visited|hower|active|a:focus {
    color: color-name;
 }
@@ -574,7 +573,7 @@ div {
             </div>
 
             <div class="sections" id="list">
-                <h3 class="heading"># List</h3>
+                <h4 class="heading"># List</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -602,7 +601,7 @@ div {
             </div>
 
             <div class="sections" id="table">
-                <h3 class="heading"># Table</h3>
+                <h4 class="heading"># Table</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -632,7 +631,7 @@ div {
             </div>
 
             <div class="sections" id="border">
-                <h3 class="heading"># Border</h3>
+                <h4 class="heading"># Border</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -699,7 +698,7 @@ div {
             </div>
 
             <div class="sections" id="outline">
-                <h3 class="heading"># Outline</h3>
+                <h4 class="heading"># Outline</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -730,7 +729,7 @@ div {
             </div>
 
             <div class="sections" id="shadow">
-                <h3 class="heading"># Shadow</h3>
+                <h4 class="heading"># Shadow</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -754,7 +753,7 @@ div {
             </div>
 
             <div class="sections" id="background">
-                <h3 class="heading"># Background</h3>
+                <h4 class="heading"># Background</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -790,7 +789,7 @@ div {
             </div>
 
             <div class="sections" id="background-linear-gradient">
-                <h3 class="heading"># Background Linear Gradient</h3>
+                <h4 class="heading"># Background Linear Gradient</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -823,7 +822,7 @@ div {
             </div>
 
             <div class="sections" id="background-radial-gradient">
-                <h3 class="heading"># Background Radial Gradient</h3>
+                <h4 class="heading"># Background Radial Gradient</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -853,7 +852,7 @@ div {
             </div>
 
             <div class="sections" id="multiple-background">
-                <h3 class="heading"># Multiple Background</h3>
+                <h4 class="heading"># Multiple Background</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -885,7 +884,7 @@ div {
             </div>
 
             <div class="sections" id="media-queries">
-                <h3 class="heading"># Media Queries</h3>
+                <h4 class="heading"># Media Queries</h4>
                 <div>
                     <strong>Media-Types :</strong>
                     <code>all|print|screen|speech</code>
@@ -894,12 +893,12 @@ div {
                     <strong>Media-Features :</strong>
                     <code> width|resolution|overflow-inline|overflow-block|orientation|aspect-ratio|height|min-width|min-resolution|min-height|min-aspect-ratio|max-width|max-resolution|max-height|max-aspect-ratio</code>
                 </div>
-                <h5>Syntax :</h5>
+                <h6>Syntax :</h6>
                 <pre class="code-box"><code>@media media-types and ( media-features ) {
     property: value;
 }
 </code></pre>
-                <h5>Ex :</h5>
+                <h6>Ex :</h6>
                 <pre class="code-box code-box-color"><code>@media screen and (min-width: 480px){
     body{
         background-color: lightgreen;
@@ -915,7 +914,7 @@ div {
             </div>
 
             <div class="sections" id="multi-columns">
-                <h3 class="heading"># Multi Columns</h3>
+                <h4 class="heading"># Multi Columns</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -956,7 +955,7 @@ div {
             </div>
 
             <div class="sections" id="flexbox">
-                <h3 class="heading"># Flexbox</h3>
+                <h4 class="heading"># Flexbox</h4>
                 <p><strong>Note : must be <code>display: flex</code></strong></p>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
@@ -1015,7 +1014,7 @@ div {
             </div>
 
             <div class="sections" id="grid-view">
-                <h3 class="heading"># Grid View</h3>
+                <h4 class="heading"># Grid View</h4>
                 <p><strong>Note : must be <code>display: grid|inline-grid</code></strong></p>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
@@ -1070,7 +1069,7 @@ div {
             </div>
 
             <div class="sections" id="css-filters">
-                <h3 class="heading"># CSS Filters</h3>
+                <h4 class="heading"># CSS Filters</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -1147,12 +1146,12 @@ div {
                     </table>
                 </div>
                 <div class="block-quote">filter: blur hue-rotate()</div>
-                <h5>Ex :</h5>
+                <h6>Ex :</h6>
                 <pre class="code-box code-box-color"><code>filter: blur(5px) hue-rotate(180deg)</code></pre>
             </div>
 
             <div class="sections" id="transitions">
-                <h3 class="heading"># Transitions</h3>
+                <h4 class="heading"># Transitions</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -1178,8 +1177,8 @@ div {
                 </div>
                 <div class="block-quote">transition: transition-property transition-duration transition-timing-function transition-delay</div>
                 <p>(comma seperates multiple)</p>
-                <h5>Ex :</h5>
-                <h5 class="justify">Triggers when div elements width changes -</h5>
+                <h6>Ex :</h6>
+                <h6 class="justify">Triggers when div elements width changes -</h6>
                 <pre class="code-box code-box-color"><code>div {
     width: 100px;
     height: 100px;
@@ -1190,7 +1189,7 @@ div:hover {
     width: 300px;
 }
 </code></pre>
-                <h5 class="justify">Transition with transform -</h5>
+                <h6 class="justify">Transition with transform -</h6>
                 <pre class="code-box code-box-color"><code>div {
     width: 100px;
     height: 100px;
@@ -1205,7 +1204,7 @@ div:hover {
             </div>
 
             <div class="sections" id="transformation-2d">
-                <h3 class="heading"># Transformation 2D</h3>
+                <h4 class="heading"># Transformation 2D</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -1252,7 +1251,7 @@ div:hover {
                 </div>
                 <div class="block-quote">transform: rotate(45deg) translate(100px)</div>
                 <p>(comma seperates muliple)</p>
-                <h5>Ex :</h5>
+                <h6>Ex :</h6>
                 <pre class="code-box code-box-color"><code>div {
     width: 200px;
     height: 100px;
@@ -1262,7 +1261,7 @@ div:hover {
             </div>
 
             <div class="sections" id="transform-3d">
-                <h3 class="heading"># Transform 3D</h3>
+                <h4 class="heading"># Transform 3D</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -1322,7 +1321,7 @@ div:hover {
                         </tbody>
                     </table>
                 </div>
-                <h5>Ex :</h5>
+                <h6>Ex :</h6>
                 <pre class="code-box code-box-color"><code>div {
     height: 150px;
     width: 150px;
@@ -1335,8 +1334,8 @@ div:hover {
             </div>
 
             <div class="sections" id="animation">
-                <h3 class="heading"># Animation</h3>
-                <h5>Syntax :</h5>
+                <h4 class="heading"># Animation</h4>
+                <h6>Syntax :</h6>
                 <pre class="code-box"><code>@keyframes animation-name {
     from { property-from-change; }
     to { property-to-change; }
@@ -1378,8 +1377,8 @@ div:hover {
                     </table>
                 </div>
                 <div class="block-quote">animation: anim-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction</div>
-                <h5>Ex :</h5>
-                <h5 class="justify">Change bg-color when animation is 25% complete, 50% complete &amp; 100% complete -</h5>
+                <h6>Ex :</h6>
+                <h6 class="justify">Change bg-color when animation is 25% complete, 50% complete &amp; 100% complete -</h6>
                 <pre class="code-box code-box-color"><code>@keyframe anim-1 {
     0%  { background-color: red; }
     50%  { background-color: yellow; }
@@ -1394,7 +1393,7 @@ div {
     animation-duration: 4s;
 }
 </code></pre>
-                <h5 class="justify">Change bg-color from red to green -</h5>
+                <h6 class="justify">Change bg-color from red to green -</h6>
                 <pre class="code-box code-box-color"><code>@keyframes anim-2 {
     from { background-color: red; }
     to { background-color: green; }
@@ -1413,6 +1412,7 @@ div {
 </code></pre>
             </div>
 
+            <!-- Navigation Buttons -->
             <nav>
                 <a href="https://itspatkar.github.io/Cheatsheets/"><i class="bi bi-arrow-left-square-fill"></i></a>
                 <a href="#" class="float-end"><i class="bi bi-arrow-up-square-fill"></i></a>

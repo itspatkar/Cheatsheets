@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>Git Cheatsheet | ItsPatkar</title>
+        <title>Git Cheatsheet</title>
 
         <!-- Bootstrap CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,31 +20,30 @@
             <!-- Theme Toggle -->
             <div class="button float-end"><i class="bi bi-circle-half"></i></div>
 
-            <h2 class="title">GIT</h2>
+            <h3 class="title">GIT</h3>
 
-            <ul class="section-list">
-                <li><a href="#initial-setup">Initial Setup</a></li>
-                <li><a href="#git-ignore-file">Git Ignore File</a></li>
-                <li><a href="#setting-repo">Setting Repo</a></li>
-                <li><a href="#view-and-inspect-changes">View and Inspect Changes</a></li>
-                <li><a href="#staging-and-unstaging">Staging and Unstaging</a></li>
-                <li><a href="#commit-and-rebase">Commit and Rebase</a></li>
-                <li><a href="#reset">Reset</a></li>
-                <li><a href="#push">Push</a></li>
-                <li><a href="#fetch-merge-and-pull">Fetch Merge and Pull</a></li>
-                <li><a href="#branch">Branch</a></li>
-                <li><a href="#remote">Remote</a></li>
-                <li><a href="#stash">Stash</a></li>
-                <li><a href="#reflog">Reflog</a></li>
-                <li><a href="#tags">Tags</a></li>
-                <li><a href="#tips">Tips</a></li>
-            </ul>
-
-            <hr>
-            <br>
+            <div class="section-list">
+                <ul>
+                    <li><a href="#initial-setup">Initial Setup</a></li>
+                    <li><a href="#git-ignore-file">Git Ignore File</a></li>
+                    <li><a href="#setting-repo">Setting Repo</a></li>
+                    <li><a href="#view-and-inspect-changes">View and Inspect Changes</a></li>
+                    <li><a href="#staging-and-unstaging">Staging and Unstaging</a></li>
+                    <li><a href="#commit-and-rebase">Commit and Rebase</a></li>
+                    <li><a href="#reset">Reset</a></li>
+                    <li><a href="#push">Push</a></li>
+                    <li><a href="#fetch-merge-and-pull">Fetch Merge and Pull</a></li>
+                    <li><a href="#branch">Branch</a></li>
+                    <li><a href="#remote">Remote</a></li>
+                    <li><a href="#stash">Stash</a></li>
+                    <li><a href="#reflog">Reflog</a></li>
+                    <li><a href="#tags">Tags</a></li>
+                    <li><a href="#tips">Tips</a></li>
+                </ul>
+            </div>
 
             <div class="sections" id="initial-setup">
-                <h3 class="heading"># Initial Setup</h3>
+                <h4 class="heading"># Initial Setup</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -81,14 +80,14 @@
             </div>
 
             <div class="sections" id="git-ignore-file">
-                <h3 class="heading"># Git Ignore File</h3>
+                <h4 class="heading"># Git Ignore File</h4>
                 <ul class="justify">
                     <li>It is a special config file. Any files added to it will be excluded from the git repo.</li>
                     <li>This file should be in the root folder of the repository.</li>
                     <li>File name: <code>.gitignore</code></li>
                     <li><a href="https://github.com/github/gitignore">Collection of useful .gitignore templates</a></li>
                 </ul>
-                <h5>Ex :</h5>
+                <h6>Ex :</h6>
                 <pre class="code-box code-box-color"><code># setup.txt will be excluded
 setup.txt
 
@@ -100,7 +99,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="setting-repo">
-                <h3 class="heading"># Setting Repo</h3>
+                <h4 class="heading"># Setting Repo</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -132,7 +131,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="view-and-inspect-changes">
-                <h3 class="heading"># View and Inspect Changes</h3>
+                <h4 class="heading"># View and Inspect Changes</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -213,7 +212,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="staging-and-unstaging">
-                <h3 class="heading"># Staging and Unstaging</h3>
+                <h4 class="heading"># Staging and Unstaging</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -272,7 +271,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="commit-and-rebase">
-                <h3 class="heading"># Commit and Rebase</h3>
+                <h4 class="heading"># Commit and Rebase</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -325,7 +324,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="reset">
-                <h3 class="heading"># Reset</h3>
+                <h4 class="heading"># Reset</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -367,7 +366,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="push">
-                <h3 class="heading"># Push</h3>
+                <h4 class="heading"># Push</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -411,7 +410,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="fetch-merge-and-pull">
-                <h3 class="heading"># Fetch Merge and Pull</h3>
+                <h4 class="heading"># Fetch Merge and Pull</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -459,7 +458,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="branch">
-                <h3 class="heading"># Branch</h3>
+                <h4 class="heading"># Branch</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -536,7 +535,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="remote">
-                <h3 class="heading"># Remote</h3>
+                <h4 class="heading"># Remote</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -584,7 +583,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="stash">
-                <h3 class="heading"># Stash</h3>
+                <h4 class="heading"># Stash</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -647,7 +646,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="reflog">
-                <h3 class="heading"># Reflog</h3>
+                <h4 class="heading"># Reflog</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -672,7 +671,7 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="tags">
-                <h3 class="heading"># Tags</h3>
+                <h4 class="heading"># Tags</h4>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-striped">
                         <thead>
@@ -704,15 +703,15 @@ bin/</code></pre>
             </div>
 
             <div class="sections" id="tips">
-                <h3 class="heading"># Tips</h3>
+                <h4 class="heading"># Tips</h4>
                 <div>
-                    <h4>&bull; Undo recent commit :</h4>
+                    <h5>&bull; Undo recent commit :</h5>
                     <p>Undo or delete the most recent remote commit.</p>
                     <pre class="code-box code-box-color"><code>$ git reset --hard HEAD~1
 $ git push -f</code></pre>
                 </div>
                 <div>
-                    <h4>&bull; Local to remote repo :</h4>
+                    <h5>&bull; Local to remote repo :</h5>
                     <p>Creating a local repository and connecting to a non-empty remote repository.</p>
                     <pre class="code-box code-box-color"><code>$ git init
 $ git remote add origin [remote-repo]
@@ -723,6 +722,7 @@ $ git push --set-upstream origin main</code></pre>
                 </div>
             </div>
 
+            <!-- Navigation Buttons -->
             <nav>
                 <a href="https://itspatkar.github.io/Cheatsheets/"><i class="bi bi-arrow-left-square-fill"></i></a>
                 <a href="#" class="float-end"><i class="bi bi-arrow-up-square-fill"></i></a>
