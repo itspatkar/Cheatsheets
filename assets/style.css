@@ -3,6 +3,8 @@ body[data-theme="light"] {
     --bg-color: #fff;
     --color: #000;
     --link-color: #0d6efd;
+    --section-bg-color: #fbfbfc;
+    --section-border-color: #d7dce2;
     --heading-underline-color: #ccc;
     --code-box-bg-color: #f6f5f6;
     --code-box-color: #e83e8c;
@@ -19,6 +21,8 @@ body[data-theme="dark"] {
     --bg-color: #080808;
     --color: #fff;
     --link-color: #1e88e5;
+    --section-bg-color: #0F1012;
+    --section-border-color: #ccc;
     --heading-underline-color: #999;
     --code-box-bg-color: #101010;
     --code-box-color: #5fa8d3;
@@ -40,9 +44,13 @@ a {
     text-decoration: none;
     color: var(--link-color);
 }
+.sections ol, .sections ul {
+    padding-left: 1.25rem;
+}
 .button {
     position: sticky;
     top: 0.5rem;
+    padding-right: 0.5rem;
     font-size: 1.5rem;
 }
 .title {
@@ -53,7 +61,11 @@ a {
     font-size: 1rem;
 }
 .sections {
-    padding-bottom: 10px;
+    margin-bottom: 0.75rem;
+    padding: 0.95rem;
+    background-color: var(--section-bg-color);
+    border: 1px solid var(--section-border-color);
+    border-radius: 10px;
     font-size: 0.975rem;
 }
 .heading {
@@ -102,6 +114,7 @@ code {
 nav {
     position: sticky;
     bottom: 0.5rem;
+    padding: 0 0.5rem;
     font-size: 1.5rem;
 }
 nav a {
@@ -110,10 +123,14 @@ nav a {
 
 /* Responsiveness */
 @media screen and (max-width: 575px) {
+    .container {
+        padding: 5px;
+    }
     .section-list {
         font-size: 0.95rem;
     }
     .sections {
+        padding: 12px 8px;
         font-size: 0.85rem;
     }
 }
