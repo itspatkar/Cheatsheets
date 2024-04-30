@@ -91,6 +91,9 @@ thead {
 code {
     color: var(--code-box-color);
 }
+.table code {
+    white-space: nowrap;
+}
 .code-box-color {
     color: var(--code-box-color-ex);
 }
