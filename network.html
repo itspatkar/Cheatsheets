@@ -31,6 +31,11 @@
                     <li><a href="#http-protocol">HTTP Protocol</a></li>
                     <li><a href="#tcp-ip-model">TCP/IP Model</a></li>
                     <li><a href="#osi-model">OSI Model</a></li>
+                    <li><a href="#ethernet">Ethernet</a></li>
+                    <li><a href="#ssl-tls">SSL/TLS</a></li>
+                    <li><a href="#vpn">VPN</a></li>
+                    <li><a href="#proxy">Proxy</a></li>
+                    <li><a href="#firewall">Firewall</a></li>
                     <li><a href="#network-node">Networking Nodes</a></li>
                 </ul>
             </div>
@@ -177,6 +182,10 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+                <div>
+                    <h5>&bull; Web Socket :</h5>
+                    <p>A WebSocket is a communication protocol that provides full-duplex communication channels over a single TCP connection. WebSocket provides real-time data updates. WebSocket begins with an HTTP handshake that upgrades the connection from HTTP to WebSocket, using the Upgrade header. This allows WebSocket to leverage existing HTTP infrastructure and proxies. Websockets provide full-duplex communication, persistent connections, low latency, bi-directional connectivity, and security.</p>
                 </div>
             </div>
 
@@ -397,6 +406,60 @@
                         <p>The physical layer is responsible for the physical cable or wireless connection between network nodes. It defines the connector, the electrical cable or wireless technology connecting the devices, and is responsible for the transmission of the raw data.</p>
                     </li>
                 </ul>
+            </div>
+
+            <div class="sections" id="ethernet">
+                <h4 class="heading"># Ethernet</h4>
+                <p>Ethernet is a family of protocols that specify how devices on the same network segment format and transmit data over a physical medium. It is the standard way to connect devices in a wired network using cables and hubs.</p>
+            </div>
+
+            <div class="sections" id="ssl-tls">
+                <h4 class="heading"># SSL/TLS</h4>
+                <p>SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols that provide secure communication over a computer network. They are commonly used to ensure data confidentiality, integrity, and authentication between clients (like web browsers) and servers (web servers, email servers, etc.).</p>
+                <ul class="justify">
+                    <li><b>Encryption:</b> SSL/TLS use cryptographic techniques to encrypt data sent between the client and server. This ensures that even if intercepted, the data is unintelligible without the decryption keys.</li>
+                    <li><b>Authentication:</b> SSL/TLS protocols use digital certificates to authenticate the identity of parties involved in the communication. Certificates are issued by trusted Certificate Authorities (CAs) and verify that the server (and sometimes the client) is who they claim to be.</li>
+                    <li><b>Integrity:</b> SSL/TLS ensure data integrity by using cryptographic hashing algorithms. This prevents data from being altered or corrupted during transmission without detection.</li>
+                    <li>TLS is the successor to SSL.</li>
+                    <li>TLS has been designed with more robust security features and improvements based on the weaknesses found in SSL.</li>
+                </ul>
+            </div>
+
+            <div class="sections" id="vpn">
+                <h4 class="heading"># VPN</h4>
+                <p>VPN, or Virtual Private Network, is a technique used to create a secure and encrypted connection over the internet between two or more devices or networks. VPNs use encryption and tunneling protocols to ensure that data transmitted over the internet is secure and protected from unauthorized access.</p>
+                <ul class="justify">
+                    <li>VPNs are commonly used in organizations to improve network security and enable remote access to network resources.</li>
+                    <li>VPN is used for secure connections, privacy and anonymity (masking IP addresses), access, and bypassing censorship and restrictions.</li>
+                </ul>
+            </div>
+
+            <div class="sections" id="proxy">
+                <h4 class="heading"># Proxy</h4>
+                <p>A proxy or proxy server acts as an intermediary between a client and the server. It forwards client requests to the destination server and returns the server's responses to the client. A proxy provides anonymity, content filtering, caching, and access control. Proxies can block or filter certain content based on predefined rules, policies, or access controls.</p>
+                <ul class="justify">
+                    <li>Proxies typically do not encrypt data between the client and the proxy server, so data transmitted beyond the proxy server may be vulnerable to interception.</li>
+                    <li>An example of proxies are content delivery networks (CDNs), which use reverse proxies to distribute content closer to users, reducing latency and improving performance.</li>
+                </ul>
+                <h5>Proxy Chain :</h5>
+                <ul class="justify">
+                    <li>A proxy chain refers to a series of proxy servers or proxies that are linked together to route network traffic through multiple nodes in order to conceal the origin of the traffic or to bypass restrictions.</li>
+                    <li>Each proxy in the chain forwards requests to the next, creating a chain of proxies through which data passes before reaching its destination.</li>
+                    <li>It is used for bypassing restrictions, load balancing, and traffic management.</li>
+                    <li>In some cases, proxy chains are used to distribute traffic across different servers or to optimize network performance by balancing the load.</li>
+                </ul>
+            </div>
+
+            <div class="sections" id="firewall">
+                <h4 class="heading"># Firewall</h4>
+                <p>A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks, such as the internet. These rules can be configured to permit or deny traffic based on factors such as IP address, port number, protocol, or specific applications. Firewalls can be hardware devices, software programs, or a combination of both. Firewalls use a variety of techniques to control and monitor network traffic, including packet filtering, stateful inspection, and application-level filtering. It blocks unauthorized access and filters out malicious traffic.</p>
+                <div>
+                    <b>Types of firewall -</b>
+                    <ul class="justify">
+                        <li><b>Network Firewall :</b> A network firewall is a device that protects an entire network from unauthorized access and attacks. Network firewalls can be hardware or software based and are typically installed at the perimeter of a network to block unauthorized access from the internet.</li>
+                        <li><b>Host-based Firewall :</b> A host-based firewall is a firewall that protects an individual computer from unauthorized access and attacks. Host-based firewalls are typically software-based and are installed on individual computers to control access to network resources and block unauthorized traffic.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="network-node">
