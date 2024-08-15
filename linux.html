@@ -262,49 +262,57 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><code>ifconfig</code></td>
-                                    <td>Interface Configuration (ifconfig) used to configure network interfaces <b>(deprecated)</b></td>
+                                    <td><code>wget [URL]</code></td>
+                                    <td>non-interactive network retriever, used for downloading files from the web</td>
                                 </tr>
                                 <tr>
-                                    <td><code>nslookup [URL]</code></td>
-                                    <td>Name Server Lookup (Nslookup) used to query DNS server interactively <b>(deprecated)</b></td>
+                                    <td><code>curl [URL]</code></td>
+                                    <td>transfers data from or to a server using URLs</td>
                                 </tr>
                                 <tr>
-                                    <td><code>netstat</code></td>
-                                    <td>print network connections, routing tables, interface statistics, masquerade connections, multicast memberships etc <b>(deprecated)</b></td>
+                                    <td><code>ping [IP]</code></td>
+                                    <td>Packet Internet Groper (ping) sends ICMP ECHO_REQUEST to network hosts to test the reachability of a host</td>
                                 </tr>
                                 <tr>
-                                    <td><code>route</code></td>
-                                    <td>display IP/kernel routing table <b>(deprecated)</b></td>
+                                    <td><code>whois [IP]</code></td>
+                                    <td>client for the whois directory service</td>
                                 </tr>
                                 <tr>
-                                    <td><code>traceroute [URL]</code></td>
-                                    <td>print route packets trace to network host</td>
+                                    <td><code>host [DOMAIN]</code></td>
+                                    <td>DNS lookup utility converts names to IP addresses and vice versa</td>
                                 </tr>
                                 <tr>
-                                    <td><code>dig</code></td>
-                                    <td>Domain Information Groper (dig) used for retrieving information about DNS name servers</td>
+                                    <td><code>dig [IP]</code></td>
+                                    <td>Domain Information Groper (dig) retrieves information about DNS Name Servers</td>
+                                </tr>
+                                <tr>
+                                    <td><code>traceroute [IP]</code></td>
+                                    <td>print the route packets trace to network host</td>
                                 </tr>
                                 <tr>
                                     <td><code>ip</code></td>
-                                    <td>show or manipulate routing, network devices, and tunnels</td>
+                                    <td>show / manipulate routing, network devices, interfaces and tunnels (replaces deprecated: ifconfig, route, arp)</td>
                                 </tr>
                                 <tr>
-                                    <td><code>ping [URL|IP]</code></td>
-                                    <td>Packet Internet Groper (ping) sends ICMP ECHO_REQUEST to network hosts</td>
+                                    <td><code>ifconfig</code></td>
+                                    <td>Interface Configuration (ifconfig) configures network interfaces <b>(deprecated)</b></td>
                                 </tr>
-				<tr>
-				    <td><code>arp</code></td>
-				    <td>display and manipulate Address Resolution Protocol (ARP) cache. ARP is protocol used to map IP addresses to MAC addresses on local network.</td>
-				</tr>
-				<tr>
-				    <td><code>nmap</code></td>
-				    <td>Network Mapper is network scanning tool that identifies devices, open ports, and services of target hosts on network. It can detect OS and service versions and automate network scanning.</td>
-				</tr>
-				<tr>
-				    <td><code>tcpdump</code></td>
-				    <td>TCP dump is packet analyser tool used to capture and analyse packets and network traffic in real-time over network.</td>
-				</tr>
+                                <tr>
+                                    <td><code>nslookup [IP]</code></td>
+                                    <td>Name Server Lookup (nsookup) queries DNS Servers interactively <b>(deprecated)</b></td>
+                                </tr>
+                                <tr>
+                                    <td><code>netstat</code></td>
+                                    <td>print network connections, routing tables, interface statistics, masquerade connections, multicast memberships, etc. <b>(deprecated)</b></td>
+                                </tr>
+                                <tr>`
+                                    <td><code>route</code></td>
+                                    <td>show / manipulate the IP routing table <b>(deprecated)</b></td>
+                                </tr>
+                                <tr>
+                                    <td><code>arp</code></td>
+                                    <td>show / manipulate Address Resolution Protocol (ARP) cache <b>(deprecated)</b></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -471,14 +479,6 @@
                                 <tr>
                                     <td><code>ln -s [file] [link]</code></td>
                                     <td>create symbolic/soft link to file</td>
-                                </tr>
-                                <tr>
-                                    <td><code>wget [URL]</code></td>
-                                    <td>non-interactive network retriever (downloader)</td>
-                                </tr>
-                                <tr>
-                                    <td><code>curl [URL]</code></td>
-                                    <td>transfers data from or to server</td>
                                 </tr>
                             </tbody>
                         </table>
