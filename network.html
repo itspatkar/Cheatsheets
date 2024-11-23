@@ -24,10 +24,15 @@
             
             <div class="section-list">
                 <ul>
-                    <li><a href="#internet">Internet</a></li>
+                    <li><a href="#network">Network</a></li>
+                    <li><a href="#ip">IP Address</a></li>
+                    <li><a href="#mac">MAC Address</a></li>
+                    <li><a href="#port">Port Address</a></li>
                     <li><a href="#url">URL</a></li>
                     <li><a href="#dns">DNS</a></li>
+                    <li><a href="#handshake">Handshake</a></li>
                     <li><a href="#protocol">Protocols</a></li>
+                    <li><a href="#web-socket">Web Socket</a></li>
                     <li><a href="#http-protocol">HTTP Protocol</a></li>
                     <li><a href="#tcp-ip-model">TCP/IP Model</a></li>
                     <li><a href="#osi-model">OSI Model</a></li>
@@ -40,114 +45,175 @@
                 </ul>
             </div>
 
-            <div class="sections" id="internet">
-                <h4 class="heading"># Internet</h4>
-                <p>The internet is a global network of interconnected computers and devices that use standardized communication protocols to exchange data and information. For effective communication and organization on a network, devices need to have clear identification and be recognizable by others which is typically occurs through unique identifiers assigned to each device, such as IP addresses or MAC addresses. These identifiers enable devices to send and receive data, facilitating communication and maintaining order within the network.</p>
-                <div>
-                    <h5>IP Address :</h5>
+            <div class="sections" id="network">
+                <h4 class="heading"># Network</h4>
+                <div class="content">
+                    <p>A network is a system of interconnected devices (such as computers, servers, routers, and other hardware) that communicate and share resources using established protocols over wired or wireless connections.</p>
+                    <h6>Types of Networks -</h6>
                     <ul class="justify">
-                        <li>An IP (or Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.</li>
+                        <li><b>Local Area Network :</b> Covers a small area like an office or home.</li>
+                        <li><b>Wide Area Network :</b> Spans large geographical areas, like the internet.</li>
+                        <li><b>Metropolitan Area Network :</b> Connects multiple LANs within a city or large campus.</li>
+                        <li><b>Personal Area Network :</b> Small-scale network for personal devices like smartphones and laptops.</li>
+                    </ul>
+
+                    <h5>Internet :</h5>
+                    <p>The internet is a global network of interconnected computers and devices that use standardized communication protocols to exchange data and information. For effective communication and organization on a network, devices need to have clear identification and be recognizable by others which is typically occurs through unique identifiers assigned to each device, such as IP addresses or MAC addresses. These identifiers enable devices to send and receive data, facilitating communication and maintaining order within the network.</p>
+                </div>
+            </div>
+
+            <div class="sections" id="ip">
+                <h4 class="heading"># IP Address</h4>
+                <div class="content">
+                    <p>An Internet Protocol (IP) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It is called a logical address.</p>
+                    <ul class="justify">
                         <li>It serves two main purposes: identifying the host or network interface and providing the location of the device in the network.</li>
                         <li>It is calculated through a technique known as IP addressing & subnetting.</li>
                         <li>A device's IP address can be changed, but two devices cannot have the same IP address within the same network.</li>
-                        <li>An IP address is of two types: public or private. A public address is used to identify the device on the Internet, whereas a private address is used to identify a device amongst other devices on a local network.</li>
+                        <li>The Internet Assigned Numbers Authority (IANA) manages the global pool of unique IP addresses and delegates them to Regional Internet Registries (RIRs), which distribute them to organizations in their regions. Internet Service Providers (ISPs) obtain IP addresses from RIRs and assign them to customers like businesses and home users.</li>
                     </ul>
-               
-                    <h5>MAC Address :</h5>
+                    <h6>Type of IP Address -</h6>
                     <ul class="justify">
-                        <li>A MAC (Media Access Control) address is a unique identifier assigned to a network interface controller (NIC) for communication at the data link layer of a network segment. It serves as a hardware address that distinguishes one device from another on a local network.</li>
+                        <li><b>IPv4 :</b> Internet Protocol Version 4 (IPv4) is a 32-bit address and written as four decimal numbers separated by dots. The first octet of 127 is reserved for a computer's loopback address. Usally, the address <code>127.0.0.1</code> is used. The loopback address provides mechanisms for self-diagnosis and troubleshooting at the machine level. (e.g., <code>192.168.1.1</code>)</li>
+                        <li><b>IPv6 :</b>  Internet Protocol Version 6 (IPv6) is a 128-bit address and written as eight groups of hexadecimal numbers (of 4 digits) separated by colons. <code>::1</code> is the local loopback address in IPv6. (e.g., <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>)</li>
+                    </ul>
+                    <h6>Categories of IP Address -</h6>
+                    <ul class="justify">
+                        <li><b>Public :</b> A public address is used to identify the device on the Internet.</li>
+                        <li><b>Private :</b> A private address is used to identify a device amongst other devices on a local network.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections" id="mac">
+                <h4 class="heading"># MAC Address</h4>
+                <div class="content">
+                    <p>A MAC (Media Access Control) address is a unique identifier assigned to a network interface controller (NIC) for communication at the data link layer of a network segment. It is called a physical address.</p>
+                    <ul class="justify">
+                        <li>It serves as a hardware address that distinguishes one device from another on a local network or physical hardware.</li>
                         <li>The MAC address is a twelve-character hexadecimal number split into two's and separated by a colon. The first six characters represent the vendor/company that made the network interface, and the last six is a unique number.</li>
-                        <li>Address Resolution Protocol (ARP) is a protocol used to map IP addresses to MAC addresses on a local network. This is necessary because while IP addresses are used for routing packets across networks, MAC addresses are needed to deliver the packets to the correct device within a local network.</li>
                         <li>MAC addresses can be faked or spoofed in a process known as spoofing. This spoofing occurs when a networked device pretends to identify another using its MAC address.</li>
+                        <li>The Network Interface Card (NIC) Card’s manufacturer provides the MAC address.</li>
                     </ul>
-               
-                    <h5>Port Address :</h5>
+                    <h6>Address Resolution Protocol (ARP) :</h6>
+                    <p>Address Resolution Protocol (ARP) is a protocol used to map IP addresses to MAC addresses on a local network. This is necessary because while IP addresses are used for routing packets across networks, MAC addresses are needed to deliver the packets to the correct device within a local network.</p>
+                </div>
+            </div>
+
+            <div class="sections" id="port">
+                <h4 class="heading"># Port Address</h4>
+                <div class="content">
+                    <p>A port address is a logical identifier (numeric value) for a specific process or service used to uniquely identify different communication endpoints in a network.</p>
                     <ul class="justify">
-                        <li>A port address is a numeric value used to uniquely identify different communication endpoints in a network.</li>
+                        <li>A port allows a single IP address to support multiple simultaneous communications, each using a different port number.</li>
                         <li>In a node, multiple processes are running, and data that is sent or received must reach the right process.</li>
-                        <li>Every process in the node is uniquely identified using a port number, which is used to route data packets to the correct destination.</li>
+                        <li>Every process in the node is uniquely identified using a port number, which is used to route data packets to the correct destination. This allows a device to distinguish between multiple running processes and applications when communicating.</li>
+                        <li>Port numbers are assigned and managed by the Internet Assigned Numbers Authority (IANA).</li>
+                        <li>Port numbers range from 0 to 65535.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="sections" id="url">
                 <h4 class="heading"># URL</h4>
-                <p>A URL (or Uniform Resource Locator) is predominantly an instruction on how to access a resource on the internet.</p>
-                <h6>Ex :</h6>
-                <div class="code-box code-box-color"><code>http://user:password@example.com:80/view?id=1#task2</code></div>
-                <ul class="justify">
-                    <li><b>Scheme (<code>http</code>) :</b> This instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP.</li>
-                    <li><b>User (<code>user:password</code>) :</b> Some services require authentication to log in, you can put a username and password into the URL to log in.</li>
-                    <li><b>Host (<code>example.com</code>) :</b> The domain name or IP address of the server you wish to access.</li>
-                    <li><b>Port (<code>80</code>) :</b> The Port that you are going to connect to, usually 80 for HTTP and 443 for HTTPS.</li>
-                    <li><b>Path (<code>/view</code>) :</b> The file name or location of the resource you are trying to access.</li>
-                    <li><b>Query String (<code>/view?id=1</code>) :</b> Extra bits of information that can be sent to the requested path.</li>
-                    <li><b>Fragment (<code>#task2</code>) :</b> This is a reference to a location on the actual page requested.</li>
-                </ul>
+                <div class="content">
+                    <p>A URL (or Uniform Resource Locator) is predominantly an instruction on how to access a resource on the internet.</p>
+                    <h6>Ex :</h6>
+                    <div class="code-box code-box-color"><code>http://user:password@example.com:80/view?id=1#task2</code></div>
+                    <ul class="justify">
+                        <li><b>Scheme (<code>http</code>) :</b> This instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP.</li>
+                        <li><b>User (<code>user:password</code>) :</b> Some services require authentication to log in, you can put a username and password into the URL to log in.</li>
+                        <li><b>Host (<code>example.com</code>) :</b> The domain name or IP address of the server you wish to access.</li>
+                        <li><b>Port (<code>80</code>) :</b> The Port that you are going to connect to, usually 80 for HTTP and 443 for HTTPS.</li>
+                        <li><b>Path (<code>/view</code>) :</b> The file name or location of the resource you are trying to access.</li>
+                        <li><b>Query String (<code>/view?id=1</code>) :</b> Extra bits of information that can be sent to the requested path.</li>
+                        <li><b>Fragment (<code>#task2</code>) :</b> This is a reference to a location on the actual page requested.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="dns">
                 <h4 class="heading"># DNS</h4>
-                <p>The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like google.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources. DNS servers eliminate the need for humans to memorize IP addresses such as <code>192.168.1.1</code> (in IPv4).</p>
-                <ul class="justify">
-                    <li><b>Domain Name Resolution :</b> When a domain name is entered into a web browser, the device first checks its local DNS cache to see if the corresponding IP address exists. If not, it sends a request to a DNS server.</li>
-                    <li><b>DNS Server Lookup :</b> The device sends a query to a DNS server, provided by the Internet Service Provider (ISP). If the DNS server has the requested information in its cache, it returns the IP address to the device. If not, it queries other DNS servers until it finds the information or determines that it doesn't exist.</li>
-                    <li><b>Response :</b> Once the DNS server has the IP address corresponding to the requested domain name, it sends that information back to the device. The device can then connect to the server hosting the requested website and access the website.</li>
-                    <li>
-                        <p><b>Domain Hierarchy :</b> Domain Hierarchy refers to the structure and organization of domain names within the Domain Name System (DNS).</p>
-                        <div class="code-box code-box-color"><code>page.example.com</code></div>
-                        <ul>
-                            <li>Top-Level Domain (<code>.com</code>)</li>
-                            <li>Second-Level Domain (<code>example</code>)</li>
-                            <li>Subdomain (<code>page</code>)</li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="content">
+                    <p>The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like google.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources. DNS servers eliminate the need for humans to memorize IP addresses such as <code>192.168.1.1</code> (in IPv4).</p>
+                    <ul class="justify">
+                        <li><b>Domain Name Resolution :</b> When a domain name is entered into a web browser, the device first checks its local DNS cache to see if the corresponding IP address exists. If not, it sends a request to a DNS server.</li>
+                        <li><b>DNS Server Lookup :</b> The device sends a query to a DNS server, provided by the Internet Service Provider (ISP). If the DNS server has the requested information in its cache, it returns the IP address to the device. If not, it queries other DNS servers until it finds the information or determines that it doesn't exist.</li>
+                        <li><b>Response :</b> Once the DNS server has the IP address corresponding to the requested domain name, it sends that information back to the device. The device can then connect to the server hosting the requested website and access the website.</li>
+                        <li>
+                            <p><b>Domain Hierarchy :</b> Domain Hierarchy refers to the structure and organization of domain names within the Domain Name System (DNS).</p>
+                            <div class="code-box code-box-color"><code>page.example.com</code></div>
+                            <ul>
+                                <li>Top-Level Domain (<code>.com</code>)</li>
+                                <li>Second-Level Domain (<code>example</code>)</li>
+                                <li>Subdomain (<code>page</code>)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections" id="handshake">
+                <h4 class="heading"># Handshake</h4>
+                <div class="content">
+                    <p>Handshake is a process of establishing communication between two devices or systems to ensure they are ready to exchange data. It involves the exchange of control messages to agree on connection parameters, protocols, or synchronization details.</p>
+                    <h6>Types of Handshakes -</h6>
+                    <h5>TCP Handshake (Three-Way Handshake) :</h5>
+                    <p>The TCP handshake, or three-way handshake, is a process used in the TCP Protocol to establish a reliable connection between a client and a server before data is transmitted. It ensures both parties are synchronized and ready for communication.</p>
+                    <ul class="justify">
+                        <li>SYN (Synchronize) : The client sends a SYN message to the server, requesting to establish a connection and specifying an initial sequence number.</li>
+                        <li>SYN-ACK (Synchronize-Acknowledge) : The server responds with a SYN-ACK message, acknowledging the client's request and providing its own sequence number.</li>
+                        <li>ACK (Acknowledge) : The client sends an ACK message back to the server, confirming receipt of the server's response. The connection is now established.</li>
+                    </ul>
+                    <h5>TLS/SSL Handshake :</h5>
+                    <p>The TLS/SSL handshake is a process used to establish a secure, encrypted connection between a client (e.g., a web browser) and a server (e.g., a website). This handshake is a crucial part of the TLS (Transport Layer Security) or SSL (Secure Sockets Layer) protocols, which protect data in transit over a network.</p>
+                </div>
             </div>
 
             <div class="sections" id="protocol">
                 <h4 class="heading"># Protocols</h4>
-                <p>In computer networking, protocols are a set of rules or conventions that govern how data is transmitted between devices on a network.<br>
-                There are numerous protocols at different layers of the networking stack, such as -</p>
-                <ul>
-                    <li>
-                        <h6>Internet Protocol (IP) :</h6>
-                        <p>Fundamental protocol responsible for addressing and routing packets of data so they can travel across networks and reach their intended destinations.</p>
-                    </li>
-                    <li>
-                        <h6>Transmission Control Protocol (TCP) :</h6>
-                        <p>TCP is a protocol that operates at a higher level than IP and is responsible for establishing and maintaining connections between devices, ensuring reliable and ordered delivery of data. If data is lost or corrupted during transmission, TCP detects this and retransmits the lost or corrupted packets. TCP is connection-oriented, meaning a connection is established and maintained until the application programs at each end have finished exchanging messages. This connection's establishment and termination involve a handshake process. TCP is used in web browsers (in HTTP), email, file transfer, and instant/realtime messaging.</p>
-                    </li>
-                    <li>
-                        <h6>User Datagram Protocol (UDP) :</h6>
-                        <p>UDP is a connectionless protocol, which means it doesn't establish a connection before sending data and doesn't guarantee delivery of packets or the order of packets. Each UDP packet is independent of the others. UDP offers lower latency compared to TCP due to its connectionless nature, no handshake, minimal overhead, and no retransmissions. It is often used for time-sensitive applications where speed is prioritized over reliability. UDP is commonly used in VoIP applications, video streaming, online gaming, DNS, and DHCP.</p>
-                    </li>
-                    <li>
-                        <h6>Hypertext Transfer Protocol (HTTP) :</h6>
-                        <p>The HTTP (Hypertext Transfer Protocol) is an application layer protocol used for transferring hypermedia documents, such as HTML files, on the World Wide Web. It is the foundation of data communication on the web, and HTTP uses a client-server model, where clients initiate requests and servers respond with the requested resources. HTTP operates over TCP/IP, which ensures reliable delivery of data packets over networks. The protocol is stateless, meaning each request from a client is independent and not dependent on previous requests.</p>
-                    </li>
-                    <li>
-                        <h6>Hypertext Transfer Protocol Secure (HTTPS) :</h6>
-                        <p>HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP used for secure communication over a computer network, particularly the internet. It encrypts the data sent and received between a user's browser and the website server, ensuring that the information remains confidential and protected from interception or tampering by unauthorized parties. HTTPS uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocols to establish an encrypted connection between the client and the server.</p>
-                    </li>
-                    <li>
-                        <h6>Simple Mail Transfer Protocol (SMTP) :</h6>
-                        <p>SMTP, or Simple Mail Transfer Protocol, is a communication protocol used for transmitting electronic mail (email) between computers over a network. It defines how email messages should be formatted and transmitted.</p>
-                    </li>
-                    <li>
-                        <h6>File Transfer Protocol (FTP) :</h6>
-                        <p>FTP, or File Transfer Protocol, is a standard network protocol used for transferring files between a client and a server on a computer network. It specifies how files should be transferred and accessed.</p>
-                    </li>
-                    <li>
-                        <h6>Secure Shell Protocol (SSH) :</h6>
-                        <p>SSH, or Secure Shell, is a cryptographic network protocol used to securely access and manage remote servers or systems over an unsecured network. It provides a secure channel over which users can perform various tasks, such as logging into remote machines, executing commands, transferring files, managing network services, and tunneling or port forwarding.</p>
-                    </li>
-                    <li>
-                        <h6>Dynamic Host Configuration Protocol (DHCP) :</h6>
-                        <p>It is a network management protocol used to automatically assign IP addresses and other network configuration information to devices on a network. DHCP eliminates the need for manual configuration of network settings.</p>
-                    </li>
-                </ul>
-                <div>
+                <div class="content">
+                    <p>In computer networking, protocols are a set of rules or conventions that govern how data is transmitted between devices on a network.<br>
+                    There are numerous protocols at different layers of the networking stack, such as -</p>
+                    <ul>
+                        <li>
+                            <h6>Internet Protocol (IP) :</h6>
+                            <p>Fundamental protocol responsible for addressing and routing packets of data so they can travel across networks and reach their intended destinations.</p>
+                        </li>
+                        <li>
+                            <h6>Transmission Control Protocol (TCP) :</h6>
+                            <p>TCP is a protocol that operates at a higher level than IP and is responsible for establishing and maintaining connections between devices, ensuring reliable and ordered delivery of data. If data is lost or corrupted during transmission, TCP detects this and retransmits the lost or corrupted packets. TCP is connection-oriented, meaning a connection is established and maintained until the application programs at each end have finished exchanging messages. This connection's establishment and termination involve a handshake process. TCP is used in web browsers (in HTTP), email, file transfer, and instant/realtime messaging.</p>
+                        </li>
+                        <li>
+                            <h6>User Datagram Protocol (UDP) :</h6>
+                            <p>UDP is a connectionless protocol, which means it doesn't establish a connection before sending data and doesn't guarantee delivery of packets or the order of packets. Each UDP packet is independent of the others. UDP offers lower latency compared to TCP due to its connectionless nature, no handshake, minimal overhead, and no retransmissions. It is often used for time-sensitive applications where speed is prioritized over reliability. UDP is commonly used in VoIP applications, video streaming, online gaming, DNS, and DHCP.</p>
+                        </li>
+                        <li>
+                            <h6>Hypertext Transfer Protocol (HTTP) :</h6>
+                            <p>The HTTP (Hypertext Transfer Protocol) is an application layer protocol used for transferring hypermedia documents, such as HTML files, on the World Wide Web. It is the foundation of data communication on the web, and HTTP uses a client-server model, where clients initiate requests and servers respond with the requested resources. HTTP operates over TCP/IP, which ensures reliable delivery of data packets over networks. The protocol is stateless, meaning each request from a client is independent and not dependent on previous requests.</p>
+                        </li>
+                        <li>
+                            <h6>Hypertext Transfer Protocol Secure (HTTPS) :</h6>
+                            <p>HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP used for secure communication over a computer network, particularly the internet. It encrypts the data sent and received between a user's browser and the website server, ensuring that the information remains confidential and protected from interception or tampering by unauthorized parties. HTTPS uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocols to establish an encrypted connection between the client and the server.</p>
+                        </li>
+                        <li>
+                            <h6>Simple Mail Transfer Protocol (SMTP) :</h6>
+                            <p>SMTP, or Simple Mail Transfer Protocol, is a communication protocol used for transmitting electronic mail (email) between computers over a network. It defines how email messages should be formatted and transmitted.</p>
+                        </li>
+                        <li>
+                            <h6>File Transfer Protocol (FTP) :</h6>
+                            <p>FTP, or File Transfer Protocol, is a standard network protocol used for transferring files between a client and a server on a computer network. It specifies how files should be transferred and accessed.</p>
+                        </li>
+                        <li>
+                            <h6>Secure Shell Protocol (SSH) :</h6>
+                            <p>SSH, or Secure Shell, is a cryptographic network protocol used to securely access and manage remote servers or systems over an unsecured network. It provides a secure channel over which users can perform various tasks, such as logging into remote machines, executing commands, transferring files, managing network services, and tunneling or port forwarding.</p>
+                        </li>
+                        <li>
+                            <h6>Dynamic Host Configuration Protocol (DHCP) :</h6>
+                            <p>It is a network management protocol used to automatically assign IP addresses and other network configuration information to devices on a network. DHCP eliminates the need for manual configuration of network settings.</p>
+                        </li>
+                    </ul>
+
                     <h6>Default Port for Protocols :</h6>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -179,23 +245,49 @@
                                     <td>22</td>
                                 </tr>
                                 <tr>
+                                    <td>SMTP</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>SMTP with TLS</td>
+                                    <td>587</td>
+                                </tr>
+                                <tr>
                                     <td>DNS</td>
                                     <td>53</td>
+                                </tr>
+                                <tr>
+                                    <td>DNS over TLS (DoT)</td>
+                                    <td>853</td>
+                                </tr>
+                                <tr>
+                                    <td>NTP</td>
+                                    <td>123</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div>
-                    <h5>&bull; Web Socket :</h5>
-                    <p>A WebSocket is a communication protocol that provides full-duplex communication channels over a single TCP connection. WebSocket provides real-time data updates. WebSocket begins with an HTTP handshake that upgrades the connection from HTTP to WebSocket, using the Upgrade header. This allows WebSocket to leverage existing HTTP infrastructure and proxies. Websockets provide full-duplex communication, persistent connections, low latency, bi-directional connectivity, and security.</p>
+            </div>
+
+            <div class="sections" id="web-socket">
+                <h4 class="heading"># Web Socket</h4>
+                <div class="content">
+                    <p>A Web Socket is a communication protocol that provides full-duplex communication and persistent connection channels over a single TCP connection between a client (a web browser) and a server.</p>
+                    <ul>
+                        <li>WebSocket begins with an HTTP handshake that upgrades the connection from HTTP to WebSocket, using the Upgrade header. This allows WebSocket to leverage existing HTTP infrastructure and proxy.</li>
+                        <li>Unlike traditional HTTP communication, which is request-response based, Websockets provide full-duplex communication, persistent connections, low latency, bi-directional connectivity, and security.</li>
+                        <li>WebSocket provides real-time communication and data transfer.</li>
+                        <li>It is used in real-time applications like social media apps, online gaming and live streaming, and collaborative tools like Google Docs.</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="sections" id="http-protocol">
                 <h4 class="heading"># HTTP Protocol</h4>
-                <p>The HTTP (Hypertext Transfer Protocol) is an application layer protocol used for transferring hypermedia documents, such as HTML files, on the World Wide Web.</p>
-                <div>
+                <div class="content">
+                    <p>The HTTP (Hypertext Transfer Protocol) is an application layer protocol used for transferring hypermedia documents, such as HTML files, on the World Wide Web.</p>
+
                     <h5>HTTP Methods :</h5>
                     <p>HTTP methods are a way for the client to show their intended action when making an HTTP request.</p>
                     <ul class="justify">
@@ -204,8 +296,7 @@
                         <li><b>PUT Request :</b> This is used for submitting data to a web server to update information.</li>
                         <li><b>DELETE Request :</b> This is used for deleting information or records from a web server.</li>
                     </ul>
-                </div>
-                <div>
+
                     <h5>HTTP Status Code :</h5>
                     <p>HTTP status codes are responses provided by a server to indicate the outcome of a client's request to access a particular resource.</p>
                     <div class="table-responsive">
@@ -240,6 +331,7 @@
                             </tbody>
                         </table>
                     </div>
+
                     <h6>Common Status Codes :</h6>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -321,8 +413,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <div>
+
                     <h5>HTTP Headers :</h5>
                     <p>Headers are additional bits of data that are sent to the web server when making requests. Although no headers are strictly required when making an HTTP request, if they are not sent, it is difficult to view a website properly.</p>
                     <ul>
@@ -346,8 +437,7 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
-                <div>
+
                     <h5>Cookies :</h5>
                     <p>A cookie is a small piece of data that is stored on a user's computer by a web browser. Cookies are set by the "Set-Cookie" header received from a web server. Cookies are used for session management, tracking and analytics, advertising, etc.</p>
                 </div>
@@ -355,108 +445,121 @@
 
             <div class="sections" id="tcp-ip-model">
                 <h4 class="heading"># TCP/IP Model</h4>
-                <p>The Internet protocol suite, commonly known as TCP/IP, is a framework for organizing the set of communication protocols used in the Internet and similar computer networks according to functional criteria. The foundational protocols in the suite are the Transmission Control Protocol (TCP), the User Datagram Protocol (UDP), and the Internet Protocol (IP). The Internet protocol suite provides end-to-end data communication specifying how data should be packetized, addressed, transmitted, routed, and received. This functionality is organized into four abstraction layers, which classify all related protocols according to each protocol's scope of networking.</p>
-                <ul>
-                    <li>
-                        <h6>Application Layer :</h6>
-                        <p>The application layer is the top layer and provides applications with standardized data exchange. Its protocols include HTTP, FTP, POP3, SMTP, DNS, DHCP and SNMP. At the application layer, the payload is the actual application data.</p>
-                    </li>
-                    <li>
-                        <h6>Transport Layer :</h6>
-                        <p>The transport layer is responsible for maintaining end-to-end communications across the network. TCP handles communications between hosts and provides flow control, multiplexing and reliability. The transport protocols include TCP and UDP.</p>
-                    </li>
-                    <li>
-                        <h6>Internet Layer :</h6>
-                        <p>The internet layer, also called the network layer, deals with packets and connects independent networks to transport the packets across network boundaries. The network layer protocols are IP and Internet Control Message Protocol (ICMP), which are used for error reporting.</p>
-                    </li>
-                    <li>
-                        <h6>Network Access Layer :</h6>
-                        <p>The network Access layer, also known as the network interface layer or data link layer, consists of protocols that operate only on a link -- the network component that interconnects nodes or hosts in the network. The protocols in this lowest layer include Ethernet for local area networks and Address Resolution Protocol (ARP).</p>
-                    </li>
-                </ul>
+                <div class="content">
+                    <p>The Internet protocol suite, commonly known as TCP/IP, is a framework for organizing the set of communication protocols used in the Internet and similar computer networks according to functional criteria. The foundational protocols in the suite are the Transmission Control Protocol (TCP), the User Datagram Protocol (UDP), and the Internet Protocol (IP). The Internet protocol suite provides end-to-end data communication specifying how data should be packetized, addressed, transmitted, routed, and received. This functionality is organized into four abstraction layers, which classify all related protocols according to each protocol's scope of networking.</p>
+                    <ul>
+                        <li>
+                            <h6>Application Layer :</h6>
+                            <p>The application layer is the top layer and provides applications with standardized data exchange. Its protocols include HTTP, FTP, POP3, SMTP, DNS, DHCP and SNMP. At the application layer, the payload is the actual application data.</p>
+                        </li>
+                        <li>
+                            <h6>Transport Layer :</h6>
+                            <p>The transport layer is responsible for maintaining end-to-end communications across the network. TCP handles communications between hosts and provides flow control, multiplexing and reliability. The transport protocols include TCP and UDP.</p>
+                        </li>
+                        <li>
+                            <h6>Internet Layer :</h6>
+                            <p>The internet layer, also called the network layer, deals with packets and connects independent networks to transport the packets across network boundaries. The network layer protocols are IP and Internet Control Message Protocol (ICMP), which are used for error reporting.</p>
+                        </li>
+                        <li>
+                            <h6>Network Access Layer :</h6>
+                            <p>The network Access layer, also known as the network interface layer or data link layer, consists of protocols that operate only on a link -- the network component that interconnects nodes or hosts in the network. The protocols in this lowest layer include Ethernet for local area networks and Address Resolution Protocol (ARP).</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="osi-model">
                 <h4 class="heading"># OSI Model</h4>
-                <p>The Open Systems Interconnection (OSI) model is a reference model from the International Organization for Standardization (ISO) that provides a common basis for the coordination of standards development for the purpose of systems interconnection. In the OSI reference model, the communications between systems are split into seven different abstraction layers that computer systems use to communicate over a network. The modern Internet is not based on OSI but on the simpler TCP/IP model.</p>
-                <ul>
-                    <li>
-                        <h6>Application Layer :</h6>
-                        <p>The application layer is used by end-user software such as web browsers and email clients. It provides protocols that allow software to send and receive information and present meaningful data to users. A few examples of application layer protocols are HTTP, FTP, POP, SMTP, and DNS.</p>
-                    </li>
-                    <li>
-                        <h6>Presentation Layer :</h6>
-                        <p>The presentation layer prepares data for the application layer. It defines how two devices should encode, encrypt, and compress data so it is received correctly on the other end. The presentation layer takes any data transmitted by the application layer and prepares it for transmission over the session layer.</p>
-                    </li>
-                    <li>
-                        <h6>Session Layer :</h6>
-                        <p>The session layer creates communication channels, called sessions, between devices. It is responsible for opening sessions, ensuring they remain open and functional while data is being transferred, and closing them when communication ends.</p>
-                    </li>
-                    <li>
-                        <h6>Transport Layer :</h6>
-                        <p>The transport layer takes data transferred in the session layer and breaks it into “segments” on the transmitting end. It is responsible for reassembling the segments on the receiving end, turning it back into data that can be used by the session layer.</p>
-                    </li>
-                    <li>
-                        <h6>Network Layer :</h6>
-                        <p>The network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses network addresses (typically Internet Protocol addresses) to route packets to a destination node.</p>
-                    </li>
-                    <li>
-                        <h6>Data Link Layer :</h6>
-                        <p>The data link layer establishes and terminates a connection between two physically-connected nodes on a network. It breaks up packets into frames and sends them from source to destination.</p>
-                    </li>
-                    <li>
-                        <h6>Physical Layer :</h6>
-                        <p>The physical layer is responsible for the physical cable or wireless connection between network nodes. It defines the connector, the electrical cable or wireless technology connecting the devices, and is responsible for the transmission of the raw data.</p>
-                    </li>
-                </ul>
+                <div class="content">
+                    <p>The Open Systems Interconnection (OSI) model is a reference model from the International Organization for Standardization (ISO) that provides a common basis for the coordination of standards development for the purpose of systems interconnection. In the OSI reference model, the communications between systems are split into seven different abstraction layers that computer systems use to communicate over a network. The modern Internet is not based on OSI but on the simpler TCP/IP model.</p>
+                    <ul>
+                        <li>
+                            <h6>Application Layer :</h6>
+                            <p>The application layer is used by end-user software such as web browsers and email clients. It provides protocols that allow software to send and receive information and present meaningful data to users. A few examples of application layer protocols are HTTP, FTP, POP, SMTP, and DNS.</p>
+                        </li>
+                        <li>
+                            <h6>Presentation Layer :</h6>
+                            <p>The presentation layer prepares data for the application layer. It defines how two devices should encode, encrypt, and compress data so it is received correctly on the other end. The presentation layer takes any data transmitted by the application layer and prepares it for transmission over the session layer.</p>
+                        </li>
+                        <li>
+                            <h6>Session Layer :</h6>
+                            <p>The session layer creates communication channels, called sessions, between devices. It is responsible for opening sessions, ensuring they remain open and functional while data is being transferred, and closing them when communication ends.</p>
+                        </li>
+                        <li>
+                            <h6>Transport Layer :</h6>
+                            <p>The transport layer takes data transferred in the session layer and breaks it into “segments” on the transmitting end. It is responsible for reassembling the segments on the receiving end, turning it back into data that can be used by the session layer.</p>
+                        </li>
+                        <li>
+                            <h6>Network Layer :</h6>
+                            <p>The network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses network addresses (typically Internet Protocol addresses) to route packets to a destination node.</p>
+                        </li>
+                        <li>
+                            <h6>Data Link Layer :</h6>
+                            <p>The data link layer establishes and terminates a connection between two physically-connected nodes on a network. It breaks up packets into frames and sends them from source to destination.</p>
+                        </li>
+                        <li>
+                            <h6>Physical Layer :</h6>
+                            <p>The physical layer is responsible for the physical cable or wireless connection between network nodes. It defines the connector, the electrical cable or wireless technology connecting the devices, and is responsible for the transmission of the raw data.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="ethernet">
                 <h4 class="heading"># Ethernet</h4>
-                <p>Ethernet is a family of protocols that specify how devices on the same network segment format and transmit data over a physical medium. It is the standard way to connect devices in a wired network using cables and hubs.</p>
+                <div class="content">
+                    <p>Ethernet is a family of protocols that specify how devices on the same network segment format and transmit data over a physical medium. It is the standard way to connect devices in a wired network using cables and hubs.</p>
+                </div>
             </div>
 
             <div class="sections" id="ssl-tls">
                 <h4 class="heading"># SSL/TLS</h4>
-                <p>SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols that provide secure communication over a computer network. They are commonly used to ensure data confidentiality, integrity, and authentication between clients (like web browsers) and servers (web servers, email servers, etc.).</p>
-                <ul class="justify">
-                    <li><b>Encryption:</b> SSL/TLS use cryptographic techniques to encrypt data sent between the client and server. This ensures that even if intercepted, the data is unintelligible without the decryption keys.</li>
-                    <li><b>Authentication:</b> SSL/TLS protocols use digital certificates to authenticate the identity of parties involved in the communication. Certificates are issued by trusted Certificate Authorities (CAs) and verify that the server (and sometimes the client) is who they claim to be.</li>
-                    <li><b>Integrity:</b> SSL/TLS ensure data integrity by using cryptographic hashing algorithms. This prevents data from being altered or corrupted during transmission without detection.</li>
-                    <li>TLS is the successor to SSL.</li>
-                    <li>TLS has been designed with more robust security features and improvements based on the weaknesses found in SSL.</li>
-                </ul>
+                <div class="content">
+                    <p>SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols that provide secure communication over a computer network. They are commonly used to ensure data confidentiality, integrity, and authentication between clients (like web browsers) and servers (web servers, email servers, etc.).</p>
+                    <ul class="justify">
+                        <li><b>Encryption:</b> SSL/TLS use cryptographic techniques to encrypt data sent between the client and server. This ensures that even if intercepted, the data is unintelligible without the decryption keys.</li>
+                        <li><b>Authentication:</b> SSL/TLS protocols use digital certificates to authenticate the identity of parties involved in the communication. Certificates are issued by trusted Certificate Authorities (CAs) and verify that the server (and sometimes the client) is who they claim to be.</li>
+                        <li><b>Integrity:</b> SSL/TLS ensure data integrity by using cryptographic hashing algorithms. This prevents data from being altered or corrupted during transmission without detection.</li>
+                        <li>TLS is the successor to SSL.</li>
+                        <li>TLS has been designed with more robust security features and improvements based on the weaknesses found in SSL.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="vpn">
                 <h4 class="heading"># VPN</h4>
-                <p>VPN, or Virtual Private Network, is a technique used to create a secure and encrypted connection over the internet between two or more devices or networks. VPN works by routing a device's internet connection through a secure, encrypted server that hides the IP address and location. VPNs use encryption and tunneling protocols to ensure that data transmitted over the internet is secure and protected from unauthorized access.</p>
-                <ul class="justify">
-                    <li>VPNs are commonly used in organizations to improve network security and enable remote access to network resources.</li>
-                    <li>VPN is used for secure connections, privacy and anonymity (masking IP addresses), access, and bypassing censorship and restrictions.</li>
-                </ul>
+                <div class="content">
+                    <p>VPN, or Virtual Private Network, is a technique used to create a secure and encrypted connection over the internet between two or more devices or networks. VPN works by routing a device's internet connection through a secure, encrypted server that hides the IP address and location. VPNs use encryption and tunneling protocols to ensure that data transmitted over the internet is secure and protected from unauthorized access.</p>
+                    <ul class="justify">
+                        <li>VPNs are commonly used in organizations to improve network security and enable remote access to network resources.</li>
+                        <li>VPN is used for secure connections, privacy and anonymity (masking IP addresses), access, and bypassing censorship and restrictions.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="proxy">
                 <h4 class="heading"># Proxy</h4>
-                <p>A proxy or proxy server acts as an intermediary between a client and the server. It forwards client requests to the destination server and returns the server's responses to the client. A proxy provides anonymity, content filtering, caching, and access control. Proxies can block or filter certain content based on predefined rules, policies, or access controls.</p>
-                <ul class="justify">
-                    <li>Proxies typically do not encrypt data between the client and the proxy server, so data transmitted beyond the proxy server may be vulnerable to interception.</li>
-                    <li>An example of proxies are content delivery networks (CDNs), which use reverse proxies to distribute content closer to users, reducing latency and improving performance.</li>
-                </ul>
-                <h5>Proxy Chain :</h5>
-                <ul class="justify">
-                    <li>A proxy chain refers to a series of proxy servers or proxies that are linked together to route network traffic through multiple nodes in order to conceal the origin of the traffic or to bypass restrictions.</li>
-                    <li>Each proxy in the chain forwards requests to the next, creating a chain of proxies through which data passes before reaching its destination.</li>
-                    <li>It is used for bypassing restrictions, load balancing, and traffic management.</li>
-                    <li>In some cases, proxy chains are used to distribute traffic across different servers or to optimize network performance by balancing the load.</li>
-                </ul>
+                <div class="content">
+                    <p>A proxy or proxy server acts as an intermediary between a client and the server. It forwards client requests to the destination server and returns the server's responses to the client. A proxy provides anonymity, content filtering, caching, and access control. Proxies can block or filter certain content based on predefined rules, policies, or access controls.</p>
+                    <ul class="justify">
+                        <li>Proxies typically do not encrypt data between the client and the proxy server, so data transmitted beyond the proxy server may be vulnerable to interception.</li>
+                        <li>An example of proxies are content delivery networks (CDNs), which use reverse proxies to distribute content closer to users, reducing latency and improving performance.</li>
+                    </ul>
+                    <h5>Proxy Chain :</h5>
+                    <ul class="justify">
+                        <li>A proxy chain refers to a series of proxy servers or proxies that are linked together to route network traffic through multiple nodes in order to conceal the origin of the traffic or to bypass restrictions.</li>
+                        <li>Each proxy in the chain forwards requests to the next, creating a chain of proxies through which data passes before reaching its destination.</li>
+                        <li>It is used for bypassing restrictions, load balancing, and traffic management.</li>
+                        <li>In some cases, proxy chains are used to distribute traffic across different servers or to optimize network performance by balancing the load.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="firewall">
                 <h4 class="heading"># Firewall</h4>
-                <p>A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks, such as the internet. These rules can be configured to permit or deny traffic based on factors such as IP address, port number, protocol, or specific applications. Firewalls can be hardware devices, software programs, or a combination of both. Firewalls use a variety of techniques to control and monitor network traffic, including packet filtering, stateful inspection, and application-level filtering. It blocks unauthorized access and filters out malicious traffic.</p>
-                <div>
+                <div class="content">
+                    <p>A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks, such as the internet. These rules can be configured to permit or deny traffic based on factors such as IP address, port number, protocol, or specific applications. Firewalls can be hardware devices, software programs, or a combination of both. Firewalls use a variety of techniques to control and monitor network traffic, including packet filtering, stateful inspection, and application-level filtering. It blocks unauthorized access and filters out malicious traffic.</p>
+
                     <b>Types of firewall -</b>
                     <ul class="justify">
                         <li><b>Network Firewall :</b> A network firewall is a device that protects an entire network from unauthorized access and attacks. Network firewalls can be hardware or software based and are typically installed at the perimeter of a network to block unauthorized access from the internet.</li>
@@ -467,8 +570,8 @@
 
             <div class="sections" id="network-node">
                 <h4 class="heading"># Networking Nodes</h4>
-                <p>A node in a network is a point where data can be received, sent, created, or stored. It needs identification like an IP address for access and can be any device that processes and shares information with other nodes.</p>
-                <div>
+                <div class="content">
+                    <p>A node in a network is a point where data can be received, sent, created, or stored. It needs identification like an IP address for access and can be any device that processes and shares information with other nodes.</p>
                     <ul>
                         <li>
                             <h6>Repeater :</h6>
