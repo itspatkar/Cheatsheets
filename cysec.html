@@ -25,6 +25,13 @@
             <div class="section-list">
                 <ul>
                     <li><a href="#cia">CIA Triad</a></li>
+                    <li><a href="#cryptography">Cryptography</a></li>
+                    <li><a href="#encryption">Encryption</a></li>
+                    <li><a href="#hash">Hashing</a></li>
+                    <li><a href="#digital-sign">Digital Signature</a></li>
+                    <li><a href="#pki">Public Key Infrastructure</a></li>
+                    <li><a href="#secops">Security Operations</a></li>
+                    <li><a href="#access-control">Access Control</a></li>
                     <li><a href="#risk">Risk Management</a></li>
                     <li><a href="#governance">Governance Elements</a></li>
                 </ul>
@@ -59,16 +66,244 @@
                 </div>
             </div>
 
+            <div class="sections" id="cryptography">
+                <h4 class="heading"># Cryptography</h4>
+                <div class="content">
+                    <p>Cryptography is the practice and study of techniques for securing communication and data from third parties. It involves the creation of mathematical algorithms and protocols that ensure confidentiality, integrity, authenticity, and non-repudiation of information.</p>
+                    <ul>
+                        <li>
+                            <h6>Encryption :</h6>
+                            <p>Encryption is the process of transforming readable plaintext into unreadable ciphertext to mask sensitive information from unauthorized users. Encryption is used to protect sensitive data from unauthorized access and data breaches.</p>
+                        </li>
+                        <li>
+                            <h6>Decryption :</h6>
+                            <p>The description is a reverse process of encryption, where ciphertext is transformed back into plaintext using a decryption key.</p>
+                        </li>
+                        <li>
+                            <h6>Hashing :</h6>
+                            <p>Hashing is a method of converting data (message, file, or password) into a fixed-size string of characters, which typically represents a "fingerprint" of the original data. This converted hash value is called digest. Hashes are used for data integrity checks, ensuring that data has not been altered.</p>
+                        </li>
+                        <li>
+                            <h6>Digital Signature :</h6>
+                            <p>A digital signature is a cryptographic technique used to verify the authenticity and integrity of digital messages or documents. It serves as a virtual equivalent of a handwritten signature or a stamped seal, but with much more security.</p>
+                        </li>
+                        <li>
+                            <h6>Public Key Infrastructure (PKI) :</h6>
+                            <p>Public Key Infrastructure (PKI) is a framework that manages digital keys and certificates, enabling secure communication and data exchange over untrusted networks (like the internet). PKI ensures that public keys are properly distributed, authenticated, and managed so that secure transactions and communications can occur between parties.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections" id="encryption">
+                <h4 class="heading"># Encryption</h4>
+                <div class="content">
+                    <p>Encryption is the process of transforming readable plaintext into unreadable ciphertext to mask sensitive information from unauthorized users. Encryption is used to protect sensitive data from unauthorized access and data breaches. Encryption works by using encryption algorithms to encrypt data into an indecipherable format. Only authorized parties with the right secret key, known as the decryption key, can decrypt the data.</p>
+                    <ul class="justify">
+                        <li><b>Plaintext :</b> Plaintext is the original, readable data or message in its unencrypted form. Its meaning or value is immediately accessible and usable by the end user (person or a process).</li>
+                        <li><b>Ciphertext :</b> Ciphertext is the encrypted, unreadable data or message and is not interpretable without the decryption key.</li>
+                        <li><b>Encryption Algorithm :</b> An encryption algorithm is a mathematical procedure used to transform data (plaintext) into an unreadable format (ciphertext). This transformation process is achieved using a set of rules and a cryptographic key.</li>
+                    </ul>
+                    <h6>Types of Encryption -</h6>
+                    <ul class="justify">
+                        <li><b>Symmetric Encryption :</b> In symmetric encryption, the same key is used for both encryption and decryption processes. Example: AES (Advanced Encryption Standard) and DES (Data Encryption Standard) </li>
+                        <li><b>Asymmetric Encryption :</b> In asymmetric encryption, different keys are used for encryption and decryption: a public key for encryption and a private key for decryption. Asymmetric encryption is also known as public key cryptography (PKC). Example: RSA (Rivest-Shamir-Adleman)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections" id="Hash">
+                <h4 class="heading"># Hashing</h4>
+                <div class="content">
+                    <p>Hashing is a method of converting data (message, file, or password) into a fixed-size string of characters, which typically represents a "fingerprint" of the original data. This converted hash value is called digest. Hashes are used for data integrity checks, ensuring that data has not been altered. Hashing is often used in file fingerprinting and storing passwords securely. Instead of storing the password itself, systems store the hash of the password.</p>
+                    <ul class="justify">
+                        <li>The key property of a hash function is that it produces a fixed-size output for any size of input.</li>
+                        <li>The same input will always produce the same hash value, and even a tiny change in input will generate drastically different hash values.</li>
+                        <li>The hash is irreversible, that is, a one-way operation; one cannot reverse the process to retrieve the original input data from the hash value.</li>
+                        <li>Example: MD5 (Message Digest Algorithm) and SHA (Secure Hash Algorithm).</li>
+                    </ul>
+                    <h5>Checksum :</h5>
+                    <p>A checksum is a small-sized piece of data generated from a larger set of data, used for error detection in data transmission and storage. When the data is transmitted or stored, the checksum is sent or saved alongside it. A checksum is computed by applying a mathematical algorithm (e.g., CRC32, MD5, SHA-1) to the data. Checksum is used in error detection in file transfers, storage, and network protocols (e.g., CRC checks in network protocols like Ethernet or ZIP file integrity).</p>
+                    <ul class="justify">
+                        <li>Checksums are fast and efficient for detecting accidental data corruption but are not designed for security purposes; they don't provide a high level of protection against malicious tampering.</li>
+                        <li>For data integrity and colision resistance, more robust and secure hashes are used.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections" id="digital-sign">
+                <h4 class="heading"># Digital Signature</h4>
+                <div class="content">
+                    <p>A digital signature is a cryptographic technique used to verify the authenticity and integrity of digital messages or documents. It serves as a virtual equivalent of a handwritten signature or a stamped seal, but with much more security. Digital signatures are based on asymmetric cryptography (also called public-key cryptography). It is used in email signing, software distribution, legal documents (contracts, agreements, and other legally binding documents), and blockchain.</p>
+                    <h6>Digital Signatures Working -</h6>
+                    <ul>
+                        <li>
+                            <h6>Key Generation :</h6>
+                            <ul class="justify">
+                                <li>Private Key : This key is kept confidential by the signer and is used to create the digital signature.</li>
+                                <li>Public Key : This key is shared publicly and can be used by others to verify the authenticity of the signature.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6>Signing Process :</h6>
+                            <ul class="justify">
+                                <li>The signer creates a hash (a unique digital fingerprint) of the document or message.</li>
+                                <li>This hash is encrypted using the signer's private key, forming the digital signature.</li>
+                                <li>The signed message (the original message along with the digital signature) is then sent to the recipient.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6>Verification Process :</h6>
+                            <ul class="justify">
+                                <li>The recipient uses the public key of the signer to decrypt the digital signature.</li>
+                                <li>The recipient also generates a hash of the original document.</li>
+                                <li>If the decrypted hash from the digital signature matches the newly generated hash, it confirms that the document has not been altered and that the signature is indeed from the rightful signer.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections" id="pki">
+                <h4 class="heading"># Public Key Infrastructure</h4>
+                <div class="content">
+                    <p>Public Key Infrastructure (PKI) is a framework that manages digital keys and certificates, enabling secure communication and data exchange over untrusted networks (like the internet). PKI ensures that public keys are properly distributed, authenticated, and managed so that secure transactions and communications can occur between parties. PKI involves a set of hardware, software, policies, and standards that work together to provide services such as encryption, authentication, and digital signatures using public key cryptography.</p>
+                    <h6>Key Components of PKI -</h6>
+                    <ul>
+                        <li>
+                            <h6>Certificate Authority (CA) :</h6>
+                            <p>The CA is the trusted entity responsible for issuing and managing digital certificates. The CA validates the identity of the entity requesting a certificate before issuing it. Essentially, the CA vouches for the authenticity of a public key and the identity behind it. Example: DigiCert, GlobalSign, Let's Encrypt.</p>
+                        </li>
+                        <li>
+                            <h6>Registration Authority (RA) :</h6>
+                            <p>The RA acts as an intermediary between users and the CA. When a user requests a digital certificate, the RA verifies the applicant’s identity (documents or database checks). Once the RA validates the request, it sends it to the CA for final approval and certificate issuance. The RA does not issue certificates but plays a key role in the identity verification process.</p>
+                        </li>
+                        <li>
+                            <h6>Digital Certificates :</h6>
+                            <p>A digital certificate is an electronic document that binds a public key to an identity (e.g., an individual, organization, or device). It contains the public key, the identity of the certificate holder, and the CA’s signature confirming its authenticity. <code>X.509</code> certificates are the most common format for digital certificates. Key fields of a digital certificate include the public key (associated with the user or entity), the subject (owner's identity, e.g., domain, email, or organizational entity), the issuer (Certificate Authority), the serial number (a unique identifier for the certificate.), the expiration date (certificate validity period), and the digital signature (the CA's signature confirming the certificate's authenticity).</p>
+                        </li>
+                        <li>
+                            <h6>Key Management :</h6>
+                            <p>PKI systems must ensure proper key storage, revocation, and renewal processes. This includes handling certificate expiration and managing compromised keys. Key storage is typically done using secure hardware modules, such as Hardware Security Modules (HSMs), or software-based solutions like key vaults.</p>
+                        </li>
+                    </ul>
+                    <h6>Use Case of PKI : SSL/TLS Certificates -</h6>
+                    <ul class="justify">
+                        <li><b>Server & Client Interaction :</b> A client (web browser) connects to a web server via HTTPS. The server presents its SSL/TLS certificate, which contains its public key.</li>
+                        <li><b>Certificate Validation :</b> The client’s browser checks if the certificate is valid (signed by a trusted CA, not expired, and not revoked). If valid, a secure communication channel is established by encrypting data using the server’s public key.</li>
+                        <li><b>Secure Communication :</b> The data exchanged between the client and the server is encrypted using a symmetric session key, and the public/private key pair is used for the initial secure key exchange.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections" id="secops">
+                <h4 class="heading"># Security Operations</h4>
+                <div class="content">
+                    <p>SecOps (Security Operations) is a crucial discipline in cybersecurity that focuses on the integration of security practices and IT operations to ensure the continuous protection, monitoring, and management of an organization's infrastructure, networks, and data.</p>
+                    <h5>Logging and Monitoring :</h5>
+                    <p>Logging refers to the practice of recording detailed information about events, processes, and actions that occur within a system or network.</p>
+                    <ul class="justify">
+                        <li>These records, called logs, provide a history of events and activities that can be used for troubleshooting, performance monitoring, security auditing, and incident response.</li>
+                        <li>A log contains information such as user IDs, system activities, dates and times of key events, device and location identity, system and resource access attempts, system configurations, network traffic, and track or history of events.</li>
+                        <li>A log should be stored separately from the system where it is generated.</li>
+                    </ul>
+
+                    <h5>Security Information and Event Management :</h5>
+                    <p>Security Information and Event Management (SIEM) is a system or tool used to provide real-time monitoring, analysis, and response to security threats across an organization's IT infrastructure.</p>
+                    <ul class="justify">
+                        <li>SIEM tools collect, aggregate, and analyze data from various sources, such as security logs, network traffic, and endpoint devices, to detect potential security incidents, vulnerabilities, or breaches.</li>
+                        <li>Characteristics of SIEM are log management, event correlation, and real-time monitoring; incident detection and alerts; reporting and compliance; and forensics and analysis.</li>
+                        <li>Logs are the raw data generated by systems and provide detailed records of activities. And SIEM is a tool that aggregates, normalizes, and analyzes these logs in real-time to detect security threats, providing more advanced insights, automation, and compliance reporting.</li>
+                        <li>While logs provide the foundational data, SIEM platforms use that data to enhance security monitoring and response, making SIEM an essential tool for managing and interpreting logs in the context of cybersecurity.</li>
+                        <li>Example: Splunk, a popular SIEM platform that helps organizations monitor, analyze, and respond to security events and incidents.</li>
+                    </ul>
+
+                    <h5>Intrusion Detection Systems :</h5>
+                    <p>Intrusion Detection Systems (IDS) are security tools designed to detect unauthorized access or anomalies in a network or system. IDS monitors and analyzes network traffic, system activity, and user behavior to identify potential security breaches, such as cyberattacks or data theft, and alerts administrators to take action. IDS automate the inspection of logs and real-time system events to detect intrusion attempts and system failures.</p>
+                    <h6>Type of IDS -</h6>
+                    <ul class="justify">
+                        <li><b>Network-based IDS (NIDS) :</b> HIDs monitor activity on individual devices or hosts (servers, computers). It is installed on the host device, where it monitors file integrity, system calls, and application logs. It detects internal threats and activities like unauthorized access to files and malicious changes to system configurations.</li>
+                        <li><b>Host-based IDS (HIDS) :</b> NIDs monitor network traffic for suspicious activity. It is placed at strategic points within the network (e.g., between the internal network and the internet). It detects external attacks like denial-of-service (DoS) and port scanning.</li>
+                    </ul>
+
+                    <h5>Intrusion Prevention Systems :</h5>
+                    <p>An Intrusion Prevention System (IPS) is a network security device that monitors network and/or system activities for malicious activity. IPS is placed in line with traffic and is more advanced than an Intrusion Detection System (IDS). IPS not only detects but also automatically blocks or prevents the detected threats in real time to prevent unauthorized access or attacks on computer systems and networks. Since IPSs are more effective at preventing network-based attacks, their function is integrated into firewalls.</p>
+                    <h6>Types of IPS -</h6>
+                    <ul class="justify">
+                        <li><b>Network-based IPS (NIPS) :</b> These are deployed at key points in the network (e.g., network perimeter) to monitor and protect the entire network.</li>
+                        <li><b>Host-based IPS (HIPS) :</b> Installed on individual devices or hosts, HIPS protect against threats targeting a specific machine, such as a server or endpoint.</li>
+                        <li><b>Wireless IPS (WIPS) :</b> A specialized IPS designed to protect wireless networks from unauthorized access or attacks.</li>
+                    </ul>
+
+                    <h5>Firewalls :</h5>
+                    <p>A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks, such as the internet. These rules can be configured to permit or deny traffic based on factors such as IP address, port number, protocol, or specific applications. Firewalls can be hardware devices, software programs, or a combination of both. Firewalls use a variety of techniques to control and monitor network traffic, including packet filtering, stateful inspection, and application-level filtering. It blocks unauthorized access and filters out malicious traffic.</p>
+                    <h6>Types of Firewall -</h6>
+                    <ul class="justify">
+                        <li><b>Network-based Firewall</b> : A network firewall is a device that protects an entire network from unauthorized access and attacks. Network firewalls can be hardware or software based and are typically installed at the perimeter of a network to block unauthorized access from the internet.</li>
+                        <li><b>Host-based Firewall :</b> A host-based firewall is a firewall that protects an individual computer from unauthorized access and attacks. Host-based firewalls are typically software-based and are installed on individual computers to control access to network resources and block unauthorized traffic.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections" id="access-control">
+                <h4 class="heading"># Access Control</h4>
+                <div class="content">
+                    <p>Access control is the process and mechanism that restrict and manage access to systems, data, or resources within an organization. It limits the visibility, access, and use of resources in a computing environment. This ensures that only authorized users can access information, resources, and systems while preventing unauthorized access that could lead to data breaches, system vulnerabilities, or cyberattacks.</p>
+                    <h6>Types of Access Control Models -</h6>
+                    <ul>
+                        <li>
+                            <h6>Discretionary Access Control (DAC) :</h6>
+                            <p>The owner of a resource has the authority to grant or deny access to others. Access rights are determined based on the discretion of the resource owner. Once a user is given permission to access an object (usually by a system administrator or through an existing access control list), they can grant access to other users on an as-needed basis. Example: A file owner on a system determines who can read, write, or execute the file.</p>
+                        </li>
+                        <li>
+                            <h6>Mandatory Access Control (MAC) :</h6>
+                            <p>Access decisions are made based on predetermined policies set by an administrator, not the resource owner. Resources are classified (e.g., top secret, confidential, public), and users are assigned clearance levels. Mandatory access control establishes strict security policies for individual users and the resources, systems, or data they are allowed to access. Example: Military or governmental organizations often use MAC, where access is based on security clearances.</p>
+                        </li>
+                        <li>
+                            <h6>Role-Based Access Control (RBAC) :</h6>
+                            <p>Access rights are assigned based on roles within an organization, rather than individual users. Users are granted permissions according to the role they are assigned (e.g., admin, manager, employee). Individuals can perform any action that is assigned to their role and may be assigned multiple roles as necessary. Example: An admin has full access, while regular users may have read-only access to certain files.</p>
+                        </li>
+                        <li>
+                            <h6>Rule-Based Access Control :</h6>
+                            <p>A set of rules is established to determine access; these rules are based on specific conditions (e.g., network location, device, or specific times of day). RuBAC is an extension of RBAC in which access is governed by a set of rules that the organization prescribes. Example: Allowing access to certain systems only when a user is connected from the company's secure network.</p>
+                        </li>
+                    </ul>
+                    <h5>Microsegmentation :</h5>
+                    <p>Microsegmentation is the practice of breaking up security perimeters into small zones to maintain separate access for separate parts of the network. Networks are divided into smaller, isolated segments to reduce the lateral movement of potential attackers. Each segment has its own security policy, making it more difficult for threats to spread across the network.</p>
+                    <h5>Zero Trust :</h5>
+                    <p>Zero Trust is a security framework that operates on the principle of "never trust, always verify." It requires strict identity verification and access control for every user, device, application, and network trying to access resources, regardless of whether they are inside or outside the corporate network.</p>
+                    <h6>Key Principles of Zero Trust -</h6>
+                    <ul class="justify">
+                        <li><b>Never Trust, Always Verify :</b> Every request for access to systems, applications, or data is treated as though it is coming from an untrusted source, even if the request originates from inside the network.</li>
+                        <li><b>Least Privilege Access :</b> Users and devices are granted the minimum level of access necessary to perform their tasks, reducing the potential attack surface. This includes enforcing strict access control policies and limiting user permissions.</li>
+                        <li><b>Micro-Segmentation :</b> Zero Trust networks also utilize microsegmentation. Networks are divided into smaller, isolated segments to reduce the lateral movement of potential attackers. Each segment has its own security policy, making it more difficult for threats to spread across the network.</li>
+                        <li><b>Continuous Monitoring and Validation :</b> Security controls are constantly evaluated, and access rights are continuously reassessed to ensure they are still appropriate based on the context (e.g., location, device, role, behavior). This helps in identifying and mitigating anomalies.</li>
+                        <li><b>Multi-Factor Authentication (MFA) :</b> Strong authentication mechanisms are implemented to ensure that only authorized users and devices can access critical resources. MFA requires multiple forms of identity verification, such as passwords and biometrics or tokens.</li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="sections" id="risk">
                 <h4 class="heading"># Risk Management</h4>
                 <div class="content">
-                    <p>Risk management in cybersecurity is the process of identifying, assessing, and mitigating risks to an organization's digital assets, systems, and information.</p>
-                    <h6>Risk Management Terminology :</h6>
+                    <p>Risk management is the process of identifying, assessing, and mitigating potential risks to an organization's digital assets, systems, and information. It includes risk assessments and audits, vulnerability scanning, implementing preventive measures such as firewalls, encryption, or multi-factor authentication, and developing risk management frameworks and policies.</p>
+                    <h5>Incident Response :</h5>
+                    <p>Incident Response (IR) refers to the organized approach taken by an organization to detect, respond to, manage, and recover from security incidents, such as cyberattacks, data breaches, or other malicious activities. The goal of incident response is to minimize the impact of an incident, restore normal operations as quickly as possible, and learn from the event to improve future security measures.</p>
+                    <h6>Terminologies -</h6>
                     <ul class="justify">
-                        <li><b>Asset :</b> An asset is something in need of protection.</li>
-                        <li><b>Vulnerability :</b> A vulnerability is a gap or weakness in those protection effort.</li>
-                        <li><b>Threat :</b> A threat something or someone that aims to exploit a vulnerability to thwart protection efforts.</li>
+                        <li><b>Asset :</b> An asset refers to any valuable entity that needs protection within an organization's IT infrastructure, network, or environment. Assets can include both tangible (physical devices) and intangible resources (data, software, and intellectual property).</li>
+                        <li><b>Event :</b> An event refers to any observable occurrence or action within a system, network, or environment.</li>
+                        <li><b>Vulnerability :</b> Weakness in a system, system security procedures, internal controls, or implementation that could be exploited by a threat source.</li>
+                        <li><b>Threat :</b> A threat is a potential or ongoing danger that could exploit a vulnerability to cause harm to a system, network, or organization via unauthorized access, destruction, disclosure, or modification of information.</li>
+                        <li><b>Exploit :</b> An exploit is a piece of software, code, or technique that leverages a vulnerability in a system, application, or network to cause unintended behavior or gain unauthorized access.</li>
+                        <li><b>Attack :</b> An attack refers to any deliberate action taken by a malicious actor with the intent to compromise the confidentiality, integrity, or availability of a system or network.</li>
+                        <li><b>Intrusion :</b> A security event or combination of events in which an intruder gains or attempts to gain unauthorized access to a system or system resource.</li>
+                        <li><b>Breach :</b> A breach refers to an incident where unauthorized access, disclosure, or manipulation of data, systems, or networks occurs.</li>
+                        <li><b>Incident :</b> An event that actually or potentially compromises the confidentiality, integrity, or availability of a system or network.</li>
+                        <li><b>Zero Day :</b> A zero-day refers to a vulnerability in a software or system that is unknown to the vendor or the public.</li>
                     </ul>
+                    <h6>Rebundancy :</h6>
+                    <p>Redundancy refers to the practice of implementing backup systems, processes, or components to ensure that critical functions continue to operate smoothly in the event of failures, attacks, or disasters. By incorporating redundant systems, data storage, and network paths, organizations can reduce the risk of downtime, data loss, and service interruptions caused by system failures, cyberattacks, or other disruptions.</p>
                 </div>
             </div>
 
