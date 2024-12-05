@@ -24,17 +24,68 @@
 
             <div class="section-list">
                 <ul>
+                    <li><a href="#governance">Governance Elements</a></li>
+                    <li><a href="#risk">Risk Management</a></li>
                     <li><a href="#cia">CIA Triad</a></li>
+                    <li><a href="#access-control">Access Control</a></li>
                     <li><a href="#cryptography">Cryptography</a></li>
                     <li><a href="#encryption">Encryption</a></li>
                     <li><a href="#hash">Hashing</a></li>
                     <li><a href="#digital-sign">Digital Signature</a></li>
                     <li><a href="#pki">Public Key Infrastructure</a></li>
                     <li><a href="#secops">Security Operations</a></li>
-                    <li><a href="#access-control">Access Control</a></li>
-                    <li><a href="#risk">Risk Management</a></li>
-                    <li><a href="#governance">Governance Elements</a></li>
+                    <li><a href="#attacks">Attacks</a></li>
                 </ul>
+            </div>
+
+            <div class="sections" id="governance">
+                <h4 class="heading"># Governance Elements</h4>
+                <div class="content">
+                    <p>Governance elements refer to the foundational components and frameworks that guide an organization's approach to managing and protecting its information systems.</p>
+                    <ul class="justify">
+                        <li>
+                            <h6>Regulations :</h6>
+                            <p>Regulations are commonly issued in the form of laws, usually from the government, and carry financial penalties and/or imprisonment for non-compliance. For example, the General Data Protection Regulations (GDPR) were enacted by the European Union (EU) to control the use of Personally Identifiable Information (PII) of its citizens and those in the EU.</p>
+                        </li>
+                        <li>
+                            <h6>Standards :</h6>
+                            <p>Standards are often used by government teams to provide a framework to introduce policies and procedures in support of regulations. For example, the International Organization for Standardization (ISO) develops and publishes international standards on a variety of technical subjects, including information systems and information security. And another is the National Institute of Standards and Technology (NIST), a United States government agency.</p>
+                        </li>
+                        <li>
+                            <h6>Policies :</h6>
+                            <p>Policies are put in place by organizational governance, such as executive management, to provide guidance in all activities to ensure that the organization meets industry standards and regulations.</p>
+                        </li>
+                        <li>
+                            <h6>Procedures :</h6>
+                            <p>Procedures are the detailed steps to complete tasks that support departmental or organizational policies.</p>
+                        </li>
+                    </ul>
+                    <p>When leaders and management implement the systems and structure that the organization will use to achieve its goals, they are guided by laws and regulations created by the government to enact public policy. Laws and regulations guide the development of standards that cultivate policies that result in procedures.</p>
+                </div>
+            </div>
+
+            <div class="sections" id="risk">
+                <h4 class="heading"># Risk Management</h4>
+                <div class="content">
+                    <p>Risk management is the process of identifying, assessing, and mitigating potential risks to an organization's digital assets, systems, and information. It includes risk assessments and audits, vulnerability scanning, implementing preventive measures such as firewalls, encryption, or multi-factor authentication, and developing risk management frameworks and policies.</p>
+                    <h5>Incident Response :</h5>
+                    <p>Incident Response (IR) refers to the organized approach taken by an organization to detect, respond to, manage, and recover from security incidents, such as cyberattacks, data breaches, or other malicious activities. The goal of incident response is to minimize the impact of an incident, restore normal operations as quickly as possible, and learn from the event to improve future security measures.</p>
+                    <h6>Terminologies -</h6>
+                    <ul class="justify">
+                        <li><b>Asset :</b> An asset refers to any valuable entity that needs protection within an organization's IT infrastructure, network, or environment. Assets can include both tangible (physical devices) and intangible resources (data, software, and intellectual property).</li>
+                        <li><b>Event :</b> An event refers to any observable occurrence or action within a system, network, or environment.</li>
+                        <li><b>Vulnerability :</b> Weakness in a system, system security procedures, internal controls, or implementation that could be exploited by a threat source.</li>
+                        <li><b>Threat :</b> A threat is a potential or ongoing danger that could exploit a vulnerability to cause harm to a system, network, or organization via unauthorized access, destruction, disclosure, or modification of information.</li>
+                        <li><b>Exploit :</b> An exploit is a piece of software, code, or technique that leverages a vulnerability in a system, application, or network to cause unintended behavior or gain unauthorized access.</li>
+                        <li><b>Attack :</b> An attack refers to any deliberate action taken by a malicious actor with the intent to compromise the confidentiality, integrity, or availability of a system or network.</li>
+                        <li><b>Intrusion :</b> A security event or combination of events in which an intruder gains or attempts to gain unauthorized access to a system or system resource.</li>
+                        <li><b>Breach :</b> A breach refers to an incident where unauthorized access, disclosure, or manipulation of data, systems, or networks occurs.</li>
+                        <li><b>Incident :</b> An event that actually or potentially compromises the confidentiality, integrity, or availability of a system or network.</li>
+                        <li><b>Zero Day :</b> A zero-day refers to a vulnerability in a software or system that is unknown to the vendor or the public.</li>
+                    </ul>
+                    <h6>Rebundancy :</h6>
+                    <p>Redundancy refers to the practice of implementing backup systems, processes, or components to ensure that critical functions continue to operate smoothly in the event of failures, attacks, or disasters. By incorporating redundant systems, data storage, and network paths, organizations can reduce the risk of downtime, data loss, and service interruptions caused by system failures, cyberattacks, or other disruptions.</p>
+                </div>
             </div>
 
             <div class="sections" id="cia">
@@ -62,6 +113,44 @@
                             <h6>Non-Repudiation* :</h6>
                             <p>Non-repudiation ensures that a party cannot deny the authenticity of their actions, such as sending a message or signing a document. It provides proof of origin and delivery, ensuring accountability. It is achieved using digital signatures, audit logs, message receipts, and secure time stamping.</p>
                         </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections" id="access-control">
+                <h4 class="heading"># Access Control</h4>
+                <div class="content">
+                    <p>Access control is the process and mechanism that restrict and manage access to systems, data, or resources within an organization. It limits the visibility, access, and use of resources in a computing environment. This ensures that only authorized users can access information, resources, and systems while preventing unauthorized access that could lead to data breaches, system vulnerabilities, or cyberattacks.</p>
+                    <h6>Types of Access Control Models -</h6>
+                    <ul>
+                        <li>
+                            <h6>Discretionary Access Control (DAC) :</h6>
+                            <p>The owner of a resource has the authority to grant or deny access to others. Access rights are determined based on the discretion of the resource owner. Once a user is given permission to access an object (usually by a system administrator or through an existing access control list), they can grant access to other users on an as-needed basis. Example: A file owner on a system determines who can read, write, or execute the file.</p>
+                        </li>
+                        <li>
+                            <h6>Mandatory Access Control (MAC) :</h6>
+                            <p>Access decisions are made based on predetermined policies set by an administrator, not the resource owner. Resources are classified (e.g., top secret, confidential, public), and users are assigned clearance levels. Mandatory access control establishes strict security policies for individual users and the resources, systems, or data they are allowed to access. Example: Military or governmental organizations often use MAC, where access is based on security clearances.</p>
+                        </li>
+                        <li>
+                            <h6>Role-Based Access Control (RBAC) :</h6>
+                            <p>Access rights are assigned based on roles within an organization, rather than individual users. Users are granted permissions according to the role they are assigned (e.g., admin, manager, employee). Individuals can perform any action that is assigned to their role and may be assigned multiple roles as necessary. Example: An admin has full access, while regular users may have read-only access to certain files.</p>
+                        </li>
+                        <li>
+                            <h6>Rule-Based Access Control :</h6>
+                            <p>A set of rules is established to determine access; these rules are based on specific conditions (e.g., network location, device, or specific times of day). RuBAC is an extension of RBAC in which access is governed by a set of rules that the organization prescribes. Example: Allowing access to certain systems only when a user is connected from the company's secure network.</p>
+                        </li>
+                    </ul>
+                    <h5>Microsegmentation :</h5>
+                    <p>Microsegmentation is the practice of breaking up security perimeters into small zones to maintain separate access for separate parts of the network. Networks are divided into smaller, isolated segments to reduce the lateral movement of potential attackers. Each segment has its own security policy, making it more difficult for threats to spread across the network.</p>
+                    <h5>Zero Trust :</h5>
+                    <p>Zero Trust is a security framework that operates on the principle of "never trust, always verify." It requires strict identity verification and access control for every user, device, application, and network trying to access resources, regardless of whether they are inside or outside the corporate network.</p>
+                    <h6>Key Principles of Zero Trust -</h6>
+                    <ul class="justify">
+                        <li><b>Never Trust, Always Verify :</b> Every request for access to systems, applications, or data is treated as though it is coming from an untrusted source, even if the request originates from inside the network.</li>
+                        <li><b>Least Privilege Access :</b> Users and devices are granted the minimum level of access necessary to perform their tasks, reducing the potential attack surface. This includes enforcing strict access control policies and limiting user permissions.</li>
+                        <li><b>Micro-Segmentation :</b> Zero Trust networks also utilize microsegmentation. Networks are divided into smaller, isolated segments to reduce the lateral movement of potential attackers. Each segment has its own security policy, making it more difficult for threats to spread across the network.</li>
+                        <li><b>Continuous Monitoring and Validation :</b> Security controls are constantly evaluated, and access rights are continuously reassessed to ensure they are still appropriate based on the context (e.g., location, device, role, behavior). This helps in identifying and mitigating anomalies.</li>
+                        <li><b>Multi-Factor Authentication (MFA) :</b> Strong authentication mechanisms are implemented to ensure that only authorized users and devices can access critical resources. MFA requires multiple forms of identity verification, such as passwords and biometrics or tokens.</li>
                     </ul>
                 </div>
             </div>
@@ -245,91 +334,67 @@
                 </div>
             </div>
 
-            <div class="sections" id="access-control">
-                <h4 class="heading"># Access Control</h4>
+            <div class="sections" id="attacks">
+                <h4 class="heading"># Attacks</h4>
                 <div class="content">
-                    <p>Access control is the process and mechanism that restrict and manage access to systems, data, or resources within an organization. It limits the visibility, access, and use of resources in a computing environment. This ensures that only authorized users can access information, resources, and systems while preventing unauthorized access that could lead to data breaches, system vulnerabilities, or cyberattacks.</p>
-                    <h6>Types of Access Control Models -</h6>
-                    <ul>
-                        <li>
-                            <h6>Discretionary Access Control (DAC) :</h6>
-                            <p>The owner of a resource has the authority to grant or deny access to others. Access rights are determined based on the discretion of the resource owner. Once a user is given permission to access an object (usually by a system administrator or through an existing access control list), they can grant access to other users on an as-needed basis. Example: A file owner on a system determines who can read, write, or execute the file.</p>
-                        </li>
-                        <li>
-                            <h6>Mandatory Access Control (MAC) :</h6>
-                            <p>Access decisions are made based on predetermined policies set by an administrator, not the resource owner. Resources are classified (e.g., top secret, confidential, public), and users are assigned clearance levels. Mandatory access control establishes strict security policies for individual users and the resources, systems, or data they are allowed to access. Example: Military or governmental organizations often use MAC, where access is based on security clearances.</p>
-                        </li>
-                        <li>
-                            <h6>Role-Based Access Control (RBAC) :</h6>
-                            <p>Access rights are assigned based on roles within an organization, rather than individual users. Users are granted permissions according to the role they are assigned (e.g., admin, manager, employee). Individuals can perform any action that is assigned to their role and may be assigned multiple roles as necessary. Example: An admin has full access, while regular users may have read-only access to certain files.</p>
-                        </li>
-                        <li>
-                            <h6>Rule-Based Access Control :</h6>
-                            <p>A set of rules is established to determine access; these rules are based on specific conditions (e.g., network location, device, or specific times of day). RuBAC is an extension of RBAC in which access is governed by a set of rules that the organization prescribes. Example: Allowing access to certain systems only when a user is connected from the company's secure network.</p>
-                        </li>
-                    </ul>
-                    <h5>Microsegmentation :</h5>
-                    <p>Microsegmentation is the practice of breaking up security perimeters into small zones to maintain separate access for separate parts of the network. Networks are divided into smaller, isolated segments to reduce the lateral movement of potential attackers. Each segment has its own security policy, making it more difficult for threats to spread across the network.</p>
-                    <h5>Zero Trust :</h5>
-                    <p>Zero Trust is a security framework that operates on the principle of "never trust, always verify." It requires strict identity verification and access control for every user, device, application, and network trying to access resources, regardless of whether they are inside or outside the corporate network.</p>
-                    <h6>Key Principles of Zero Trust -</h6>
+                    <p>Attacks refer to any deliberate action or attempt to compromise the confidentiality, integrity, or availability of systems, networks, or data, with the intention of altering, stealing, destroying, or exposing information. These attacks can be perpetrated by individuals, groups, or even nation-states. The goal of a cyberattack can range from stealing sensitive information to disrupting the functioning of a system or causing financial, operational, or reputational harm.</p>
+                    <h6>Types of Attacks -</h6>
+                    <h5>Social Engineering :</h5>
+                    <p>Social engineering attacks involve manipulating or deceiving individuals into divulging confidential or personal information, typically to gain unauthorized access to systems, data, or financial resources. Unlike technical hacking methods that exploit vulnerabilities in software or hardware, social engineering targets the human element of security, exploiting psychological tendencies and trust. Social engineering techniques include phishing, baiting, tailgating (or piggybacking), and pretexting.</p>
+                    <h5>Phishing Attacks :</h5>
+                    <p>In phishing attacks, attackers impersonate legitimate organizations or individuals to trick people into revealing sensitive information, such as passwords, credit card numbers, or personal details. This is typically done through fraudulent emails, websites, or messages that appear to be from trusted sources, such as banks, online services, or social media platforms.</p>
                     <ul class="justify">
-                        <li><b>Never Trust, Always Verify :</b> Every request for access to systems, applications, or data is treated as though it is coming from an untrusted source, even if the request originates from inside the network.</li>
-                        <li><b>Least Privilege Access :</b> Users and devices are granted the minimum level of access necessary to perform their tasks, reducing the potential attack surface. This includes enforcing strict access control policies and limiting user permissions.</li>
-                        <li><b>Micro-Segmentation :</b> Zero Trust networks also utilize microsegmentation. Networks are divided into smaller, isolated segments to reduce the lateral movement of potential attackers. Each segment has its own security policy, making it more difficult for threats to spread across the network.</li>
-                        <li><b>Continuous Monitoring and Validation :</b> Security controls are constantly evaluated, and access rights are continuously reassessed to ensure they are still appropriate based on the context (e.g., location, device, role, behavior). This helps in identifying and mitigating anomalies.</li>
-                        <li><b>Multi-Factor Authentication (MFA) :</b> Strong authentication mechanisms are implemented to ensure that only authorized users and devices can access critical resources. MFA requires multiple forms of identity verification, such as passwords and biometrics or tokens.</li>
+                        <li><b>Spear Phishing :</b> A targeted attempt to steal sensitive information using personalized fake communications (e.g., emails from seemingly trusted sources).</li>
+                        <li><b>Whaling :</b> A specific type of spear phishing that targets high-profile individuals, such as executives or government officials.</li>
                     </ul>
-                </div>
-            </div>
-
-            <div class="sections" id="risk">
-                <h4 class="heading"># Risk Management</h4>
-                <div class="content">
-                    <p>Risk management is the process of identifying, assessing, and mitigating potential risks to an organization's digital assets, systems, and information. It includes risk assessments and audits, vulnerability scanning, implementing preventive measures such as firewalls, encryption, or multi-factor authentication, and developing risk management frameworks and policies.</p>
-                    <h5>Incident Response :</h5>
-                    <p>Incident Response (IR) refers to the organized approach taken by an organization to detect, respond to, manage, and recover from security incidents, such as cyberattacks, data breaches, or other malicious activities. The goal of incident response is to minimize the impact of an incident, restore normal operations as quickly as possible, and learn from the event to improve future security measures.</p>
-                    <h6>Terminologies -</h6>
+                    <h5>Eavesdropping (Sniffing) :</h5>
+                    <p>Eavesdropping is the act of secretly intercepting and listening to private communications or data transmissions without the consent of the involved parties. It is often done to gather sensitive information, such as personal details, passwords, credit card numbers, or confidential business data. To prevent eavesdropping, encryption should be used for sensitive communications, and VPNs should be used to secure data over public networks.</p>
+                    <h5>DNS Spoofing</h5>
+                    <p>DNS Spoofing (also known as DNS Cache Poisoning) is an attack in which an attacker manipulates the Domain Name System (DNS) records to redirect or intercept users' web traffic. In a DNS spoofing attack, the attacker provides false DNS responses to a victim, causing the victim’s system to trust the malicious data. This can lead the victim to be redirected to malicious websites or servers, even though the domain name they entered was legitimate. To mitigate, use secure DNS servers, cache hygiene (regularly clearing DNS caches), and encryption.</p>
+                    <h5>Malware Attacks :</h5>
+                    <p>A malware attack refers to the process by which a malicious actor or software spreads or executes malware on a target system or network. Malware, short for malicious software, is any program or code designed to harm, exploit, or compromise the functionality of a computer, network, or device. Malware can lead to data theft, system damage, or a complete system takeover. Common types of malware include viruses, worms, trojans, ransomware, and spyware.</p>
                     <ul class="justify">
-                        <li><b>Asset :</b> An asset refers to any valuable entity that needs protection within an organization's IT infrastructure, network, or environment. Assets can include both tangible (physical devices) and intangible resources (data, software, and intellectual property).</li>
-                        <li><b>Event :</b> An event refers to any observable occurrence or action within a system, network, or environment.</li>
-                        <li><b>Vulnerability :</b> Weakness in a system, system security procedures, internal controls, or implementation that could be exploited by a threat source.</li>
-                        <li><b>Threat :</b> A threat is a potential or ongoing danger that could exploit a vulnerability to cause harm to a system, network, or organization via unauthorized access, destruction, disclosure, or modification of information.</li>
-                        <li><b>Exploit :</b> An exploit is a piece of software, code, or technique that leverages a vulnerability in a system, application, or network to cause unintended behavior or gain unauthorized access.</li>
-                        <li><b>Attack :</b> An attack refers to any deliberate action taken by a malicious actor with the intent to compromise the confidentiality, integrity, or availability of a system or network.</li>
-                        <li><b>Intrusion :</b> A security event or combination of events in which an intruder gains or attempts to gain unauthorized access to a system or system resource.</li>
-                        <li><b>Breach :</b> A breach refers to an incident where unauthorized access, disclosure, or manipulation of data, systems, or networks occurs.</li>
-                        <li><b>Incident :</b> An event that actually or potentially compromises the confidentiality, integrity, or availability of a system or network.</li>
-                        <li><b>Zero Day :</b> A zero-day refers to a vulnerability in a software or system that is unknown to the vendor or the public.</li>
+                        <li><b>Viruses :</b> A virus is a piece of malicious software or code that attaches itself to a program or file. It is designed to spread from one computer to another when the infected files are shared or opened, and it works by altering, overwriting, or deleting files once it infects a system. A virus often disrupts system operations.</li>
+                        <li><b>Worms :</b> Standalone programs that replicate themselves and spread across networks without requiring a host file. Unlike viruses, they can spread automatically without user intervention by exploiting vulnerabilities in networks.</li>
+                        <li><b>Trojans :</b> Malicious software disguised as legitimate programs to trick users into running it, often used to steal data or gain unauthorized access.</li>
+                        <li><b>Ransomware :</b> Software that encrypts a victim’s data and demands a ransom payment in exchange for the decryption key.</li>
+                        <li><b>Spyware :</b> Software that secretly monitors and collects information about users and users's devices without their knowledge.</li>
+                        <li><b>Adware :</b> Software that automatically displays or downloads unwanted advertisements and often tracks user behavior.</li>
+                        <li><b>Keylogger :</b> A keylogger is a type of software or hardware designed to secretly record the keystrokes on a computer or other devices. The purpose of a keylogger is to capture and monitor all typed data without the user’s knowledge or consent. This includes everything from usernames, passwords, credit card numbers, messages, and other sensitive information. Keyloggers can operate in the background, invisible to the user, and may send the captured data back to the attacker or store it locally for later retrieval.</li>
+                        <li><b>Rootkit :</b> A rootkit is malicious software designed to gain unauthorized access to a system or network and hide its presence. It allows attackers to maintain privileged control (root access) over the system while remaining undetected, often by manipulating system processes or logs. Rootkits operate at a low system level, such as the kernel or firmware, making them difficult to detect with standard security software. Detecting and removing rootkits typically requires specialized tools or a complete system reformat.</li>
+                        <li><b>Botnet :</b> A botnet is a network of infected computers or devices, known as "bots" or "zombies," that are controlled remotely by an attacker, often without the knowledge of the device's owner. These devices are typically compromised by malware and can be used for a variety of malicious purposes, including Distributed Denial-of-Service (DDoS) attacks, spamming (sending large volumes of unsolicited emails), data theft, and mining cryptocurrency.</li>
                     </ul>
-                    <h6>Rebundancy :</h6>
-                    <p>Redundancy refers to the practice of implementing backup systems, processes, or components to ensure that critical functions continue to operate smoothly in the event of failures, attacks, or disasters. By incorporating redundant systems, data storage, and network paths, organizations can reduce the risk of downtime, data loss, and service interruptions caused by system failures, cyberattacks, or other disruptions.</p>
-                </div>
-            </div>
-
-            <div class="sections" id="governance">
-                <h4 class="heading"># Governance Elements</h4>
-                <div class="content">
-                    <p>Governance elements refer to the foundational components and frameworks that guide an organization's approach to managing and protecting its information systems.</p>
+                    <h5>Password Attacks :</h5>
+                    <p>Passwords are often the primary means of authenticating users, and if compromised, they can provide access to sensitive data, systems, and resources.</p>
                     <ul class="justify">
-                        <li>
-                            <h6>Regulations :</h6>
-                            <p>Regulations are commonly issued in the form of laws, usually from the government, and carry financial penalties and/or imprisonment for non-compliance. For example, the General Data Protection Regulations (GDPR) were enacted by the European Union (EU) to control the use of Personally Identifiable Information (PII) of its citizens and those in the EU.</p>
-                        </li>
-                        <li>
-                            <h6>Standards :</h6>
-                            <p>Standards are often used by government teams to provide a framework to introduce policies and procedures in support of regulations. For example, the International Organization for Standardization (ISO) develops and publishes international standards on a variety of technical subjects, including information systems and information security. And another is the National Institute of Standards and Technology (NIST), a United States government agency.</p>
-                        </li>
-                        <li>
-                            <h6>Policies :</h6>
-                            <p>Policies are put in place by organizational governance, such as executive management, to provide guidance in all activities to ensure that the organization meets industry standards and regulations.</p>
-                        </li>
-                        <li>
-                            <h6>Procedures :</h6>
-                            <p>Procedures are the detailed steps to complete tasks that support departmental or organizational policies.</p>
-                        </li>
+                        <li><b>Brute Force Attack :</b> In a brute-force attack, the attacker systematically tries every possible combination of characters until the correct password is found. This method involves testing all possible combinations of letters, numbers, and symbols, making it time-consuming but effective if the password is weak or simple. Countermeasures include using long and complex passwords, implementing account lockouts after multiple failed attempts, and enabling multi-factor authentication (MFA).</li>
+                        <li><b>Dictionary Attack :</b> A dictionary attack involves using a dictionary, i.e., a prearranged list of common words, phrases, and frequently used passwords, to guess a password. The attacker typically uses a list of words from the dictionary, variations of common passwords, or leaked password lists. Countermeasures include using passwords that are not based on common words or dictionary phrases and enabling multi-factor authentication (MFA).</li>
+                        <li><b>Rainbow Table Attack :</b> Rainbow tables are precomputed tables used to reverse cryptographic hash functions, converting hashed passwords back into plaintext. Attackers use precompiled tables of hash values corresponding to common passwords and attempt to match them with the hashes stored in a database. Countermeasures include using salting (adding random data) when storing passwords and employing strong cryptographic hashing algorithms like bcrypt.</li>
+                        <li><b>Credential Stuffing :</b> Credential stuffing attacks use previously stolen username and password combinations (often from data breaches) to gain unauthorized access to multiple systems. Attackers automate the process of trying stolen credentials on various websites or services. If users reuse passwords across multiple sites, attackers can gain access to accounts on those platforms. Countermeasures include using never-reused passwords across different accounts, enabling MFA, and using password managers to generate and store unique passwords.</li>
                     </ul>
-                    <p>When leaders and management implement the systems and structure that the organization will use to achieve its goals, they are guided by laws and regulations created by the government to enact public policy. Laws and regulations guide the development of standards that cultivate policies that result in procedures.</p>
+                    <h5>MitM Attack :</h5>
+                    <p>A Man-in-the-Middle (MitM) attack is a type of cyberattack where an attacker intercepts and potentially alters communication between two parties without their knowledge. The attacker positions themselves between the sender and the receiver, allowing them to eavesdrop on the conversation or modify the data being transmitted. This can occur in unsecured communication channels, like public Wi-Fi networks.</p>
+                    <h5>Denial-of-Service Attack :</h5>
+                    <p>In a Denial-of-Service (DoS) attack, an attacker attempts to disrupt the normal functioning of a target system, service, or network by overwhelming it with a flood of traffic or requests. The goal is to make the targeted system unavailable to its users, effectively denying access to legitimate users. DoS attacks can result in downtime for websites, services, or networks, causing significant disruptions, financial losses, or reputational damage.</p>
+                    <ul class="justify">
+                        <li><b>DoS (Denial of Service) :</b> In a traditional DoS attack, a single source or machine sends a massive volume of traffic to the target system, overwhelming its resources (such as bandwidth, memory, or CPU), causing the system to slow down or crash.</li>
+                        <li><b>DDoS (Distributed Denial of Service) :</b> In a DDoS attack, the attacker uses multiple machines or devices (often part of a botnet) to flood the target system with traffic, making the attack more difficult to stop because it comes from many different sources.</li>
+                    </ul>
+                    <h5>SQL Injection :</h5>
+                    <p>Structured Query Language Injection (SQLi) is an attack on a web application's database that exploits vulnerabilities, allowing malicious SQL queries to be executed. This attack enables an attacker to manipulate SQL queries, often with the intent of gaining unauthorized access to sensitive data or performing malicious actions on the database.</p>
+                    <h5>Cross-Site Scripting (XSS) :</h5>
+                    <p>Cross-Site Scripting (XSS) is a type of security vulnerability found in web applications, where attackers inject malicious scripts (typically JavaScript) into web pages viewed by other users. These scripts execute within the user's browser, enabling the attacker to manipulate content, steal sensitive information, access cookies and session tokens, or perform actions on behalf of the user without their consent.</p>
+                    <ul class="justify">
+                        <li><b>Stored XSS :</b> The malicious script is stored on the server (for example, in a database) and is served to users who view the infected page.</li>
+                        <li><b>Reflected XSS :</b> The malicious script is reflected off the web server (e.g., via a URL or query parameter) and executed immediately, usually without being stored.</li>
+                        <li><b>DOM-based XSS :</b> The malicious script is executed as a result of modifying the DOM (Document Object Model) in the browser, often without involving the server.</li>
+                    </ul>
+                    <h5>Privilege Escalation :</h5>
+                    <p>Privilege escalation is a type of security vulnerability or attack where an attacker gains elevated access to resources or functions that they would normally not be able to access. This occurs when a user, application, or process is granted higher privileges (e.g., admin or root rights) than intended.</p>
+                    <ul class="justify">
+                        <li><b>Vertical Privilege Escalation (or Privilege Elevation) :</b> This occurs when a user gains higher privileges, such as a regular user gaining administrative (root) access. For example, a standard user may exploit a vulnerability to gain administrator rights and perform actions that are normally restricted.</li>
+                        <li><b>Horizontal Privilege Escalation :</b> This happens when an attacker gains access to another user's resources or data, but without increasing their own privileges. In this case, they can access or modify data that belongs to a different user with similar or equal privilege levels.</li>
+                    </ul>
                 </div>
             </div>
 
