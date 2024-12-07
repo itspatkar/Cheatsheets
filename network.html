@@ -131,8 +131,9 @@
             <div class="sections" id="mac">
                 <h4 class="heading"># MAC Address</h4>
                 <div class="content">
-                    <p>A MAC (Media Access Control) address is a unique identifier assigned to a network interface controller (NIC) for communication at the data link layer of a network segment. It is called a physical address.</p>
+                    <p>A MAC (Media Access Control) address is a unique identifier assigned to a network interface controller (NIC) for communication at the data link layer of a network segment.</p>
                     <ul class="justify">
+                        <li>It is called a physical address.</li>
                         <li>It serves as a hardware address that distinguishes one device from another on a local network or physical hardware.</li>
                         <li>The MAC address is a twelve-character hexadecimal number split into two's and separated by a colon. The first six characters represent the vendor/company that made the network interface, and the last six is a unique number.</li>
                         <li>MAC addresses can be faked or spoofed in a process known as spoofing. This spoofing occurs when a networked device pretends to identify another using its MAC address.</li>
@@ -146,8 +147,9 @@
             <div class="sections" id="ip">
                 <h4 class="heading"># IP Address</h4>
                 <div class="content">
-                    <p>An Internet Protocol (IP) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It is called a logical address.</p>
+                    <p>An Internet Protocol (IP) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.</p>
                     <ul class="justify">
+                        <li>It is called a logical address.</li>
                         <li>It serves two main purposes: identifying the host or network interface and providing the location of the device in the network.</li>
                         <li>It is calculated through a technique known as IP addressing & subnetting.</li>
                         <li>A device's IP address can be changed, but two devices cannot have the same IP address within the same network.</li>
@@ -183,7 +185,7 @@
             <div class="sections" id="dns">
                 <h4 class="heading"># DNS</h4>
                 <div class="content">
-                    <p>The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like google.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources. DNS servers eliminate the need for humans to memorize IP addresses such as <code>192.168.1.1</code> (in IPv4).</p>
+                    <p>The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like google.com. Web browsers interact through IP addresses. DNS translates domain names to IP addresses so browsers can load Internet resources. DNS servers eliminate the need for humans to memorize IP addresses such as <code>192.168.1.1</code> (in IPv4).</p>
                     <ul class="justify">
                         <li><b>Domain Name Resolution :</b> When a domain name is entered into a web browser, the device first checks its local DNS cache to see if the corresponding IP address exists. If not, it sends a request to a DNS server.</li>
                         <li><b>DNS Server Lookup :</b> The device sends a query to a DNS server, provided by the Internet Service Provider (ISP). If the DNS server has the requested information in its cache, it returns the IP address to the device. If not, it queries other DNS servers until it finds the information or determines that it doesn't exist.</li>
@@ -209,10 +211,10 @@
                     <div class="code-box code-box-color"><code>http://user:password@example.com:80/view?id=1#task2</code></div>
                     <ul class="justify">
                         <li><b>Scheme (<code>http</code>) :</b> This instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP.</li>
-                        <li><b>User (<code>user:password</code>) :</b> Some services require authentication to log in, you can put a username and password into the URL to log in.</li>
-                        <li><b>Host (<code>example.com</code>) :</b> The domain name or IP address of the server you wish to access.</li>
-                        <li><b>Port (<code>80</code>) :</b> The Port that you are going to connect to, usually 80 for HTTP and 443 for HTTPS.</li>
-                        <li><b>Path (<code>/view</code>) :</b> The file name or location of the resource you are trying to access.</li>
+                        <li><b>User (<code>user:password</code>) :</b> Some services require authentication to log in; put a username and password into the URL to log in.</li>
+                        <li><b>Host (<code>example.com</code>) :</b> The domain name or IP address of the server to access.</li>
+                        <li><b>Port (<code>80</code>) :</b> The port that the client is going to connect to, usually 80 for HTTP and 443 for HTTPS.</li>
+                        <li><b>Path (<code>/view</code>) :</b> The file name or location of the resource that is to be accessed.</li>
                         <li><b>Query String (<code>/view?id=1</code>) :</b> Extra bits of information that can be sent to the requested path.</li>
                         <li><b>Fragment (<code>#task2</code>) :</b> This is a reference to a location on the actual page requested.</li>
                     </ul>
@@ -526,11 +528,11 @@
                         <li>
                             <h6>Common Request Headers :</h6>
                             <ul class="justify">
-                                <li><b>Host :</b> Some web servers host multiple websites, so by providing the host headers, you can tell it which one you require; otherwise, you'll just receive the default website for the server.</li>
-                                <li><b>User-Agent :</b> This is your browser software and version number, telling the web server that your browser software helps it format the website properly for your browser. Also, some elements of HTML, JavaScript, and CSS are only available in certain browsers.</li>
+                                <li><b>Host :</b> Some web servers host multiple websites, so by providing the host headers, the client instructs the server which one is required; otherwise, it receives the default website for the server.</li>
+                                <li><b>User-Agent :</b> This is the browser software and its version number, which tells the web server which browser is being used, helping it format the website properly for that specific browser. Additionally, some elements of HTML, JavaScript, and CSS are only supported in certain browser versions.</li>
                                 <li><b>Content-Length :</b> When sending data to a web server, such as in a form, the content length tells the web server how much data to expect in the web request. This way, the server can ensure it isn't missing any data.</li>
                                 <li><b>Accept-Encoding :</b> Tells the web server what types of compression methods the browser supports so the data can be made smaller for transmitting over the internet.</li>
-                                <li><b>Cookie :</b> Data is sent to the server to help remember your information.</li>
+                                <li><b>Cookie :</b> It is data that is sent to the server to help remember users information.</li>
                             </ul>
                         </li>
                         <li>
@@ -639,11 +641,13 @@
                 <h4 class="heading"># TOR</h4>
                 <div class="content">
                     <p>TOR stands for The Onion Router, a free, open-source software that enables anonymous communication over the internet. It is designed to protect users' privacy and security by routing internet traffic through a series of volunteer-operated servers, known as nodes or relays, that encrypt and re-encrypt the data multiple times, making it very difficult to trace back to the original user.</p>
-                    <ul>
+                    <ul class="justify">
                         <li>Onion routing is the technology behind the TOR (The Onion Router) network, and it is designed to provide anonymous communication over the internet.</li>
                         <li>It works by encrypting data in multiple layers, similar to the layers of an onion, and then routing it through a network of servers (nodes) to ensure that the origin, destination, and contents of the communication are hidden from potential eavesdroppers.</li>
                         <li>This process helps to obscure users' IP addresses, making it difficult for anyone to track their online activities or locate them.</li>
                     </ul>
+                    <h5>Dark Web :</h5>
+                    <p>The dark web is a part of the deep web (the portion of the internet not indexed by search engines) that is intentionally hidden and requires special tools, such as TOR, to access. Websites on the dark web have ".onion" domains, which are only accessible via the Tor browser. These sites are typically not indexed by search engines, providing a higher level of anonymity and privacy. The dark web is known for hosting both legal and illegal content. However, it is also used by individuals seeking privacy, engaging in political activism, practicing journalism, or escaping censorship in authoritarian regimes.</p>
                 </div>
             </div>
 
