@@ -56,7 +56,7 @@
 
             <div class="sections" id="linux-basics">
                 <h4 class="heading"># Linux Basics</h4>
-                <div>
+                <div class="content">
                     <h5>&bull; Shell :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -122,8 +122,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <div>
+
                     <h5>&bull; System and User :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -134,14 +133,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-				<tr>
-				    <td><code>su</code></td>
-				    <td>switch user - allow switch to another user</td>
-				</tr>
-				<tr>
-				    <td><code>sudo</code></td>
-				    <td>superuser do - allow executing commands with elevated/root privileges</td>
-				</tr>
+                                <tr>
+                                    <td><code>su</code></td>
+                                    <td>switch user - allow switch to another user</td>
+                                </tr>
+                                <tr>
+                                    <td><code>sudo</code></td>
+                                    <td>superuser do - allow executing commands with elevated/root privileges</td>
+                                </tr>
                                 <tr>
                                     <td><code>df</code></td>
                                     <td>filesystem disk space usage</td>
@@ -190,10 +189,10 @@
                                     <td><code>uptime</code></td>
                                     <td>show uptime (how long the system has been running)</td>
                                 </tr>
-				<tr>
-				    <td><code>halt</code></td>
-				    <td>halts system by stopping all processes but does not power off</td>
-				</tr>
+                                <tr>
+                                    <td><code>halt</code></td>
+                                    <td>halts system by stopping all processes but does not power off</td>
+                                </tr>
                                 <tr>
                                     <td><code>poweroff</code></td>
                                     <td>poweroff system</td>
@@ -249,8 +248,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <div>
+
                     <h5>&bull; Networking :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -305,7 +303,7 @@
                                     <td><code>netstat</code></td>
                                     <td>print network connections, routing tables, interface statistics, masquerade connections, multicast memberships, etc. <b>(deprecated)</b></td>
                                 </tr>
-                                <tr>`
+                                <tr>
                                     <td><code>route</code></td>
                                     <td>show / manipulate the IP routing table <b>(deprecated)</b></td>
                                 </tr>
@@ -316,8 +314,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <div>
+
                     <h5>&bull; File Management :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -488,115 +485,127 @@
 
             <div class="sections" id="bash-scripts">
                 <h4 class="heading"># Bash Scripts</h4>
-                <p>A Bash script is a plain text file that contains a series of commands that are executed in sequence. Scripts have <code>.sh</code> extension (for example: <code>script.sh</code>). Shell scripts begin with the shebang (<code>#!/bin/sh</code>), which tells the system which shell interpreter to use to run the script.</p>
-                <h6>Ex :</h6>
-                <pre class="code-box code-box-color"><code>#!/bin/bash
+                <div class="content">
+                    <p>A Bash script is a plain text file that contains a series of commands that are executed in sequence. Scripts have <code>.sh</code> extension (for example: <code>script.sh</code>). Shell scripts begin with the shebang (<code>#!/bin/sh</code>), which tells the system which shell interpreter to use to run the script.</p>
+                    <h6>Ex :</h6>
+                    <pre class="code-box code-box-color"><code>#!/bin/bash
 
 mkdir Docs
 cp doc1.txt Docs/
 rm doc1.txt
 clear</code></pre>
-                <h5>Executing Scripts :</h5>
-                <p><b>Note :</b> The script must have executable permission.</p>
-                <pre class="code-box"><code>./[script]
+                    <h5>Executing Scripts :</h5>
+                    <p><b>Note :</b> The script must have executable permission.</p>
+                    <pre class="code-box"><code>./[script]
 sh [script]
 bash [script]
 
 # Output each command execution :
 bash -x [script]</code></pre>
-                <h6>Ex :</h6>
-                <pre class="code-box code-box-color"><code>./script.sh
+                    <h6>Ex :</h6>
+                    <pre class="code-box code-box-color"><code>./script.sh
 bash script.sh</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="variables">
                 <h4 class="heading"># Variables</h4>
-                <h6>Declaring :</h6>
-                <pre class="code-box"><code>greet="Hello World"
+                <div class="content">
+                    <h6>Declaring :</h6>
+                    <pre class="code-box"><code>greet="Hello World"
 num=17</code></pre>
-                <h6>Access :</h6>
-                <pre class="code-box"><code>echo $greet
+                    <h6>Access :</h6>
+                    <pre class="code-box"><code>echo $greet
 echo "Number is ${num}"</code></pre>
-                <h6>Read-Only Variable :</h6>
-                <div class="code-box"><code>readonly COUNT=1</code></div>
-                <h6>Declare Integer :</h6>
-                <div class="code-box"><code>declare -i num=10</code></div>
-                <h6>Remove Variable :</h6>
-                <div class="code-box"><code>unset num</code></div>
+                    <h6>Read-Only Variable :</h6>
+                    <div class="code-box"><code>readonly COUNT=1</code></div>
+                    <h6>Declare Integer :</h6>
+                    <div class="code-box"><code>declare -i num=10</code></div>
+                    <h6>Remove Variable :</h6>
+                    <div class="code-box"><code>unset num</code></div>
+                </div>
             </div>
 
             <div class="sections" id="strings">
                 <h4 class="heading"># Strings</h4>
-                <h6>Declaring :</h6>
-                <div class="code-box"><code>greet="Hello World"</code></div>
-                <h6>Access :</h6>
-                <div class="code-box"><code>echo $greet</code></div>
-                <h6>Length of string :</h6>
-                <div class="code-box"><code>echo ${#greet}</code></div>
-                <h6>String Replace :</h6>
-                <pre class="code-box"><code>greet="Hello World"
+                <div class="content">
+                    <h6>Declaring :</h6>
+                    <div class="code-box"><code>greet="Hello World"</code></div>
+                    <h6>Access :</h6>
+                    <div class="code-box"><code>echo $greet</code></div>
+                    <h6>Length of string :</h6>
+                    <div class="code-box"><code>echo ${#greet}</code></div>
+                    <h6>String Replace :</h6>
+                    <pre class="code-box"><code>greet="Hello World"
 echo "Before: $greet"
 greet=${greet/World/Universe}
 echo "After: $greet"</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="arrays">
                 <h4 class="heading"># Arrays</h4>
-                <h6>Declaring Indexed Array :</h6>
-                <div class="code-box"><code>declare -a fruits=("apple" "mango" "banana" "orange")</code></div>
-                <h6>Declaring Associative Array :</h6>
-                <pre class="code-box"><code>declare -A india["capital"]="New Delhi"
+                <div class="content">
+                    <h6>Declaring Indexed Array :</h6>
+                    <div class="code-box"><code>declare -a fruits=("apple" "mango" "banana" "orange")</code></div>
+                    <h6>Declaring Associative Array :</h6>
+                    <pre class="code-box"><code>declare -A india["capital"]="New Delhi"
 
 declare -A capital=(["India"]="New Delhi", ["Nepal"]="Kathmandu", ["Bhutan"]="Thimphu")</code></pre>
-                <h6>Indexing :</h6>
-                <div class="code-box"><code>fruits[0]="grapes"</code></div>
-                <h6>Access Element :</h6>
-                <div class="code-box"><code>echo ${fruits[0]}</code></div>
-                <h6>Print All Elements :</h6>
-                <div class="code-box"><code>echo ${fruits[@]}</code></div>
-                <h6>Print Key of Associative Array :</h6>
-                <div class="code-box"><code></code>echo ${!india[@]}</div>
-                <h6>Length of Array :</h6>
-                <div class="code-box"><code>echo ${#fruits[@]}</code></div>
-                <h6>Input :</h6>
-                <div class="code-box"><code>read -a fruits</code></div>
+                    <h6>Indexing :</h6>
+                    <div class="code-box"><code>fruits[0]="grapes"</code></div>
+                    <h6>Access Element :</h6>
+                    <div class="code-box"><code>echo ${fruits[0]}</code></div>
+                    <h6>Print All Elements :</h6>
+                    <div class="code-box"><code>echo ${fruits[@]}</code></div>
+                    <h6>Print Key of Associative Array :</h6>
+                    <div class="code-box"><code></code>echo ${!india[@]}</div>
+                    <h6>Length of Array :</h6>
+                    <div class="code-box"><code>echo ${#fruits[@]}</code></div>
+                    <h6>Input :</h6>
+                    <div class="code-box"><code>read -a fruits</code></div>
+                </div>
             </div>
 
             <div class="sections" id="input">
                 <h4 class="heading"># Input</h4>
-                <h6>Input (STDIN) :</h6>
-                <div class="code-box"><code>read [var]</code></div>
-                <h6>Prompt Input :</h6>
-                <div class="code-box"><code>read -p "Username : " [var]</code></div>
-                <h6>Secure Prompt Input :</h6>
-                <div class="code-box"><code>read -sp "Password : " [var]</code></div>
-                <h6>Input NChar :</h6>
-                <div class="code-box"><code>read -n [x] [var]</code></div>
-                <h6>Array Input :</h6>
-                <div class="code-box"><code>read -a [array]</code></div>
+                <div class="content">
+                    <h6>Input (STDIN) :</h6>
+                    <div class="code-box"><code>read [var]</code></div>
+                    <h6>Prompt Input :</h6>
+                    <div class="code-box"><code>read -p "Username : " [var]</code></div>
+                    <h6>Secure Prompt Input :</h6>
+                    <div class="code-box"><code>read -sp "Password : " [var]</code></div>
+                    <h6>Input NChar :</h6>
+                    <div class="code-box"><code>read -n [x] [var]</code></div>
+                    <h6>Array Input :</h6>
+                    <div class="code-box"><code>read -a [array]</code></div>
+                </div>
             </div>
 
             <div class="sections" id="output">
                 <h4 class="heading"># Output</h4>
-                <h6>Print (STDOUT) :</h6>
-                <p>The <code>echo</code> prints output followed by a new line character.</p>
-                <pre class="code-box"><code>echo "Hello World"
+                <div class="content">
+                    <h6>Print (STDOUT) :</h6>
+                    <p>The <code>echo</code> prints output followed by a new line character.</p>
+                    <pre class="code-box"><code>echo "Hello World"
 
 msg="Hello World"
 echo $msg
 echo "Hii, ${msg}"</code></pre>
-                <h6>Enable Backslash Escapes :</h6>
-                <div class="code-box"><code>echo -e "\n Hello World"</code></div>
-                <h6>Special Char in Output :</h6>
-                <div class="code-box"><code>echo '$Hello World'</code></div>
-                <h6>Print (STDOUT) :</h6>
-                <p>The <code>printf</code> prints output in the specified format; it does not append an implied newline.</p>
-                <div class="code-box"><code>printf "\n%s\n\n" "Hello World"</code></div>
+                    <h6>Enable Backslash Escapes :</h6>
+                    <div class="code-box"><code>echo -e "\n Hello World"</code></div>
+                    <h6>Special Char in Output :</h6>
+                    <div class="code-box"><code>echo '$Hello World'</code></div>
+                    <h6>Print (STDOUT) :</h6>
+                    <p>The <code>printf</code> prints output in the specified format; it does not append an implied newline.</p>
+                    <div class="code-box"><code>printf "\n%s\n\n" "Hello World"</code></div>
+                </div>
             </div>
 
             <div class="sections" id="operators">
                 <h4 class="heading"># Operators</h4>
-                <div>
+                <div class="content">
                     <h5>&bull; Arithmetic Operator :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -639,9 +648,7 @@ echo "Hii, ${msg}"</code></pre>
                         </table>
                     </div>
                     <p><b>Note :</b> Arithmetic operations should be in double braces: <code>count=$((count+1))</code></p>
-                </div>
 
-                <div>
                     <h5>&bull; Logical Operator :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -667,9 +674,7 @@ echo "Hii, ${msg}"</code></pre>
                             </tbody>
                         </table>
                     </div>
-                </div>
 
-                <div>
                     <h5>&bull; Relational Operator :</h5>
                     <p>(Numerical Comparison)</p>
                     <div class="table-responsive">
@@ -707,15 +712,13 @@ echo "Hii, ${msg}"</code></pre>
                                 </tr>
                             </tbody>
                         </table>
-                    </div
-                   <h6>Ex :</h6>
+                    </div>
+                    <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code>if [ 80 -gt 40 ]
 then
     echo "Greater"
 fi</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; Relational Operator :</h5>
                     <p>(String Comparison)</p>
                     <div class="table-responsive">
@@ -757,9 +760,7 @@ then
 else
     echo "Not Matched"
 fi</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; Lexicographic Comparison :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -781,9 +782,7 @@ fi</code></pre>
                             </tbody>
                         </table>
                     </div>
-                </div>
 
-                <div>
                     <h5>&bull; File Testing Operator :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -851,100 +850,103 @@ fi</code></pre>
 
             <div class="sections" id="escape-sequence">
                 <h4 class="heading"># Escape Sequence</h4>
-                <div class="table-responsive">
-                    <table class="table table-sm table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Escape</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>\\</code></td>
-                                <td>backslash</td>
-                            </tr>
-                            <tr>
-                                <td><code>\a</code></td>
-                                <td>alert (BEL)</td>
-                            </tr>
-                            <tr>
-                                <td><code>\b</code></td>
-                                <td>backspace</td>
-                            </tr>
-                            <tr>
-                                <td><code>\c</code></td>
-                                <td>suppress trailing newline</td>
-                            </tr>
-                            <tr>
-                                <td><code>\f</code></td>
-                                <td>form feed</td>
-                            </tr>
-                            <tr>
-                                <td><code>\n</code></td>
-                                <td>new line</td>
-                            </tr>
-                            <tr>
-                                <td><code>\r</code></td>
-                                <td>carriage return</td>
-                            </tr>
-                            <tr>
-                                <td><code>\t</code></td>
-                                <td>horizontal tab</td>
-                            </tr>
-                            <tr>
-                                <td><code>\v</code></td>
-                                <td>vertical tab</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="content">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Escape</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>\\</code></td>
+                                    <td>backslash</td>
+                                </tr>
+                                <tr>
+                                    <td><code>\a</code></td>
+                                    <td>alert (BEL)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>\b</code></td>
+                                    <td>backspace</td>
+                                </tr>
+                                <tr>
+                                    <td><code>\c</code></td>
+                                    <td>suppress trailing newline</td>
+                                </tr>
+                                <tr>
+                                    <td><code>\f</code></td>
+                                    <td>form feed</td>
+                                </tr>
+                                <tr>
+                                    <td><code>\n</code></td>
+                                    <td>new line</td>
+                                </tr>
+                                <tr>
+                                    <td><code>\r</code></td>
+                                    <td>carriage return</td>
+                                </tr>
+                                <tr>
+                                    <td><code>\t</code></td>
+                                    <td>horizontal tab</td>
+                                </tr>
+                                <tr>
+                                    <td><code>\v</code></td>
+                                    <td>vertical tab</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
             <div class="sections" id="variable-substitution">
                 <h4 class="heading"># Variable Substitution</h4>
-                <div class="table-responsive">
-                    <table class="table table-sm table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Var</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>${x}</code></td>
-                                <td>substitute value of variable x</td>
-                            </tr>
-                            <tr>
-                                <td><code>${x:+y}</code></td>
-                                <td>if x is set, y is substituted for x. (value of x does not change)</td>
-                            </tr>
-                            <tr>
-                                <td><code>${x:-y}</code></td>
-                                <td>if x is null or unset, y is substituted for x. (value of x does not change)</td>
-                            </tr>
-                            <tr>
-                                <td><code>${x:=y}</code></td>
-                                <td>if x is null or unset, x is set to value of y.</td>
-                            </tr>
-                            <tr>
-                                <td><code>${x:?y}</code></td>
-                                <td>if x is null or unset, y is printed to standard error.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="content">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Var</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>${x}</code></td>
+                                    <td>substitute value of variable x</td>
+                                </tr>
+                                <tr>
+                                    <td><code>${x:+y}</code></td>
+                                    <td>if x is set, y is substituted for x. (value of x does not change)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>${x:-y}</code></td>
+                                    <td>if x is null or unset, y is substituted for x. (value of x does not change)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>${x:=y}</code></td>
+                                    <td>if x is null or unset, x is set to value of y.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>${x:?y}</code></td>
+                                    <td>if x is null or unset, y is printed to standard error.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
             <div class="sections" id="command-substitution">
                 <h4 class="heading"># Command Substitution</h4>
-                <p>Command substitution allows the output of a command to replace the command itself. Using a backquote is old-style; instead, the second form is recommended.</p>
-                <div>
+                <div class="content">
+                    <p>Command substitution allows the output of a command to replace the command itself. Using a backquote is old-style; instead, the second form is recommended.</p>
                     <h5>&bull; Back-Quote :</h5>
                     <h6>Syntax :</h6>
                     <div class="code-box"><code>`[command]`</code></div>
-
                     <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code># Example 1:
 DATE=`date`
@@ -953,9 +955,7 @@ echo "Date is $DATE"
 # Example 2:
 USERS=`who | wc -l`
 echo "Logged in user are $USERS"</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; Dollor Sign & Parenthesis :</h5>
                     <h6>Syntax :</h6>
                     <div class="code-box"><code>$([command])</code></div>
@@ -973,7 +973,7 @@ done</code></pre>
 
             <div class="sections" id="decision">
                 <h4 class="heading"># Decision Making</h4>
-                <div>
+                <div class="content">
                     <h5>&bull; If Statement :</h5>
                     <h6>Syntax :</h6>
                     <pre class="code-box"><code>if [ condition ]
@@ -992,16 +992,13 @@ if [ condition ] && [ condition ]
 then
     #Statement
 fi</code></pre>
-
                     <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code>x="Y"
 if [ "$x" = "y" ] || [ "$x" = "Y" ]
 then
     echo "YES"
 fi</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; If-Else Statement :</h5>
                     <h6>Syntax :</h6>
                     <pre class="code-box"><code>if [ condition ]
@@ -1010,7 +1007,6 @@ then
 else
     #Statement
 fi</code></pre>
-
                     <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code>name="admin"
 if [ $name = "admin" ]
@@ -1019,9 +1015,7 @@ then
 else
     echo "Who Are You?"
 fi</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; Elif Statements :</h5>
                     <h6>Syntax :</h6>
                     <pre class="code-box"><code>If [ condition ]
@@ -1033,7 +1027,6 @@ then
 else
     #Statement
 fi</code></pre>
-
                     <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code># Example 1:
 x=10
@@ -1062,9 +1055,7 @@ then
 else
     echo "Scalene"
 fi</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; Switch Statement :</h5>
                     <h6>Syntax :</h6>
                     <pre class="code-box"><code>case [var] in
@@ -1102,14 +1093,13 @@ esac</code></pre>
 
             <div class="sections" id="loops">
                 <h4 class="heading"># Loops</h4>
-                <div>
+                <div class="content">
                     <h5>&bull; While Loop :</h5>
                     <h6>Syntax :</h6>
                     <pre class="code-box"><code>while [ condition ]
 do
     #Statement
 done</code></pre>
-
                     <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code># Example 1: print "hello" 5 times
 count=0
@@ -1160,9 +1150,7 @@ do
     counter=$(( $counter - 1 ))
 done
 echo $factorial</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; For Loop :</h5>
                     <h6>Syntax :</h6>
                     <pre class="code-box"><code>for [var] in [expression]
@@ -1174,7 +1162,6 @@ done</code></pre>
 do
     #Statement
 done</code></pre>
-
                     <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code># Example 1: input array & print
 read -a array
@@ -1239,9 +1226,7 @@ done
 for key in ${!array[@]}; do
     echo "$key : ${array[$key]}"
 done</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; Until Loop :</h5>
                     <p>Executes until the condition is false.</p>
                     <h6>Syntax :</h6>
@@ -1249,7 +1234,6 @@ done</code></pre>
 do
     #Statement
 done</code></pre>
-
                     <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code>count=5
 until [ $count -le 0 ]
@@ -1258,16 +1242,13 @@ do
     count=$((count-1))
     sleep 1
 done</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; Select Loop :</h5>
                     <h6>Syntax :</h6>
                     <pre class="code-box"><code>select [var] in [expressions]
 do
     #Statements
 done</code></pre>
-
                     <h6>Ex :</h6>
                     <pre class="code-box code-box-color"><code>select drink in tea cofee water orange apple none
 do
@@ -1286,13 +1267,10 @@ do
         ;;
     esac
 done</code></pre>
-                </div>
 
-                <div>
                     <h5>&bull; Loop Controls :</h5>
-                    <div>
-                        <h6>1. Break Statement -</h6>
-                        <pre class="code-box"><code>a=1
+                    <h6>1. Break Statement -</h6>
+                    <pre class="code-box"><code>a=1
 while [ $a -lt 10 ]
 do
     echo $a
@@ -1302,10 +1280,8 @@ do
     fi
     a=$(expr $a + 1)
 done</code></pre>
-                    </div>
-                    <div>
-                        <h6>2. Continue Statement -</h6>
-                        <pre class="code-box"><code>nums="1 2 3 4 5 6 7"
+                    <h6>2. Continue Statement -</h6>
+                    <pre class="code-box"><code>nums="1 2 3 4 5 6 7"
 for num in $nums
 do
     q=$(expr $num % 2)
@@ -1316,38 +1292,38 @@ do
     fi
     echo $num
 done</code></pre>
-                    </div>
                 </div>
             </div>
 
             <div class="sections" id="functions">
                 <h4 class="heading"># Functions</h4>
-                <h6>Syntax :</h6>
-                <pre class="code-box"><code>function(){
+                <div class="content">
+                    <h6>Syntax :</h6>
+                    <pre class="code-box"><code>function(){
     #Statements
 }</code></pre>
-                <h6>Calling Function :</h6>
-                <pre class="code-box code-box-color"><code>greet(){
+                    <h6>Calling Function :</h6>
+                    <pre class="code-box code-box-color"><code>greet(){
     echo "Hello World"
 }
 
 greet</code></pre>
-                <h6>Function with Parameter :</h6>
-                <pre class="code-box code-box-color"><code>greet(){
+                    <h6>Function with Parameter :</h6>
+                    <pre class="code-box code-box-color"><code>greet(){
     echo "Hello $1"
 }
 
 greet World</code></pre>
-                <h6>Call within statement :</h6>
-                <pre class="code-box code-box-color"><code>capital(){
+                    <h6>Call within statement :</h6>
+                    <pre class="code-box code-box-color"><code>capital(){
     echo $1 | tr 'a-z' 'A-Z'
 }
 
 name="admin"
 echo "Capital: $(capital $name)"</code></pre>
-                <h6>Local Variables :</h6>
-                <p>Local variables are defined within a function and have local scope. They are only accessible within the function where they are defined, not outside of it. It is declared with the <code>local</code> keyword.</p>
-                <pre class="code-box code-box-color"><code>swap(){
+                    <h6>Local Variables :</h6>
+                    <p>Local variables are defined within a function and have local scope. They are only accessible within the function where they are defined, not outside of it. It is declared with the <code>local</code> keyword.</p>
+                    <pre class="code-box code-box-color"><code>swap(){
     local t=$a
     a=$b
     b=$t
@@ -1358,129 +1334,132 @@ b=7
 printf "\nA = $a\nb = $b"
 swap
 printf "\nA = $a\nb = $b"</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="command-line-arguments">
                 <h4 class="heading"># Command Line Arguments</h4>
-                <p>Also called shell script parameters.</p>
-                <div class="table-responsive">
-                    <table class="table table-sm table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Arguments</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>$0</code></td>
-                                <td>returns file name of script</td>
-                            </tr>
-                            <tr>
-                                <td><code>basename $0</code></td>
-                                <td>filename of script without leading path</td>
-                            </tr>
-                            <tr>
-                                <td><code>$[x]</code></td>
-                                <td>arguments pass to script/function</td>
-                            </tr>
-                            <tr>
-                                <td><code>$#</code></td>
-                                <td>total number of arguments passed</td>
-                            </tr>
-                            <tr>
-                                <td><code>$$</code></td>
-                                <td>PID of current shell</td>
-                            </tr>
-                            <tr>
-                                <td><code>$!</code></td>
-                                <td>PID of last executed background process</td>
-                            </tr>
-                            <tr>
-                                <td><code>$?</code></td>
-                                <td>exit status of last command/script executed (0 for success and 1 for failure)</td>
-                            </tr>
-                            <tr>
-                                <td><code>$_</code></td>
-                                <td>command which is being executed previously</td>
-                            </tr>
-                            <tr>
-                                <td><code>$∗</code></td>
-                                <td>returns all the arguments (in single string)</td>
-                            </tr>
-                            <tr>
-                                <td><code>$@</code></td>
-                                <td>same as $∗, but differ when enclosed in (") (in array)</td>
-                            </tr>
-                            <tr>
-                                <td><code>$-</code></td>
-                                <td>print the current options flags</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="content">
+                    <p>Also called shell script parameters.</p>
+                    <div class="table-responsive">
+                        <table class="table table-sm table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Arguments</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>$0</code></td>
+                                    <td>returns file name of script</td>
+                                </tr>
+                                <tr>
+                                    <td><code>basename $0</code></td>
+                                    <td>filename of script without leading path</td>
+                                </tr>
+                                <tr>
+                                    <td><code>$[x]</code></td>
+                                    <td>arguments pass to script/function</td>
+                                </tr>
+                                <tr>
+                                    <td><code>$#</code></td>
+                                    <td>total number of arguments passed</td>
+                                </tr>
+                                <tr>
+                                    <td><code>$$</code></td>
+                                    <td>PID of current shell</td>
+                                </tr>
+                                <tr>
+                                    <td><code>$!</code></td>
+                                    <td>PID of last executed background process</td>
+                                </tr>
+                                <tr>
+                                    <td><code>$?</code></td>
+                                    <td>exit status of last command/script executed (0 for success and 1 for failure)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>$_</code></td>
+                                    <td>command which is being executed previously</td>
+                                </tr>
+                                <tr>
+                                    <td><code>$∗</code></td>
+                                    <td>returns all the arguments (in single string)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>$@</code></td>
+                                    <td>same as $∗, but differ when enclosed in (") (in array)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>$-</code></td>
+                                    <td>print the current options flags</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
             <div class="sections" id="output-redirection">
                 <h4 class="heading"># Output Redirection</h4>
-                <div class="table-responsive">
-                    <table class="table table-sm table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Commands</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>[command] &gt; [file]</code></td>
-                                <td>redirect STDOUT to file</td>
-                            </tr>
-                            <tr>
-                                <td><code>[command] 1&gt; [file]</code></td>
-                                <td>redirect STDOUT to file (default file descriptor)</td>
-                            </tr>
-                            <tr>
-                                <td><code>[command] 2&gt; [file]</code></td>
-                                <td>redirect STDERR (standard error) to file</td>
-                            </tr>
-                            <tr>
-                                <td><code>[command] &&gt; [file]</code></td>
-                                <td>redirect STDOUT and STDERR to file</td>
-                            </tr>
-                            <tr>
-                                <td><code>[command] &gt; [file] 2&gt;&1</code></td>
-                                <td>redirect STDOUT and STDERR to file</td>
-                            </tr>
-                            <tr>
-                                <td><code>[command] &gt;&gt; [file]</code></td>
-                                <td>redirect and append STDOUT to file</td>
-                            </tr>
-                            <tr>
-                                <td><code>[command] &gt; /dev/null</code></td>
-                                <td>redirect STDOUT to null (discard STDOUT)</td>
-                            </tr>
-                            <tr>
-                                <td><code>[command] &&gt; /dev/null</code></td>
-                                <td>redirect STDOUT and STDERR to null</td>
-                            </tr>
-                            <tr>
-                                <td><code>echo &gt; [file]</code></td>
-                                <td>create empty file</td>
-                            </tr>
-                            <tr>
-                                <td><code>&gt; [file]</code></td>
-                                <td>create empty file</td>
-                            </tr>
-                            <tr>
-                                <td><code>cat &gt; [file]</code></td>
-                                <td>create file (CTRL+C to exit)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="content">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Commands</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>[command] &gt; [file]</code></td>
+                                    <td>redirect STDOUT to file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[command] 1&gt; [file]</code></td>
+                                    <td>redirect STDOUT to file (default file descriptor)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[command] 2&gt; [file]</code></td>
+                                    <td>redirect STDERR (standard error) to file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[command] &&gt; [file]</code></td>
+                                    <td>redirect STDOUT and STDERR to file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[command] &gt; [file] 2&gt;&1</code></td>
+                                    <td>redirect STDOUT and STDERR to file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[command] &gt;&gt; [file]</code></td>
+                                    <td>redirect and append STDOUT to file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[command] &gt; /dev/null</code></td>
+                                    <td>redirect STDOUT to null (discard STDOUT)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[command] &&gt; /dev/null</code></td>
+                                    <td>redirect STDOUT and STDERR to null</td>
+                                </tr>
+                                <tr>
+                                    <td><code>echo &gt; [file]</code></td>
+                                    <td>create empty file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&gt; [file]</code></td>
+                                    <td>create empty file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>cat &gt; [file]</code></td>
+                                    <td>create file (CTRL+C to exit)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                <div>
                     <p><b>NOTE :</b> 0,1,2 are global file descriptors.</p>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -1506,9 +1485,7 @@ printf "\nA = $a\nb = $b"</code></pre>
                             </tbody>
                         </table>
                     </div>
-                </div>
 
-                <div>
                     <h5>&bull; Custom File Descriptor :</h5>
                     <p>Define own file descriptor and redirect to it.</p>
                     <ol>
@@ -1529,12 +1506,13 @@ $ exec 3&gt;&-</code></pre>
 
             <div class="sections" id="piping">
                 <h4 class="heading"># Piping</h4>
-                <p>Pipelines or pipes (<code>|</code>) are used as a funnel to pass the output of one command to another command as an input or parameter.</p>
-                <h6>Syntax :</h6>
-                <div class="code-box"><code>[command] | [command]</code></div>
+                <div class="content">
+                    <p>Pipelines or pipes (<code>|</code>) are used as a funnel to pass the output of one command to another command as an input or parameter.</p>
+                    <h6>Syntax :</h6>
+                    <div class="code-box"><code>[command] | [command]</code></div>
 
-                <h6>Ex :</h6>
-                <pre class="code-box code-box-color"><code># Output 1 page at time:
+                    <h6>Ex :</h6>
+                    <pre class="code-box code-box-color"><code># Output 1 page at time:
 ls -iR | less
 
 # Display 10 rows:
@@ -1545,204 +1523,219 @@ cat file.txt | grep Hello
 
 # Sort output file having word "index":
 grep -l index * | sort</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="bash-aliases">
                 <h4 class="heading"># Bash Aliases</h4>
-                <p>Redefine aliases by assigning commands to words or short-names as substitutions.</p>
-                <h6>Synatx :</h6>
-                <div class="code-box"><code>alias name='[command]'</code></div>
-                <p>Save aliases in the file <code>.bashrc</code> (in home directory) and execute the file with -</p>
-                <div class="code-box"><code>source .bashrc</code></div>
+                <div class="content">
+                    <p>Redefine aliases by assigning commands to words or short-names as substitutions.</p>
+                    <h6>Synatx :</h6>
+                    <div class="code-box"><code>alias name='[command]'</code></div>
+                    <p>Save aliases in the file <code>.bashrc</code> (in home directory) and execute the file with -</p>
+                    <div class="code-box"><code>source .bashrc</code></div>
 
-                <h6>Ex :</h6>
-                <pre class="code-box code-box-color"><code>alias cpp='g++ $1 && ./a.out && rm a.out'</code></pre>
+                    <h6>Ex :</h6>
+                    <pre class="code-box code-box-color"><code>alias cpp='g++ $1 && ./a.out && rm a.out'</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="brace-expansion">
                 <h4 class="heading"># Brace Expansion</h4>
-                <ul>
-                    <li><code>echo {1,2,3}</code> : 1 2 3</li>
-                    <li><code>echo {1..5}</code> : 1 2 3 4 5</li>
-                    <li><code>echo {5..1}</code> : 5 4 3 2 1</li>
-                    <li><code>echo {1..-3}</code> : 1 0 -1 -2 -3</li>
-                    <li><code>echo {1..10..2}</code> : 1 3 5 7 9</li>
-                    <li><code>echo {A..E}</code> : A B C D E</li>
-                    <li><code>echo {A..H..2}</code> : A C E G</li>
-                    <li><code>echo a{2..5}b</code> : a2b a3b a4b a5b</li>
-                    <li><code>echo a, b, c, d{1..3}, e</code> : a, b, c, d1, d2, d3, e</li>
-                    <li><code>echo {code1,code2,code3}.c</code> : code1.c code2.c code3.c</li>
-                    <li><code>echo code{.c,.cpp,.py,.sh}</code> : code.c code.cpp code.py code.sh </li>
-                </ul>
+                <div class="content">
+                    <ul>
+                        <li><code>echo {1,2,3}</code> : 1 2 3</li>
+                        <li><code>echo {1..5}</code> : 1 2 3 4 5</li>
+                        <li><code>echo {5..1}</code> : 5 4 3 2 1</li>
+                        <li><code>echo {1..-3}</code> : 1 0 -1 -2 -3</li>
+                        <li><code>echo {1..10..2}</code> : 1 3 5 7 9</li>
+                        <li><code>echo {A..E}</code> : A B C D E</li>
+                        <li><code>echo {A..H..2}</code> : A C E G</li>
+                        <li><code>echo a{2..5}b</code> : a2b a3b a4b a5b</li>
+                        <li><code>echo a, b, c, d{1..3}, e</code> : a, b, c, d1, d2, d3, e</li>
+                        <li><code>echo {code1,code2,code3}.c</code> : code1.c code2.c code3.c</li>
+                        <li><code>echo code{.c,.cpp,.py,.sh}</code> : code.c code.cpp code.py code.sh </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="regex">
                 <h4 class="heading"># RegEx</h4>
-                <p>A regular expression (shortened as regex) is a sequence of characters that defines a search pattern for use in pattern matching to find, match, or replace text.</p>
-                <ul>
-                    <li><code>grep ^The file.txt</code> : print line start with "The"</li>
-                    <li><code>grep The^ file.txt</code> : print line end with "The"</li>
-                    <li><code>grep [Hh]ello file.txt</code> : print line with word "Hello" or "hello"</li>
-                    <li><code>grep hello|HELLO file.txt</code> : print line with word "hello" or "HELLO"</li>
-                    <li><code>ls file[1-9]</code> : print files with name file1 to file9</li>
-                    <li><code>grep '[0-9][0-9][0-9][0-9]' file.txt</code> : match for 4 digit number from file.txt with range 0-9</li>
-                    <li><code>ls *[0-9]*</code> : print files containing numbers 0 to 9 (file1.txt test2.sh note5.pdf test_20)</li>
-                    <li><code>ls test.*</code> : print files start with "test" (test.txt test.pdf)</li>
-                    <li><code>ls ab*</code> : print files start with "ab" (ab.txt abcd abort.sh)</li>
-                    <li><code>ls {*.pdf,*.doc,*.exe}</code> : print files end with .pdf/.doc/.exe (file.txt project.doc run.exe)</li>
-                    <li><code>ls a[a-d]b</code> : print files with name bet a[a to d]b (abd acd)</li>
-                    <li><code>ls test_[!3]</code> : print files with number except 3 (test_1 test_2 test_4)</li>
-                </ul>
+                <div class="content">
+                    <p>A regular expression (shortened as regex) is a sequence of characters that defines a search pattern for use in pattern matching to find, match, or replace text.</p>
+                    <ul>
+                        <li><code>grep ^The file.txt</code> : print line start with "The"</li>
+                        <li><code>grep The^ file.txt</code> : print line end with "The"</li>
+                        <li><code>grep [Hh]ello file.txt</code> : print line with word "Hello" or "hello"</li>
+                        <li><code>grep hello|HELLO file.txt</code> : print line with word "hello" or "HELLO"</li>
+                        <li><code>ls file[1-9]</code> : print files with name file1 to file9</li>
+                        <li><code>grep '[0-9][0-9][0-9][0-9]' file.txt</code> : match for 4 digit number from file.txt with range 0-9</li>
+                        <li><code>ls *[0-9]*</code> : print files containing numbers 0 to 9 (file1.txt test2.sh note5.pdf test_20)</li>
+                        <li><code>ls test.*</code> : print files start with "test" (test.txt test.pdf)</li>
+                        <li><code>ls ab*</code> : print files start with "ab" (ab.txt abcd abort.sh)</li>
+                        <li><code>ls {*.pdf,*.doc,*.exe}</code> : print files end with .pdf/.doc/.exe (file.txt project.doc run.exe)</li>
+                        <li><code>ls a[a-d]b</code> : print files with name bet a[a to d]b (abd acd)</li>
+                        <li><code>ls test_[!3]</code> : print files with number except 3 (test_1 test_2 test_4)</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="grep">
                 <h4 class="heading"># Grep</h4>
-                <p>Global regular expression print (grep) prints lines that match patterns from text or files.</p>
-                <h6>Syntax :</h6>
-                <div class="code-box"><code>grep -option [pattern] [file]</code></div>
-                <ul>
-                    <li><code>grep hello file.txt</code> : match for word "hello" in file.txt and print matched line</li>
-                    <li><code>grep -i hello file.txt</code> : case insensitive match for "hello" in file.txt</li>
-                    <li><code>grep -r hello file.txt</code> : recursively match for "hello" in file.txt</li>
-                    <li><code>grep -v hello *</code> : match for all files & folders which doesn`t have word "hello"</li>
-                    <li><code>grep -c hello file.txt</code> : count occurance of "hello" in file.txt</li>
-                    <li><code>grep -w hello file.txt</code> : match for whole word "hello" in file.txt</li>
-                    <li><code>grep -n hello file.txt</code> : match for "hello" in file.txt and print line number with matched lines</li>
-                    <li><code>grep -l hello *</code> : match for "hello" in all files and print name of each matched files instead of matched line</li>
-                    <li><code>grep -B 2 -A 3 hello file.txt</code> : print before 2 lines and after 3 lines of matched case</li>
-                </ul>
+                <div class="content">
+                    <p>Global regular expression print (grep) prints lines that match patterns from text or files.</p>
+                    <h6>Syntax :</h6>
+                    <div class="code-box"><code>grep -option [pattern] [file]</code></div>
+                    <ul>
+                        <li><code>grep hello file.txt</code> : match for word "hello" in file.txt and print matched line</li>
+                        <li><code>grep -i hello file.txt</code> : case insensitive match for "hello" in file.txt</li>
+                        <li><code>grep -r hello file.txt</code> : recursively match for "hello" in file.txt</li>
+                        <li><code>grep -v hello *</code> : match for all files & folders which doesn`t have word "hello"</li>
+                        <li><code>grep -c hello file.txt</code> : count occurance of "hello" in file.txt</li>
+                        <li><code>grep -w hello file.txt</code> : match for whole word "hello" in file.txt</li>
+                        <li><code>grep -n hello file.txt</code> : match for "hello" in file.txt and print line number with matched lines</li>
+                        <li><code>grep -l hello *</code> : match for "hello" in all files and print name of each matched files instead of matched line</li>
+                        <li><code>grep -B 2 -A 3 hello file.txt</code> : print before 2 lines and after 3 lines of matched case</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="tr">
                 <h4 class="heading"># Tr</h4>
-                <p>Translate, squeeze, and/or delete characters from standard input and write them to standard output.</p>
-                <h6>Syntax :</h6>
-                <div class="code-box"><code>tr -option [string1] [string2]</code></div>
-                <ul>
-                    <li><code>tr "ab" "xy" <<< "abcd"</code> : replace occurrence of "a" with "x" and "c" with "z"</li>
-                    <li><code>tr [a-z] [A-Z] <<< "abcd"</code> :  convert lower case characters to upper case</li>
-                    <li><code>tr [:lower:] [:upper:] <<< "abcd"</code> :  convert lower case characters to upper case</li>
-                    <li><code>tr [:space:] "\t" <<< "Hello World"</code> : translate white-space characters to tabs</li>
-                    <li><code>tr -s [a-z] <<< "Hellooo Worrld"</code> : squeeze sequence of repetitive characters using -s option and replaces with single occurrence of character</li>
-                    <li><code>tr -d "l" <<< "Hello World"</code> : delete specified characters using -d option</li>
-                    <li><code>tr -d [:digit:] <<< "Hello 123 World6789"</code> : remove all the digits from the string</li>
-                    <li><code>tr -c "a" "x" <<< "ababc"</code> : invert the selection by using -c option (complement)</li>
-                    <li><code>tr -cd [:digit:] <<< "abc123def456"</code> : delete everything except digits</li>
-                </ul>
-                <h6>Tokens :</h6>
-                <div class="table-responsive">
-                    <table class="table table-sm table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Token</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>CHAR1-CHAR2</code></td>
-                                <td>all characters from CHAR1 to CHAR2 in ascending order</td>
-                            </tr>
-                            <tr>
-                                <td><code>[CHAR*]</code></td>
-                                <td>in ARRAY2, copies of CHAR until length of ARRAY1</td>
-                            </tr>
-                            <tr>
-                                <td><code>[CHAR*REPEAT]</code></td>
-                                <td>REPEAT copies of CHAR, REPEAT octal if starting with 0</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:alnum:]</code></td>
-                                <td>all letters and digits</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:alpha:]</code></td>
-                                <td>all letters</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:blank:]</code></td>
-                                <td>all horizontal whitespace</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:cntrl:]</code></td>
-                                <td>all control characters</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:digit:]</code></td>
-                                <td>all digits</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:graph:]</code></td>
-                                <td>all printable characters, not including space</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:lower:]</code></td>
-                                <td>all lower case letters</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:print:]</code></td>
-                                <td>all printable characters, including space</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:punct:]</code></td>
-                                <td>all punctuation characters</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:space:]</code></td>
-                                <td>all horizontal or vertical whitespace</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:upper:]</code></td>
-                                <td>all upper case letters</td>
-                            </tr>
-                            <tr>
-                                <td><code>[:xdigit:]</code></td>
-                                <td>all hexadecimal digits</td>
-                            </tr>
-                            <tr>
-                                <td><code>[=CHAR=]</code></td>
-                                <td>all characters which are equivalent to CHAR</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="content">
+                    <p>Translate, squeeze, and/or delete characters from standard input and write them to standard output.</p>
+                    <h6>Syntax :</h6>
+                    <div class="code-box"><code>tr -option [string1] [string2]</code></div>
+                    <ul>
+                        <li><code>tr "ab" "xy" <<< "abcd"</code> : replace occurrence of "a" with "x" and "c" with "z"</li>
+                        <li><code>tr [a-z] [A-Z] <<< "abcd"</code> :  convert lower case characters to upper case</li>
+                        <li><code>tr [:lower:] [:upper:] <<< "abcd"</code> :  convert lower case characters to upper case</li>
+                        <li><code>tr [:space:] "\t" <<< "Hello World"</code> : translate white-space characters to tabs</li>
+                        <li><code>tr -s [a-z] <<< "Hellooo Worrld"</code> : squeeze sequence of repetitive characters using -s option and replaces with single occurrence of character</li>
+                        <li><code>tr -d "l" <<< "Hello World"</code> : delete specified characters using -d option</li>
+                        <li><code>tr -d [:digit:] <<< "Hello 123 World6789"</code> : remove all the digits from the string</li>
+                        <li><code>tr -c "a" "x" <<< "ababc"</code> : invert the selection by using -c option (complement)</li>
+                        <li><code>tr -cd [:digit:] <<< "abc123def456"</code> : delete everything except digits</li>
+                    </ul>
+                    <h6>Tokens :</h6>
+                    <div class="table-responsive">
+                        <table class="table table-sm table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Token</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>CHAR1-CHAR2</code></td>
+                                    <td>all characters from CHAR1 to CHAR2 in ascending order</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[CHAR*]</code></td>
+                                    <td>in ARRAY2, copies of CHAR until length of ARRAY1</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[CHAR*REPEAT]</code></td>
+                                    <td>REPEAT copies of CHAR, REPEAT octal if starting with 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:alnum:]</code></td>
+                                    <td>all letters and digits</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:alpha:]</code></td>
+                                    <td>all letters</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:blank:]</code></td>
+                                    <td>all horizontal whitespace</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:cntrl:]</code></td>
+                                    <td>all control characters</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:digit:]</code></td>
+                                    <td>all digits</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:graph:]</code></td>
+                                    <td>all printable characters, not including space</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:lower:]</code></td>
+                                    <td>all lower case letters</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:print:]</code></td>
+                                    <td>all printable characters, including space</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:punct:]</code></td>
+                                    <td>all punctuation characters</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:space:]</code></td>
+                                    <td>all horizontal or vertical whitespace</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:upper:]</code></td>
+                                    <td>all upper case letters</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[:xdigit:]</code></td>
+                                    <td>all hexadecimal digits</td>
+                                </tr>
+                                <tr>
+                                    <td><code>[=CHAR=]</code></td>
+                                    <td>all characters which are equivalent to CHAR</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
             <div class="sections" id="find">
                 <h4 class="heading"># Find</h4>
-                <p>It searches for files and directories in the directory hierarchy.</p>
-                <h6>Syntax :</h6>
-                <div class="code-box"><code>find [path] -option [file]</code></div>
-                <ul>
-                    <li><code>find . -name file.txt</code> : find "file.txt" and is case sensitive</li>
-                    <li><code>find . -iname file.txt</code> : find "file.txt" and is case insensitive</li>
-                    <li><code>find . -name "*.html"</code> : find files end with ".html" and is case sensitive</li>
-                    <li><code>find . -maxdepth 2 "*.cpp"</code> : find files end with ".html" in 2 level depth only</li>
-                    <li><code>find . -not "*.cpp"</code> : find all files except those end with ".cpp"</li>
-                    <li><code>find / -mtime 10</code> : find files that modified in last 10 days</li>
-                    <li><code>find / -atime 10</code> : find files whose access time is within last 10 days</li>
-                    <li><code>find / -cmin 10</code> : find files that created within last 10 days</li>
-                </ul>
+                <div class="content">
+                    <p>It searches for files and directories in the directory hierarchy.</p>
+                    <h6>Syntax :</h6>
+                    <div class="code-box"><code>find [path] -option [file]</code></div>
+                    <ul>
+                        <li><code>find . -name file.txt</code> : find "file.txt" and is case sensitive</li>
+                        <li><code>find . -iname file.txt</code> : find "file.txt" and is case insensitive</li>
+                        <li><code>find . -name "*.html"</code> : find files end with ".html" and is case sensitive</li>
+                        <li><code>find . -maxdepth 2 "*.cpp"</code> : find files end with ".html" in 2 level depth only</li>
+                        <li><code>find . -not "*.cpp"</code> : find all files except those end with ".cpp"</li>
+                        <li><code>find / -mtime 10</code> : find files that modified in last 10 days</li>
+                        <li><code>find / -atime 10</code> : find files whose access time is within last 10 days</li>
+                        <li><code>find / -cmin 10</code> : find files that created within last 10 days</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="sections" id="eval">
                 <h4 class="heading"># Eval</h4>
-                <p>Eval evaluates the specified parameters as a command.</p>
-                <h6>Syntax :</h6>
-                <div class="code-box"><code>eval [arg...]</code></div>
-                <h6>Ex :</h6>
-                <pre class="code-box code-box-color"><code>list="ls | more"
-eval $list</code></pre>
+                <div class="content">
+                    <p>Eval evaluates the specified parameters as a command.</p>
+                    <h6>Syntax :</h6>
+                    <div class="code-box"><code>eval [arg...]</code></div>
+                    <h6>Ex :</h6>
+                    <pre class="code-box code-box-color"><code>list="ls | more"
+    eval $list</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="expr">
                 <h4 class="heading"># Expr</h4>
-                <p>Expr evaluates a given expression and prints it to standard output.</p>
-                <h6>Syntax :</h6>
-                <div class="code-box"><code>expr [OPTION] [EXPRESSION]</code></div>
-
-                <h6>Ex :</h6>
-                <pre class="code-box code-box-color"><code># Example 1:
+                <div class="content">
+                    <p>Expr evaluates a given expression and prints it to standard output.</p>
+                    <h6>Syntax :</h6>
+                    <div class="code-box"><code>expr [OPTION] [EXPRESSION]</code></div>
+                    <h6>Ex :</h6>
+                    <pre class="code-box code-box-color"><code># Example 1:
 expr 1 + 2
 expr 5 - 3
 expr 2 \* 3
@@ -1775,56 +1768,57 @@ echo $sub
 x="Hello World"
 c=$(expr index $x)
 echo $c</code></pre>
+                </div>
             </div>
 
             <div class="sections" id="file-permissions">
                 <h4 class="heading"># File Permissions</h4>
-                <p>Modifies file permissions.</p>
-                <h6>Syntax :</h6>
-                <div class="code-box"><code>chmod user+permission [file]</code></div>
-                <h6>Change Permission Recursively :</h6>
-                <div class="code-box"><code>chmod -R user+permission [file]</code></div>
-                <h6>Format of Permission :</h6>
-                <div class="code-box"><code>-rwx r-- r--</code></div>
-                <ul>
-                    <li>1st bit is file type</li>
-                    <li>2nd 3 bits are user permission</li>
-                    <li>3rd 3 bits are group permission</li>
-                    <li>4th 3 bits are others permission</li>
-                </ul>
-                <div class="table-responsive">
-                    <table class="table table-sm table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Options</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>File Type</td>
-                                <td>- (regular file), d (dir), c (block device), l (symbolic link)</td>
-                            </tr>
-                            <tr>
-                                <td>Setting Permission</td>
-                                <td>+ (add), - (remove), = (assign)</td>
-                            </tr>
-                            <tr>
-                                <td>Permission</td>
-                                <td>r (read), w (write), x (execute), - (no permission)</td>
-                            </tr>
-                            <tr>
-                                <td>Owner</td>
-                                <td>u (user), g (group), o (other), a (all three)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <h6>Ex :</h6>
-                <pre class="code-box code-box-color"><code>chmod u+wr-r text.txt
-chmod o+wrx script.sh</code></pre>
+                <div class="content">
+                    <p>Modifies file permissions.</p>
+                    <h6>Syntax :</h6>
+                    <div class="code-box"><code>chmod user+permission [file]</code></div>
+                    <h6>Change Permission Recursively :</h6>
+                    <div class="code-box"><code>chmod -R user+permission [file]</code></div>
+                    <h6>Format of Permission :</h6>
+                    <div class="code-box"><code>-rwx r-- r--</code></div>
+                    <ul>
+                        <li>1st bit is file type</li>
+                        <li>2nd 3 bits are user permission</li>
+                        <li>3rd 3 bits are group permission</li>
+                        <li>4th 3 bits are others permission</li>
+                    </ul>
+                    <div class="table-responsive">
+                        <table class="table table-sm table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Options</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>File Type</td>
+                                    <td>- (regular file), d (dir), c (block device), l (symbolic link)</td>
+                                </tr>
+                                <tr>
+                                    <td>Setting Permission</td>
+                                    <td>+ (add), - (remove), = (assign)</td>
+                                </tr>
+                                <tr>
+                                    <td>Permission</td>
+                                    <td>r (read), w (write), x (execute), - (no permission)</td>
+                                </tr>
+                                <tr>
+                                    <td>Owner</td>
+                                    <td>u (user), g (group), o (other), a (all three)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h6>Ex :</h6>
+                    <pre class="code-box code-box-color"><code>chmod u+wr-r text.txt
+    chmod o+wrx script.sh</code></pre>
 
-                <div>
                     <h5>&bull; Permission using Integers :</h5>
                     <div class="table-responsive">
                         <table class="table table-sm table-bordered table-striped">
@@ -1919,7 +1913,9 @@ chmod o+wrx script.sh</code></pre>
 
             <div class="sections" id="linux-filesystem-hierarchy">
                 <h4 class="heading"># Linux Filesystem Hierarchy</h4>
-                <div><img src="assets/linux-filesystem.png" alt="linux filesystem" class="img"></div>
+                <div class="content">
+                    <img src="assets/linux-filesystem.png" alt="linux filesystem" class="img">
+                </div>
             </div>
 
             <!-- Navigation Buttons -->
