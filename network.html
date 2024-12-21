@@ -199,6 +199,20 @@
                                 <li>Subdomain (<code>page</code>)</li>
                             </ul>
                         </li>
+                        <li>
+                            <p><b>DNS Records :</b> DNS records are entries in a DNS database that map a domain name to specific data. These records provide information about how the internet should route traffic for a domain, such as how to find a website, where to send emails, and more. Each DNS record has a specific type and serves a unique purpose. DNS records ensure that DNS queries are directed to the correct server based on the domain name.</p>
+                            <h6>Record Types -</h6>
+                            <ul>
+                                <li>Address Record (<code>A</code>) : Maps a domain to an IPv4 address.</li>
+                                <li>IPv6 Address Record (<code>AAAA</code>) : Maps a domain to an IPv6 address.</li>
+                                <li>Canonical Name Record (<code>CNAME</code>) : Aliases one domain name to another.</li>
+                                <li>Mail Exchange Record (<code>MX</code>) : Directs email traffic to a mail server for a domain.</li>
+                                <li>Name Server Record (<code>NS</code>) : Specifies the authoritative name servers for the domain.</li>
+                                <li>Service Record (<code>SRV</code>) : Specifies services available for a domain, including protocol and port number.</li>
+                                <li>Pointer Record (<code>PTR</code>) : Maps an IP address to a domain name, typically used for reverse DNS lookups.</li>
+                                <li>Text Record (<code>TXT</code>) : Used to store arbitrary text, often for verification purposes (like SPF, DKIM, or other services).</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -629,7 +643,7 @@
                 <div class="content">
                     <p>A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks, such as the internet. These rules can be configured to permit or deny traffic based on factors such as IP address, port number, protocol, or specific applications. Firewalls can be hardware devices, software programs, or a combination of both. Firewalls use a variety of techniques to control and monitor network traffic, including packet filtering, stateful inspection, and application-level filtering. It blocks unauthorized access and filters out malicious traffic.</p>
 
-                    <b>Types of firewall -</b>
+                    <h6>Types of firewall -</h6>
                     <ul class="justify">
                         <li><b>Network Firewall :</b> A network firewall is a device that protects an entire network from unauthorized access and attacks. Network firewalls can be hardware or software based and are typically installed at the perimeter of a network to block unauthorized access from the internet.</li>
                         <li><b>Host-based Firewall :</b> A host-based firewall is a firewall that protects an individual computer from unauthorized access and attacks. Host-based firewalls are typically software-based and are installed on individual computers to control access to network resources and block unauthorized traffic.</li>
