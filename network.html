@@ -34,6 +34,7 @@
                     <li><a href="#osi-model">OSI Model</a></li>
                     <li><a href="#tcp-ip-model">TCP/IP Model</a></li>
                     <li><a href="#protocol">Protocols</a></li>
+                    <li><a href="#torrent">BitTorrent</a></li>
                     <li><a href="#http-protocol">HTTP Protocol</a></li>
                     <li><a href="#web-socket">Web Socket</a></li>
                     <li><a href="#ssl-tls">SSL/TLS</a></li>
@@ -58,7 +59,13 @@
                     </ul>
 
                     <h5>Internet :</h5>
-                    <p>The internet is a global network of interconnected computers and devices that use standardized communication protocols to exchange data and information. For effective communication and organization on a network, devices need to have clear identification and be recognizable by others which is typically occurs through unique identifiers assigned to each device, such as IP addresses or MAC addresses. These identifiers enable devices to send and receive data, facilitating communication and maintaining order within the network.</p>
+                    <p>The internet is a global public network of interconnected computers and devices that use standardized communication protocols to exchange data and information. For effective communication and organization on a network, devices need to have clear identification and be recognizable by others, which typically occurs through unique identifiers assigned to each device, such as IP addresses or MAC addresses. These identifiers enable devices to send and receive data, facilitating communication and maintaining order within the network.</p>
+
+                    <h5>Intranet :</h5>
+                    <p>An intranet is a private network used within an organization to facilitate communication, share information, and enable collaboration among employees. It operates like the internet but is confined to a specific group or organization, and access is restricted to authorized users only. Key features of an intranet include internal communication, file sharing and storage, collaboration, security, and centralized resources.</p>
+
+                    <h5>Extranet :</h5>
+                    <p>An extranet is a private network that allows controlled access to external users, typically business partners, vendors, or customers, while maintaining a level of security. It extends a company's internal network (intranet) to authorized users outside the organization. Through an extranet, businesses can securely share information and collaborate with external parties while keeping the main network protected from unauthorized access. It typically involves the use of secure connections, such as virtual private networks (VPNs), to ensure the safety of the data being exchanged.</p>
                 </div>
             </div>
 
@@ -82,7 +89,7 @@
                             <ul class="justify">
                                 <li>Hubs are essentially multi-port repeaters used to setup LANs.</li>
                                 <li>Layer 1 device - Physical layer</li>
-                                <li>Has no momory</li>
+                                <li>Has no memory</li>
                                 <li>Half duplex mode</li>
                                 <li>Has muliple ports</li>
                                 <li>Supports only broadcasting, thus flooding the network.</li>
@@ -93,7 +100,7 @@
                             <ul class="justify">
                                 <li>Repeater + Functionality of Reading MAC Address, Used for Interconnecting Two LANs on the Same Protocol.</li>
                                 <li>Layer 2 device - Data link layer</li>
-                                <li>Has momory - stores MAC address table</li>
+                                <li>Has memory - stores MAC address table</li>
                                 <li>Full duplex mode</li>
                                 <li>Multi-port device</li>
                                 <li>Supports unicasting, multicasting and broadcasting.</li>
@@ -105,7 +112,7 @@
                             <ul class="justify">
                                 <li>Used to connect devices together on a network to establish a LAN (switching is deciding the best route for data transmission).</li>
                                 <li>Layer 2 device - Data link layer</li>
-                                <li>Has momory - stores MAC address table</li>
+                                <li>Has memory - stores MAC address table</li>
                                 <li>Full duplex mode</li>
                                 <li>Multi-port device</li>
                                 <li>Supports unicasting, multicasting and broadcasting.</li>
@@ -117,7 +124,7 @@
                             <ul class="justify">
                                 <li>Use to connect two or more different LANs using different protocols (forwarding data packets between computer networks).</li>
                                 <li>Layer 3 device - Network layer</li>
-                                <li>Has momory - stores routing table</li>
+                                <li>Has memory - stores routing table</li>
                                 <li>Full duplex mode</li>
                                 <li>Multi-port device</li>
                                 <li>Supports unicasting, multicasting and broadcasting.</li>
@@ -347,6 +354,10 @@
                             <h6>Ethernet :</h6>
                             <p>Ethernet is a family of protocols that specify how devices on the same network segment format and transmit data over a physical medium. It is the standard way to connect devices in a wired network using cables and hubs.</p>
                         </li>
+                        <li>
+                            <h6>BitTorrent :</h6>
+                            <p>BitTorrent is a peer-to-peer (P2P) file-sharing protocol that allows users to distribute files efficiently across the internet. Instead of downloading a file from a single source, BitTorrent splits the file into smaller pieces and downloads them simultaneously from multiple sources (peers).</p>
+                        </li>
                     </ul>
 
                     <h6>Default Port for Protocols :</h6>
@@ -402,6 +413,23 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+
+            <div class="sections" id="torrent">
+                <h4 class="heading"># BitTorrent</h4>
+                <div class="content">
+                    <p>BitTorrent is a peer-to-peer (P2P) file-sharing protocol used for distributing large amounts of data over the internet. Instead of downloading a file from a single server, BitTorrent breaks the file into smaller pieces and distributes them across a network of computers (peers) that share parts of the file. These peers download and upload pieces of the file to each other, enabling faster and more efficient transfers. It is used to efficiently share large files, reduce server load, enable faster downloads, and improve scalability and fault tolerance.</p>
+                    <h6>Key Concepts :</h6>
+                    <ul class="justify">
+                        <li><b>Peers :</b> The individual computers or devices connected to the BitTorrent network that share files with one another.</li>
+                        <li><b>Seeders :</b> Peers that have the complete file and share it with others.</li>
+                        <li><b>Leechers :</b> Peers that are downloading the file but haven’t completed downloading it yet. They usually also upload parts of the file they've downloaded.</li>
+                        <li><b>Torrent File :</b> A small file with the <code>.torrent</code> extension that contains metadata about the files to be shared (such as file names, sizes, and structure) and the addresses of tracker servers.</li>
+                        <li><b>Trackers :</b> Servers that help manage communication between peers. They don’t host the file but help peers find each other to facilitate data sharing.</li>
+                        <li><b>Swarm :</b> The group of all peers (seeders and leechers) sharing a specific file in the BitTorrent network.</li>
+                        <li><b>Pieces and Blocks :</b> Files are divided into smaller pieces, which are further subdivided into blocks. This allows users to download parts of a file from multiple peers simultaneously, making downloads faster and more efficient.</li>
+                    </ul>
                 </div>
             </div>
 
