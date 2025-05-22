@@ -35,6 +35,7 @@
                     <li><a href="#pki">Public Key Infrastructure</a></li>
                     <li><a href="#secops">Security Operations</a></li>
                     <li><a href="#attacks">Attacks</a></li>
+                    <li><a href="#vulns">Vulnerabilities</a></li>
                 </ul>
             </div>
 
@@ -354,7 +355,8 @@
                         <li><b>Dumpster Diving :</b> Dumpster diving involves sifting through trash or discarded items (such as paper documents, old hardware, or electronic devices) to find sensitive or valuable information. This could include things like passwords, account numbers, business records, or other confidential data.</li>
                         <li><b>Shoulder Surfing :</b> Shoulder surfing involves observing someone’s screen or physical interactions, such as entering a password or PIN, to steal sensitive information. This can happen in public places or areas where people are not aware that someone is watching them.</li>
                         <li><b>Pharming :</b> Pharming is a type of cyber attack where a user is redirected from a legitimate website to a malicious one, often without their knowledge. This is typically done by exploiting vulnerabilities in DNS or by infecting the user's computer with malware that modifies their host file.</li>
-                        <li><b>Evil Twin :</b> An Evil Twin attack is a type of wireless network attack where a malicious actor sets up a fake Wi-Fi access point that appears to be a legitimate, trusted network. The attacker’s fake access point mimics the SSID (network name) of a legitimate Wi-Fi network, often in a public space like an airport or hotel.</ul>
+                        <li><b>Evil Twin :</b> An Evil Twin attack is a type of wireless network attack where a malicious actor sets up a fake Wi-Fi access point that appears to be a legitimate, trusted network. The attacker’s fake access point mimics the SSID (network name) of a legitimate Wi-Fi network, often in a public space like an airport or hotel.</li>
+                    </ul>
                     <h5>Phishing Attacks :</h5>
                     <p>In phishing attacks, attackers impersonate legitimate organizations or individuals to trick people into revealing sensitive information, such as passwords, credit card numbers, or personal details. This is typically done through fraudulent emails, websites, or messages that appear to be from trusted sources, such as banks, online services, or social media platforms.</p>
                     <ul class="justify">
@@ -365,7 +367,7 @@
                     </ul>
                     <h5>Eavesdropping (Sniffing) :</h5>
                     <p>Eavesdropping is the act of secretly intercepting and listening to private communications or data transmissions without the consent of the involved parties. It is often done to gather sensitive information, such as personal details, passwords, credit card numbers, or confidential business data. To prevent eavesdropping, encryption should be used for sensitive communications, and VPNs should be used to secure data over public networks.</p>
-                    <h5>DNS Spoofing</h5>
+                    <h5>DNS Spoofing :</h5>
                     <p>DNS Spoofing (also known as DNS Cache Poisoning) is an attack in which an attacker manipulates the Domain Name System (DNS) records to redirect or intercept users' web traffic. In a DNS spoofing attack, the attacker provides false DNS responses to a victim, causing the victim’s system to trust the malicious data. This can lead the victim to be redirected to malicious websites or servers, even though the domain name they entered was legitimate. To mitigate, use secure DNS servers, cache hygiene (regularly clearing DNS caches), and encryption.</p>
                     <h5>Malware Attacks :</h5>
                     <p>A malware attack refers to the process by which a malicious actor or software spreads or executes malware on a target system or network. Malware, short for malicious software, is any program or code designed to harm, exploit, or compromise the functionality of a computer, network, or device. Malware can lead to data theft, system damage, or a complete system takeover. Common types of malware include viruses, worms, trojans, ransomware, and spyware.</p>
@@ -397,20 +399,72 @@
                         <li><b>DoS (Denial of Service) :</b> In a traditional DoS attack, a single source or machine sends a massive volume of traffic to the target system, overwhelming its resources (such as bandwidth, memory, or CPU), causing the system to slow down or crash.</li>
                         <li><b>DDoS (Distributed Denial of Service) :</b> In a DDoS attack, the attacker uses multiple machines or devices (often part of a botnet) to flood the target system with traffic, making the attack more difficult to stop because it comes from many different sources.</li>
                     </ul>
-                    <h5>SQL Injection :</h5>
-                    <p>Structured Query Language Injection (SQLi) is an attack on a web application's database that exploits vulnerabilities, allowing malicious SQL queries to be executed. This attack enables an attacker to manipulate SQL queries, often with the intent of gaining unauthorized access to sensitive data or performing malicious actions on the database.</p>
-                    <h5>Cross-Site Scripting (XSS) :</h5>
-                    <p>Cross-Site Scripting (XSS) is a type of security vulnerability found in web applications, where attackers inject malicious scripts (typically JavaScript) into web pages viewed by other users. These scripts execute within the user's browser, enabling the attacker to manipulate content, steal sensitive information, access cookies and session tokens, or perform actions on behalf of the user without their consent.</p>
-                    <ul class="justify">
-                        <li><b>Stored XSS :</b> The malicious script is stored on the server (for example, in a database) and is served to users who view the infected page.</li>
-                        <li><b>Reflected XSS :</b> The malicious script is reflected off the web server (e.g., via a URL or query parameter) and executed immediately, usually without being stored.</li>
-                        <li><b>DOM-based XSS :</b> The malicious script is executed as a result of modifying the DOM (Document Object Model) in the browser, often without involving the server.</li>
-                    </ul>
                     <h5>Privilege Escalation :</h5>
                     <p>Privilege escalation is a type of security vulnerability or attack where an attacker gains elevated access to resources or functions that they would normally not be able to access. This occurs when a user, application, or process is granted higher privileges (e.g., admin or root rights) than intended.</p>
                     <ul class="justify">
                         <li><b>Vertical Privilege Escalation (or Privilege Elevation) :</b> This occurs when a user gains higher privileges, such as a regular user gaining administrative (root) access. For example, a standard user may exploit a vulnerability to gain administrator rights and perform actions that are normally restricted.</li>
                         <li><b>Horizontal Privilege Escalation :</b> This happens when an attacker gains access to another user's resources or data, but without increasing their own privileges. In this case, they can access or modify data that belongs to a different user with similar or equal privilege levels.</li>
+                    </ul>
+                    <h5>Advanced Persistent Threat (APT) :</h5>
+                    <p>An Advanced Persistent Threat (APT) is a type of cyberattack where an unauthorized user gains prolonged and covert access to a network to steal data or surveil activity. These attacks are typically orchestrated by well-funded and highly skilled threat actors, often linked to nation-states or organized crime groups.</p>
+                </div>
+            </div>
+
+             <div class="sections" id="vulns">
+                <h4 class="heading"># Vulnerabilities</h4>
+                <div class="content">
+                    <p>A vulnerability is a weakness in an information system, security procedures, internal controls, or implementation that could be exploited or triggered by a threat source.</p>
+                    <h6>Types of Vulnerabilities -</h6>
+                    <h5>Remote Code Execution (RCE) :</h5>
+                    <p>Remote Code Execution (RCE) is a critical security vulnerability that allows an attacker to run arbitrary code on a remote system, usually the server, without authorization. RCE occurs when an application or system: Takes user input, and Executes it as code, or passes it to a vulnerable component (e.g., shell, interpreter) without proper validation. This allows attackers to send specially crafted data that executes commands, installs malware, or takes control of the system. Consequences of RCE: Full server compromise, Data theft or loss, Lateral movement within a network, etc. RCE Examples: Log4Shell (Apache Log4j).</p>
+                    <h5>Injection :</h5>
+                    <p>An injection vulnerability is a security flaw that allows an attacker to inject malicious input into a program, causing it to interpret that input as code or commands instead of plain data.Applications often interact with databases, operating systems, web services, or interpreters using user-provided input. If the application fails to properly validate or escape this input, attackers can "inject" special code that the system mistakenly executes. Types of Injection:</p>
+                    <ul class="justify">
+                        <li><b>SQL Injection:</b> Targets databases by injecting SQL commands.</li>
+                        <li><b>Command Injection:</b> Targets the operating system, allowing execution of arbitrary system commands.</li>
+                        <li><b>XXE (XML External Entity):</b> Targets XML parsers by injecting external entities to access files, perform SSRF, or cause DoS.</li>
+                        <li><b>XML Injection / XPath Injection:</b> Targets XML parsers or XPath engines, manipulating XML data or queries.</li>
+                        <li><b>LDAP Injection:</b> Targets LDAP directories, altering directory queries or bypassing authentication.</li>
+                    </ul>
+                    <h5>Insecure Deserialisation</h5>
+                    <p>Insecure deserialization is a vulnerability that occurs when an application deserializes untrusted or tampered data without proper validation, allowing an attacker to manipulate the serialized object in a way that leads to unintended behavior such as remote code execution (RCE), privilege escalation, authentication bypass, or denial of service (DoS). Serialization is the process of converting an object (such as a Python dictionary or a Java object) into a format that can be stored or transmitted, like JSON, XML, or binary. Deserialization is the reverse process, where the data is converted back into its original object form.</p>
+                    <h5>Server-Side Request Forgery (SSRF) :</h5>
+                    <p>Server-Side Request Forgery (SSRF) is a web vulnerability that occurs when an attacker is able to make the server send HTTP (or other protocol) requests to an unintended destination, typically due to insecure handling of user-supplied URLs or input. In SSRF, the attacker tricks the server into making a request to a target that the attacker cannot reach directly. This is possible when an application fetches data from a URL provided by the user — for example, downloading a file, accessing an image, or connecting to a webhook — without validating or restricting the destination. Prevent SSRF by restricting allowed domains/IPs, blocking internal metadata endpoints, using firewalls or network segmentation, validating user input, and limiting server response data exposure.</p>
+                    <h5>Broken Access Control (BAC) :</h5>
+                    <p>Broken Access Control is a security vulnerability that occurs when an application fails to properly enforce restrictions on what authenticated users are allowed to do, enabling attackers to gain unauthorized access to resources or perform actions outside their intended permissions. Access control defines who can perform specific actions within an application. When these rules are poorly implemented or entirely missing, it can allow malicious users to access other users' data, perform admin-level actions without proper authorization, or modify and delete records they should not have access to. Examples of Broken Access Control include Insecure Direct Object References (IDOR), where attackers modify user IDs in URLs to access unauthorized accounts; missing role checks that let regular users access admin functions; forced browsing to hidden, privileged endpoints; and relying on frontend restrictions without backend enforcement, allowing attackers to send unauthorized requests manually.</p>
+                    <h5>Broken Authentication :</h5>
+                    <p>Broken Authentication is a security vulnerability where an application’s authentication mechanisms are improperly implemented, allowing attackers to compromise user accounts, bypass authentication, or impersonate other users. Common causes include weak, predictable, or default passwords; poor session management (e.g., session IDs not rotated or invalidated on logout); credential stuffing attacks due to reused passwords; insecure password recovery or reset processes; exposing authentication tokens in URLs or logs; and failure to enforce multi-factor authentication (MFA) where appropriate. Consequences of broken authentication can include account takeover, data theft or unauthorized access, privilege escalation if administrative accounts are compromised, and fraud or identity theft.</p>
+                    <h5>Sensitive Data Exposure :</h5>
+                    <p>Sensitive Data Exposure is a security vulnerability that occurs when an application inadvertently exposes confidential or personal information to unauthorized parties. This can happen through weak encryption, improper handling, or insecure transmission and storage of sensitive data such as passwords, credit card numbers, personal identification details, or health records. When sensitive data is exposed, attackers can steal or manipulate it, leading to identity theft, financial loss, or privacy violations. Protecting sensitive data requires strong encryption, secure transmission protocols (like HTTPS), proper access controls, and careful data handling practices throughout the application lifecycle.</p>
+                    <h5>Security Misconfiguration :</h5>
+                    <p>Security Misconfiguration is a common vulnerability that occurs when security settings in an application, server, or platform are incorrectly configured or left at insecure defaults. This can expose the system to attacks by making it easier for attackers to exploit weaknesses, access sensitive data, or take control of the environment. Examples of security misconfiguration include leaving default passwords or keys unchanged, enabling unnecessary features, services, or ports, exposing sensitive information through debugging or error messages, and using insecure HTTP headers or outdated software versions.</p>
+                    <h5>Cross-Site Scripting (XSS) :</h5>
+                    <p>Cross-Site Scripting (XSS) is a web security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. These scripts are typically written in JavaScript and can be used to manipulate content, steal sensitive information such as cookies and session tokens, hijack user sessions, deface websites, redirect users to malicious sites, or perform actions on behalf of the user without their consent. XSS occurs when an application takes untrusted input—like form fields, URLs, or comments—and renders it in a web page without proper sanitization or escaping, allowing the attacker’s script to execute in the victim’s browser. To prevent XSS, output should be escaped based on its context (HTML, JavaScript, URL), input should be sanitized using libraries like DOMPurify, and a Content Security Policy (CSP) should be implemented to restrict script execution. Unsafe DOM methods like innerHTML should be avoided, and modern frameworks such as React or Angular, which automatically handle output encoding, should be used. Types of XSS:</p>
+                    <ul class="justify">
+                        <li><b>Stored XSS (Persistent):</b> The malicious script is stored on the server (e.g., in comments or user profiles) and served to users later.</li>
+                        <li><b>Reflected XSS:</b> The script is embedded in a URL or request and immediately reflected in the response, often in error messages or search results.</li>
+                        <li><b>DOM-based XSS:</b> The vulnerability exists in client-side JavaScript that processes data from the browser without proper sanitization.</li>
+                    </ul>
+                    <h5>Cross-Site Request Forgery (CSRF) :</h5>
+                    <p>Cross-Site Request Forgery (CSRF) is a security vulnerability where an attacker tricks a logged-in user into unknowingly submitting unwanted actions on a web application. This happens because the user’s browser automatically includes their authentication credentials (like cookies) when making requests, so the server thinks the requests are legitimate. CSRF works by tricking a logged-in user’s browser into sending unauthorized requests to a trusted site without their knowledge, using their active authentication (like cookies). The site then processes these forged requests as if they were legitimate actions from the user. Prevent CSRF by using anti-CSRF tokens in forms and requests, requiring re-authentication for sensitive actions, setting the SameSite cookie attribute to restrict cross-site cookie sending, and verifying the request source through Referer or Origin headers.</p>
+                    <h5>SQL Injection :</h5>
+                    <p>SQL Injection (SQLi) is a type of cyberattack in which an attacker exploits vulnerabilities in an application by inserting malicious SQL (Structured Query Language) code into input fields. This can allow the attacker to manipulate the database—viewing, modifying, or deleting data they should not have access to. Most web applications interact with databases using SQL queries, and if user input is not properly validated or sanitized, attackers can craft input that alters the intended SQL query. SQL Injection enables attackers to bypass authentication, access and steal sensitive data, modify or delete records, execute administrative tasks, extract entire databases, and potentially take control of the server. To prevent SQL Injection, use prepared statements (parameterized queries) to ensure user input is treated as data, not code. Validate and sanitize all inputs through input validation and escaping. Follow the principle of least privilege by restricting database permissions. Utilize ORM frameworks, which often include built-in SQLi protection, and deploy web application firewalls (WAFs) as an additional defense layer. Types of SQLi:</p>
+                    <ul>
+                        <li>
+                            <b>In-Band SQLi:</b> Attacker injects SQL and immediately sees results in the application’s response (e.g., input <code>' OR '1'='1</code> alters the query to always return true, bypassing authentication).
+                            <ul>
+                                <li><b>Error-Based:</b> Attacker causes database errors to gain information from error messages (e.g., injecting <code>' UNION SELECT NULL, version() --</code> reveals the database version through an error).</li>
+                                <li><b>Union-Based:</b> Attacker uses the SQL UNION operator to combine results from the original query with malicious query results, retrieving data directly (e.g., <code>' UNION SELECT username, password FROM users --</code> appends user data to the query output).</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Blind SQLi:</b> No direct output; attacker infers data by observing application behavior (e.g., using true/false queries to check if the first letter of username is ‘A’, with different page responses).
+                            <ul>
+                                <li><b>Boolean-Based:</b> Uses conditional queries causing different responses based on true/false evaluation (e.g., <code>username = 'admin' AND 1=1</code> returns a normal page, while username = 'admin' AND 1=0 causes an error or different behavior).</li>
+                                <li><b>Time-Based:</b> Uses delays to determine if conditions are true by measuring server response times (e.g., query causes a 5-second delay if the first password character is ‘a’).</li>
+                            </ul>
+                        </li>
+                        <li><b>Out-of-Band SQLi:</b> When direct or blind injection isn’t possible, attacker uses external channels like DNS or HTTP requests to receive data (e.g., database triggers a DNS lookup to attacker’s server, leaking data externally).</li>
                     </ul>
                 </div>
             </div>
